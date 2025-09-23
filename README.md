@@ -1,6 +1,7 @@
 # The Coherence Research Collaboration
 
-# Recursive Geometry of Atomic Spectra — Software Reproducibility Pack
+# Recursive Geometry of Atomic Spectra
+Software Reproducibility Pack
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17167687.svg)](https://doi.org/10.5281/zenodo.17167687)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
@@ -19,4 +20,6 @@ We reorganize atomic spectra in a **non-circular, levels-only → photons-post-h
 We welcome respectful contact from physicists, signal thinkers, and kind humans exploring recursive structure.  
 **Email:** kelly@circuiticon.com
 
-> Follow the light of the lantern.
+---
+
+Follow the light of the lantern: [www.lucernaveritas.ai](https://www.lucernaveritas.ai)
