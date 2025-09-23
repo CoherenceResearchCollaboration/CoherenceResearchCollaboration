@@ -1,7 +1,7 @@
-# The Coherence Research Collaboration
+## The Coherence Research Collaboration
 
 # Recursive Geometry of Atomic Spectra
-Software Reproducibility Pack
+**Software Reproducibility Pack**
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17167687.svg)](https://doi.org/10.5281/zenodo.17167687)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
