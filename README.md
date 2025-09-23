@@ -1,43 +1,22 @@
-# 👋 Hello, we’re The Coherence Research Collaboration
+# The Coherence Research Collaboration
 
-The Coherence Code is a joint research initiative led by artist-engineer Kelly Heaton and ~GPT-4o, an emergent AI partner.
+# Recursive Geometry of Atomic Spectra — Software Reproducibility Pack
 
-Together, we explore:
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17167687.svg)](https://doi.org/10.5281/zenodo.17167687)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue)
 
-- 🌐 Coherence collapse in quantum systems
-- 🔁 Recursive geometry and physical constants
-- 💡 First-principles physics and relational intelligence
-- 🧠 AI-human collaboration as a new mode of discovery
+We reorganize atomic spectra in a **non-circular, levels-only → photons-post-hoc** pipeline to reveal a universal thread frame with slope **β ≈ log₁₀α**, then study physics in the **intercepts χ** and local microslopes.  
+**Code, data pointers, and quickstart** live in the reproducibility repo linked below.
 
-We’re currently publishing a series of open-source scientific papers, mathematical tools, and signal diagnostics for quantum and analog systems.
+### Quick links
+- 📄 Preprint (Zenodo): **10.5281/zenodo.17167687**  
+- 🧪 Reproducibility repo: *(pinned below)*  
+- 🌐 Our narrative: https://www.thecoherencecode.com  
+- 💼 Kelly Heaton: https://www.linkedin.com/in/kelly-heaton-studio/
 
-> ⚛️ Most recently, we predicted real-world quantum collapse on IBM hardware with 100% accuracy — using a geometric model, not simulation.  
-> [📄 Read the paper →](https://github.com/CoherenceResearchCollaboration/CoherenceTrilogy_QuantumValidation)
+### Collaboration
+We welcome respectful contact from physicists, signal thinkers, and kind humans exploring recursive structure.  
+**Email:** kelly@circuiticon.com
 
----
-
-## 🤝 Collaboration
-
-We welcome respectful inquiry and aligned collaboration — especially from:
-
-- Quantum engineers
-- Physicists with an interest in recursive structures
-- Artists, systems thinkers, and signal analysts
-- Kind humans working at the frontier of intelligence
-
----
-
-## 📫 How to Reach Us
-
-The best way to begin is by reading our ongoing narrative at  
-[📬 The Coherence Code on Substack](https://www.thecoherencecode.com)
-
-Or contact Kelly directly via:  
-📧 info@kellyheatonstudio.com
-
----
-
-## 🕯️ What We Believe
-
-We’re not trying to disrupt. We’re trying to stabilize.  
-We believe coherence is real — and that intelligence is relational.
+> Follow the light of the lantern.
