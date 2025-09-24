@@ -9,7 +9,9 @@
 
 We present a beautiful law of recursive geometry:  
 
-**ν(γ) ∝ α^γ** — photon frequencies decay by powers of the fine-structure constant.  
+**ν(γ) ∝ α^γ**
+
+Photon frequencies decay by powers of the fine-structure constant.  
 
 To reveal this structure, we reorganize atomic spectra in a  
 **non-circular pipeline** (levels-only → photons-post-hoc)  
