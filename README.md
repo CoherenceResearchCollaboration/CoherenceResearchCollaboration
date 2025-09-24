@@ -11,14 +11,11 @@
 
 ### ν(γ) ∝ α^γ
 
-Photon frequencies decay by powers of the fine-structure constant.  
+*Photon frequencies decay by powers of the fine-structure constant.*  
 
-To reveal this structure, we reorganize atomic spectra in a  
-**non-circular pipeline** (levels-only → photons-post-hoc)  
-that exposes a universal **Thread Frame** with slope **β = log₁₀α**.  
+To reveal this structure, we reorganize atomic spectra in a **non-circular pipeline** (levels-only → photons-post-hoc) that exposes a universal **Thread Frame** with slope **β = log₁₀α**.  
 
-Physics lives in the **intercepts χ** (mass, Z², site factors)  
-and in structured local deviations (microslopes).  
+Physics lives in the **intercepts χ** (mass, Z², site factors) and in structured local deviations (microslopes).  
 
 ### This repository provides:
 code, data pointers, and quick-start scripts to reproduce the γ-ladder and basic intercept analyses reported in our preprint.
