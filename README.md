@@ -7,9 +7,14 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 ![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue)
 
-We reorganize atomic spectra in a **non-circular, levels-only → photons-post-hoc** pipeline to reveal a universal thread frame with slope **β ≈ log₁₀α**.  
-Physics lives in the **intercepts χ** and local microslopes.  
-This repository provides code, data pointers, and quick-start scripts to reproduce the γ-ladder and intercept analyses reported in our preprint.
+We reorganize atomic spectra in a  
+**non-circular, levels-only → photons-post-hoc pipeline**  
+to reveal a **universal thread frame** with slope **β ≈ log₁₀α**.  
+
+Physics lives in the **intercepts χ** and **local microslopes**.  
+
+This repository provides **code, data pointers, and quick-start scripts**  
+to reproduce the **γ-ladder** and **intercept analyses** reported in our preprint.
 
 ---
 
