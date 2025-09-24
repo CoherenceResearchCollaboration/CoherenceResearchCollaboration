@@ -7,9 +7,9 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 ![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue)
 
-We present a beautiful law of recursive geometry:  
+## We present a beautiful law of recursive geometry:  
 
-# **ν(γ) ∝ α^γ**
+### **ν(γ) ∝ α^γ**
 
 Photon frequencies decay by powers of the fine-structure constant.  
 
@@ -20,7 +20,7 @@ that exposes a universal **Thread Frame** with slope **β = log₁₀α**.
 Physics lives in the **intercepts χ** (mass, Z², site factors)  
 and in structured local deviations (microslopes).  
 
-## This repository provides **code, data pointers, and quick-start scripts** to reproduce the **γ-ladder** and **basic intercept analyses** reported in our preprint.
+### This repository provides **code, data pointers, and quick-start scripts** to reproduce the **γ-ladder** and **basic intercept analyses** reported in our preprint.
 
 ---
 
