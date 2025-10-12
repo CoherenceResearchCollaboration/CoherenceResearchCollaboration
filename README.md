@@ -22,8 +22,24 @@ code, data pointers, and quick-start scripts to reproduce the γ-ladder and basi
 
 ---
 
+## ✨ New Companion Paper
+
+### *Information-Theoretic Confirmation of the α-Affine Thread Frame:*  
+**Minimum Description Length Validation of the Fine-Structure Slope**
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17335815.svg)](https://doi.org/10.5281/zenodo.17335815)
+
+This companion paper extends **Recursive Geometry of Atomic Spectra** by providing an  
+independent information-theoretic validation of the universal slope  
+**β = log₁₀ α**, confirming that the fine-structure constant defines the most  
+compressive and information-optimal coordinate for photon organization.
+📥 [Download PDF (v1.0)](preprint/KBHeaton_Information_Theoretic_Confirmation_MDLSlope_2025.pdf)
+
+---
+
 ### Quick links
-- 📄 Preprint (Zenodo): [10.5281/zenodo.17167687](https://doi.org/10.5281/zenodo.17167687)  
+- 📄 New Preprint (MDL Validation): [10.5281/zenodo.17335815](https://doi.org/10.5281/zenodo.17335815)  
+- 📄 Original Preprint (Recursive Geometry): [10.5281/zenodo.17167687](https://doi.org/10.5281/zenodo.17167687)  
 - 🧪 Reproducibility repo: *(this repository)*  
 - 🌐 Narrative & updates: https://www.thecoherencecode.com  
 - 💼 Kelly Heaton: https://www.linkedin.com/in/kelly-heaton-studio/  
