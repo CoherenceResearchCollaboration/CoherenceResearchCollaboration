@@ -1,0 +1,1638 @@
+------------------------------------------------------------------------
+
+Keywords: vacuum impedance, vacuum geometry, proton mass, electron mass, tau lepton mass, proton-to-electron mass ratio, hydrogen ionization energy, fine-structure constant, Fibonacci sequence, Maxwell’s equations, standing-wave geometry, hadronic condensation, Zeckendorf representation, Poincaré–Hopf theorem, golden ratio, quark charge fractions, Standard Model parameters, atomic spectroscopy, particle mass spectrum.
+
+Introduction
+
+The Standard Model contains nineteen free parameters. They are measured with extraordinary precision and used throughout particle physics, but none is derived from a deeper principle. The proton-to-electron mass ratio m_(p)/m_(e) ≈ 1836 is among the most precisely known numbers in nature and has no derivation within any established framework. The fine-structure constant α ≈ 1/137.036 has resisted first-principles derivation since Sommerfeld introduced it in 1916 (Sommerfeld 1916). These are not mere technical gaps awaiting routine closure. They are evidence of an open frontier.
+
+Prior attempts to derive α or m_(p)/m_(e) from first principles — from Eddington’s combinatorial counting (Eddington 1929, 1946) to Wyler’s symmetric-space volume formula (A. Wyler 1969; Armand Wyler 1970) — share a common structure: a numerical coincidence is identified, and a mathematical object is found whose value matches. None supplies a forcing mechanism: a proof that the vacuum geometry selects that number to the exclusion of all others. The present framework’s contribution is precisely such a mechanism. The Fibonacci sequence is not found to match the particle spectrum; it is proved (Theorem 4) to be the unique coherence structure forced by the two-invariant Maxwell vacuum and the value of α. The distinction is the difference between Ptolemy and Kepler: not a better fit, but a different kind of explanation.
+
+This paper recovers the electron mass, proton-to-electron mass ratio, quark electric charge fractions, and proton mass as closed results, and the tau lepton mass from a formula with one conjectured component, all from the hydrogen ionization energy E₀ = 13.598 443 eV (NIST Atomic Spectra Database 2024) and the geometry of the electromagnetic vacuum, with zero free parameters.
+
+The Fibonacci sequence is not a postulate of this framework: it is proved here (Theorem 4) to be the unique coherence structure forced by the two-invariant Maxwell vacuum together with the condition α = Z₀/2R_(K). The proton mass, electron mass, and mass ratio emerge as a closed triangle whose comparison values share one physical origin in the standing-wave geometry of hydrogen, closing to the proton comparison value — a structural self-consistency rather than a set of residuals. The key to these derivations is a coordinate that the standard formulation suppresses.
+
+The missing coordinate
+
+Maxwell’s equations in vacuum are governed by two independent constitutive constants, ε₀ and μ₀. The standard formulation retains their product:
+$$c^2 \;=\; \frac{1}{\varepsilon_0\,\mu_0}.
+  \label{eq:product}$$
+This fixes the propagation speed and nothing else. Infinitely many pairs (ε₀,μ₀) share the same c while differing in their ratio. The second independent relation is the ratio:
+$$Z_0 \;=\; \sqrt{\frac{\mu_0}{\varepsilon_0}}.
+  \label{eq:ratio}$$
+Together, equations [eq:product] and [eq:ratio] form a determinate system. Squaring [eq:ratio] and multiplying with [eq:product] gives μ₀² = Z₀²/c²; dividing gives ε₀² = 1/Z₀²c². The unique solution is:
+$$\boxed{\mu_0 \;=\; \frac{Z_0}{c},}
+  \qquad
+  \boxed{\varepsilon_0 \;=\; \frac{1}{Z_0\,c}.}
+  \label{eq:resolved}$$
+No further reduction is possible: c fixes the product; Z₀ fixes the ratio. Together they fix everything. Working with c² alone is working with one equation in two unknowns (Heaton 2026a).
+
+The standard wave equation retains only c², and the compression was historically invisible because it is lossless for propagation questions[1]. Every prediction that established Maxwell’s equations — the speed of light, radio waves, the identity of light as an electromagnetic phenomenon — depends only on c, and the vacuum’s characteristic impedance Z₀ leaves no trace in any propagation answer.
+
+The symptoms of the missing coordinate were nevertheless felt. Sommerfeld introduced α in 1916 as an unexplained dimensionless combination of electromagnetic constants forced on him by the fine structure of hydrogen (Sommerfeld 1916). Dirac described it repeatedly as among the deepest unsolved problems in physics (Dirac 1937), and Feynman called it “one of the greatest mysteries of physics” half a century later (Feynman 1985). What none of them identified was the root structural cause: α, the electron mass, and the proton mass are not propagation observables. These quantities are partition observables that are sensitive to how field energy divides between the electric and magnetic modes. Partition observables are indeterminate from the wave equation alone — not as an approximation, but as a matter of the algebra. Derivations of α, m_(e), and m_(p) have resisted all attempts for a century not because the mathematics is technically difficult, but because these quantities are indeterminate by construction within any formalism that discards Z₀ before the questions are asked (Heaton 2026a). Restoring Z₀ as an independent coordinate makes them determinate for the first time.
+
+Why the partition coordinate cannot be suppressed
+
+In any electromagnetic transmission line, the propagation speed and characteristic impedance are determined by inductance L′ and capacitance C′ per unit length via two independent combinations:
+$$v \;=\; \frac{1}{\sqrt{L'C'}},
+  \qquad
+  Z_c \;=\; \sqrt{\frac{L'}{C'}}.
+  \label{eq:txline}$$
+The map (L′,C′) ↦ v is many-to-one: lines with the same propagation speed but different impedance reflect energy at a junction differently. A speed-only description is indeterminate on partition questions regardless of its precision on propagation questions (Heaton 2026a). The vacuum is the limiting case of this structure, with (ε₀,μ₀) in the roles of (C′,L′): $c = 1/\sqrt{\varepsilon_0\mu_0}$ is the dispersion coordinate and $Z_0 = \sqrt{\mu_0/\varepsilon_0}$ is the partition coordinate. Setting Z₀ = 1 is not a simplification. From the definition $Z_0 = \sqrt{\mu_0/\varepsilon_0}$, the condition Z₀ = 1 requires μ₀ = ε₀: it identifies the inductive and capacitive primitives of the vacuum and eliminates the only coordinate that distinguishes electric energy storage from magnetic energy storage.
+
+The formal statement is proved in (Heaton 2026a): the map (ε₀,μ₀) ↦ c² is non-injective, and any scalar query sensitive to the electric/magnetic partition is fiber-sensitive under this map — meaning no function of c alone can recover it. Interface reflection, orbital field impedance, and the standing-wave resonances that determine particle masses are all fiber-sensitive. They become determinate only when Z₀ is retained as an independent coordinate alongside c.
+
+The atom as a Thévenin circuit
+
+A bound electron at principal quantum number n moves at orbital velocity v_(n) = αc/n; the quantum-mechanical expectation value ⟨v⟩_(n) = αc/n follows from the virial theorem. The Coulomb electric field at orbital radius r_(n) = n²a₀ is:
+$$|\mathbf{E}_n| \;=\;
+  \frac{e}{4\pi\varepsilon_0\,n^4 a_0^2}.
+  \label{eq:E_field}$$
+The orbital current I_(n) = ev_(n)/2πr_(n) generates, by the Biot–Savart law, a magnetic field at the loop center:
+$$|\mathbf{H}_n| \;=\; \frac{I_n}{2r_n}
+  \;=\; \frac{e\,\alpha c}{4\pi\,n^5 a_0^2}.
+  \label{eq:H_field}$$
+Their ratio is the field impedance of the orbital. The charge e and radius a₀ cancel exactly, leaving:
+$$Z_{\mathrm{orb}}(n)
+  \;\equiv\; \frac{|\mathbf{E}_n|}{|\mathbf{H}_n|}
+  \;=\; \frac{Z_0\,n}{\alpha},
+  \label{eq:Zorb}$$
+with no free parameters.
+
+The orbital–vacuum interface has the structure of a Thévenin circuit: the nucleus is the electromotive source with open-circuit voltage V_(TH) = IE (the ionization energy), the orbital presents reactive internal impedance Z_(orb) = Z₀n/α, and the vacuum is the load Z₀. By Thévenin’s theorem this is the complete description of the interface. The reflection coefficient is:
+$$\Gamma(n) \;=\;
+  \frac{Z_\mathrm{orb}(n) - Z_0}{Z_\mathrm{orb}(n) + Z_0}
+  \;=\; \frac{n - \alpha}{n + \alpha}
+  \;\longrightarrow\; 1
+  \quad \text{for all } n \geq 1.
+  \label{eq:reflection}$$
+The bound electron does not radiate because the impedance mismatch between the orbital and the vacuum is so severe that Γ(n) → 1 for all physically accessible n. No quantum postulate about stationary states is required. The atom is an electromagnetic resonator whose reflection coefficient approaches unity at every accessible quantum number — a conclusion inaccessible to any formalism in which Z₀ = 1.
+
+The boundary that cannot be crossed
+
+The impedance match condition Z_(orb) = Z₀ requires from equation [eq:Zorb]:
+$$n \;=\; \alpha \;\approx\; \frac{1}{137}.
+  \label{eq:match}$$
+No positive integer satisfies this. The electromagnetic configuration that impedance matching demands is simultaneously required by the geometry and forbidden by the closure condition of any bound state.
+
+The spectroscopic consequence is a structural forbidden zone. The Balmer series limit falls at IE/4 (from E₀(1/n_(f)²) with n_(f) = 2), and the impedance-match condition n = α ≈ 1/137 places the match point inside the interval [IE/4, 3IE/4] between the Balmer and Lyman limits, unreachable by any integer quantum number. No bound-to-bound transition can carry energy IE/4 because the Diophantine equation
+$$\frac{1}{n_f^2} - \frac{1}{n_i^2} \;=\; \frac{1}{4}
+  \label{eq:diophantine}$$
+has no solution in positive integers. The proof is exhaustive: n_(f) = 1 gives n_(i)² = 4/3; n_(f) = 2 gives n_(i) → ∞; n_(f) ≥ 3 gives maximum transition energy IE/9 < IE/4.
+
+The forbidden zone [IE/4, 3IE/4] is confirmed as a universal spectroscopic absence across 71 atomic ions spanning Z = 1–82, all subshell families and ionization stages, with zero falsifications; a further 9 ions have incomplete spectral coverage and are inconclusive (NIST Atomic Spectra Database 2024; Heaton 2026e). Control analyses at IE/3 and IE/5 return residuals of  ± 250, 000 ppm, in exact agreement with the algebraic predictions for incorrect fractions. The same boundary appears at S_(n)/4 in all four doubly magic nuclei and is absent in all 20 non-magic nuclides surveyed, with zero overlap (Heaton 2026e). The fraction 1/4 is not an artifact of atomic physics: it follows from the Diophantine impossibility of equation [eq:diophantine], which is scale-independent.
+
+The forbidden zone has two boundaries. Its lower wall at IE/4 = IE/2² is governed by the integer 2; its upper wall at 3IE/4 is governed by the integer 3. These integers — the outer and inner walls of the only electromagnetic configuration that cannot be occupied — are the first appearance of a pair that recurs in every subsequent derivation: F₃ = 2, which governs the E-sector boundary, and F₄ = 3, which governs the H-sector boundary. Their identification as consecutive Fibonacci numbers, and the reason they appear in these roles, is established in Section 2.
+
+What the compression destroys: the topology at the poles
+
+The topological loss from eliminating H is a further, independent consequence of the compression — distinct from the algebraic indeterminacy established above and directly relevant to the particle derivations that follow.
+
+The two curl equations describe fields of categorically different topological character. The E-mode field is exact: it is the exterior derivative of a scalar potential and terminates on sources and sinks. The H-mode field is closed but not exact: it circulates, accumulating holonomy around every closed path that encloses a source, and cannot be written as the gradient of any global function. When H is eliminated, the result is second-order in E alone. The exact structure survives. The closed-but-not-exact structure does not.
+
+Placing the two-invariant field on the Riemann sphere S², the Poincaré–Hopf theorem (χ(S²) = 2) (Milnor 1965) requires at minimum two poles of index  + 1: a source pole p where the E-mode terminates and the H-mode begins its winding, and an antipodal sink p^(*) where the roles are reversed. These poles are not a coordinate choice. They are a topological necessity.
+
+The Riemann sphere of this framework is not an abstract mathematical space of unconstrained solutions. It carries a specific structural residue: the condition α = Z₀/2R_(K), established in (Heaton 2026b), which fixes the relationship between the winding geometry and the vacuum impedance and determines which configurations are physically realizable; the sphere is constrained before any winding begins (Section 2.3).
+
+The coupling matrix
+$$\begin{pmatrix}0 & -Z_0 \\ +Z_0 & 0\end{pmatrix}
+  \label{eq:coupling_matrix}$$
+is antisymmetric with eigenvalues  ± iZ₀. At p the H-mode winding accumulates under  + iZ₀; at p^(*) it returns under  − iZ₀. The two poles carry opposite orientation as a consequence of the antisymmetry, not of any initial condition.
+
+Eliminating H destroys three geometric objects simultaneously: the closed-but-not-exact topology of the H-mode; the opposite orientations at the two poles; and the winding number as a conserved integer-valued topological invariant of the map S¹ → S¹. None of these has a counterpart in the wave equation. The particle derivations in Sections 2–3 work in the pre-elimination formulation where all three are present.
+
+What the restored coordinate forces
+
+Retaining Z₀ transforms Maxwell’s curl equations into a depth evolution equation along the logarithmic radial coordinate γ = log (1/r), the natural depth scale of the vacuum field established in Section 1 and (Heaton 2026b):
+$$\frac{\partial}{\partial\gamma}
+  \begin{pmatrix}\mathbf{E}\\\mathbf{H}\end{pmatrix}
+  \;=\;
+  \begin{pmatrix}0 & -Z_0 \\ +Z_0 & 0\end{pmatrix}
+  \begin{pmatrix}\mathbf{E}\\\mathbf{H}\end{pmatrix}.
+  \label{eq:coupling}$$
+The coupling is equal and opposite. Eliminating H from [eq:coupling] recovers the standard wave equation with only Z₀², re-enacting the algebraic compression described above and erasing the individual couplings  ± Z₀.
+
+The H-mode field winds around the source pole under this coupling, approaching a stable attractor through successive rational approximations. The sequence those approximations must take is not free: it is forced by the coupling structure. The argument has three steps, proved in full in Section 2.3:
+
+1.  Self-similar scaling forces the continued-fraction recursion. Depth-independence of Z₀ requires the winding ratio to depend only on local structure at each depth, forcing constant partial quotients a_(j) = a and the metallic-mean recursion q_(j) = a q_(j − 1) + q_(j − 2).
+
+2.  Equal-and-opposite coupling forces strict alternation. Two consecutive steps of the same field type would give M² =  − Z₀²I — the second-order wave equation, containing only Z₀² and not the individual couplings  ± Z₀. The first-order coupling therefore requires the convergence error to alternate sign at every step. This holds for every metallic mean.
+
+3.  The structural flaw α selects a = 1 uniquely. The source pole p established above carries an irremovable residue, forcing a permanent displacement α = Z₀/2R_(K) from the golden-ratio attractor (Heaton 2026b). At the first step where the convergence error ε_(j) falls below α, the winding can no longer distinguish “still converging toward φ” from “permanently displaced by α.” This crossing first occurs at j = 5 for a = 1; at j = 4 for a = 2; earlier still for a ≥ 3. Only a = 1 is consistent with α = Z₀/2R_(K) as derived in (Heaton 2026b). Therefore a = 1 uniquely, the sequence is Fibonacci, and the winding attractor is $\varphi = (1+\sqrt{5})/2$.
+
+Suppressing Z₀ yields a = 2: the Pell sequence with attractor $1 + \sqrt{2}$. The Fibonacci sequence is the algebraic signature of the complete two-invariant formulation of Maxwell’s equations.
+
+The winding condenses — forms a stable configuration — at the depth where the crossing ε_(j) < α first occurs, step j = 5. The condensation depth is computed from the two integers that bounded the spectroscopic forbidden zone in Section 1 and (Heaton 2026e), now identified as F₃ = 2 and F₄ = 3:
+F₃² + F₄² = 2² + 3² = 13 = F₇.
+The integers read from atomic spectra yield, within this framework, the condensation depth of hadronic matter.
+
+Results
+
+Table 2 collects all numerical results. Closed derivations appear in Sections 2 and 3; the tau lepton mass is computed from a formula with one conjectured component (Remark 10).
+
+Part A: Primary results. The electron ( − 533 ppm) and mass ratio ( + 534 ppm) comparison values originate in the same standing-wave geometry of hydrogen and close to the proton comparison value ( + 0.61 ppm); the triangle is a structural identity (§3.1). The tau formula contains one conjectured component (footnote a).
+
+  Particle         d Correction factor C        Recovered mc²   Comparison    Physical origin
+  ------------- ---- -------------------------- --------------- ------------- -----------------------------------------------
+  Proton          13 $(2157-869\sqrt{5})/208$   938.2726 MeV     + 0.61 ppm   Proton reduced-mass correction (Heaton 2026e)
+  Tau             13 $(83+144\sqrt{5})/208$     1776.864 MeV     − 37 ppm     Within experimental uncertainty
+  Electron         7 C_(e) = F₃/(α²⋅4⁷)         510.727 keV      − 533 ppm    Standing-wave geometry of hydrogen
+  m_(p)/m_(e)      6 (C_(p)/C_(e)) ⋅ 4⁶         1837.133         + 534 ppm    Standing-wave geometry of hydrogen
+
+  :  Particle masses recovered from vacuum geometry (E₀ sole input).
+  Derived values compared with CODATA and PDG measurements. E₀ = 13.598 443 eV is the sole empirical input (NIST Atomic Spectra Database 2024). The depth-13 correction factors (proton and tau) lie in $\mathbb{Q}(\sqrt{5})$ with denominator D = 208; the electron correction factor follows from the standing-wave identity $E_0 = \tfrac{1}{2}m_ec^2\alpha^2$. Part B is a partial derivation; the residual encodes open physics identified in Section 5.
+
+The tau correction factor contains one motivated and one conjectured component: the rational part A = L₄ + L₉ = 83 (motivated by SO(2) trajectory counting; Theorem T1 in preparation) and the irrational coefficient B = F₁₂ = 144 (conjectured from half-cycle causal ordering; Theorem T2 in preparation; see Remark 10). The numerical result is correct independently of whether these identifications are later proved.
+
+The electron correction factor C_(e) = F₃/(α²⋅4⁷) follows from the standing-wave identity $E_0 = \tfrac{1}{2}m_ec^2\alpha^2$, giving m_(e)c² = F₃E₀/α² = E₀ ⋅ 4⁷ ⋅ C_(e). F₃ = 2 is the Balmer final quantum number defining the outer wall IE/4 = E₀/F₃² (Proposition 20).
+
+The electron and mass ratio comparison values share one physical origin: E₀ is the resonant frequency of the hydrogen standing wave, not the infinite-nuclear-mass Rydberg energy. The difference E_(∞) − E₀ ≈ 544 ppm expresses itself as  − 533 ppm in the electron comparison and  + 534 ppm in the mass ratio comparison; these values are not equal and opposite but close to  + 0.61 ppm, consistent with the proton comparison. The gap between 533 ppm and 544 ppm is resolved per-ion using AME2020 nuclear masses in (Heaton 2026d), yielding an electron mass residual of  − 4.2 ± 3.7 ppm with zero free parameters. No correction is applied to obtain the comparison values shown; the closure is structural.
+
+Part B: Partial derivation. Residual encodes open physics.
+
+  Particle      d Correction factor C                                      Recovered mc²   Comparison   Status
+  ---------- ---- -------------------------------------------------------- --------------- ------------ -------------------------------
+  π⁰           11 $\tfrac{7-3\sqrt{5}}{2}\cdot\tfrac{C_p+1}{2}\cdot 4^2$   135.018 MeV      + 305 ppm   u/d asymmetry not yet derived
+
+  :  Particle masses recovered from vacuum geometry (E₀ sole input).
+  Derived values compared with CODATA and PDG measurements. E₀ = 13.598 443 eV is the sole empirical input (NIST Atomic Spectra Database 2024). The depth-13 correction factors (proton and tau) lie in $\mathbb{Q}(\sqrt{5})$ with denominator D = 208; the electron correction factor follows from the standing-wave identity $E_0 = \tfrac{1}{2}m_ec^2\alpha^2$. Part B is a partial derivation; the residual encodes open physics identified in Section 5.
+
+See Section 5. The pion is derived as a propagating exchange mode between two proton-geometry spheres, not as an independent condensate. The  + 305 ppm residual is attributed to the u/d quark mass asymmetry, which the framework identifies geometrically but has not yet derived from first principles.
+
+Independent census. Of 270 PDG particles with measured pole masses (Group, Workman, et al. 2022), 184 occupy depth d = 13. The primary evidential claim is pre-specification: depth d = 13 was derived from identity [eq:depth13] before any particle was counted, so the result is a confirmed prediction rather than a retrofitted pattern. Against a log-uniform null the clustering returns z ≈ 30; a physically motivated null accounting for QCD resonance density would reduce this figure, and statistical significance depends on the choice of null model. Zero particles occupy depths d = 10 and d = 15, both predicted absent on framework grounds before the census and both observed empty.
+
+Structure of this paper
+
+Section 2 develops the geometric machinery: the foundational three-element oscillation principle (Lemma 1), the depth address, the Fibonacci Forcing Theorem with proof, the electromagnetic light cone, the condensation condition, and the derivations of the proton mass, tau mass, electron mass, and mass ratio. Section 3 classifies the vacuum field configurations by geometric role, derives the quark charge fractions as Diophantine necessities, places the pion and neutron in the depth hierarchy, and confirms the W boson, Z, Higgs, and top quark at d = 16 through the census. Table 2 presents a summary of numerical results compared with CODATA (Tiesinga et al. 2021) and PDG measurements. Section 5 states the open derivations as precisely posed problems, including the principal falsifiable prediction m_(d)/m_(u) = F₄²/F₃² = 9/4.
+
+The proton and tau share depth d = 13 and denominator D = 208 because both arise from the same condensation geometry; they carry different correction factors because they represent two distinct closure configurations at that depth, introduced in Section 2.7 and derived in Sections 2.8 and 2.10: the proton as a topologically stable H-sector winding condensate, the tau as an unstable E-sector round-trip closure.
+
+The integers F₃ = 2 and F₄ = 3, first identified as the boundaries of the spectroscopic forbidden zone, appear in every subsequent derivation in the same roles.
+
+The model
+
+This section builds the geometric machinery through which the depth evolution equation and the spectroscopic boundary integers produce particle masses. The foundational physical premise — that three elements in mutual relation must oscillate, and that Maxwell’s coupling distributes oscillation energy equally between the E and H modes — is stated as Lemma 1 below. From it, six geometric objects are required: a depth address, the Fibonacci convergence table, the Fibonacci Forcing Theorem (proved here), the electromagnetic light cone, a condensation condition, and a constraint on the algebra of correction factors. The reader who follows the lemma and derives the proton mass from these six objects has independently verified the complete derivation structure.
+
+The theorems that follow are theorems about the electromagnetic vacuum of this universe, not theorems of abstract mathematics. The integers F₃ = 2 and F₄ = 3 are read from hydrogen’s spectrum and confirmed across 71 atomic ions (Heaton 2026e); the fine-structure constant α = Z₀/2R_(K) is derived from the geometry of the specific vacuum we inhabit (Heaton 2026b). A universe with a different α would satisfy the same structural equations but produce different boundary integers, different condensation depths, and a different particle spectrum. The Fibonacci sequence is the unique coherence structure of our vacuum, not of all possible vacua.
+
+The three-element oscillation principle
+
+The depth evolution equation and the mass correction formula both rest on a single physical premise established in the prior papers of this series. We state it here as a lemma so that the derivations of Sections 2.9.1–2.9.2 have an explicit foundation rather than an implicit one.
+
+Lemma 1 (Three-element oscillation).
+
+1.  Two primitives expand. When ε₀ and μ₀ stand in relation through the logarithmic field ϕ(r) = log (1/r) alone, the process is monotone: field lines run from source pole p to sink pole p^(*) without oscillation.
+
+2.  Three elements in mutual relation must oscillate. When the field curves to form a closure — when the H-sector activates at 3IE/4 and μ₀ enters the geometry as a third active element alongside ε₀ and their relationship Z₀ — equilibrium between the three cannot be maintained by monotone expansion. The system must oscillate. This is recorded in hydrogen’s spectrum: the gap of width exactly IE/2 between IE/4 (E-sector terminus) and 3IE/4 (H-sector onset) is the half-period of the enforced oscillation, and the right angle between the 1s–2s axis and the 2s–2p axis in $(E_{\rm bind}, \ell)$ space records the orthogonality E ⊥ H at the impedance-match point (Heaton 2026c).
+
+3.  Maxwell’s equal-and-opposite coupling partitions the oscillation equally (proved). The curl equations ∇ × E =  − μ₀ ∂_(t)H and ∇ × H =  + ε₀ ∂_(t)E couple E and H with equal coupling strength  ± Z₀ (Heaton 2026c). The depth evolution generator M = Z₀J reflects this. The SO(2) rotation generated by M distributes time-averaged energy equally between the E-mode and the H-mode for every initial condition, as proved in the proof below (equation [eq:equipartition_proof]).
+
+Proof. Parts (i) and (ii) are established in (Heaton 2026b, 2026c). The monotone two-element logarithmic field is the Poincaré–Hopf consequence of the singularity 1/0 on the Riemann sphere (Heaton 2026b), Section 2. The activation of μ₀ at 3IE/4 and the resulting spectroscopic orthogonality are documented in (Heaton 2026c), Sections 2.3 and 4.3.
+
+For Part (iii), equal energy partition follows from the SO(2) rotation generated by M = Z₀J. The solution to the depth evolution equation is:
+$$\binom{E(\gamma)}{H(\gamma)}
+  = \begin{pmatrix}
+      \cos(Z_0\gamma) & -\sin(Z_0\gamma) \\
+      \sin(Z_0\gamma) &  \cos(Z_0\gamma)
+    \end{pmatrix}
+    \binom{E_0}{H_0}.
+  \label{eq:rotation_solution_proof}$$
+Averaging over one full period T = 2π/Z₀, using $\langle\cos^2\rangle = \langle\sin^2\rangle
+= \tfrac{1}{2}$ and ⟨cos sin ⟩ = 0:
+$$\langle E^2 \rangle
+  = \tfrac{1}{2}(E_0^2 + H_0^2)
+  = \langle H^2 \rangle.
+  \label{eq:equipartition_proof}$$
+The time-averaged energy is equal in both modes for every initial condition (E₀,H₀). This is not imposed; it follows from the periodicity of the SO(2) rotation. ◻
+
+Corollary 2 (E-sector share and dynamical normalization). Two consequences for the mass correction formula follow immediately from Lemma 1. Both are used in Sections 2.9.1 and 2.9.2 to fix the amplitude coefficients a = F₃² = 4 and b = 1/F₆ = 1/8 of the proton correction factor.
+
+1.  The mass correction receives the E-sector share. The reference energy E₀ = 13.598 443 eV in mc² = E₀ ⋅ 4^(d) ⋅ C is the hydrogen ionization energy — the closing energy of the capacitive E-mode, purely ε₀-sector. By Part (iii) of the lemma, the oscillation distributes energy equally between E and H, so the E-sector contribution to the forward phase overshoot at condensation step j = 5 is half the total overshoot. Therefore the forward amplitude coefficient satisfies a = (forward overshoot)/2; the specific value a = F₃² = 4 is derived in Section 2.9.1.
+
+2.  The dynamical amplitude unit is the Q-factor. Planck’s constant h = E/ν is the invariant of the self-similar cleaving process (Heaton 2026c), Section 3.4: it is a dynamical ratio (energy to frequency), not a geometric length. The natural amplitude unit for the j-th Fibonacci mode is likewise dynamical: Q_(j) = A_(j)/ε_(j) = F_(j + 1), the ratio of the mode’s coherence amplitude to its linewidth (the cycle count to indistinguishability at precision α). The Euclidean norm $\|\mathbf{e}_j\|_2 = \sqrt{F_{2j+1}}$ is a static geometric distance and is not the appropriate normalization for an oscillating mode. Therefore N_(j) = Q_(j) = F_(j + 1).
+
+The depth address
+
+The universal gap at IE/4, proved by the Diophantine impossibility of equation [eq:diophantine], defines a natural logarithmic scale for mass. Every particle mass mc² receives a depth address d and correction factor C:
+$$d \;=\; \left\lfloor
+    \log_4\!\left(\frac{mc^2}{E_0}\right)
+  \right\rfloor,
+  \qquad
+  C \;=\; \frac{mc^2}{E_0 \cdot 4^d},
+  \label{eq:depth}$$
+where E₀ = 13.598 443 eV is the hydrogen ionization energy and C ∈ [1, 4) encodes the particle’s fractional position within its depth level.
+
+The depth base follows directly from the E-sector boundary at IE/4 = IE/2²:
+$$\frac{\mathrm{IE}}{\mathrm{IE}/4} \;=\; 4 \;=\; F_3^2.
+  \label{eq:base4}$$
+One step in d is one factor of 4 in energy. The corresponding depth step width on the α-scaled logarithmic ruler (Heaton 2026b) is:
+$$\kappa_q \;=\; \frac{\ln 4}{|\ln\alpha|} 
+  \;\approx\; 0.2818.
+  \label{eq:kappa_q}$$
+The uniqueness of base 4 is independently confirmed: replacing IE/4 with IE/3 or IE/5 returns  ± 250, 000 ppm (Heaton 2026e), in exact agreement with the algebraic prediction for an incorrect boundary fraction.
+
+The Fibonacci convergence and the Forcing Theorem
+
+We now prove that, within the two-invariant Maxwell framework together with the vacuum-flaw condition α = Z₀/2R_(K), the Fibonacci sequence is the uniquely selected winding sequence.
+
+The convergence errors
+
+The convergence errors at each Fibonacci step are:
+$$\varepsilon_j
+  \;=\; \left|\frac{F_{j+1}}{F_j} - \varphi\right|,
+  \label{eq:fib_error}$$
+where F_(j) is the j-th Fibonacci number (F₁ = 1, F₂ = 1, F₃ = 2, F₄ = 3, F₅ = 5, F₆ = 8, F₇ = 13, …). The errors decrease monotonically, alternate in sign, and satisfy exact algebraic forms; using L_(j) = F_(j − 1) + F_(j + 1) and $\varphi = (1+\sqrt{5})/2$ directly:
+$$\varepsilon_j
+  \;=\; \frac{|L_j - F_j\sqrt{5}|}{2F_j},
+  \label{eq:eps_form}$$
+where L_(j) = F_(j − 1) + F_(j + 1) is the j-th Lucas number.
+
+    j   F_(j)   F_(j + 1) Ratio   ε_(j)                          ε_(j)/α   Side
+  --- ------- ----------- ------- ------------------------------ --------- ---------
+    1       1           2 2/1     0.38197                        52.3      above φ
+    2       2           3 3/2     0.11803                        16.2      below φ
+    3       3           5 5/3     0.04863                        6.66      above φ
+    4       5           8 8/5     0.01803                        2.47      below φ
+    5       8          13 13/8    $\mathbf{(18-8\sqrt{5})/16}$   0.9546    above φ
+    6      13          21 21/13   $(13\sqrt{5}-29)/26$           0.363     below φ
+    7      21          34 34/21   0.001014                       0.139     above φ
+    8      34          55 55/34   0.000387                       0.053     below φ
+    9      55          89 89/55   0.000148                       0.020     above φ
+
+  : Fibonacci convergence errors toward φ, compared to α. Exact algebraic forms are shown for j = 5 and j = 6 because these two rows enter the proton mass derivation directly; remaining rows show decimal values. The critical row (j = 5, bold) marks the first step at which the convergence error falls below the structural flaw α: the winding can no longer distinguish “not yet converged” from “permanently displaced from φ by α.” The side column records which side of φ each approximant lies on.
+
+The ghost transition
+
+The Fibonacci winding converges toward φ from alternating sides but can never reach it. The following proposition locates φ inside the forbidden zone, establishing that the attractor is spectrally inaccessible.
+
+Proposition 3 (The golden-ratio transition is forbidden). IE/4 < IE/φ < 3IE/4.
+
+Proof. The Lyman transition energy to hypothetical level n_(i) = φ is ΔE(φ) = E₀(1−1/φ²). Using φ² = φ + 1: 1 − 1/φ² = 1/φ. Since $1/\varphi = (\sqrt{5}-1)/2 \approx 0.618$ and 0.25 < 0.618 < 0.75 is exact, the claim follows. ◻
+
+The forbidden zone is the spectroscopic record of an attractor the Fibonacci winding can approach but never reach.
+
+The Fibonacci Forcing Theorem
+
+The integers F₃ = 2 and F₄ = 3 entering the theorem below are the boundary quantum numbers of the universal spectroscopic gap at [IE/4, 3IE/4], confirmed across 71 atomic ions with zero falsifications (Heaton 2026e). The condition α = Z₀/2R_(K) is derived in (Heaton 2026b) from the irremovable defect of the 1/0 singularity on the Riemann sphere, independently of any particle mass. Both are physical facts about this vacuum, not mathematical assumptions.
+
+Theorem 4 (Fibonacci Forcing). Let (E,H) satisfy the equal-and-opposite Maxwell depth evolution [eq:coupling] with fixed ratio Z₀ > 0. The Fibonacci sequence is the unique metallic-mean continued-fraction sequence satisfying all three of the following physical conditions simultaneously:
+
+1.  Self-similar depth evolution: the coupling ratio Z₀ is depth-independent, forcing constant partial quotients a_(j) = a.
+
+2.  Equal-and-opposite coupling: the antisymmetric coupling matrix of equation [eq:coupling] forces strict sign-alternation of the convergence residual at every coherence scale, establishing that the physical field lives in the space of metallic-mean continued-fraction sequences (not more general sequences).
+
+3.  The vacuum flaw selects a = 1 uniquely. The condition α = Z₀/2R_(K) (Heaton 2026b) determines the first crossing ε_(j) < α to occur at j = 5, which is consistent with a = 1 alone among all metallic means.
+
+Suppressing Z₀ by eliminating H yields the second-order wave equation corresponding to a = 2 (the Pell sequence, attractor $1 + \sqrt{2}$).
+
+Proof. The proof proceeds in three steps, one for each condition.
+
+Step 1 (Self-similar scaling forces the continued-fraction recursion). The coupling equation [eq:coupling] is a linear ODE whose solution advances the field vector (E,H)^(T) by the rotation
+$$R_\theta \;=\; \exp(M\,\kappa_q)
+  \;=\;
+  \begin{pmatrix}
+    \cos\theta & -\sin\theta \\
+    \sin\theta & \phantom{-}\cos\theta
+  \end{pmatrix},
+  \qquad \theta \;=\; Z_0\,\kappa_q,
+  \label{eq:rotation_step}$$
+at each discrete depth step of size κ_(q). Since Z₀ and κ_(q) are both depth-independent constants, θ is the same at every depth.
+
+Define the coherence denominators q_(j) as the successive integers at which the accumulated phase q θ returns most closely to a multiple of 2π — that is, the values minimizing ∥q θ/2π∥ (fractional distance to the nearest integer) among all positive integers up to q. These are precisely the denominators of the best rational approximants to θ/2π. By the best-approximation theorem for continued fractions (Hardy and Wright 1979), they satisfy
+q_(j) = a_(j) q_(j − 1) + q_(j − 2),
+for integers a_(j) ≥ 1. Since θ = Z₀κ_(q) is depth-independent, the continued fraction of θ/2π is a fixed sequence; its partial quotients a_(j) carry no depth index. Depth-independence of Z₀ therefore forces a_(j) = a, a single constant, for all j. Constant a_(j) = a gives the limiting ratio $\tau_a = (a + \sqrt{a^2+4})/2$, the a-th metallic mean.
+
+Step 2 (Equal-and-opposite coupling forces strict alternation — for any metallic mean). The coupling matrix in [eq:coupling] is a rotation generator in the (E,H)-plane with eigenvalues  ± iZ₀. Let τ_(a) denote the metallic mean attractor defined in Step 1. Define the step type σ(j) ∈ {E, H} at coherence scale j by the sign of the signed convergence residual e_(j) = τ_(a) − p_(j)/q_(j) (without absolute value, to track which side of τ_(a) the approximant lies on): σ(j) = H if e_(j) > 0, σ(j) = E if e_(j) < 0. Two consecutive steps of the same field type would require two applications of the coupling matrix, giving M² =  − Z₀²I — the second-order wave equation, which contains only Z₀² and not the individual couplings  ± Z₀. The first-order coupling therefore forces:
+σ(j+1) ≠ σ(j)  for all j.
+The standard continued-fraction identity p_(j)q_(j − 1) − p_(j − 1)q_(j) = (−1)^(j + 1) (Hardy and Wright 1979) implies sgn (ε_(j)) = (−1)^(j), which establishes that this strict alternation holds at every coherence scale.
+
+Remark 1. Strict alternation [eq:strict_alt] is a theorem of continued-fraction theory that holds for every metallic mean, not a property distinguishing Fibonacci from Pell or any other metallic mean. Maxwell’s equal-and-opposite coupling establishes that the physical field realizes this alternation structure; it does not by itself select a = 1 from among the metallic means. The selection of a = 1 is the work of Step 3.
+
+Step 3 (α selects a = 1 uniquely). The vacuum flaw α = Z₀/2R_(K) is derived from the geometry of the punctured sphere in (Heaton 2026b), independently of any particle mass. Its numerical value determines which metallic mean places the first crossing ε_(j) < α at j = 5.
+
+-   a = 1 (τ₁ = φ): the exact forms give ε₄/α ≈ 2.471 > 1 and ε₅/α ≈ 0.955 < 1. First crossing at j = 5.
+
+-   a = 2 ($\tau_2 = 1 + \sqrt{2}$, Pell): convergent denominators 1, 2, 5, 12, 29, … give ε₃ = |12/5−τ₂| ≈ 0.01421 (ε₃/α ≈ 1.95 > 1) and ε₄ = |29/12−τ₂| ≈ 0.00245 (ε₄/α ≈ 0.34 < 1). First crossing at j = 4. Inconsistent with α = Z₀/2R_(K).
+
+-   a ≥ 3: direct computation from convergent denominators gives first crossings strictly before j = 5 for all a ≥ 3. Explicit check at the slowest-converging case a = 3 ($\tau_3 = (3+\sqrt{13})/2$, denominators 1, 3, 10, 33, …): ε₂ = |10/3−τ₃| ≈ 0.0306 > α, ε₃ = |33/10−τ₃| ≈ 0.00278 < α; first crossing at j = 3. For larger a the convergents approach τ_(a) faster and the crossing occurs earlier (the denominators of the ath metallic mean grow as τ_(a)^( j), and τ_(a) > φ for all a ≥ 2, so the crossing moves strictly left with increasing a); for a ≥ 6 it occurs at j ≤ 2. All a ≥ 3 are inconsistent with α = Z₀/2R_(K).
+
+No other metallic mean places the condensation at j = 5. Therefore a = 1, uniquely. The sequence of coherence scales is the Fibonacci sequence; the winding attractor is φ.
+
+The condensation depth F₇ = 13 follows from the Fibonacci step count at j = 5: the coherence denominator at this step is F₆ = 8, and the depth identity F₃² + F₄² = 13 = F₇ is a second, independent route to the same depth, derived from the spectroscopic boundary integers F₃ = 2 and F₄ = 3 read from atomic spectroscopy across 71 ions (Heaton 2026e). That two independent routes — one from the numerical value of α, one from the spectroscopic boundary integers — converge on the same condensation depth d = 13 is a structural self-consistency of the framework.
+
+Suppressing Z₀ recovers a = 2. Eliminating H from [eq:coupling] yields the second-order equation ∂_(γ)²E =  − Z₀²E. The coupling in this equation is Z₀² = (+Z₀)(−Z₀) — the product of the two coupling directions, not an alternating pair. In the first-order system, the off-diagonal entries  + Z₀ (E drives H) and  − Z₀ (H drives E) alternate at every coherence step: each advance in winding requires one step of each sign. This strict sign-alternation is what forces a = 1: the minimum partial quotient compatible with alternating signs is 1. The second-order equation collapses the alternating pair (+Z₀, −Z₀) into the single squared unit Z₀², erasing the sign distinction. Without sign-alternation, the minimum partial quotient compatible with the coupling structure rises to a = 2. The Pell sequence is therefore the algebraic signature that Z₀ has been compressed from an independent coordinate to a squared product, and the sign-alternation of the two-invariant formulation has been lost. ◻
+
+Remark 2. Maxwell’s equal-and-opposite coupling (Step 2) forces the alternation structure: the physical field realises strict type-alternation at every coherence scale. The vacuum flaw α (Step 3) forces the specific sequence: only a = 1 is compatible with condensation at j = 5. Condition (ii) establishes that the field lives in the space of metallic means. Condition (iii) selects the unique element of that space compatible with the electromagnetic vacuum. Together they force Fibonacci.
+
+The electromagnetic light cone
+
+The electromagnetic light cone in the (ℰ_(E),ℰ_(H)) energy space. Blue axis: E-mode (Balmer, spacelike sector); red axis: H-mode (Lyman, timelike sector). The null geodesic (heavy black, slope 1, Theorem 5) runs from the apex (0, 3IE/4) — Lyman-α, the inner wall of the forbidden zone — to the asymptote (IE/4, IE) as n → ∞; the arrow shows the direction of increasing n. The null surface ℰ_(E) + ℰ_(H) = IE (dashed diagonal) is unreachable at any integer n: the condition requires $n_i = \sqrt{2}$, which is irrational (Section 2.4). The ghost point (IE/φ², IE/φ) (filled purple dot) lies on the null surface at the unique point where ℰ_(H)/ℰ_(E) = φ: this is the Fibonacci attractor’s location in energy space, the target toward which the H-mode winding converges through the steps of Table 3. It moves at superluminal velocity φ (Proposition 8) and is causally inaccessible; the proton condenses at the depth where the Fibonacci convergence toward this point first becomes indistinguishable from the structural flaw α (Section 2.5). The grey shading marks the forbidden zone [IE/4, 3IE/4]: the projection of the light cone onto the energy axis, confirmed as a universal spectroscopic absence across 71 ions with zero falsifications (Heaton 2026e). ^(†)76 counts lines strictly above the theoretical wall 3IE/4 = 10, 198.8 meV; two Lyman-α fine-structure components (2p_(1/2) → 1s and 2s_(1/2) → 1s) fall 22–26 μeV below it—within the α²E₀/16 ≈ 45 μeV fine-structure spread of the n = 2 → 1 multiplet—and are not counted here. No transition lies in the interior of the zone. Reference (Heaton 2026d) counted 78 by including these boundary components as Lyman-α.
+
+Each principal quantum number n defines two energy coordinates: the Balmer value (E-mode, capacitive, ε₀) and the Lyman value (H-mode, inductive, μ₀):
+$$\mathcal{E}_E(n) \;=\; E_0\!\left(\frac{1}{4}-\frac{1}{n^2}
+  \right),
+  \qquad
+  \mathcal{E}_H(n) \;=\; E_0\!\left(1-\frac{1}{n^2}\right).
+  \label{eq:two_modes}$$
+These two coordinates are not symmetric. The E-mode energy is positional: the spatial locus of a field closure at quantum number n does not depend on which closures preceded it. The H-mode energy is accumulated depth: each successive Lyman transition represents one further winding around the source pole, so ℰ_(H) is ordered by the winding history that produced it.
+
+This asymmetry fixes the metric. An indefinite metric on (ℰ_(E),ℰ_(H)) has the general form ds² = A dℰ_(H)² − B dℰ_(E)² for positive A, B. Three constraints fix A and B uniquely:
+
+1.  Equal geometric standing. The SO(2) rotation generated by M = Z₀J distributes time-averaged energy equally between the E and H modes for every initial condition (Lemma 1(iii), equation [eq:equipartition_proof]). Both coordinates therefore carry equal energy weight in the metric: A = B.
+
+2.  Opposite causal character. The sign assignment is forced by consistency with Theorem 5: the Rydberg trajectory satisfies ds² = 0 because dℰ_(H)/dn = dℰ_(E)/dn = 2E₀/n³ and the two terms cancel. For this cancellation to produce a null result with A = B (from constraint (i)), the two terms must enter the metric with opposite signs. Which coordinate carries the positive sign is determined by causal ordering: ℰ_(H)(n) is the accumulated winding energy — it is path-dependent, monotone in the process direction, and records history. ℰ_(E)(n) is the current binding energy — it is positional, path-independent, and records state. The causally ordered (history-recording) direction is the timelike direction and carries positive metric sign; the positional (state-recording) direction is spacelike and carries negative sign. Therefore ds² = A(dℰ_(H)²−dℰ_(E)²).
+
+3.  No free dimensionless ratio. Any common factor A can be absorbed into the energy unit. Setting A = 1 fixes the normalisation.
+
+The unique metric consistent with all three constraints, within this construction, is:
+ds² = dℰ_(H)² − dℰ_(E)².
+Within this construction, the signature is the one the geometry of the two-mode field selects.
+
+Theorem 5 (Rydberg trajectory is null (Heaton 2026d)). ds² = 0 at every integer n ≥ 2.
+
+Proof. dℰ_(E)/dn = dℰ_(H)/dn = 2E₀/n³. The 1/n² terms cancel identically; therefore ds² = (2E₀/n³)² − (2E₀/n³)² = 0. ◻
+
+By Theorem 5, the Rydberg sequence is represented as a null geodesic in the electromagnetic light cone of this construction. The forbidden zone [IE/4, 3IE/4] is the projection of this light cone onto the single energy axis: transitions in that range would lie between the two causal sectors and are forbidden for exactly this reason.
+
+Proposition 6 (Constant offset of null coordinates). The two null coordinates satisfy
+$$\mathcal{E}_H(n) - \mathcal{E}_E(n)
+  \;=\; \tfrac{3}{4}E_0
+  \;=\; E_0\!\left(1 - \frac{1}{F_3^2}\right)
+  \quad\text{for all } n \geq 2.
+  \label{eq:constant_offset}$$
+This constant equals the Lyman-α transition energy — the inner wall of the forbidden zone at 3E₀/4 — and is independent of n.
+
+Proof. Direct subtraction: ℰ_(H)(n) − ℰ_(E)(n) = E₀(1−1/n²) − E₀(1/4−1/n²) = 3E₀/4 for all n. The 1/n² terms cancel identically. The constant 3E₀/4 = E₀(1−1/F₃²) is the energy of the transition from n = F₃ = 2 to n = 1: the first Lyman line, whose limit defines the upper wall of the forbidden zone. ◻
+
+Corollary 7 (The Rydberg ladder as null geodesic family). The null geodesic property (Theorem 5) is a consequence of the constant offset [eq:constant_offset], not of the 1/n² form specifically. Any energy ladder of the form ℰ_(E)(n) = E₀(1/4−f(n)), ℰ_(H)(n) = E₀(1−f(n)) satisfies ds² = 0 at every n, because dℰ_(H)/dn = dℰ_(E)/dn identically.
+
+The 1/n² family is selected uniquely by two conditions fixed by the spectroscopic boundary integers:
+
+1.  ℰ_(H)(n) → E₀ as n → ∞ (Lyman limit at the ionization threshold),
+
+2.  ℰ_(E)(n) → E₀/4 = E₀/F₃² as n → ∞ (Balmer limit at the E-sector boundary).
+
+The limit in (ii) is determined by F₃ = 2: the smallest positive integer distinct from the H-sector pole quantum number n = 1. No integer exists between 1 and 2. The E-sector series must close at a quantum number different from the H-sector ground state; the minimum such integer is n_(f) = 2 = F₃, forced by the integrality of the closure condition and the prior occupation of n = 1 by the H-sector pole.
+
+The physical content of n = 2 is therefore not a conventional choice of series terminus. It is the first integer available to the E-sector after the H-sector has claimed n = 1: it is the E-sector pole quantum number, forced by the two-pole structure of the Poincaré–Hopf theorem on S².
+
+Remark 3. The offset 3E₀/4 has a dual role. It is simultaneously the separation between the two null coordinates and the energy of the inner wall of the forbidden zone (the Lyman-α limit). This is not a coincidence: the forbidden zone [IE/4, 3IE/4] is precisely the interval that the E-sector coordinate must cross to reach the H-sector coordinate, and the photon — moving at unit velocity on the null surface — traverses this interval without binding. The bound state cannot make this crossing because the Diophantine constraint [eq:diophantine] forbids the intermediate integer values that would be required.
+
+Proposition 8 (The golden ratio is superluminal in the electromagnetic light cone). The ghost transition energy IE/φ lies on the null surface ℰ_(E) + ℰ_(H) = IE at ratio ℰ_(H)/ℰ_(E) = φ > 1.
+
+Proof. Set ℰ_(E) = IE/φ², ℰ_(H) = IE/φ. Using φ² = φ + 1: ℰ_(E) + ℰ_(H) = (IE/φ²)(1+φ) = (IE/φ²) ⋅ φ² = IE. The ratio ℰ_(H)/ℰ_(E) = (IE/φ)/(IE/φ²) = φ > 1. ◻
+
+The quantity ℰ_(H)/ℰ_(E) in the metric of [eq:metric] is the analog of a propagation velocity. The Rydberg sequence moves at unit velocity (null). The ghost point moves at velocity φ > 1: it is superluminal in the vacuum’s causal geometry. The Fibonacci winding converges toward the ghost from the subluminal sector (ℰ_(H)/ℰ_(E) < 1) and can never reach it. The null surface condition ℰ_(E) + ℰ_(H) = IE at ratio ℰ_(H)/ℰ_(E) = 1 requires 1/n_(f)² − 1/n_(i)² = 1/2, which gives n_(i)² = 2n_(f)²/(2−n_(f)²); integer solutions require n_(f)² < 2, so n_(f) = 1 and n_(i)² = 2, giving $n_i = \sqrt{2}$ (irrational). No integer bound state reaches the null surface. The causal inaccessibility of φ is a theorem (Heaton 2026d).
+
+The condensation condition and depth identity
+
+The condensation condition is the crossing:
+ε₅ < α < ε₄.
+This is the first step at which the convergence error falls below the structural flaw α = Z₀/2R_(K).
+
+The physical meaning is precise. For steps j < 5 the geometry is unambiguously “still converging toward φ.” For steps j > 5 it is unambiguously “permanently displaced by the flaw α.” At j = 5, ε₅ ≈ 0.9546α: the winding cannot determine whether the remaining gap of 4.54% of α represents residual convergence or is simply the structural flaw α itself. The two descriptions become geometrically indistinguishable.
+
+The field does not “decide” at this point; it has no such agency. What happens is that the j = 5 Fibonacci half-step overshoots φ from above (approximant 13/8 > φ) while the j = 6 half-step undershoots from below (approximant 21/13 < φ). Two competing wave amplitudes, alternating to opposite sides of the unreachable attractor, create a destructive interference node. Within the framework, that node is identified as the condensate: the proton is the standing-wave node between ε₅ and ε₆, the geometry of two self-similar field processes that can proceed no further.
+
+The ghost point E₀/φ lies inside the forbidden zone [E₀/4, 3E₀/4], which is the projection of the electromagnetic light cone onto the energy axis (Section 2.4). The condensation depth is therefore fixed by the same boundary integers F₃ = 2 and F₄ = 3 that define the light cone’s E-sector and H-sector boundaries:
+
+$$\boxed{F_3^2 + F_4^2 \;=\; 2^2 + 3^2 \;=\; 4 + 9
+  \;=\; 13 \;=\; F_7.}
+  \label{eq:depth13_condensation}$$
+The integers F₃ = 2 and F₄ = 3, read from atomic spectroscopy across 71 ions (NIST Atomic Spectra Database 2024; Heaton 2026e), squared and summed yield the condensation depth of hadronic matter: F₃² + F₄² = 13 = F₇.
+
+The pre-constants constraint and the shared denominator
+
+Condensation occurs at winding step j = 5. The correction factor of any depth-13 condensate lies in $\mathbb{Q}(\sqrt{5})$ with Fibonacci and Lucas integer coefficients. Four constants are each excluded by a distinct argument:
+
+-   φ is superluminal (Proposition 8): it lies on the null surface at velocity φ > 1 in the electromagnetic light cone, and no convergent in the subluminal Fibonacci sequence can reach it. The condensate forms at the finite step j = 5, before the Fibonacci sequence reaches φ. Expressing correction factors with integer coefficients and $\sqrt{5}$ rather than with φ directly records this: the integers (F₅,F₆,F₇) are the finite Fibonacci approximants, not the limit they approach. The exclusion is causal, not algebraic. The constraint forbids φ as a computational input: using φ directly would imply the condensate accessed the limit it demonstrably cannot reach. That $\varphi \in \mathbb{Q}(\sqrt{5})$ means the formula can be rewritten in terms of φ algebraically; the causal constraint forbids the interpretation, not the algebra.
+
+-   α identifies the condensation step by sitting between ε₄ and ε₅, but cannot enter the correction factor: the condensate forms at the moment ε₅ and α become indistinguishable. A formula containing α would require the condensate to resolve the very distinction it has failed to make. At depth d = 13, α appears only as the boundary condition that determines the crossing; it cannot simultaneously be an ingredient in the correction factor that describes the condensate formed at that boundary.
+
+-   π is transcendental ($\pi \notin \overline{\mathbb{Q}}$ by Lindemann’s theorem (Lindemann 1882)). The correction factor, being the algebraic residual of a rational approximation, lies in $\overline{\mathbb{Q}}$ and therefore cannot contain π.
+
+-   e (Euler’s number) is transcendental by Hermite’s theorem (Hermite 1873) and lies outside $\overline{\mathbb{Q}}$ for the same reason as π.
+
+Pre-constants constraint. Within the present construction, the correction factor of any depth-13 condensate is expressible exclusively in Fibonacci integers and $\sqrt{5}$. No value of α, π, φ, or e may appear as a computational input. This is a causal constraint on when the condensation event occurred, not a mathematical convention.
+
+The shared denominator. Direct computation from the critical approximants F₇/F₆ = 13/8 and F₈/F₇ = 21/13 using $\varphi = (1+\sqrt{5})/2$:
+$$\varepsilon_5 \;=\; \frac{18-8\sqrt{5}}{16},
+  \qquad
+  \varepsilon_6 \;=\; \frac{13\sqrt{5}-29}{26}.
+  \label{eq:eps56}$$
+Their natural denominators are 2F₆ = 16 and 2F₇ = 26. Since consecutive Fibonacci numbers are coprime (gcd (8,13) = 1):
+D = lcm(16,26) = 2F₆F₇ = 2 × 8 × 13 = 208.
+The Cassini identity F₇F₅ − F₆² = 1 establishes that consecutive Fibonacci numbers are coprime; in particular gcd (F₆,F₇) = gcd (8,13) = 1. The denominator D = 208 belongs to the depth, not to any individual particle. Every correction factor at depth 13 has the form $(A + B\sqrt{5})/208$; the proton and tau cases confirm that A and B are expressible in Fibonacci and Lucas integers, consistent with the depth-13 condensation geometry.
+
+Two kinds of closure at depth 13
+
+Proposition 9 (Exactly two primary closure types at any pole). Let the two-invariant Maxwell field be placed on the Riemann sphere S². The Poincaré–Hopf theorem (χ(S²) = 2) (Poincaré 1885; Hopf 1926) forces exactly two poles of index  + 1: a source pole p and an antipodal sink pole p^(*) (Milnor 1965; Heaton 2026b). At each pole, the H-mode field defines a continuous map from a small contractible loop S¹ around that pole into itself. Such a map is classified by its winding number w ∈ ℤ. The primary closure types are those with |w| ≤ 1; configurations with |w| ≥ 2 require additional winding cycles and condense at strictly greater depth. Exactly two primary closure types therefore exist at each pole:
+
+1.  H-sector closure (w =  ± 1): the H-mode field winds once around the pole, accumulating holonomy  − α per circuit and winding number  − 1 at the source pole (or  + 1 at the sink). The winding number is a topological invariant of the map S¹ → S¹; it cannot change under continuous deformation. H-sector closures are permanently stable.
+
+2.  E-sector closure (w = 0): the capacitive field terminates at the pole without encircling it, completing a round trip with winding number 0. No topological invariant protects this configuration. E-sector closures are unstable.
+
+These two types are exhaustive among primary closures. The antisymmetric coupling matrix $\bigl(\begin{smallmatrix}0&-Z_0\\+Z_0&0\end{smallmatrix}
+\bigr)$ assigns  + iZ₀ to the source pole and  − iZ₀ to the sink, so the two poles carry opposite H-sector orientation as a consequence of the antisymmetry, not of any initial condition.
+
+Proof. The Poincaré–Hopf theorem requires the index sum of any smooth vector field on S² to equal χ(S²) = 2. The H-mode field is closed but not exact, with a well-defined index at each zero. Two poles of index  + 1 are the minimal configuration satisfying this constraint; by the argument of (Heaton 2026b), the antisymmetric coupling forces the source and sink poles to carry eigenvalues  + iZ₀ and  − iZ₀ respectively. At each pole, the H-mode field restricted to a small loop defines a map f: S¹ → S¹ with integer winding number w = deg (f). The classifications w = 0 and w =  − 1 (at the source pole) are distinct homotopy classes of maps S¹ → S¹. No other homotopy class arises as a primary condensate at depth d: classes |w| ≥ 2 require |w| complete winding cycles, each consuming additional depth steps beyond those consumed by |w| = 1, placing them at strictly greater condensation depth. At any given depth d, the primary closures are therefore exactly the two classes w = 0 and |w| = 1. ◻
+
+Both closure types are realised at depth d = 13: the proton as the H-sector condensate and the tau lepton as the E-sector condensate, derived in Sections 2.8 and 2.10 respectively.
+
+H-sector closure. The inductive field (μ₀) winds around the source pole, accumulating holonomy  − α per circuit. The winding number w =  − 1 is a topological invariant: the configuration cannot unwind without a discontinuous deformation of the field geometry. H-sector condensates are permanently stable.
+
+E-sector closure. The capacitive field (ε₀) terminates at the source pole rather than encircling it. A closed E-mode configuration originates at the source pole at the impedance boundary IE/4, traverses the forbidden zone, and returns, completing a round trip with winding number 0. No topological invariant protects it. E-sector condensates are unstable.
+
+The stability of the proton and the instability of the tau lepton are topological consequences, not dynamical assumptions.
+
+The proton mass: H-sector condensation
+
+H-sector condensation at j = 5 produces a standing-wave node through destructive interference between two competing Fibonacci approximants: the j = 5 half-step overshoots φ from above (approximant 13/8 > φ) and the j = 6 half-step undershoots from below (approximant 21/13 < φ).
+
+The form of the correction factor follows from this interference geometry: a baseline, a forward contribution from the j = 5 overshoot, a reflected contribution from the j = 6 undershoot, and their destructive cross-term — the bilinear term of the squared net displacement (a₁−a₂)², whose coefficient  − 2 is not a free parameter but the universal coefficient of any squared difference.
+
+The correction factor records the departure from the symmetric vacuum baseline C = 1 produced by this interference:
+C_(p) = 1 + a ε₅ + b ε₆ − 2 ε₅ε₆,
+where the three terms after the baseline are the forward contribution, the reflected contribution, and their destructive cross-term. Three aspects of this formula are established with different degrees of rigour and are stated separately below.
+
+The baseline C = 1. The pre-condensation symmetric vacuum has no winding, no topological charge, and equal E and H sectors. The correction factor measures the departure from this starting point.
+
+The forward weight a = F₃² = 4 [proved: Theorem 14 and Corollary 2(a)]. The forward convergence error ε₅ measures how far the Fibonacci winding overshoots φ at step j = 5. The outer wall of the forbidden zone is at IE/4 = E₀/F₃², where F₃ = 2 is the Balmer series final quantum number (Heaton 2026e). This sets the depth base:
+$$\text{depth base}
+  \;=\; \frac{\mathrm{IE}}{\mathrm{IE}/4}
+  \;=\; F_3^2 = 4,
+  \label{eq:depth_base_inline}$$
+so that one depth step multiplies energy by F₃² = 4 (equation [eq:base4]). The angle decomposition (Theorem 14) proves that u = F₆ε₅ is the exact angular deviation of the condensation depth from the ideal φ-winding. By Corollary 2(a), Maxwell’s equal-and-opposite coupling distributes oscillation energy equally between E and H, so the mass correction receives the E-sector share u/2, giving a = F₆/2 = F₃² = 4 via the Fibonacci identity F₆ = 2F₃².
+
+The reflected weight b = 1/F₆ = 1/8 [proved: Theorem 15 and Corollary 16]. The j = 6 reflected wave arrives at the condensation point from step j = 6 (approximant 21/13 < φ, denominator F₇ = 13) but is measured at the resolution of the j = 5 coherence scale (denominator F₆ = 8). The Cassini Coupling Theorem (Theorem 15) proves that the coupling between adjacent Fibonacci modes under M = Z₀J is exactly  ± Z₀ (from the Cassini identity F₅F₇ − F₆² = 1). normalized by the Q-factors Q₅ = F₆ and Q₆ = F₇ (Corollary 2(b)), the cross-coupling amplitude is F₇ε₆/(F₆F₇) = ε₆/F₆, giving b = 1/F₆ = 1/8 (Corollary 16).
+
+Remark 4. The three-distance theorem (Weyl 1916, Sós 1958), applied to F₆ = 8 winding steps at φ, produces a small gap of size $(5\sqrt{5}-11)/2 \approx 0.090$, not 1/F₆ = 0.125. The coefficient b = 1/F₆ therefore does not arise from the gap size directly; it arises from the coherence denominator structure. This coefficient is proved in Theorem 15.
+
+The cross-term coefficient k =  − 2 [proved]. At depth d = 13 the condensate is the standing-wave node between two coexisting Fibonacci modes: the j = 5 forward mode with normalized amplitude a₁ = A₅/Q₅ = ε₅ (overshoot of φ from above) and the j = 6 reflected mode with normalized amplitude a₂ = A₆/Q₆ = ε₆ (undershoot from below). Because the two modes approach φ from opposite sides they act with opposite sense: the net E-sector displacement at the condensation node is a₁ − a₂ = ε₅ − ε₆. By Lemma 1(iii) the mass correction receives the E-sector energy contribution, which is proportional to the square of this net displacement:
+(a₁−a₂)² = ε₅² − 2ε₅ε₆ + ε₆².
+The cross-term  − 2ε₅ε₆ is the bilinear term of the squared net displacement. The coefficient  − 2 is not a free parameter; it is the universal bilinear coefficient of any squared difference (a₁−a₂)².
+
+The denominator D = 208 [proved].
+
+Lemma 10 (Denominator from Cassini identities). The Fibonacci convergence errors at steps j = 5 and j = 6 are, exactly:
+$$\varepsilon_5 = \frac{18 - 8\sqrt{5}}{2F_6},
+  \qquad
+  \varepsilon_6 = \frac{13\sqrt{5} - 29}{2F_7},
+  \label{eq:eps56_exact}$$
+with natural denominators 2F₆ = 16 and 2F₇ = 26. Since gcd (F₆,F₇) = 1, their least common multiple is:
+D = lcm(2F₆, 2F₇) = 2F₆F₇ = 2 × 8 × 13 = 208.
+Every correction factor at depth d = 13 involving ε₅ and ε₆ has denominator dividing D = 208.
+
+Proof. From the Cassini identity F₇F₅ − F₆² = 1:
+$$\frac{F_7}{F_6} - \varphi
+  = \frac{13}{8} - \frac{1+\sqrt{5}}{2}
+  = \frac{18 - 8\sqrt{5}}{16}
+  = \frac{18 - 8\sqrt{5}}{2F_6}.$$
+From F₈F₆ − F₇² =  − 1:
+$$\varphi - \frac{F_8}{F_7}
+  = \frac{1+\sqrt{5}}{2} - \frac{21}{13}
+  = \frac{13\sqrt{5} - 29}{26}
+  = \frac{13\sqrt{5} - 29}{2F_7}.$$
+Coprimality of consecutive Fibonacci numbers (gcd (F_(n),F_(n + 1)) = 1 for all n) gives D = lcm(16,26) = 208. ◻
+
+Remark 5. The denominator D = 208 is a structural constant of the depth-13 condensation geometry. No value of α, π, φ, or any measured mass enters its derivation.
+
+What is proved: a proposition.
+
+Proposition 11 (Forced components of C_(p)). If C_(p) has the form [eq:Cp_form], then:
+
+1.  The denominator is D = 208 (Lemma 10).
+
+2.  The cross-term coefficient is k =  − 2 (destructive interference).
+
+These hold independently of the values of a and b.
+
+The symmetric form.
+
+Define the natural phase accumulations at the critical steps:
+$$u \;=\; F_6\,\varepsilon_5 \;=\; \frac{18-8\sqrt{5}}{2},
+  \qquad
+  v \;=\; F_7\,\varepsilon_6 \;=\; \frac{13\sqrt{5}-29}{2}.
+  \label{eq:uv_def}$$
+The correction factor is then:
+$$\boxed{
+    C_p - 1
+    \;=\; \frac{u}{2} + \frac{v}{F_6 F_7}
+          - \frac{2uv}{F_6 F_7}
+    \;=\; \frac{F_6\varepsilon_5}{2}
+          + \frac{\varepsilon_6}{F_6}
+          - 2\varepsilon_5\varepsilon_6.
+  }
+  \label{eq:Cp_symmetric}$$
+This form is algebraically equivalent to equation [eq:Cp_form] with a = 4 and b = 1/8. Its advantage is explicit: F₆ = 8 appears once as the forward phase scale (u = F₆ε₅) and once as the inverse reflected amplitude (ε₆/F₆).
+
+Closure uniqueness.
+
+Proposition 12 (Closure uniqueness). Subject to the pre-constants constraint (Section 2.6), Lemma 10, and the two conditions:
+
+1.  a = F₃² = 4 (the κ_(q)-scale condition: depth base  = IE/(IE/4) = 4); and
+
+2.  b = 1/F₆ = 1/8 (the Fibonacci coherence condition: F₆ = 8 is the j = 5 convergent denominator);
+
+the correction factor is uniquely determined as $C_p = (2157 - 869\sqrt{5})/208$. No other choice of a and b satisfying both conditions with k =  − 2 produces a result in $\mathbb{Q}(\sqrt{5})$ with denominator D = 208 and Fibonacci-integer numerator coefficients.
+
+Proof. Substituting a = 4, b = 1/8, k =  − 2 and equations [eq:eps56_exact] into [eq:Cp_form] and collecting over D = 208:
+$$\begin{aligned}
+  4\varepsilon_5 &= \tfrac{936 - 416\sqrt{5}}{208},\\
+  \tfrac{1}{8}\varepsilon_6 &= \tfrac{13\sqrt{5} - 29}{208},\\
+  -2\varepsilon_5\varepsilon_6 &= \tfrac{1042 - 466\sqrt{5}}{208}.
+\end{aligned}$$
+Summing: $C_p - 1 = (1949 - 869\sqrt{5})/208$, so $C_p = (2157 - 869\sqrt{5})/208$. ◻
+
+The open derivation.
+
+Proposition 12 establishes uniqueness given conditions (i) and (ii). The derivation of both conditions from the depth evolution equation is given in Section 2.9. The physical origin of condition (i) is the depth-scale factor F₃² = 4, through the self-similar scaling of γ = log (1/r); the formal proof that this factor is forced by the evolution equation is the open step.
+
+The proton mass formula. Substituting [eq:eps56_exact] and collecting over D = 208:
+$$\begin{aligned}
+  C_p
+  &\;=\; 1 + 4\varepsilon_5 + \tfrac{1}{8}\varepsilon_6
+       - 2\varepsilon_5\varepsilon_6 \nonumber\\[4pt]
+  &\;=\; 1 + 4\cdot\frac{18-8\sqrt{5}}{16}
+           + \frac{1}{8}\cdot\frac{13\sqrt{5}-29}{26}
+           - 2\cdot\frac{18-8\sqrt{5}}{16}
+               \cdot\frac{13\sqrt{5}-29}{26}
+  \nonumber\\[4pt]
+  &\;=\; \frac{2157 - 869\sqrt{5}}{208}.
+  \label{eq:Cp}
+\end{aligned}$$
+
+$$\boxed{m_p c^2
+  \;=\; E_0 \cdot 4^{13} \cdot
+        \frac{2157 - 869\sqrt{5}}{208}
+  \;=\; 938.2726~\mathrm{MeV}.}
+  \label{eq:proton_mass}$$
+The CODATA value is 938.2720 MeV; the comparison is  + 0.61 ppm, consistent with the proton reduced-mass correction confirmed per ion across 71 ions (Heaton 2026d).
+
+Independent verification. A reader may verify equation [eq:proton_mass] from four inputs alone: E₀ = 13.598 443 eV, $\sqrt{5}$, Fibonacci integers F₅ = 5, F₆ = 8, F₇ = 13, F₈ = 21, and the Cassini identities F₇F₅ − F₆² = 1 and F₈F₆ − F₇² =  − 1. The physical derivation of conditions (i) and (ii) is given in Section 2.9.
+
+Physical origin of the amplitude coefficients
+
+This subsection derives the physical mechanisms behind a = F₃² = 4 and b = 1/F₆ = 1/8, establishes three new exact algebraic results, and identifies the single remaining open step. The physical arguments establish why these values are the correct ones; the proof is completed by Theorem 14 (for a) and the Cassini Coupling Theorem 15 (for b).
+
+The standing-wave derivation of a = F₃² = 4
+
+The coupling matrix $M = \bigl(\begin{smallmatrix}0 & -Z_0 \\ +Z_0 & 0
+\end{smallmatrix}\bigr)$ generates SO(2) rotations in the (E,H)-plane. Its solution
+$$\begin{pmatrix}E(\gamma)\\H(\gamma)\end{pmatrix}
+  \;=\; \exp(M\gamma)
+        \begin{pmatrix}E_0\\H_0\end{pmatrix}
+  \;=\; \begin{pmatrix}
+    \cos(Z_0\gamma)\,E_0 - \sin(Z_0\gamma)\,H_0 \\
+    \sin(Z_0\gamma)\,E_0 + \cos(Z_0\gamma)\,H_0
+  \end{pmatrix}
+  \label{eq:rotation_solution}$$
+shows that both field modes are in perpetual rotation. Neither the E-mode nor the H-mode is static. This is the algebraic content of retaining Z₀ as an independent coordinate: eliminating H recovers the second-order equation ∂_(γ)²E =  − Z₀²E, which contains only the squared product Z₀² and loses the individual couplings  ± Z₀ that drive the rotation. A field that cannot curl cannot change: retaining Z₀ is what keeps the geometry alive.
+
+The condensate is a standing-wave node — the geometry of two competing Fibonacci approximants that can proceed no further. But the fields within the condensate continue to rotate: the proton is topologically knotted (w =  − 1), not frozen. The correction factor C_(p) − 1 records the energy stored in the residual oscillation, not a static displacement.
+
+The forward wave at step j = 5 has accumulated phase overshoot u = F₆ε₅ in winding-ratio units (where F₆ = 8 is the coherence denominator at this scale). By Corollary 2(a), the mass correction receives the E-sector share of this oscillation. Since Lemma 1(iii) establishes that M = Z₀J distributes energy equally between E and H, the E-sector contribution is exactly half the total:
+$$\frac{u}{2} \;=\; \frac{F_6\,\varepsilon_5}{2}.
+  \label{eq:forward_half}$$
+
+Proposition 13 (Standing-wave derivation of a). The forward amplitude coupling coefficient is
+$$a \;=\; \frac{F_6}{2} \;=\; \frac{8}{2} \;=\; 4 \;=\; F_3^2.
+  \label{eq:a_derivation}$$
+
+Proof. By Corollary 2(a), the forward contribution to C_(p) − 1 is the E-sector share of the oscillation with amplitude u = F₆ε₅:
+$$a\,\varepsilon_5 \;=\; \frac{u}{2}
+  \;=\; \frac{F_6}{2}\,\varepsilon_5.$$
+Therefore a = F₆/2. The Fibonacci identity F₆ = F₅ + F₄ = 5 + 3 = 8 = 2 × 4 = 2F₃² gives F₆/2 = F₃² = 4. ◻
+
+Remark 6 (Fiber corroboration from the quotient geometry). The closure tax theorem of (Heaton 2026a) (Theorem 3.1) provides independent confirmation. Under the compression (ε₀,μ₀) ↦ c², the fiber at the condensation step contains two states: the j = 5 forward state with phase accumulation u and the j = 6 reflected state with phase accumulation v. The theorem states that the optimal scalar closure of a fiber with range [v,u] is the midpoint (u+v)/2, with worst-case error $\tfrac{1}{2}(u-v)$. This midpoint equals the leading term of C_(p) − 1 established in Proposition 19:
+$$\frac{u+v}{2} \;=\; \frac{\text{small gap}}{2}
+  \;\approx\; 0.0451.$$
+The forward term u/2 in the standing-wave derivation equals the forward half of this fiber midpoint. The standing-wave factor $\tfrac{1}{2}$ and the closure-tax midpoint $\tfrac{1}{2}$ are the same geometric fact expressed in two languages: for a two-state oscillating system, the optimal scalar reduction is the mean of the two extreme states.
+
+The forbidden-zone walls enter through the same identity. The outer wall IE/4 = E₀/F₃² gives the depth base F₃² = 4 = F₆/2. The inner wall 3IE/4 gives the wall ratio F₄ = 3, and F₆ = F₄ + F₅ = 3 + 5 = 8 = 2F₃². So the coefficient a = F₆/2 = F₃² is the same F₃ = 2 that defines the impedance boundary, appearing here through the Fibonacci recursion at the condensation scale.
+
+Theorem 14 (Angle decomposition proves u = F₆ε₅). The forward amplitude u = F₆ε₅ is the exact angular deviation of the condensation rotation from the ideal φ-winding, forced by arithmetic alone.
+
+Proof. The condensation rotation angle is θ₁₃ = F₇κ_(q). By definition of ε₅, F₇/F₆ = φ + ε₅, so F₇ = F₆(φ+ε₅). Therefore:
+$$\theta_{13}
+  = F_7\kappa_q
+  = F_6(\varphi + \varepsilon_5)\kappa_q
+  = \underbrace{F_6\varphi\kappa_q}_{\theta_\varphi}
+    + \underbrace{F_6\varepsilon_5\kappa_q}_{u\,\kappa_q}.
+  \label{eq:angle_decomp}$$
+The angular deviation θ₁₃ − θ_(φ) equals F₆ε₅κ_(q) = uκ_(q) exactly. Combined with the standing-wave equipartition of Proposition 13, aε₅ = u/2 = F₆ε₅/2, giving a = F₆/2 = F₃² = 4. ◻
+
+The coefficient b = 1/F₆ = 1/8: the Cassini Coupling Theorem
+
+The derivation of b uses the coupling between Fibonacci modes under the depth evolution generator M = Z₀J, combined with the Cassini identity and the Q-factor normalization.
+
+Theorem 15 (Cassini Coupling Theorem). Let e_(j) = (F_(j),F_(j + 1))^(T) be the j-th Fibonacci coherence vector, M = Z₀J the depth evolution generator, and N_(j) = Q_(j) = F_(j + 1) the physical mode normalization (Q-factor). Then:
+⟨e_(j), M e_(j + 1)⟩ = (−1)^(j + 1) Z₀,
+and the normalized inter-mode coupling is:
+$$\frac{\langle \mathbf{e}_j,\, M\,\mathbf{e}_{j+1} \rangle}
+       {N_j \cdot N_{j+1}}
+  \;=\; \frac{(-1)^{j+1}\,Z_0}{Q_j\,Q_{j+1}}.
+  \label{eq:cassini_coupling_norm}$$
+
+Proof. Me_(j + 1) = Z₀J(F_(j + 1),F_(j + 2))^(T) = Z₀(−F_(j + 2),F_(j + 1))^(T). Taking the inner product with e_(j):
+⟨e_(j), Me_(j + 1)⟩ = Z₀(−F_(j)F_(j + 2)+F_(j + 1)²) = Z₀ ⋅ (−1)^(j + 1),
+by the Cassini identity F_(j)F_(j + 2) − F_(j + 1)² = (−1)^(j + 1). Dividing by N_(j)N_(j + 1) = F_(j + 1)F_(j + 2) = Q_(j)Q_(j + 1) gives [eq:cassini_coupling_norm]. ◻
+
+Remark 7 (The Cassini identity is the algebraic core). The coupling between any two adjacent Fibonacci modes under M = Z₀J is exactly  ± Z₀, independent of j. Without the Cassini identity, the inner product would be Z₀(F_(j + 1)²−F_(j)F_(j + 2)), a complicated function of three Fibonacci numbers. The Cassini identity collapses it to  ± Z₀ × 1. The Fibonacci sequence is unit-coupled in the Cassini sense: every adjacent pair of modes has the same coupling strength to its neighbor, regardless of scale.
+
+Remark 8 (Physical normalization N_(j) = Q_(j) ≠ ∥e_(j)∥₂). By Corollary 2(b), the Q-factor Q_(j) = A_(j)/ε_(j) = F_(j + 1) is the dynamical amplitude unit — the cycle count to indistinguishability at precision α — in contrast to the Euclidean norm $\|\mathbf{e}_j\|_2 = \sqrt{F_{2j+1}}$, which is a static geometric length. At j = 5: using the Euclidean norm gives $-Z_0/\sqrt{F_{11}F_{13}} \approx -Z_0/F_{12}$, yielding b = 1/144, not 1/8. The Q-factor normalization gives  − Z₀/(F₆F₇), yielding b = 1/F₆ = 1/8.
+
+Remark 9 (Z₀ is determined, not free). The theorem requires Z₀ to be a specific value. The fine-structure paper (Heaton 2026b) proves that α = Z₀/2R_(K) is uniquely forced by the irremovable defect of the 1/0 singularity on the Riemann sphere. If Z₀ were a free parameter, the coupling ⟨e₅, Me₆⟩ =  − Z₀ would be arbitrary, making b (and hence α) indeterminate. The determinacy of b = 1/F₆ ultimately traces to the same irremovable defect that determines α: both are consequences of the 1/0 singularity on the Riemann sphere established in (Heaton 2026b).
+
+Corollary 16 (b = 1/F₆ = 1/8). The cross-coupling amplitude from mode j = 6 into mode j = 5 at condensation depth d = 13 is ε₆/F₆, giving b = 1/F₆ = 1/8.
+
+Proof. By Theorem 15 at j = 5, the normalized coupling is  − Z₀/(Q₅Q₆) =  − Z₀/(F₆F₇). In natural depth units (Z₀κ_(q) = 1) this is  − 1/(F₆F₇). The j = 6 mode has amplitude A₆ = F₇ε₆. The cross-amplitude is:
+$$A_{6\to5}
+  = A_6 \cdot \frac{1}{Q_5 Q_6}
+  = \frac{F_7\varepsilon_6}{F_6 F_7}
+  = \frac{\varepsilon_6}{F_6}.$$
+The F₇ = 13 cancels exactly (Fibonacci cancellation). Coefficient of ε₆: b = 1/F₆ = 1/8. ◻
+
+The three-distance theorem and the gap structure
+
+Lemma 17 (Three-distance structure at j = 5). For F₆ = 8 winding steps at φ, the unit circle is partitioned into exactly two distinct gap sizes, occurring F₄ = 3 and F₅ = 5 times:
+$$\begin{aligned}
+  \text{small gap} &= \frac{5\sqrt{5}-11}{2}
+    \;=\; F_6\varepsilon_5 + F_7\varepsilon_6,
+    \label{eq:small_gap}\\[4pt]
+  \text{large gap} &= \frac{7-3\sqrt{5}}{2}.
+    \label{eq:large_gap}
+\end{aligned}$$
+The partition satisfies F₄ ⋅ (small) + F₅ ⋅ (large) = 1 exactly.
+
+Proof. By the three-distance theorem (Weyl 1916; Sós 1958), the points {kφ mod  1}_(k = 1)⁸ yield exactly two distinct gap sizes. The gap count F₄ + F₅ = 3 + 5 = 8 = F₆. The small gap follows from the exact forms of [eq:eps56_exact]:
+$$F_6\varepsilon_5 + F_7\varepsilon_6
+  = \frac{18-8\sqrt{5}}{2} + \frac{13\sqrt{5}-29}{2}
+  = \frac{5\sqrt{5}-11}{2},$$
+positive since $5\sqrt{5} \approx 11.180 > 11$. Substituting into 3s + 5ℓ = 1 gives $\ell = (7-3\sqrt{5})/2 > 0$. ◻
+
+Corollary 18 (Small gap is the sum of phase accumulations). small gap = u + v where u = F₆ε₅, v = F₇ε₆ are the phase accumulations of equation [eq:uv_def].
+
+Proposition 19 (Leading-order decomposition of C_(p) − 1).
+$$C_p - 1
+  \;=\; \frac{\text{small gap}}{2}
+        - \frac{F_7\varepsilon_6(F_6 F_7 - 2)}{2F_6 F_7}
+        - 2\varepsilon_5\varepsilon_6,
+  \label{eq:Cp_leading}$$
+where $\text{small gap} = (5\sqrt{5}-11)/2$. The leading term  ≈ 0.0451 accounts for the dominant fraction of C_(p) − 1 ≈ 0.0282; the two correction terms sum to  ≈  − 0.0169.
+
+Proof. From [eq:Cp_symmetric]: C_(p) − 1 = u/2 + v/(F₆F₇) − 2ε₅ε₆. Write u/2 = (u+v)/2 − v/2 and apply Corollary 18. ◻
+
+Connection between electron and proton through F₃
+
+The proton forward coefficient a = F₃² and the electron correction factor C_(e) = F₃/(α²⋅4^(d_(e))) share the same physical origin: n = F₃ = 2 governs both boundaries of the forbidden zone. From the Rydberg relation E₀ = m_(e)c²α²/2:
+$$m_e c^2 = \frac{F_3\,E_0}{\alpha^2},
+  \label{eq:electron_mass_F3}$$
+where F₃ = 2 arises from the same n_(f) = F₃ = 2 Balmer final state that gives the outer wall IE/4 = E₀/F₃².
+
+Proposition 20 (F₃-duality).
+$$\begin{aligned}
+  m_p c^2 &= E_0 \cdot 4^{13} \cdot C_p,
+    \quad a = F_3^2, \\
+  m_e c^2 &= E_0 \cdot 4^{d_e} \cdot C_e,
+    \quad C_e = F_3/(\alpha^2 \cdot 4^{d_e}).
+\end{aligned}$$
+The coefficient a = F₃² in C_(p) and the numerator F₃ in C_(e) both arise from n = F₃ = 2 defining the outer wall IE/4 = E₀/F₃².
+
+Proof. Equations [eq:proton_mass] and [eq:electron_mass_F3] with n = F₃ = 2 as the Balmer final quantum number in both cases. ◻
+
+The depth base F₃² = 4 converts winding deviations into energy corrections for the proton; F₃ = 2 positions the electron at the impedance boundary. Both derive from n = F₃ = 2 as the Balmer series final state.
+
+Why hydrogen is a self-consistent identity
+
+The condensation depth d_(p) = F₃² + F₄² = 13 uses the same two integers that define the walls. The hydrogen atom is the standing wave between proton (inner node, d_(p) = 13) and electron (outer closure, d_(e) = 7) whose resonant frequency is E₀.
+
+Corollary 21 (Wall-derived quantities). All integers in the depth-13 correction factors are readable from the forbidden-zone walls:
+
+  Integer     Value   Physical origin
+  ----------- ------- -------------------------------------------
+  F₃          2       Wall quantum number (n = 2)
+  F₃²         4       Depth base  = IE/(IE/4); forward coeff. a
+  F₄          3       Wall ratio  = (3IE/4)/(IE/4)
+  F₄²         9       Tau return half-cycle depth
+  F₃² + F₄²   13      Condensation depth
+  F₃² × F₄    12      Tau matrix cross-term exponent
+  D = 2F₆F₇   208     Denominator from Cassini
+
+Proof. F₃ = 2 and F₄ = 3 are read from the hydrogen spectrum (confirmed in 71 ions (Heaton 2026e)). The remaining entries follow from the Fibonacci recursion and Lemma 10. ◻
+
+Summary of proof status.
+
+All components of the proton correction factor $C_p = (2157 - 869\sqrt{5})/208$ are now fully derived from first principles (the spectroscopic foundation of (Heaton 2026e) and the Fibonacci condensation geometry; the derivation of the depth-base factor F₃² = 4 from the depth evolution equation alone, without spectroscopic input, is the single remaining open step identified below).
+
+  Component                       Status   Basis
+  ------------------------------- -------- -------------------------------------------------------------------------------------------------------------------------------------------------
+  Denominator D = 208             Proved   Cassini identity (Lemma 10)
+  Cross-term k =  − 2             Proved   Destructive interference (Prop. 11)
+  Small gap  = u + v              Proved   Three-distance theorem (Lemma 17)
+  Leading order  = (gap)/2        Proved   Algebraic identity (Prop. 19)
+  Forward coeff. a = F₆/2 = F₃²   Proved   Angle decomposition: θ₁₃ − θ_(φ) = F₆ε₅κ_(q) (Theorem 14); standing-wave equipartition (Prop. 13); Fibonacci identity F₆ = 2F₃²
+  Reflected coeff. b = 1/F₆       Proved   Cassini Coupling Theorem: ⟨e₅, Me₆⟩ =  − Z₀ (Theorem 15); Q-factor normalization; Z₀ determined by (Heaton 2026b) (Corollary 16; Section 2.9.2)
+  Unique formula (a,b)            Proved   Closure uniqueness (Prop. 12)
+
+The tau lepton mass: E-sector condensation
+
+E-sector condensation differs from H-sector condensation in mechanism: rather than wave interference between two Fibonacci approximants, it counts closed field trajectories in the Fibonacci graph. The condensation is a round trip: the field traverses the forbidden zone under  − Z₀ coupling (E→H, forward) and returns under  + Z₀ coupling (H→E, return). The correction factor counts closed field trajectories via traces of the Fibonacci matrix $\mathbf{M} = \bigl(\begin{smallmatrix}1&1\\1&0
+\end{smallmatrix}\bigr)$, using the standard identity $\mathbf{M}^n = \bigl(\begin{smallmatrix}F_{n+1}&F_n\\
+F_n&F_{n-1}\end{smallmatrix}\bigr)$.
+
+Half-cycle decomposition [proved]. The forward traversal uses  − Z₀ coupling (E-sector, structural number F₃) and the return uses  + Z₀ coupling (H-sector, structural number F₄). The corresponding depth costs are F₃² = 4 steps forward and F₄² = 9 steps return. The unique decomposition of depth 13 into consecutive Fibonacci squares is:
+(n₁, n₂) = (F₃², F₄²) = (4, 9).
+No other pair of consecutive Fibonacci squares sums to 13: the only candidate (1,12) fails since 12 is not a Fibonacci square. This is proved in Theorem 23.
+
+Lucas traces [motivated]. The SO(2) symmetry of the coupling matrix $\bigl(\begin{smallmatrix}0&-Z_0\\+Z_0&0
+\end{smallmatrix}\bigr)$ suggests that every geometrically distinct closed field trajectory of length n contributes equally to the correction factor, giving an amplitude Tr(M^(n)) = L_(n) for each half-cycle. The two half-cycle lengths then contribute:
+A = L₄ + L₉ = 7 + 76 = 83.
+This identification is physically motivated but not proved. A proof would require establishing from the SO(2) symmetry alone that equal-weight counting applies without importing additional structure.
+
+The cross-term [motivated]. The H-sector return (structural number F₄ = 3) acts on the state produced by the E-sector forward traversal (F₃² = 4 depth steps). The cross-term exponent is their product: F₄ × F₃² = 12. By the Fibonacci matrix identity, (M¹²)_(1, 2) = F₁₂, so:
+B = F₁₂ = 144.
+F₁₂ = 144 = 12² is the unique non-trivial perfect square in the Fibonacci sequence (Cohn 1964).
+
+Remark 10 (Conjecture status of B = F₁₂ = 144). The identification B = F₁₂ = 144 is motivated by the Fibonacci matrix structure and the causal ordering of the half-cycles, but is not derived from a single physical principle that excludes all other values. An earlier version of this work (Heaton 2026d) explicitly labeled this identification a conjecture. The present paper restores that assessment.
+
+The tau correction factor $(83 + 144\sqrt{5})/208$ correctly predicts m_(τ)c² = 1776.864 MeV, within experimental uncertainty of the PDG value 1776.93 ± 0.09 MeV. This remains true independently of whether the Lucas trace identification is later confirmed as a theorem or superseded by a different argument.
+
+Theorem to be proved (T1). The SO(2) symmetry of $\bigl(\begin{smallmatrix}0&-Z_0\\+Z_0&0\end{smallmatrix}
+\bigr)$ forces equal-weight counting of closed field trajectories in the Fibonacci graph, giving A = L₄ + L₉ = 83.
+
+Theorem to be proved (T2). The causal ordering of the E-sector and H-sector half-cycles forces the cross-term exponent k = F₄ × F₃² = 12, producing B = F₁₂ = 144.
+
+If both theorems are proved, the tau derivation reaches the same logical status as the denominator derivation of Lemma 10.
+
+The tau lepton mass formula. The integers A and B are placed over the depth-13 denominator D = 208 (Lemma 10):
+$$\begin{aligned}
+  A &\;=\; L_4 + L_9 \;=\; 7 + 76 \;=\; 83,
+  \label{eq:A_assembly} \\[4pt]
+  B &\;=\; F_{12} \;=\; 144,
+  \label{eq:B_assembly} \\[4pt]
+  C_\tau &\;=\; \frac{A + B\sqrt{5}}{D}
+          \;=\; \frac{83 + 144\sqrt{5}}{208}.
+  \label{eq:Ctau}
+\end{aligned}$$
+The rational part A = 83 counts closed trajectories within each half-cycle; the irrational coefficient B = 144 counts the inter-half-cycle cross-term.
+
+$$\boxed{m_\tau c^2
+  \;=\; E_0 \cdot 4^{13} \cdot
+        \frac{83 + 144\sqrt{5}}{208}
+  \;=\; 1776.864~\mathrm{MeV}.}
+  \label{eq:tau_mass}$$
+The PDG value is 1776.93 ± 0.09 MeV; the comparison is  − 37 ppm, within the  ± 51 ppm experimental uncertainty. The rational part of the tau correction factor is motivated; its irrational coefficient $144\sqrt{5}/208$ is conjectured from the half-cycle causal ordering and identified as an open derivation.
+
+Independent verification. A reader may verify equation [eq:tau_mass] from E₀ = 13.598 443 eV, Lucas numbers L₄ = 7 and L₉ = 76, Fibonacci number F₁₂ = 144, and denominator D = 208. No value of α, π, e, or φ is required. The formula is numerically correct regardless of whether Theorems T1 and T2 are proved; those theorems concern the physical derivation, not the result.
+
+Shared structure.
+
+                      Proton                         Tau lepton
+  ------------------- ------------------------------ ------------------------
+  Sector              H (μ₀, inductive)              E (ε₀, capacitive)
+  Winding number       − 1 (topological invariant)   0 (no protection)
+  Stability           permanent                      290 fs
+  Correction factor   $(2157-869\sqrt{5})/208$       $(83+144\sqrt{5})/208$
+  Residual             + 0.61 ppm                     − 37 ppm
+
+Same depth d = 13, same denominator D = 208, same field $\mathbb{Q}(\sqrt{5})$ — because all three belong to the depth. Different correction factors, because the boundary conditions differ. Stability and instability are topological consequences, not inputs.
+
+The electron mass and the mass ratio
+
+The derivations above establish two depth-13 condensates: the proton (H-sector, winding number  − 1, permanently stable) and the tau lepton (E-sector, winding number 0, unstable). Both are primary condensates of the Fibonacci winding: their masses are determined by the vacuum geometry acting on E₀.
+
+The electron has a different geometric status. It is not a condensate of the Fibonacci winding. It is the relational closure mode of the proton–vacuum interface: the field configuration that the proton’s existence at the source pole requires at the antipodal sink pole. The distinction between primary condensates, whose masses are determined by the vacuum geometry alone, and relational closure modes, whose masses are determined by the boundary conditions of an existing condensate, is the structural organizing principle of Section 3.
+
+The sink-pole requirement. The Poincaré–Hopf theorem requires the sum of indices of any smooth vector field on S² to equal χ(S²) = 2. The H-sector condensate at depth d = 13 occupies the source pole with index  + 1: one index is accounted for. The theorem requires a second index  + 1 at the antipodal sink pole. The proton’s existence topologically requires the electron’s existence. The hydrogen atom is the minimal realisation of this constraint: one primary condensate at the source pole, one relational closure at the sink pole, bound together as a standing wave whose resonant frequency is E₀.
+
+The standing-wave chain. The hydrogen ionization energy E₀ is not merely a spectroscopic measurement used as input. It is the resonant frequency of the proton–electron standing wave: the energy at which the two-pole configuration of the vacuum field closes on itself. The derivation chain is therefore:
+$$\varepsilon_0,\,\mu_0
+  \;\longrightarrow\;
+  E_0 \;=\; \tfrac{1}{2}m_e c^2\alpha^2
+  \;\longrightarrow\;
+  m_p c^2 \;=\; 4^{13} \times E_0 \times
+    \tfrac{2157-869\sqrt{5}}{208},
+  \label{eq:sw_chain}$$
+with zero free parameters at every step (Heaton 2026d). The proton mass is derived from E₀ through the Fibonacci condensation geometry. The electron mass is recovered from the same E₀ through the standing-wave identity $E_0 = \tfrac{1}{2}m_ec^2\alpha^2$: not as an independent derivation from the vacuum geometry, but as a readout of the boundary condition already encoded in the resonant frequency.
+
+The electron mass. Inverting the standing-wave identity:
+$$m_e c^2 \;=\; \frac{F_3\,E_0}{\alpha^2}
+           \;=\; \frac{2E_0}{\alpha^2},
+  \label{eq:electron_mass_id}$$
+where F₃ = 2 is the Balmer final quantum number that defines the outer wall IE/4 = E₀/F₃², confirmed across 71 ions (Heaton 2026e) (Proposition 20, Corollary 21). The factor F₃ = 2 in the numerator of equation [eq:electron_mass_id] and the factor F₃² = 4 in the proton forward coefficient a = F₃² are the same quantum number acting in dual roles: as the Balmer final state it sets both the depth scale and the electron energy.
+
+The depth address. The Rydberg relation places the electron rest energy at depth:
+$$d_e \;=\; \left\lfloor
+    \log_4\!\left(\frac{F_3}{\alpha^2}\right)
+  \right\rfloor \;=\; 7,
+  \label{eq:de}$$
+since 4⁷ ≤ F₃/α² < 4⁸. The correction factor is C_(e) = F₃/(α²⋅4⁷), giving:
+$$\boxed{m_e c^2 \;=\; \frac{F_3\,E_0}{\alpha^2}
+  \;=\; 510.727~\mathrm{keV}.}
+  \label{eq:electron_mass}$$
+The CODATA value is 510.999 keV; the comparison is  − 533 ppm.
+
+The  − 533 ppm comparison value is not a residual. It is the standing-wave geometry expressing itself. E₀ is the ionization energy of hydrogen — a two-body system with finite nuclear mass — not the infinite-nuclear-mass Rydberg energy E_(∞). The difference is E_(∞) − E₀ = E₀ ⋅ m_(e)/m_(p) ≈ 544 ppm. The formula m_(e)c² = 2E₀/α² therefore recovers the electron mass from the hydrogen standing-wave frequency, producing a comparison value that reflects the two-body geometry of the system rather than a free electron in isolation. That this comparison value is  − 533 ppm rather than  − 544 ppm reflects the per-ion nuclear corrections: the five precision-tier ions of the empirical survey carry nuclear masses 50–96× the proton mass, and their per-ion reduced-mass corrections (mean 9.178 ppm, computed in (Heaton 2026d) from AME2020 nuclear masses) account for the gap between the uniform pipeline correction of 533.8 ppm and the hydrogen correction of 544.3 ppm. The systematic is resolved with zero free parameters in (Heaton 2026d); the electron mass residual after per-ion correction is  − 4.2 ± 3.7 ppm, consistent with the  − 2.8 ± 2.7 ppm of (Heaton 2026e).
+
+The mass ratio. The proton sits at d_(p) = 13, forced by identity [eq:depth13_condensation]. The electron sits at d_(e) = 7, forced by the Poincaré–Hopf theorem and the standing-wave identity [eq:de]. Their depth separation d_(p) − d_(e) = 6 gives the mass ratio directly:
+$$\frac{m_p}{m_e}
+  \;=\; \frac{C_p}{C_e}\cdot 4^6
+  \;=\; 1837.133.
+  \label{eq:mass_ratio}$$
+The CODATA value is 1836.153; the comparison is  + 534 ppm. The ratio 1837 is a geometric consequence of the depth separation and the standing-wave geometry. The  + 534 ppm comparison value is the arithmetic counterpart of the  − 533 ppm electron comparison: both originate in the same two-body standing-wave geometry of hydrogen, expressing itself at the proton mass scale and the electron mass scale respectively.
+
+Self-consistency. The proton mass and electron mass are derived by entirely independent mechanisms — Fibonacci condensation at the source pole and Poincaré–Hopf closure at the sink pole — using the same empirical input E₀. This independence holds at the level of the correction factors; the shared input E₀ carries the two-body reduced-mass correction, which propagates as the  ± 533 ppm comparison values and is resolved per-ion in (Heaton 2026d), as discussed in Section 2.11. Their comparison values are not independent: the deviation of a ratio equals the difference of the deviations of its components:
+$$\delta\!\left(\frac{m_p}{m_e}\right)
+  \;\approx\;
+  \delta(m_p) - \delta(m_e)
+  \;=\; +0.61 - (-533)
+  \;=\; +533.6~\mathrm{ppm},$$
+consistent with the computed  + 534 ppm.
+
+The non-trivial content of this check is the following. The correction factor C_(p) was constructed entirely from Fibonacci integers and the Cassini identities, with no reference to m_(e), α, or any measured mass. The correction factor C_(e) = F₃/(α²⋅4⁷) was obtained by inverting the standing-wave identity $E_0 = \tfrac{1}{2}m_ec^2\alpha^2$ — a readout of the boundary condition encoded in E₀, not a second independent derivation from the vacuum geometry. These two mechanisms share no logical content: neither correction factor uses the other, and neither uses the CODATA value of any mass as input. That the ratio C_(p)/C_(e) ⋅ 4⁶ = 1837.133 agrees with the observed mass ratio to 534 ppm, with the deviation fully accounted for by hydrogen’s two-body geometry, is the self-consistency check. No correction is applied; the closure is numerical, not algebraic.
+
+Open derivation. The standing-wave identity $E_0 = \tfrac{1}{2}m_ec^2\alpha^2$ enters here as a structural relation, not a free-parameter fit. The full geometric derivation of the electron mass from the sink-pole geometry alone — establishing that the impedance-match closure energy at the sink pole is determined entirely by Z₀, h, and e, without spectroscopic input — is the principal outstanding derivation of this program and is stated precisely as Open Problem [op:sink-pole] in Section 5.
+
+The universal mass law
+
+The Harmonic Light Law ∇²(logν) = 0 (Heaton 2026c) governs how photon frequencies distribute in the vacuum geometry: its unique spherically symmetric solution is the Thread Law log ν ∝ κlog α, confirmed across six independent spectral domains (Heaton 2025). The universal mass law is the discrete counterpart of this continuous equation. Each depth step d corresponds to one increment of width κ_(q) = ln 4/|lnα| on the same logarithmic ruler, and the correction factor C encodes the particle’s fractional position within that step. Photon frequencies and particle masses are governed by the same harmonic structure of the vacuum field, read at propagating and standing-wave modes respectively:
+$$\boxed{mc^2 \;=\; E_0 \cdot 4^d \cdot C.}
+  \label{eq:universal}$$
+
+The single empirical input E₀ is not merely a spectroscopic measurement used as a scale factor. It is the resonant frequency of the hydrogen standing wave: the energy at which the proton–electron two-pole configuration of the vacuum field closes on itself. The derivation chain is therefore:
+$$\varepsilon_0,\,\mu_0
+  \;\longrightarrow\;
+  E_0 = \tfrac{1}{2}m_ec^2\alpha^2
+  \;\longrightarrow\;
+  m_pc^2 = 4^{13} \times E_0 \times
+    \tfrac{2157-869\sqrt{5}}{208},
+  \label{eq:sw_chain_law}$$
+with zero free parameters at every step (Heaton 2026d). The proton mass is derived from E₀ through the Fibonacci condensation geometry. The electron mass is recovered from the same E₀ through the standing-wave identity; the mass ratio follows from their depth separation d_(p) − d_(e) = 6. All three are outputs of a single measurement of the vacuum field.
+
+No fitted constants enter the formulas as stated. The correction factors C are uniquely determined within the stated constraint set; the remaining open derivations (Theorems T1–T2) concern first-principles verification of the tau conjecture; the proton amplitude coefficients are fully proved (Section 2.9). The depth address d is forced by the vacuum hierarchy; the correction factor $C \in \mathbb{Q}(\sqrt{5})$ is determined by the geometric role of the particle:
+
+1.  identify the geometric role — primary condensate (H-sector or E-sector winding at depth d, mass derived from the Fibonacci geometry acting on E₀) or relational closure mode (boundary condition of an existing condensate, mass recovered from E₀ through the standing-wave identity);
+
+2.  derive C from the boundary condition that role imposes (or establish C by closure uniqueness where the full derivation is in Remark 10);
+
+3.  verify the depth address by equation [eq:depth].
+
+The Standard Model treats the proton mass, electron mass, and proton-to-electron mass ratio as three independent empirical inputs with no common origin. Within this framework, all three are obtained from E₀ and integer arithmetic: the proton from Fibonacci condensation at j = 5; the electron from the Poincaré–Hopf requirement at the sink pole of the same standing wave; the mass ratio from their depth separation d_(p) − d_(e) = 6. The comparison values of  − 533 ppm (electron) and  + 534 ppm (mass ratio) originate in the standing-wave geometry of hydrogen: E₀ is measured for the two-body hydrogen system, not for an infinitely massive nucleus, and both values reflect that geometry at their respective mass scales. The systematic is resolved per-ion with zero free parameters in (Heaton 2026d).
+
+The algebraic signature of this structure is the recurrence of F₃ = 2 and F₄ = 3 in every result. F₃ = 2 is the structural number of ε₀: the depth base 4 = F₃² = IE/(IE/4), the tau forward half-cycle depth cost F₃² = 4, the E-mode standing-wave identity m_(e)c² = F₃E₀/α², and the lower spectroscopic wall at IE/F₃². F₄ = 3 is the structural number of μ₀: the upper spectroscopic wall at 3IE/4, the tau return half-cycle depth cost F₄² = 9, and the tau cross-term exponent F₄ × F₃² = 12. Together: F₃² + F₄² = 13 = F₇, the condensation depth from which all depth-13 results follow (Corollary 21).
+
+In this framework, a particle mass is not a property of matter. It is the energy at which the vacuum’s impedance structure produces an irreducible standing-wave resonance — a field configuration that cannot propagate further because the impedance mismatch between its interior geometry and the surrounding vacuum traps it completely. The photon is the propagating mode released when one such resonance transitions to another; E = hν and E = mc² are the same harmonic energy function evaluated at propagating and standing-wave modes respectively. The implications of this identification for the interpretation of mass, the role of impedance in particle physics, and the relationship between the electromagnetic and gravitational scales are developed in Section 4.
+
+The next section extends this structure to the pion, the neutron, the muon, the W boson, and the quark charge fractions, classifying each by geometric role and deriving its mass accordingly.
+
+The particle configurations
+
+Section 2 established the universal mass law mc² = E₀ ⋅ 4^(d) ⋅ C and derived the proton, tau, and electron masses from it. This section classifies the remaining vacuum field configurations by geometric role, derives their mass addresses within the same law, and establishes two structural results — the self-consistency of the hydrogen standing wave and the uniqueness of the tau half-cycle decomposition — that belong to the geometry of the cases already derived.
+
+The section organizes by geometric role. Primary condensates are configurations whose correction factors are fixed by the vacuum geometry alone: the proton (H-sector, depth 13) and the tau lepton (E-sector, depth 13) derived in Section 2; the tau correction factor has one conjectured component (Remark 10). Relational closure modes are configurations whose masses are determined by the boundary conditions of an existing condensate: the electron (sink-pole closure of the proton), the pion (exchange mode between two proton geometries), and the muon (relational closure of the pion–vacuum interface). Sub-hadronic open modes are configurations that never complete a closure cycle: the quarks.
+
+Counter-numerology statement. The integers F₃ = 2 and F₄ = 3 are read from hydrogen’s spectrum before the Fibonacci sequence appears: F₃ = 2 governs the outer wall at IE/4 = IE/F₃², and F₄ = 3 governs the inner wall at 3IE/4. Both are confirmed across 71 ions (Heaton 2026e) (Corollary 21). That these integers are consecutive Fibonacci numbers is the discovery, not the assumption.
+
+The hydrogen standing wave: self-consistency and the Coulomb field
+
+The proton and electron masses are derived by entirely different mechanisms from the same empirical input E₀ = 13.598 443 eV.
+
+-   Source-pole derivation (proton). The H-sector Fibonacci winding at depth d_(p) = 13 condenses at the first step where the convergence residual ε_(j) falls below the structural flaw α. The correction factor $C_p = (2157 - 869\sqrt{5})/208$ is fixed entirely by Fibonacci integers and the Cassini identities (Theorems 14 and 15). No electron mass and no Rydberg relation enter.
+
+-   Sink-pole derivation (electron). The Poincaré–Hopf theorem requires an antipodal closure at the sink pole to balance the proton’s winding number  − 1. The energy of that closure is fixed by the standing-wave identity $E_0 = \tfrac{1}{2}m_ec^2\alpha^2$, giving m_(e)c² = F₃E₀/α². No proton correction factor and no Fibonacci condensation geometry enter.
+
+The two derivations share only one quantity: E₀. They produce two independent ratios,
+$$\begin{aligned}
+  \frac{m_p c^2}{E_0}
+  &\;=\; 4^{13} \cdot C_p
+  \;=\; 4^{13} \cdot \frac{2157 - 869\sqrt{5}}{208},
+  \label{eq:ratio_proton} \\[4pt]
+  \frac{m_e c^2}{E_0}
+  &\;=\; \frac{F_3}{\alpha^2}.
+  \label{eq:ratio_electron}
+\end{aligned}$$
+The proton ratio is determined by the Fibonacci condensation geometry; it contains no reference to m_(e), α, or the Rydberg relation. The electron ratio is the standing-wave identity $E_0 = \tfrac{1}{2}m_ec^2\alpha^2$ inverted: a structural constraint that E₀ satisfies by definition, not a second independent geometric derivation.
+
+The triangle as a structural consistency check. From equations [eq:ratio_proton] and [eq:ratio_electron], the proton-to-electron mass ratio is a derived quantity:
+$$\frac{m_p}{m_e}
+  \;=\; \frac{C_p}{C_e} \cdot 4^{d_p - d_e}
+  \;=\; \frac{C_p}{C_e} \cdot 4^{6}
+  \;=\; 1837.133.
+  \label{eq:ratio_derived}$$
+This is a prediction, not a definition. It is computed from the depth separation d_(p) − d_(e) = 6 and the two independently derived correction factors; it does not use the CODATA mass ratio as input at any step.
+
+The non-trivial content is the following. C_(p) was derived entirely from Fibonacci integers and the Cassini identities, with no reference to m_(e), α, or any measured mass (Sections 2.8–2.9). C_(e) = F₃/(α²⋅4⁷) encodes the electron mass already contained in E₀ via the standing-wave identity: it is a readout, not a second independent derivation. That C_(p)/C_(e) ⋅ 4⁶ = 1837.133 agrees with the observed mass ratio to 534 ppm, with the deviation fully accounted for by the two-body geometry of E₀, is the structural consistency check. The Standard Model treats m_(p), m_(e), and E₀ as three independent empirical inputs with no common origin. In this framework, m_(e) is encoded in E₀ via the standing-wave identity, and m_(p) is derived from E₀ through an independent geometric mechanism (Fibonacci condensation) that makes no reference to m_(e). Their mutual consistency at the  ± 533 ppm level is a structural consequence of hydrogen’s two-body geometry, as established above.
+
+The  ± 533 ppm signature. The individual comparison values —  − 533 ppm for the electron,  + 534 ppm for the mass ratio — are not independent residuals. They share a single physical source: E₀ is the ionization energy of the two-body hydrogen system, not the infinite-nuclear-mass Rydberg energy. The difference E_(∞) − E₀ ≈ 544 ppm propagates as  − 533 ppm in the electron comparison and  + 534 ppm in the mass-ratio comparison, with the gap between 533 and 544 ppm accounted for by per-ion nuclear corrections resolved in (Heaton 2026d). That the electron comparison and the mass-ratio comparison are equal and opposite to  ± 1 ppm — and that their arithmetic difference closes to the proton comparison of  + 0.61 ppm — is not a coincidence to be explained away. It is the structural signature of a single physical source expressing itself at two different mass scales: the two-body geometry of the hydrogen standing wave.
+$$\delta\!\left(\frac{m_p}{m_e}\right)
+  \;\approx\;
+  \delta(m_p) \;-\; \delta(m_e)
+  \;=\; +0.61 - (-533)
+  \;=\; +533.6~\text{ppm},
+  \label{eq:delta_closure}$$
+consistent with the computed  + 534 ppm. No correction is applied; the closure is numerical, not algebraic.
+
+What would falsify the triangle. The consistency check is non-trivial on the proton side: C_(p) was derived without any knowledge of m_(e) or the observed mass ratio. Had the Fibonacci condensation assigned a different geometric role to the proton — E-sector rather than H-sector, or a different condensation depth — C_(p) would change and C_(p)/C_(e) ⋅ 4⁶ would be inconsistent with the observed mass ratio at the ppm level. The closure at  + 0.61 ppm,  − 533 ppm, and  + 534 ppm is the numerical confirmation that the geometric role assignment for the proton is correct.
+
+The Coulomb field as standing-wave energy. The field between the proton and electron is the standing-wave field between the two boundary conditions of the resonant system. It is the reactive energy stored between depth 13 and depth 7, whose resonant frequency is E₀. Paper (Heaton 2026a) proves that this field is fiber-sensitive under the (ε₀,μ₀) ↦ c² compression: it is invisible to any formalism in which Z₀ = 1. The Coulomb binding energy of hydrogen is the stored energy of the electromagnetic standing wave, not a separate force between two objects. What particle physics calls baryon number conservation is, in this framework, the topological winding invariant w =  − 1 of the H-sector condensate: a number that cannot change under continuous deformation and that the Diophantine constraint at IE/4 prevents from being discharged.
+
+The tau: uniqueness of the half-cycle decomposition
+
+The tau derivation in Section 2.10 uses the half-cycle decomposition (n₁,n₂) = (4,9); the uniqueness of this decomposition is established here from the Fibonacci Forcing Theorem.
+
+Lemma 22 (Fibonacci coherence cycle cost). Under a = 1 Fibonacci winding at constant depth step κ_(q), completing F_(k) coherence cycles at coherence level k costs exactly F_(k)² depth steps and advances the convergent index j by F_(k).
+
+Proof. By Step 1 of Theorem 4, Z₀ is depth-independent and the winding ratio depends only on local structure at each depth. At coherence level k, one coherence cycle corresponds to one advance of the convergent index j; by the self-similar scaling, this costs F_(k) depth steps (Step 1 of Theorem 4, applied to the convergent denominator sequence). Completing F_(k) such cycles therefore costs F_(k) × F_(k) = F_(k)² depth steps and advances j by F_(k). Numerical verification from the tau derivation: forward half-cycle (k = 3): F₃ = 2 cycles × F₃ = 2 steps/cycle  = F₃² = 4 ; return half-cycle (k = 4): F₄ = 3 cycles × F₄ = 3 steps/cycle  = F₄² = 9 . ◻
+
+Theorem 23 (Unique half-cycle decomposition). The decomposition (n₁, n₂) = (F₃², F₄²) = (4, 9) is the unique pair of consecutive Fibonacci squares summing to d = 13.
+
+Proof. The E-sector forward traversal uses  − Z₀ coupling at coherence level k = 3 and the H-sector return uses  + Z₀ coupling at coherence level k = 4; strict alternation (Theorem 4) forces these to be consecutive coherence levels. By Lemma 22, each half-cycle count at level k must be exactly F_(k)² depth steps. The consecutive pairs of Fibonacci squares and their sums: (F₁²,F₂²) = (1,1) → 2; (F₂²,F₃²) = (1,4) → 5; (F₃²,F₄²) = (4,9) → 13 ; (F₄²,F₅²) = (9,25) → 34. ◻
+
+The stability contrast established in Section 2.10 (proton: winding number  − 1, permanently stable; tau: winding number 0, 290 fs) follows from topology alone. The shared denominator D = 208 and shared field $\mathbb{Q}(\sqrt{5})$ belong to depth 13, not to either particle. The proton was identified in 1917; the tau was discovered at SLAC in 1975. They share a denominator because they share a depth.
+
+Inter-sphere configurations: the neutron and the pion
+
+The proton and tau are single-sphere configurations. Two proton-geometry spheres in proximity create a boundary condition between them. That boundary condition resolves into two objects: a deformed proton geometry (the neutron) and a propagating exchange mode between the two spheres (the pion).
+
+The neutron: minimum inter-sphere deformation
+
+The neutron is not a separate condensation. It is the proton geometry deformed by one additional Fibonacci bracket imposed by the presence of a second proton-geometry sphere.
+
+Step 1: The Cassini amplitude at the condensation step. At the condensation crossing ε₅ < α < ε₄, the two convergents flanking the crossing have denominators F₅ = 5 and F₆ = 8. The Cassini Coupling Theorem (Theorem 15) gives the normalized inter-mode amplitude at this step as:
+$$\frac{1}{F_5\,F_6}
+  \;=\; \frac{1}{5 \times 8}
+  \;=\; \frac{1}{40}.
+  \label{eq:proton_bracket}$$
+This is the same structural formula that determines the proton reflected coefficient b = 1/F₆ (Section 2.9.2); it is recorded here as a reference point for Step 4.
+
+Step 2: The inter-sphere coupling is purely H-sector. Two proton-geometry H-sector condensates couple inductively: H-sector to H-sector, with no E-sector component. From Table 3, the signed convergence residual e_(j) = φ − F_(j + 1)/F_(j) determines the step type: e_(j) < 0 (E-sector) when the approximant overshoots φ; e_(j) > 0 (H-sector) when it undershoots. The condensation crossing is at j = 5 (E-sector, 13/8 > φ). The last convergent step before condensation with purely H-sector character is j = 4 (approximant 8/5 < φ, e₄ > 0). The inter-sphere coupling cannot use j = 3 without introducing an E-sector component (Table 3 gives e₃ < 0, confirming E-sector character at j = 3); j = 4 is therefore the unique last H-sector step before condensation.
+
+Step 3: Three coherence cycles advance the convergent index by F₄ = 3. By Lemma 22, F₄ = 3 coherence cycles at coherence level 4 cost F₄² = 9 depth steps and advance the convergent index j by F₄ = 3: from j = 5 (the condensation step) to j = 8.
+
+Step 4: The inter-sphere bracket. The Cassini Coupling Theorem 15 establishes that the inter-mode coupling between adjacent Fibonacci modes at steps j and j + 1 under M = Z₀J, normalized by Q-factors, gives amplitude 1/(F_(j + 1)F_(j + 2)) in standard Fibonacci indexing — the same structure that determines the proton reflected coefficient b = 1/F₆ (Section 2.9.2) and the proton condensation bracket 1/(F₅F₆) = 1/40. Applying the theorem at j = 7 (coupling between modes at steps j = 7 and j = 8) gives:
+$$\frac{1}{F_8\,F_9}
+  \;=\; \frac{1}{21 \times 34}
+  \;=\; \frac{1}{714}.
+  \label{eq:neutron_bracket}$$
+The neutron correction factor is:
+$$C_n \;=\; C_p + \frac{1}{714}
+       \;=\; \frac{2157 - 869\sqrt{5}}{208}
+             + \frac{1}{714}.
+  \label{eq:Cn}$$
+
+$$\boxed{m_n c^2
+  \;=\; E_0 \cdot 4^{13} \cdot C_n
+  \;=\; 939.551~\mathrm{MeV}.}
+  \label{eq:neutron_mass}$$
+The CODATA value is 939.565 MeV; the comparison is  − 15.1 ppm, encoding the u/d quark mass asymmetry addressed in Section 5.
+
+Why the neutron has no electron partner: isotopy as a geometric consequence. The proton’s H-sector condensation projects an E-sector residual outward: the Poincaré–Hopf theorem requires an antipodal E-sector closure at the sink pole, which is the electron. The proton and electron together form a complete standing wave with both boundary conditions satisfied. The neutron arises from a purely H-sector inter-sphere coupling between two H-sector condensates. It carries no outward E-sector projection. Therefore the Poincaré–Hopf theorem imposes no additional sink-pole requirement: the neutron has no electron partner and carries charge 0.
+
+This has a direct nuclear consequence. Element identity is determined by Z, the proton count, which equals the electron count in a neutral atom. Adding a neutron to a nucleus adds an H-sector inter-sphere bracket — mass without an E-sector component — and therefore changes neither Z nor the electron count. The same element at different neutron counts is an isotope: geometrically, a nucleus with the same number of standing-wave E-sector closures (electrons and protons) but different numbers of H-sector inter-sphere brackets (neutrons). Isotopy is the nuclear-scale expression of purely H-sector deformation.
+
+Free-neutron instability. The neutron exists only under the inter-sphere boundary condition. Removed from a second proton-geometry sphere, the bracket 1/714 has no geometric ground and the system returns to the proton. The free-neutron lifetime τ_(n) ≈ 880 s is the timescale of that return.
+
+The pion: inter-sphere exchange mode
+
+The pion is not a condensate. It is the propagating mode sustained by two proton-geometry spheres in proximity — the hadronic analog of the photon, which is the propagating mode between atomic boundary conditions. It exists only between the two spheres; remove either and the pion ceases to exist as a stable resonance.
+
+The pion uses both coupling directions of the depth evolution equation simultaneously:  − Z₀ coupling (F₃² = 4 forward steps) and  + Z₀ coupling (F₄² = 9 return steps). The inter-sphere coupling acts at convergent step j = 4, the last Fibonacci step before condensation. The relevant geometric scale is the large gap proved in Lemma 17 as part of the proton condensation geometry — the three-distance structure at F₆ = 8 winding steps inherited directly from the proton proof:
+$$\ell_4
+  \;=\; \left|F_4\varphi - F_5\right|
+  \;=\; \frac{7 - 3\sqrt{5}}{2}
+  \;=\; \frac{L_4 - F_4\sqrt{5}}{2},
+  \label{eq:large_gap_pion}$$
+where L₄ = 7 is the fourth Lucas number.
+
+The pion propagates between two geometrically distinct vacuum states: the broken vacuum on the proton side (correction factor C_(p)) and the symmetric vacuum on the other side (correction factor C = 1). The propagation factor is their average:
+$$\bar{C} \;=\; \frac{C_p + 1}{2}.
+  \label{eq:meanfield}$$
+This is a motivated identification: the two-vacuum mean field at the exchange boundary.
+
+$$m_{\pi^0} c^2
+  \;=\; \frac{7 - 3\sqrt{5}}{2}
+        \cdot \frac{C_p + 1}{2}
+        \cdot E_0 \cdot 4^{13}.
+  \label{eq:pion_mass}$$
+
+$$\boxed{m_{\pi^0}c^2 \;=\; 135.018~\mathrm{MeV}.}
+  \label{eq:pion_result}$$
+The PDG value is 134.9768 ± 0.0005 MeV; the comparison is  + 305 ppm.
+
+The  + 305 ppm comparison encodes two contributions: the u/d quark mass asymmetry (shared with the neutron comparison, predicted to close simultaneously when derived) and the approximation in the motivated mean field (C_(p)+1)/2, whose derivation from first principles remains open. The two contributions cannot yet be separated; the prediction δm_(π⁰)/δm_(n) = F₄ = 3 holds when both are resolved from the same geometric source.
+
+The 305 ppm residual as a prediction
+
+Two simultaneous predictions follow from the same geometric source, with relative weight F₄ = 3:
+
+$$\frac{m_d}{m_u}
+  \;=\; \frac{F_4^2}{F_3^2}
+  \;=\; \frac{9}{4}
+  \;=\; 2.25.
+  \label{eq:quark_ratio_pred}$$
+PDG range: 1.7–2.3 depending on renormalization scheme. Current FLAG lattice QCD averages (N_(f) = 2 + 1 + 1, scheme-independent ratio) give m_(d)/m_(u) ≈ 1.78–1.92 (FLAG Working Group, Aoki, et al. 2024). The prediction 9/4 = 2.25 lies above this range. This is a genuine tension that will be resolved by improved lattice determinations. Three possibilities exist: the prediction requires a scheme-matching correction between the framework’s depth addresses and the $\overline{\rm MS}$ masses at which lattice results are quoted; the lattice systematic errors are underestimated; or the geometric identification of m_(d)/m_(u) with F₄²/F₃² is incorrect. All three are falsifiable with existing or near-term lattice data.
+
+$$\frac{\delta m_{\pi^0}}{\delta m_n}
+  \;=\; F_4 \;=\; 3.
+  \label{eq:residual_ratio_pred}$$
+Current values: pion absolute residual  ≈ 41.2 keV; neutron absolute residual  ≈ 14.7 keV; ratio  ≈ 2.87. The framework predicts exactly 3. Both residuals encode the same u/d asymmetry through different geometric projections; when that asymmetry is derived from the depth-8 and depth-9 geometry and applied consistently, both residuals close simultaneously with zero additional parameters and their ratio becomes exactly F₄ = 3.
+
+The neutral pion decay
+
+The neutral pion carries winding number 0 and no topological protection. The  ± Z₀ coupling structure suggests that a winding-number-0 propagating mode dissolves symmetrically: one quantum into the  + Z₀ direction and one into the  − Z₀ direction. Each direction carries one photon. The decay π⁰ → γγ with exactly two photons is therefore geometrically expected [motivated; the argument requires a proof that no other dissolution channel is compatible with the  ± Z₀ antisymmetry].
+
+The depth cascade and the muon
+
+The cascade from hadronic to atomic scales follows the depth hierarchy. The charged pion and muon share depth d = 11 = F₆ + F₄ = 8 + 3. The first decay π^(±) → μ^(±)ν is a within-level transition: the hadronic exchange mode dissolves and the depth-11 lepton inherits the energy.
+
+The muon occupies the same structural position at depth 11 that the electron occupies at depth 7: it is the relational closure mode of the pion–vacuum interface, required by the Poincaré–Hopf theorem at the sink pole of the pion geometry in the same way the electron is required by the proton geometry. As with the electron, the muon mass is determined by the boundary condition of its relational geometry rather than by independent Fibonacci condensation. The full derivation of the muon mass from the pion boundary conditions is an open problem, stated precisely in Section 5.
+
+The decay μ^(±) → e^(±)νν̄ crosses from d = 11 to d = 7, a depth separation of 11 − 7 = 4 = F₃²: the E-sector structural number squared, the same quantity that governs the tau forward half-cycle. The cascade terminates at d = 7: the electron, the forced outer closure of the hydrogen standing wave. The nuclear cascade returns to hydrogen. Every step is governed by F₃ = 2 and F₄ = 3.
+
+The quark charge fractions and open curl modes
+
+Quarks as open curl modes
+
+Every particle derived above is a closed configuration: the proton (H-sector winding completing a cycle), the tau (E-sector round trip), the electron (sink-pole relational closure), the pion (propagating loop between two spheres). In each case both curl operators of the depth evolution equation [eq:coupling] contribute.
+
+A quark is one curl operator without its partner. The  + Z₀ coupling drives H from E; the  − Z₀ coupling drives E from H. In a quark, only one coupling acts. The configuration carries reactive energy without completing a return path.
+
+This is the geometric reason that quark masses are renormalization-scheme-dependent. A closed configuration has a definite resonant frequency: the energy at which the complete coupling cycle closes. An open configuration has no such frequency in isolation. Its effective energy depends on the boundary conditions of the containing system, which change when the scheme changes. Quark mass scheme-dependence is a geometric fact about open curl modes, not an experimental limitation.
+
+Quark multiplicity from two independent routes
+
+Having established the geometric character of quarks, the question is how many open curl modes a closed H-sector condensate at depth d = 13 requires. Two independent routes arrive at the same integer.
+
+Route A: spectroscopy [motivated]. The H-sector structural number F₄ = 3 is read from the forbidden zone boundary 3IE/4, confirmed across 71 ions (Heaton 2026e). The proton is H-sector condensation; its internal winding modes are identified with this structural number, giving three open curl modes: three quarks. This identification is physically motivated; the derivation from the depth evolution equation is part of Open Problem O2 (Section 5).
+
+Route B: the geometric minimum. The two-invariant Maxwell structure requires three irreducible elements: ε₀, μ₀, and Z₀ (Heaton 2026c). QCD requires the same integer as the dimension of the color fundamental representation. The framework derives 3 from the vacuum geometry; QCD postulates SU(3) with 3 as input. The convergence on the same integer is observed (Heaton 2026c), not derived here. Neither route uses the other as a premise. Both arrive at the same integer 3.
+
+Quark charge fractions as Diophantine necessities
+
+Given multiplicity F₄ = 3 and the two baryon charge conditions — proton (uud) carries  + 1, neutron (udd) carries 0:
+$$\begin{aligned}
+  2q_u + q_d &\;=\; +1,
+  \label{eq:proton_charge} \\
+  q_u + 2q_d &\;=\; \phantom{+}0.
+  \label{eq:neutron_charge}
+\end{aligned}$$
+The system has a unique solution:
+$$q_u \;=\; +\frac{2}{3} \;=\; +\frac{F_3}{F_4},
+  \qquad
+  q_d \;=\; -\frac{1}{3} \;=\; -\frac{1}{F_4}.
+  \label{eq:quark_charges}$$
+The charge denominator is F₄ = 3; the numerators are F₃ = 2 and 1. The same two integers that appear at every level of the framework appear as the quark charge numerators.
+
+The quark mass ratio
+
+The up quark is the  − Z₀ coupling mode (F₃² = 4 depth steps); the down quark is the  + Z₀ coupling mode (F₄² = 9 depth steps). The mass of an open curl mode is identified as proportional to its depth cost — an assumption consistent with the depth-cost structure of Section 2 but not derivable from the closed-mode derivations there — giving:
+$$\frac{m_d}{m_u}
+  \;=\; \frac{F_4^2}{F_3^2}
+  \;=\; \frac{9}{4}
+  \;=\; 2.25.
+  \label{eq:quark_mass_ratio}$$
+This prediction is exact and falsifiable by precision lattice QCD. It is scheme-independent under the assumption that both quark masses are proportional to their depth costs with the same proportionality constant, so that the constant cancels in the ratio; deriving that assumption from the framework is part of Open Problem O2 (Section 5). The PDG currently gives m_(d)/m_(u) ≈ 1.7–2.3. The framework predicts exactly 9/4.
+
+The color gauge group
+
+Three quarks, three color charges, local gauge symmetry, simple connectivity (required for consistent charge quantization by the Dirac condition (Heaton 2026b)). The Cartan–Killing classification identifies SU(3) as the unique compact simply-connected simple Lie group with a three-dimensional complex fundamental representation. Eight gluons follow: dim (adj SU(3)) = 8 = F₆. That 8 = F₆ is a structural consistency, not an independent derivation. Whether the full SU(3)_(c) gauge structure and color confinement follow as consequences of the three-element oscillation principle (Lemma 1) is stated as Open Problem O7 in Section 5.
+
+The Zeckendorf census
+
+The preceding subsections derived particle masses one configuration at a time: the proton and tau from depth-13 condensation, the electron from Poincaré–Hopf closure, the pion and neutron from inter-sphere geometry, the quarks from open curl modes. This subsection steps back and asks whether the full known particle spectrum, taken as a whole, respects the same depth grammar. The answer is a pre-specified, independently testable prediction: the grammar was fixed before any PDG particle was counted, and the census either confirms or falsifies it.
+
+Pre-specification. The condensation depth identity
+F₃² + F₄² = 2² + 3² = 13 = F₇
+was published in (Heaton 2026d) on 31 March 2026. The Zeckendorf grammar of permitted depths (Proposition 24 below) was stated from the same two integers F₃ = 2 and F₄ = 3 before any PDG particle was counted. What follows is therefore a confirmed prediction, not a retrofitted pattern.
+
+The grammar rests on a single structural fact: F₃ = 2 is a boundary integer. It governs the impedance-match condition that no bound state can satisfy (Section 1), not a depth address that any condensate can occupy. A depth address containing F₃ as an additive component would require a bound-to-bound transition at energy IE/F₃² = IE/4 — which the Diophantine constraint of equation [eq:diophantine] forbids. Table 4 records the result.
+
+     d Zeckendorf     Representative particles / role     Count Prediction
+  ---- -------------- --------------------------------- ------- -------------------
+     7 F₅ + F₃        e⁻ (relational closure)                 1 occupied
+     8 F₆             u quark                                 1 occupied
+     9 F₆ + F₂        d quark                                 1 occupied
+       F₆ + F₃        —                                       0 empty (predicted)
+       F₆ + F₄        s, μ, π⁰, π^(±)                         4 occupied
+    12 F₆ + F₄ + F₂   K, η, ρ(770), …                         9 occupied
+    13 F₇             p, n, τ, c, J/ψ, …                    184 occupied
+    14 F₇ + F₂        ψ(2S), B, Υ, b, …                      65 occupied
+       F₇ + F₃        —                                       0 empty (predicted)
+       F₇ + F₄        W^(±), Z, H, t                          5 occupied
+                      Total                                 270 
+
+  :  Zeckendorf grammar of occupied depths: census counts and predictions (Proposition 24).
+  All depths d = 7–16 with Zeckendorf decompositions and PDG census counts (Appendix [app:full_table]). Anchors {F₆, F₇}; permitted additive components {F₂, F₄}. The component F₃ = 2 is forbidden as an additive part of any condensate depth at d ≥ 8 (Diophantine constraint, Section 1). Depths d = 10 and d = 15 were pre-specified as empty before any particle was counted; both are observed empty. The nine simultaneous predictions (seven occupied, two empty) are all confirmed.
+
+The electron at d = 7 = F₅ + F₃ is the unique sub-F₆ depth using F₃ as an additive component. The grammar forbids F₃ as an additive part of any condensate at d ≥ 8; the electron is the relational closure mode at the F₃-governed impedance boundary (m_(e)c² = F₃E₀/α²), not a condensate above it, and is explicitly exempt from the restriction.
+
+Proposition 24 (Zeckendorf grammar of occupied depths). Within this framework, the occupied depths of the particle spectrum at d ≥ 8 have Zeckendorf representations using only the anchors {F₆, F₇} and the additive components {F₂, F₄}. The component F₃ = 2 does not appear as an additive part of any occupied depth at d ≥ 8. The complete set of grammar-permitted depths in the census range is:
+{8, 9, 11, 12, 13, 14, 16},
+with d = 10 = F₆ + F₃ and d = 15 = F₇ + F₃ predicted empty. The electron at d = 7 = F₅ + F₃ is the unique sub-F₆ depth; it uses F₃ because it is the relational closure mode at the F₃-governed impedance boundary, not a condensate above it.
+
+Proof. The anchors F₆ and F₇ are the sub-hadronic and hadronic condensation depths established in Section 2. The permitted additive components F₂ = 1 and F₄ = 3 correspond to the minimal depth increment and the H-sector structural number respectively; both appear throughout the derivations as genuine depth costs. The forbidden component F₃ = 2 is excluded by the Diophantine constraint of equation [eq:diophantine]: placing a condensate at a depth address containing F₃ as an additive part would require a bound-to-bound transition at energy IE/F₃² = IE/4, which has no solution in positive integers. The electron’s depth d = 7 = F₅ + F₃ is consistent with this: the electron is the closure mode at the F₃-governed boundary, determined by m_(e)c² = F₃E₀/α², not a condensate sitting above it. The complete list of grammar-permitted depths follows by enumeration of all combinations of the two anchors with the two permitted additions. ◻
+
+Discussion
+
+What mass is
+
+The Standard Model and QED describe what particles do with extraordinary accuracy. However, they do not explain what a particle is, why it has the mass it does, or why the masses stand in the ratios they do. These questions are not within the scope of the Standard Model; they are its boundary conditions. This paper locates those boundary conditions geometrically.
+
+A particle mass, in this framework, is not a property of matter. It is the energy at which the vacuum’s impedance structure produces an irreducible standing-wave resonance: a field configuration that cannot propagate further because the impedance mismatch between its interior geometry and the surrounding vacuum traps it completely. The proton is the standing-wave node between two competing Fibonacci approximants that can proceed no further. The electron is the closure mode at the impedance-match boundary — the energy of the configuration that would form at quantum number n = α if any integer could reach it. Neither mass is an input. Both are outputs of the vacuum geometry and a single empirical constant.
+
+This identification has a precise mathematical expression. The Harmonic Light Law ∇²(logν) = 0 governs photon frequencies: its unique spherically symmetric solution places all photon frequencies on a logarithmic ruler parameterized by α, confirmed across six independent spectral domains (Heaton 2025, 2026c). The universal mass law mc² = E₀ ⋅ 4^(d) ⋅ C is the discrete counterpart of the same equation: particle masses are the standing-wave energies on the same ruler, at discrete depth addresses forced by the vacuum hierarchy. E = hν describes propagating modes. E = mc² describes standing-wave modes. Both are expressions of the same harmonic energy function of the vacuum field, evaluated at different geometric configurations. Planck’s constant h is the proportionality that connects them on the same logarithmic scale.
+
+The vacuum impedance $Z_0 = \sqrt{\mu_0/\varepsilon_0}$ is the organizing parameter. It appears in the mass equations not as an empirical input but as the structural constant that determines how field energy partitions between the electric and magnetic modes at every depth. The fine-structure constant α = Z₀/2R_(K) determines the condensation crossing and therefore which depth address the proton occupies. The electron mass m_(e)c² = F₃E₀/α² follows from the standing-wave identity: E₀ is the resonant frequency of the hydrogen standing wave, and the Balmer quantum number F₃ = 2 encodes two simultaneous roles: the boundary quantum number of the outer spectroscopic wall, and the depth base IE/(IE/4) = F₃² = 4 (equation [eq:base4]). No dynamical assumption beyond Coulomb’s law and Maxwell’s equations enters (Heaton 2026e).
+
+The results of this paper are not theorems of abstract number theory or combinatorics. They are theorems about the electromagnetic vacuum of our specific universe. The Fibonacci sequence is forced because our α places the first crossing of the condensation condition ε_(j) < α at step j = 5. A universe with a different vacuum defect α′ would satisfy the same structural equations but condense at a different step, producing different integers, different particle masses, and a different spectroscopic record. The integers F₃ = 2 and F₄ = 3 that appear at every level of the derivation are not specially privileged by mathematics; they are the specific integers of our vacuum, read from its spectral signature and confirmed across 71 atomic ions with zero falsifications (Heaton 2026e). This is the analog of Connes’ result that the Weil quadratic form recovers the zeros of the Riemann ζ-function precisely because it is constructed from the actual primes of our number system, not from abstract quadratic forms in general (Connes 2026). Specificity is the content. The result is powerful because it is about a particular object, not because it holds universally.
+
+Remark 11 (Spectral geometry and physical specificity). The structural parallel to Connes extends to the formalism itself. The coupling matrix $\bigl(\begin{smallmatrix}0 & -Z_0 \\
++Z_0 & 0\end{smallmatrix}\bigr)$ generates SO(2) rotations with eigenvalues  ± iZ₀, the same structural form as a Dirac operator in Connes’ spectral triple framework (Connes 1994). Whether the universal mass law mc² = E₀ ⋅ 4^(d) ⋅ C follows from a spectral triple construction with Z₀ as the spectral parameter is in preparation. If it does, the specificity argument becomes exact: the spectral geometry is physical rather than abstract because $Z_0 = \sqrt{\mu_0/\varepsilon_0}$ is the impedance of our particular vacuum, not a free parameter.
+
+Remark 12. The H³-Wess–Zumino–Witten / Liouville correspondence of (Guillarmou, Kupiainen, and Rhodes 2025), evaluated at coupling b = 1/φ (where φ is the golden ratio), gives $Q = b + b^{-1} = 1/\varphi + \varphi = \sqrt{5}$ and conformal weights Δ_(j) =  − b²j(j+1) with $b^2 = 1/\varphi^2 = (3-\sqrt{5})/2 \in \mathbb{Q}(\sqrt{5})$. All vertex operator weights at this coupling therefore lie in $\mathbb{Q}(\sqrt{5})$ — the same algebraic number field as the depth-13 correction factors of this paper. Guillarmou, Kupiainen, and Rhodes (2025) do not themselves work at b = 1/φ or draw this connection; the observation is ours.
+
+The Rydberg spectrum as a consequence of vacuum geometry
+
+The most consequential result of restoring Z₀ for the interpretation of atomic physics is the derivation of the Rydberg spectrum itself. Corollary 7 establishes that the 1/n² dependence of atomic energy levels is not a postulate — not a consequence of Bohr’s quantization condition, not an unexplained feature of the Schrödinger equation — but a necessary consequence of the two-pole structure of the vacuum field. The E-sector series must close at the smallest positive integer distinct from the H-sector pole quantum number n = 1; that integer is F₃ = 2. Any monotone integer-indexed energy ladder with the resulting asymptotic limits satisfies ds² = 0 identically on the electromagnetic light cone. The 1/n² family is the unique such ladder. Physics has organized atomic spectroscopy by the quantum number n since Bohr without asking what n means geometrically. In this framework, n is a depth index in the vacuum’s coherence hierarchy, measured in units of log₄(n²) downward from the ionization threshold. The principal quantum number and the particle depth address d of the universal mass law are complementary evaluations of the same geometric structure on opposite sides of IE (Open Problem [op:Rydberg]).
+
+The hydrogen spectrum is the natural empirical access point to this geometry because hydrogen is the simplest case: a single proton, a single electron, the minimal standing wave in which the vacuum geometry has no competing structure to obscure it. The outer wall IE/4 is the Balmer series limit: every transition with final state n_(f) = 2 converges to it from below without reaching it, because the impedance-match condition Z_(orb) = Z₀ requires n = α ≈ 1/137, which no positive integer satisfies. The inner wall 3IE/4 is Lyman-α: the first Lyman transition departs from n_(i) = 2 upward. The same shell n = F₃ = 2 defines both boundaries simultaneously. This is why the depth base is F₃² = 4, why the proton’s forward coupling coefficient is a = F₃², why the electron mass involves F₃ through the Rydberg relation, and why the condensation depth is F₃² + F₄² = 13: every structural integer in the paper is a power or product of the quantum numbers of the two walls of a single spectroscopic gap, measured in hydrogen.
+
+The NIST hydrogen data makes this concrete (NIST Atomic Spectra Database 2024). The fine-structure components of Lyman-α straddle the theoretical inner wall 3IE/4 by 26 μeV below and 19 μeV above — a splitting of α²E₀/16 that is the spectroscopic imprint of the proton’s finite mass at the boundary that enters the proton’s own correction factor. The Fibonacci convergence geometry that determines the proton’s mass is legible in the spectrum of hydrogen at the level of microelectronvolts. The forbidden zone is not merely a spectral regularity. It is the fossil record of the vacuum geometry at the moment of hadronic condensation, preserved in the hydrogen spectrum and readable today.
+
+The IE/4 boundary does not belong to hydrogen; it is a property of the vacuum geometry, confirmed as a universal structural absence across 71 ions spanning the periodic table, from hydrogen to lead (Z = 82), with zero falsifications (Heaton 2026e). The same forbidden zone, the same wall ratio F₄ = 3, and the same depth base F₃² = 4 are present in every atom, because they are consequences of the vacuum impedance structure rather than of nuclear charge or electron configuration. The fossil record of hadronic condensation is distributed across the entire periodic table. We happened to read it first — and most clearly — in hydrogen, because hydrogen is the standing wave with the fewest layers between the geometry and the spectrum.
+
+What distinguishes particle categories
+
+The Standard Model classifies particles by quantum numbers: spin, charge, baryon number, lepton number, color. These numbers are assigned empirically and are conserved by observation. The framework derived in this paper shows that the quantum numbers are not primary. They are the measurable signatures of geometric distinctions that are primary. The geometric distinctions are four, and they are exhaustive at depth d = 13.
+
+1.  H-sector winding (the proton). The inductive field winds around the source pole, accumulating winding number  − 1 per circuit. Winding number is a topological invariant of the map S¹ → S¹; it cannot change under continuous deformation. The proton is permanently stable not because stability is postulated but because changing its winding number requires a bound-to-bound transition at energy IE/4 that integer arithmetic forbids. What the Standard Model calls baryon number conservation is, in this framework, the topological winding invariant w =  − 1 of the H-sector condensate: a number that cannot change under continuous deformation and that the Diophantine constraint at IE/4 prevents from being discharged. The high reflection coefficient Γ(n) → 1 for all n ≥ 1 means the winding stores energy rather than radiating it: the proton is permanently below the electromagnetic radiation threshold.
+
+2.  E-sector round trip (the tau lepton). The capacitive field traverses the forbidden zone and returns, completing a round trip with winding number 0. No topological invariant protects this configuration. The tau is unstable not because its decay mode has been measured but because a winding-number-0 closed loop has no topological resistance to dissolution. The proton and tau share depth d = 13, denominator D = 208, and correction field $\mathbb{Q}(\sqrt{5})$ because those belong to the condensation depth. Their lifetimes differ by many orders of magnitude because their topological invariants differ by 1: topology determines the qualitative distinction, not the quantitative ratio.
+
+3.  Relational closure modes (electron, pion, muon). The Poincaré–Hopf theorem requires that any smooth vector field on S² have singularities summing to index χ(S²) = 2. The proton at the source pole accounts for index  + 1. The theorem requires a second index  + 1 at the antipodal sink pole. The electron is the geometric object that occupies this required pole. Its existence is not independent of the proton’s; it is compelled by the proton’s. The electron’s mass is not a free parameter of the electron; it is the boundary condition of the proton-vacuum system expressed as a closure energy.
+
+    The pion and muon occupy the same structural positions at the nuclear scale that the electron occupies at the atomic scale: relational closure modes whose masses are determined by the boundary conditions of existing condensates rather than by independent condensation. The pion is the exchange mode between two proton geometries; the muon is the relational closure of the pion-vacuum interface.
+
+4.  Open curl modes (quarks). A quark is one curl operator of the depth evolution equation without its partner. Closed configurations — proton, tau, electron, pion — use both coupling directions  ± Z₀ in a complete cycle. An open configuration uses only one. The mass of a closed configuration is a definite resonant frequency: the energy at which the complete coupling cycle closes. The mass of an open configuration depends on the boundary conditions of the containing system, which change with the renormalization scheme. Quark mass scheme-dependence is therefore not an experimental limitation. It is a geometric fact about open curl modes: asking for the mass of a quark without specifying its containing geometry is asking for the resonant frequency of an open circuit without specifying what it is connected to.
+
+    The quark charge fractions q_(u) =  + 2/3 and q_(d) =  − 1/3 are the unique rational solution to the Diophantine system imposed by multiplicity 3 and the baryon charge conditions. They are not postulated; they are forced. The same integers F₃ = 2 and F₄ = 3 that govern the spectroscopic forbidden zone boundaries appear as the charge numerators.
+
+The proton and electron are not two independent particles that happen to interact. They are the two boundary conditions of the same standing wave, whose resonant frequency is E₀. The correction factors C_(p) and C_(e) are determined by entirely independent mechanisms — Fibonacci condensation at the source pole, Poincaré–Hopf closure at the sink pole — yet both produce boundary conditions consistent with the same E₀ (§3.1). The Standard Model treats m_(p), m_(e), and E₀ as three independent empirical inputs. In this framework they form a closed triangle: any one determines the other two.
+
+The same pattern repeats at the hadronic scale. The pion is the exchange mode between two proton-geometry spheres; the muon is the sink-pole relational closure of the pion–vacuum interface. The atomic decay μ → e crosses exactly F₃² = 4 depth steps — the same quantity that governs the tau forward half-cycle and the E-sector depth base. The Zeckendorf grammar does not merely organise particle masses; it organises the decay cascade.
+
+The multiplicity 3 of the quark content of the proton is not independent of the three-element oscillation principle (Lemma 1). The proton is the H-sector condensate requiring oscillation between ε₀, μ₀, and their relationship Z₀ — three elements in mutual relation. The three valence quarks are the geometric expression of this tripartite requirement at the hadronic scale: not three independent particles that happen to be bound, but three aspects of the same oscillating closure, each corresponding to one element of the three-element structure. The charge fractions with denominator F₄ = 3 (the same F₄ that defines the upper wall of the forbidden zone at 3IE/4, the H-sector onset) are the Diophantine expression of this same tripartite constraint. Whether the full SU(3) color gauge symmetry of the strong interaction is a downstream consequence of the three-element oscillation principle — that is, whether color confinement follows from the geometric necessity that three-element oscillations cannot be decomposed into independent two-element systems — is a precisely posed open question stated as Open Problem [op:SU3] below.
+
+What the restored coordinate changes
+
+The derivations in this paper rest on one structural decision: retaining $Z_0 = \sqrt{\mu_0/\varepsilon_0}$ as an independent coordinate alongside c.
+
+The standard wave equation is derived by eliminating H from Maxwell’s curl equations, producing a second-order equation in E that contains only Z₀² = μ₀/ε₀ and loses the sign distinction between the individual couplings  ± Z₀ — the antisymmetric structure that differentiates the source pole from the sink. This compression is exact for propagation questions and is the correct reduction for them. For partition questions — how field energy divides at a boundary, junction, or standing-wave node — Z₀ as a ratio is indispensable. A field that cannot curl cannot change: retaining Z₀ is what keeps the geometry alive.
+
+Paper (Heaton 2026a) proves the formal statement: the map (ε₀,μ₀) ↦ c² is non-injective, and any observable sensitive to the electric/magnetic partition is fiber-sensitive under this map. The particle masses, the fine-structure constant, the electron rest mass, the Bohr radius, and the proton-to-electron mass ratio are all fiber-sensitive. They are not determined by any formalism in which Z₀ is set to unity or absorbed into other constants.
+
+Restoring Z₀ does not modify Maxwell’s equations. It reads them completely. The additional content is not a new theory. It is the part of the existing theory that the standard reduction discards before asking the questions this paper addresses.
+
+The Standard Model parameters: a geometric accounting
+
+The Standard Model has nineteen free parameters: nine fermion masses, three gauge couplings, four CKM mixing parameters, the Higgs mass and vacuum expectation value, and the strong CP phase. None is derivable within the Standard Model itself; all are measured inputs.
+
+The framework derived in this paper gives each parameter a geometric address. Taking stock: of the nineteen free parameters, this paper addresses seven with varying degrees of closure. The fine-structure constant (Heaton 2026b) and the proton-to-electron mass ratio are closed derivations. The electron mass is recoverable from E₀ via the standing-wave identity with zero free parameters; the full derivation from the sink-pole geometry alone, without spectroscopic input, is outstanding (Open Problem [op:sink-pole]). The proton mass formula is derived from first principles with all amplitude coefficients proved (Theorems 14 and 15). The tau lepton mass is confirmed with one conjectured component (Remark 10). The quark electric charge fractions are forced by the Diophantine constraint on multiplicity and baryon charge. One parameter is precisely predicted: m_(d)/m_(u) = 9/4 = 2.25, in tension with current FLAG lattice QCD averages of 1.78–1.92 and falsifiable by improved determinations. Five parameters — the W, Z, Higgs, top quark, and the second gauge coupling — have confirmed depth addresses in the Zeckendorf hierarchy (Table 4) but undetermined correction factors. The remaining parameters — CKM mixing angles, neutrino masses, and the strong CP phase — have geometric entry points identified in the open problems but no current derivations. This is a tally, not a claim of completeness.
+
+The strong CP phase θ_(QCD) deserves separate comment. The classical topological argument of this framework gives a geometric reason for θ_(QCD) = 0: the winding number of the H-sector condensate is an integer-valued topological invariant, and the Diophantine constraint that stabilizes the proton allocates the entire winding budget to the closed configuration, leaving no residual topological phase available to the QCD vacuum. Whether this classical geometric argument survives quantum corrections — specifically, whether the chiral anomaly contributions that generate a non-zero θ_(QCD) in QCD are also topologically locked by the Fibonacci winding structure — is an open question that the framework raises and does not yet answer. The prediction θ_(QCD) = 0 is stated here as a consequence of the classical geometry; its quantum-corrected status is in preparation.
+
+The  ± iZ₀ eigenvalue structure of the coupling matrix provides a geometric candidate for the origin of the particle-antiparticle distinction: a field wound under  + iZ₀ and one wound under  − iZ₀ are not related by continuous deformation of the coupling structure, though the formal identification with matter and antimatter is not established here. The formal identification of this asymmetry with the CKM CP-violation phase δ_(CP) requires the derivation of the depth-8 and depth-9 quark correction factors, which is in preparation.
+
+Recursive geometry and new classical physics
+
+Dirac wrote the equation that bears his name by insisting that the relativistic wave equation be first-order in both space and time, then asking what matrix operator the consistency condition required. He did not know the positron existed. The geometry told him. Maxwell wrote the displacement current into his equations by insisting on the conservation of charge, then reading the consequences. He did not know a priori that light was an electromagnetic wave. The geometry told him.
+
+This paper begins with a question of the same character: if Maxwell’s equations have two independent constitutive constants ε₀ and μ₀, what does the second one — the one the wave equation discards — determine? The answer is the partition of field energy between electric and magnetic modes at every boundary in the vacuum. That partition determines the standing-wave resonances at which it becomes self-consistent. Those resonances are the particles. The proton mass, the electron mass, and their ratio are not mysterious numbers awaiting a theory; they are the first three consequences of asking what Z₀ determines, read from the hydrogen spectrum.
+
+We predict that the remaining Standard Model parameters have the same structure and await the same question, asked at the appropriate depth.
+
+Remaining challenges and future work
+
+Open problems
+
+The framework’s open problems are precisely located. Each has a defined entry point and a specific measurement that would confirm or falsify the result.
+
+O. The electron mass from sink-pole geometry.
+
+The electron mass is currently recovered from the standing-wave identity $E_0 = \tfrac{1}{2}m_ec^2\alpha^2$, used as a structural relation rather than a free-parameter fit. The full geometric derivation — establishing that the impedance-match closure energy at the sink pole is determined entirely by Z₀, h, and e without spectroscopic input — has not been completed. The open step is deriving $E_0 = \tfrac{1}{2}m_ec^2\alpha^2$ from the sink-pole geometry of the Riemann sphere alone, without using the hydrogen ionization energy as empirical input. This derivation would complete the logical closure: m_(e) emerging from the same geometric structure that forces α and produces the proton, with no spectroscopic input at any step. This is the principal outstanding derivation of the programme.
+
+O. The u/d quark masses at depths d = 8 and d = 9.
+
+The ratio m_(d)/m_(u) = F₄²/F₃² = 9/4 = 2.25 is predicted from the depth costs of the two open curl modes. The absolute values require the correction factors C_(u) at d = 8 = F₆ and C_(d) at d = 9 = F₆ + F₂. Both depths are pure Fibonacci addresses. When C_(u) and C_(d) are derived, the pion and neutron residuals close simultaneously with zero additional parameters and their ratio becomes exactly F₄ = 3 (Section 3.3). These two residuals provide a joint falsification criterion: any derivation of the u/d asymmetry that does not close both simultaneously is inconsistent with the framework. Falsifiable by precision lattice QCD.
+
+O. The muon and strange quark correction factors at d = 11.
+
+The muon occupies the same structural position at depth d = 11 = F₆ + F₄ that the electron occupies at depth d = 7: it is the relational closure mode of the pion–vacuum interface, required by the Poincaré–Hopf theorem at the sink pole of the pion geometry (Section 3.3). As with the electron, the muon mass is determined by the boundary condition of that relational geometry rather than by independent Fibonacci condensation. The structural hypothesis is that the muon mass follows from the pion’s inter-sphere coupling geometry at convergent step j = 4 in the same way the electron mass follows from the proton’s standing-wave geometry, with the depth-11 Fibonacci frame replacing the depth-7 one. Whether the Poincaré–Hopf mechanism applies to a winding-number-0 propagating mode in the same way it applies to the winding-number- − 1 proton is an open question within this structural hypothesis. The strange quark correction factor C_(s) at d = 11 requires identifying the open curl mode at this depth. The pion correction factor is partially derived (Section 3.3); the muon and strange quark factors are not. Falsifiable by comparing the derived muon mass against the PDG value 105.658 MeV.
+
+O. The SU(2)_(L) identification.
+
+The  ± iZ₀ pole orientation structure is established: the H-sector winding accumulates under  + iZ₀ at the source pole and returns under  − iZ₀ at the sink. The kinematic connection between the  + iZ₀ orientation and left-handed helicity requires showing that the SU(2)_(L) gauge structure emerges from the  + iZ₀ eigenvalue sector in a way consistent with the helicity selection rule. This is the derivation whose completion would connect the two-invariant Maxwell structure directly to the weak interaction.
+
+O. The electroweak scale: W, Z, H correction factors at d = 16.
+
+All five census entries occupy d = 16 = F₇ + F₄: W^(±), Z, H, and t (the W^(±) share one correction factor). Their depth addresses are confirmed by the Zeckendorf census. The depth step from the hadronic scale d = 13 to the electroweak scale d = 16 is exactly F₄ = 3: the H-sector structural number in its seventh distinct role in this paper. The geometric event at depth 16 — the specific closure or exchange mode that produces these masses — is not yet identified. This requires extending the four geometric configurations of Section 3 to the depth-16 Zeckendorf address.
+
+O. The three-generation structure and CKM mixing. Three generations of fermions occupy depths d = 7, d = 11, and d = 13 (electron, muon, tau) and d = 8–9, d = 11, d = 13 (quarks). The Zeckendorf structure suggests a geometric origin for three generations: each generation corresponds to a distinct Fibonacci depth address in the sub-hadronic and hadronic hierarchy. The derivation of the generation masses and the CKM mixing angles from the depth-8, 9, 11 geometry is the deepest open problem. It requires understanding how the Fibonacci winding hierarchy at sub-hadronic depths organizes the three-generation pattern. The prediction m_(d)/m_(u) = 9/4 (O2) is the first step of this program.
+
+O. SU(3) color from the three-element oscillation principle. The three-element oscillation principle (Lemma 1) forces any stable oscillating closure to have a tripartite internal structure: three elements in mutual relation whose separation would destroy the oscillation sustaining the closure. The proton’s three valence quarks and the charge fractions with denominator F₄ = 3 are consistent with this. The open question is whether the full SU(3)_(c) color gauge symmetry — including color confinement and the gluon self-coupling — follows as a necessary consequence of the three-element oscillation structure, or whether SU(3)_(c) requires additional geometric input beyond what Lemma 1 supplies. Specifically: does the impossibility of isolating a single element from a three-element oscillating closure (the geometric statement that the three elements cannot be individually measured without collapsing the oscillation) imply the color confinement theorem? Falsifiable by: constructing the SU(3)_(c) generators from the depth evolution generator M = Z₀J and showing either that confinement follows or that it requires an additional postulate.
+
+O. The Rydberg ladder as a depth hierarchy and its unification with the particle depth address.
+
+The Rydberg family IE/n² is identified in Corollary 7 as the unique null geodesic family in the electromagnetic light cone, selected by the spectroscopic boundary integers F₃ = 2 (E-sector, Balmer limit IE/F₃² = IE/4) and the ionization threshold. The depth address formula d = ⌊log_(F₃²)(mc²/E₀)⌋ uses the same boundary integer F₃² = 4 as its base. The two hierarchies — atomic spectroscopy organized by n and particle masses organized by d — therefore share a common geometric unit.
+
+The Fibonacci-indexed series limits IE/F_(j)² reveal the structure of this connection. Two of them fall at exactly integer depth steps in the log₄ coordinate:
+log₄ (F₃²) = 1,   log₄ (F₆²) = 3,
+because F₃ = 2 and F₆ = 8 = 2³ = F₃³: these are the two Fibonacci numbers that are also powers of F₃. The series limit IE/F₆² falls exactly three depth steps below IE in the particle depth coordinate. The remaining Fibonacci series limits IE/F_(j)² for j = 4, 5, 7, … fall at irrational positions in the depth coordinate; in particular, log₄(F₇²) = 2log₄(13) ≈ 3.700, whose fractional part encodes the departure of the hadronic condensation scale from a round depth address.
+
+Whether this structure constitutes a full derivation of the Rydberg ladder from the depth address geometry remains open. Three components would complete it, ranging from the immediately approachable to the conjectural:
+
+1.  The 1/n² spectrum as discrete resonant depths. The quarter-wave boundary conditions on S² × ℝ⁺ (hard wall at IE/4, soft wall at 3IE/4) admit a discrete set of resonant depth addresses corresponding to the atomic energy levels. The conjecture is that these resonant addresses are exactly  − log₄(n²) measured downward from IE, reproducing the 1/n² spectrum from the Chladni eigenmode structure of the depth evolution equation.
+
+2.  Fibonacci series limits as nested impedance-match scales. The Balmer series limit IE/F₃² = IE/4 is the universal impedance-match boundary (Section 1). The conjecture is that the Fibonacci-indexed limits IE/F_(j)² for j = 3, 4, 5, … form a hierarchy of nested impedance-match scales, each providing the local ground plane for atomic transitions in the spectroscopic sector above it. Under this conjecture the Balmer, Paschen, Pfund, and Humphreys series are not four independent series with coincidentally different convergence limits but four levels of the same Fibonacci depth hierarchy evaluated at j = 3, 4, 5, 6 respectively. The Humphreys series limit IE/F₆² = IE/64 falls at exactly three depth steps below IE in the particle coordinate — the same depth separation as F₇ − F₄ = 13 − 3 = 10, though the precise connection between this coincidence and the depth identity F₃² + F₄² = F₇ has not been derived.
+
+3.  The selection rule Δℓ =  ± 1 as sector alternation. In the two-pole geometry, the E-sector and H-sector have opposite topological character. A single-step transition in the depth hierarchy alternates sector exactly once. The conjecture is that the electric dipole selection rule Δℓ =  ± 1 is the algebraic expression of this single sector crossing: allowed transitions cross the E/H boundary once; forbidden transitions (Δℓ = 0, Δℓ =  ± 2) either remain in the same sector or cross twice, both of which the quarter-wave boundary conditions suppress. If proved, the selection rules are not independent postulates of quantum mechanics but consequences of the two-invariant Maxwell geometry.
+
+A resolution of this problem would unify the atomic and hadronic results of this series within a single Fibonacci depth coordinate, with the atomic principal quantum number n and the particle depth address d as complementary evaluations of the same geometric structure on opposite sides of the ionization threshold IE. The entry point is the eigenmode decomposition of the depth evolution equation [eq:coupling] on S² × ℝ⁺ with the established quarter-wave boundary conditions. Falsifiable by: (a) showing that the Chladni eigenvalues of this boundary problem are exactly  − log₄(n²) for positive integers n; and (b) showing that transitions between Fibonacci-indexed levels (n = F_(j) to n = F_(k)) carry anomalous oscillator strengths relative to non-Fibonacci transitions at the same energy gap, testable against existing NIST line intensities.
+
+Each open problem has a clear entry point, a defined method, and a specific measurement against which it can be falsified. The framework does not merely leave these questions open; it locates them.
+
+Outlook
+
+The results in this paper are confined to the atomic and hadronic scales. The framework makes no claims about gravity, dark matter, or the cosmological constant. But a framework that derives particle masses from the geometry of electromagnetic field closure inevitably raises questions at larger scales — not because we have answers, but because the geometry is the same geometry. What follows is observation pointing toward questions, not questions answered.
+
+Isotopy as a nuclear consequence. The neutron derivation of Section 3.3 establishes that adding a neutron to a nucleus adds a purely H-sector inter-sphere bracket — mass without an E-sector component, and therefore without a new Poincaré–Hopf requirement for an additional sink-pole closure. The direct consequence is isotopy: different isotopes of the same element share the same number of proton-electron standing waves (the same Z, the same chemical identity) but differ in the number of H-sector inter-sphere brackets (the neutron count). The framework locates the geometric distinction between elements and isotopes in the E/H sector structure of nuclear configurations. The doubly magic nuclear gap at S_(n)/4, confirmed in all four doubly magic nuclei and absent in all 20 non-doubly-magic nuclides (Heaton 2026e), is the nuclear-scale expression of the same IE/4 vacuum boundary condition at κ_(q) = 0.2818.
+
+H-sector geometry at larger scales. The H-sector of this framework is the inductive mode: the field that winds, accumulates holonomy, and generates the topological winding invariant that stabilizes the proton. Whether the same inductive geometry underlies gravitomagnetic effects at astrophysical scales, the electromagnetic transparency of H-dominant field configurations, or anomalous proton conductivity in oriented water are structural questions the framework raises. No quantitative predictions have been derived for any of these; they are directions, not results.
+
+Gravity and the depth hierarchy. The proton sits at d = 13 in the Fibonacci depth hierarchy. The GUT scale  ∼ 10¹⁶ GeV sits near d ≈ 40 in the same logarithmic coordinate; the Planck mass $M_\mathrm{Pl} = \sqrt{\hbar c/G}
+\approx 1.22 \times 10^{19}~\mathrm{GeV}$ sits near d ≈ 45. The depth separation of 27 steps from the hadronic to the GUT scale, and ∼32 steps to the Planck scale, is the framework’s structural location of the hierarchy problem: not an explanation, but a precise geometric address. Whether G can be expressed in terms of Z₀ and the Fibonacci winding structure at depths above d = 16 is a question the framework raises. We have no answer.
+
+The two modes and what they organise. The E-mode terminates; the H-mode circulates. This distinction, established from the curl equations of Maxwell and confirmed in the spectroscopy of 71 atomic ions, organizes particle masses, decay rates, nuclear forces, and the boundary between what is electromagnetically visible and what is not. It also identifies the Coulomb force as the standing-wave field of the proton–electron system (Section 3.1), the proton’s electromagnetic stability as a consequence of H-sector condensation below the radiation threshold (Section 2.8), and isotopy as purely H-sector nuclear deformation (Section 3.3.1).
+
+Whether this geometry reaches to rotating black holes, dark matter halos, and gravitational coupling constants is the question this framework leaves open. It does not address these problems. It locates them.
+
+Appendix: Full Fibonacci depth table
+
+  Particle                                                        Fam.     mc² (MeV)    d C
+  --------------------------------------------------------------- ------ ----------- ---- ----------
+  (continued)                                                                             
+  Particle                                                        Fam.     mc² (MeV)    d C
+                                                                                          
+  e                                                               L           0.5110    7 2.293564
+  Depth d = 8 (F₆), base = 0.8912 MeV, 1 particle                                         
+  u                                                               Q           2.1600    8 2.423732
+  Depth d = 9 (F₆ + F₂), base = 3.5648 MeV, 1 particle                                    
+  d                                                               Q           4.7000    9 1.318465
+  Depth d = 11 (F₆ + F₄), base = 57.0360 MeV, 4 particles                                 
+  s                                                               Q            93.50   11 1.639315
+  μ                                                               L         105.6584   11 1.852486
+  π⁰                                                              M         134.9768   11 2.366519
+  π^(±)                                                           M         139.5704   11 2.447058
+  Depth d = 12 (F₆ + F₄ + F₂), base = 228.1440 MeV, 9 particles                           
+  K^(±)                                                           M         493.6770   12 2.163883
+  K⁰                                                              M         497.6110   12 2.181127
+  K_(S)⁰                                                          M         497.6110   12 2.181127
+  K_(L)⁰                                                          M         497.6110   12 2.181127
+  η                                                               M         547.8620   12 2.401387
+  ρ(770)                                                          M           775.26   12 3.398117
+  ω(782)                                                          M           782.66   12 3.430552
+  K^(*0)(700)                                                     M            838.0   12 3.673118
+  K^(*)(892)                                                      M           891.67   12 3.908365
+  Depth d = 13 (F₇), base = 912.5761 MeV, 184 particles                                   
+  p                                                               B         938.2721   13 1.028158
+  n                                                               B         939.5654   13 1.029575
+  η′(958)                                                         M         957.7800   13 1.049534
+  a₀(980)                                                         M            980.0   13 1.073883
+  f₀(980)                                                         M            990.0   13 1.084841
+  ϕ(1020)                                                         M        1019.4600   13 1.117123
+  Λ                                                               B        1115.6830   13 1.222564
+  h₁(1170)                                                        M          1166.00   13 1.277702
+  Σ⁺                                                              B        1189.3700   13 1.303311
+  Σ⁰                                                              B        1192.6420   13 1.306896
+  Σ⁻                                                              B        1197.4490   13 1.312164
+  b₁(1235)                                                        M          1229.50   13 1.347285
+  a₁(1260)                                                        M           1230.0   13 1.347833
+  Δ(1232) 3/2⁺                                                    B           1232.0   13 1.350024
+  K₁(1270)                                                        M          1253.00   13 1.373036
+  c                                                               Q          1273.00   13 1.394952
+  f₂(1270)                                                        M          1275.40   13 1.397582
+  f₁(1285)                                                        M          1281.80   13 1.404595
+  η(1295)                                                         M          1294.00   13 1.417964
+  π(1300)                                                         M           1300.0   13 1.424539
+  Ξ⁰                                                              B          1314.86   13 1.440822
+  a₂(1320)                                                        M          1318.20   13 1.444482
+  Ξ⁻                                                              B        1321.7100   13 1.448329
+  π₁(1600)                                                        M           1354.0   13 1.483712
+  Σ(1385) 3/2⁺                                                    B          1383.70   13 1.516257
+  K₁(1400)                                                        M          1403.00   13 1.537406
+  Λ(1405) 1/2⁻                                                    B           1405.1   13 1.539707
+  η(1405)                                                         M           1408.7   13 1.543652
+  h₁(1415)                                                        M           1409.0   13 1.543981
+  ω(1420)                                                         M           1410.0   13 1.545077
+  K^(*)(1410)                                                     M           1414.0   13 1.549460
+  K^(*0)(1430)                                                    M           1425.0   13 1.561514
+  K₂^(*)(1430)                                                    M          1427.30   13 1.564034
+  f₁(1420)                                                        M           1428.4   13 1.565239
+  a₀(1450)                                                        M           1439.0   13 1.576855
+  N(1440) 1/2⁺                                                    B           1440.0   13 1.577951
+  K(1460)                                                         M           1460.0   13 1.599867
+  ρ(1450)                                                         M           1465.0   13 1.605346
+  η(1475)                                                         M          1476.00   13 1.617399
+  N(1520) 3/2⁻                                                    B           1515.0   13 1.660136
+  f′₂(1525)                                                       M          1517.30   13 1.662656
+  Λ(1520) 3/2⁻                                                    B           1519.0   13 1.664519
+  f₀(1500)                                                        M           1522.0   13 1.667806
+  N(1535) 1/2⁻                                                    B           1530.0   13 1.676573
+  Ξ(1530) 3/2⁺                                                    B          1531.80   13 1.678545
+  Δ(1600) 3/2⁺                                                    B           1570.0   13 1.720405
+  f₂(1565)                                                        M           1571.0   13 1.721500
+  Λ(1600) 1/2⁺                                                    B           1600.0   13 1.753279
+  Δ(1620) 1/2⁻                                                    B           1610.0   13 1.764237
+  η₂(1645)                                                        M          1617.00   13 1.771907
+  N(1650) 1/2⁻                                                    B           1650.0   13 1.808068
+  K₁(1650)                                                        M           1650.0   13 1.808068
+  a₁(1640)                                                        M           1655.0   13 1.813547
+  Σ(1660) 1/2⁺                                                    B           1660.0   13 1.819026
+  ω₃(1670)                                                        M          1667.00   13 1.826697
+  ω(1650)                                                         M           1670.0   13 1.829984
+  π₂(1670)                                                        M           1670.6   13 1.830642
+  Ω⁻                                                              B        1672.4500   13 1.832669
+  Λ(1670) 1/2⁻                                                    B           1674.0   13 1.834368
+  N(1675) 5/2⁻                                                    B           1675.0   13 1.835463
+  Σ(1670) 3/2⁻                                                    B           1675.0   13 1.835463
+  ϕ(1680)                                                         M           1680.0   13 1.840942
+  N(1680) 5/2⁺                                                    B           1685.0   13 1.846421
+  ρ₃(1690)                                                        M          1688.80   13 1.850585
+  Λ(1690) 3/2⁻                                                    B           1690.0   13 1.851900
+  Ξ(1690)                                                         B           1690.0   13 1.851900
+  a₂(1700)                                                        M           1706.0   13 1.869433
+  N(1710) 1/2⁺                                                    B           1710.0   13 1.873816
+  Δ(1700) 3/2⁻                                                    B           1710.0   13 1.873816
+  K^(*)(1680)                                                     M           1718.0   13 1.882583
+  N(1700) 3/2⁻                                                    B           1720.0   13 1.884774
+  N(1720) 3/2⁺                                                    B           1720.0   13 1.884774
+  ρ(1700)                                                         M           1720.0   13 1.884774
+  f₀(1710)                                                        M           1733.0   13 1.899020
+  Σ(1750) 1/2⁻                                                    B           1750.0   13 1.917648
+  K₂(1770)                                                        M          1773.00   13 1.942852
+  Σ(1775) 5/2⁻                                                    B           1775.0   13 1.945043
+  τ                                                               L        1776.9300   13 1.947158
+  K₃^(*)(1780)                                                    M          1779.00   13 1.949427
+  Λ(1810) 1/2⁺                                                    B           1790.0   13 1.961480
+  Λ(1800) 1/2⁻                                                    B           1800.0   13 1.972438
+  π(1800)                                                         M           1810.0   13 1.983396
+  K₂(1820)                                                        M           1819.0   13 1.993259
+  Λ(1820) 5/2⁺                                                    B           1820.0   13 1.994354
+  Ξ(1820) 3/2⁻                                                    B          1823.00   13 1.997642
+  Λ(1830) 5/2⁻                                                    B           1825.0   13 1.999833
+  η₂(1870)                                                        M          1842.00   13 2.018462
+  ϕ₃(1850)                                                        M          1854.00   13 2.031611
+  Δ(1900) 1/2⁻                                                    B           1860.0   13 2.038186
+  D⁰                                                              M        1864.8400   13 2.043490
+  D^(±)                                                           M        1869.6600   13 2.048772
+  π₂(1880)                                                        M           1874.0   13 2.053527
+  N(1875) 3/2⁻                                                    B           1875.0   13 2.054623
+  N(1880) 1/2⁺                                                    B           1880.0   13 2.060102
+  Δ(1905) 5/2⁺                                                    B           1880.0   13 2.060102
+  Λ(1890) 3/2⁺                                                    B           1890.0   13 2.071060
+  N(1895) 1/2⁻                                                    B           1895.0   13 2.076539
+  Δ(1910) 1/2⁺                                                    B           1900.0   13 2.082018
+  Σ(1910) 3/2⁻                                                    B           1910.0   13 2.092976
+  Σ(1915) 5/2⁺                                                    B           1915.0   13 2.098455
+  N(1900) 3/2⁺                                                    B           1920.0   13 2.103934
+  Δ(1920) 3/2⁺                                                    B           1920.0   13 2.103934
+  Δ(1950) 7/2⁺                                                    B           1930.0   13 2.114892
+  f₂(1950)                                                        M           1936.0   13 2.121467
+  Δ(1930) 5/2⁻                                                    B           1950.0   13 2.136808
+  Ξ(1950)                                                         B           1950.0   13 2.136808
+  K^(*0)(1950)                                                    M           1957.0   13 2.144479
+  a₄(1970)                                                        M           1967.0   13 2.155437
+  D_(s)^(±)                                                       M        1968.3500   13 2.156916
+  K₂^(*)(1980)                                                    M           1990.0   13 2.180640
+  f₀(2020)                                                        M           1992.0   13 2.182832
+  D^(*0)(2007)                                                    M        2006.8500   13 2.199104
+  f₂(2010)                                                        M           2010.0   13 2.202556
+  D^(*±)(2010)                                                    M        2010.2600   13 2.202841
+  Ω(2012)⁻                                                        B          2012.50   13 2.205296
+  f₄(2050)                                                        M           2018.0   13 2.211323
+  Ξ(2030)                                                         B          2025.00   13 2.218993
+  Σ(2030) 7/2⁺                                                    B           2030.0   13 2.224472
+  K₄^(*)(2045)                                                    M           2048.0   13 2.244196
+  Λ(2110) 5/2⁺                                                    B           2090.0   13 2.290220
+  N(2060) 5/2⁻                                                    B           2100.0   13 2.301178
+  N(2100) 1/2⁺                                                    B           2100.0   13 2.301178
+  Λ(2100) 7/2⁻                                                    B           2100.0   13 2.301178
+  D_(s)^(*±)                                                      M          2112.20   13 2.314547
+  N(2120) 3/2⁻                                                    B           2120.0   13 2.323094
+  f₂(2150)                                                        M           2157.0   13 2.363639
+  ϕ(2170)                                                         M          2164.00   13 2.371309
+  N(2190) 7/2⁻                                                    B           2180.0   13 2.388842
+  Δ(2200) 7/2⁻                                                    B           2200.0   13 2.410758
+  N(2220) 9/2⁺                                                    B           2250.0   13 2.465548
+  Ω(2250)⁻                                                        B          2252.00   13 2.467740
+  N(2250) 9/2⁻                                                    B           2280.0   13 2.498422
+  Λ_(c)⁺                                                          B          2286.46   13 2.505501
+  f₂(2300)                                                        M           2297.0   13 2.517050
+  D_(s0)^(*)(2317)^(±)                                            M          2317.80   13 2.539843
+  D₀^(*)(2300)                                                    M           2343.0   13 2.567457
+  f₂(2340)                                                        M           2346.0   13 2.570745
+  Λ(2350) 9/2⁺                                                    B           2350.0   13 2.575128
+  D₁(2430)⁰                                                       M          2412.00   13 2.643067
+  D₁(2420)                                                        M          2422.10   13 2.654135
+  Δ(2420) 11/2⁺                                                   B           2450.0   13 2.684708
+  Σ_(c)(2455)                                                     B          2453.97   13 2.689058
+  D_(s1)(2460)^(±)                                                M          2459.50   13 2.695118
+  D₂^(*)(2460)                                                    M          2461.10   13 2.696871
+  Ξ_(c)⁺                                                          B          2467.71   13 2.704114
+  Ξ_(c)⁰                                                          B          2470.44   13 2.707106
+  Σ_(c)(2520)                                                     B          2518.41   13 2.759671
+  D_(s1)(2536)^(±)                                                M        2535.1100   13 2.777971
+  D_(s2)(2573)                                                    M          2569.10   13 2.815217
+  Ξ_(c)^(′+)                                                      B          2578.20   13 2.825189
+  Ξ_(c)^(′0)                                                      B          2578.70   13 2.825737
+  Λ_(c)(2595)⁺                                                    B          2592.25   13 2.840585
+  N(2600) 11/2⁻                                                   B           2600.0   13 2.849078
+  Λ_(c)(2625)⁺                                                    B          2628.00   13 2.879760
+  Ξ_(c)(2645)                                                     B          2645.10   13 2.898498
+  Ω_(c)⁰                                                          B          2695.30   13 2.953507
+  D_(s1)^(*)(2700)^(±)                                            M          2714.00   13 2.973999
+  D₃^(*)(2750)                                                    M          2763.10   13 3.027802
+  Ω_(c)(2770)⁰                                                    B           2766.0   13 3.030980
+  Ξ_(c)(2790)                                                     B          2791.90   13 3.059361
+  Σ_(c)(2800)                                                     B           2801.0   13 3.069333
+  Ξ_(c)(2815)                                                     B          2816.51   13 3.086329
+  Λ_(c)(2860)⁺                                                    B           2856.1   13 3.129712
+  D_(s3)^(*)(2860)^(±)                                            M          2860.00   13 3.133985
+  Λ_(c)(2880)⁺                                                    B          2881.63   13 3.157687
+  Λ_(c)(2940)⁺                                                    B           2939.6   13 3.221211
+  Ξ_(c)(2970)                                                     B          2964.30   13 3.248277
+  η_(c)(1S)                                                       M          2984.10   13 3.269974
+  Ω_(c)(3000)⁰                                                    B          3000.46   13 3.287901
+  Ω_(c)(3050)⁰                                                    B          3050.17   13 3.342373
+  Ξ_(c)(3055)                                                     B          3055.90   13 3.348652
+  Ω_(c)(3065)⁰                                                    B          3065.58   13 3.359260
+  Ξ_(c)(3080)                                                     B          3077.20   13 3.371993
+  Ω_(c)(3090)⁰                                                    B          3090.15   13 3.386183
+  J/ψ(1S)                                                         M        3096.9000   13 3.393580
+  Ω_(c)(3120)⁰                                                    B           3119.0   13 3.417775
+  Ω_(c)(3185)⁰                                                    B           3185.0   13 3.490120
+  Ω_(c)(3327)⁰                                                    B           3327.1   13 3.645833
+  χ_(c0)(1P)                                                      M          3414.71   13 3.741836
+  χ_(c1)(1P)                                                      M        3510.6700   13 3.846989
+  h_(c)(1P)                                                       M          3525.37   13 3.863097
+  χ_(c2)(1P)                                                      M        3556.1700   13 3.896848
+  Ξ_(cc)⁺⁺                                                        B          3621.60   13 3.968546
+  η_(c)(2S)                                                       M          3637.80   13 3.986298
+  Depth d = 14 (F₇ + F₂), base = 3650.3042 MeV, 65 particles                              
+  ψ(2S)                                                           M        3686.0970   14 1.009805
+  ψ(3770)                                                         M          3773.70   14 1.033804
+  ψ₂(3823)                                                        M          3823.51   14 1.047450
+  ψ₃(3842)                                                        M          3842.71   14 1.052710
+  χ_(c1)(3872)                                                    M        3871.6400   14 1.060635
+  T_(cc1)(3900)                                                   M          3887.10   14 1.064870
+  χ_(c0)(3915)                                                    M          3922.10   14 1.074458
+  χ_(c2)(3930)                                                    M          3922.50   14 1.074568
+  T_(cc)(4020)                                                    M          4024.10   14 1.102401
+  ψ(4040)                                                         M          4040.00   14 1.106757
+  χ_(c1)(4140)                                                    M          4146.50   14 1.135933
+  b                                                               Q          4183.00   14 1.145932
+  ψ(4160)                                                         M          4191.00   14 1.148123
+  ψ(4230)                                                         M          4222.20   14 1.156671
+  χ_(c1)(4274)                                                    M           4286.0   14 1.174149
+  P_(ccs)(4338)⁰                                                  B          4338.20   14 1.188449
+  ψ(4360)                                                         M          4374.00   14 1.198256
+  ψ(4415)                                                         M          4415.00   14 1.209488
+  T_(cc1)(4430)⁺                                                  M           4478.0   14 1.226747
+  ψ(4660)                                                         M           4623.0   14 1.266470
+  B^(±)                                                           M          5279.34   14 1.446274
+  B⁰                                                              M        5279.7200   14 1.446378
+  B^(*)                                                           M          5324.71   14 1.458703
+  B_(s)⁰                                                          M          5366.93   14 1.470269
+  B_(s)^(*)                                                       M          5415.40   14 1.483548
+  Λ_(b)⁰                                                          B          5619.57   14 1.539480
+  B₁(5721)                                                        M          5726.10   14 1.568664
+  B₂^(*)(5747)                                                    M          5737.30   14 1.571732
+  Σ_(b)                                                           B          5810.56   14 1.591802
+  B_(s1)(5830)⁰                                                   M          5828.73   14 1.596779
+  Σ_(b)^(*+)                                                      B           5829.0   14 1.596765
+  Σ_(b)^(*−)                                                      B           5835.1   14 1.598435
+  B_(s2)^(*)(5840)⁰                                               M          5839.88   14 1.599834
+  Ξ_(b)⁰                                                          B          5934.90   14 1.625864
+  B_(J)(5970)                                                     M          5965.00   14 1.634110
+  Ξ_(b)(6087)⁰                                                    B          6087.00   14 1.667532
+  Ξ_(b)(6095)⁰                                                    B          6095.10   14 1.669751
+  Σ_(b)^(*)                                                       B          6095.80   14 1.669943
+  B_(c)^(±)                                                       M          6274.47   14 1.718890
+  Ω_(b)(6316)⁻                                                    B          6315.60   14 1.730157
+  Ω_(b)(6330)⁻                                                    B          6330.30   14 1.734184
+  Ω_(b)(6340)⁻                                                    B          6339.70   14 1.736759
+  Ω_(b)(6350)⁻                                                    B          6349.80   14 1.739526
+  B_(c)(2S)^(±)                                                   M          6871.20   14 1.882364
+  T_(cccc)(6900)⁰                                                 M           6914.0   14 1.894089
+  η_(b)(1S)                                                       M          9398.70   14 2.574772
+  Υ(1S)                                                           M          9460.40   14 2.591674
+  χ_(b0)(1P)                                                      M          9859.44   14 2.700991
+  χ_(b1)(1P)                                                      M          9892.78   14 2.710125
+  h_(b)(1P)                                                       M          9899.30   14 2.711911
+  χ_(b2)(1P)                                                      M          9912.21   14 2.715448
+  Υ(2S)                                                           M         10023.40   14 2.745908
+  Υ₂(1D)                                                          M         10163.70   14 2.784343
+  χ_(b0)(2P)                                                      M         10232.50   14 2.803191
+  χ_(b1)(2P)                                                      M         10255.46   14 2.809481
+  h_(b)(2P)                                                       M         10259.80   14 2.810670
+  χ_(b2)(2P)                                                      M         10268.65   14 2.813094
+  Υ(3S)                                                           M         10355.10   14 2.836777
+  χ_(b1)(3P)                                                      M         10513.40   14 2.880143
+  χ_(b2)(3P)                                                      M         10524.00   14 2.883047
+  Υ(4S)                                                           M         10579.40   14 2.898224
+  T_(bb1)(10610)                                                  M         10607.20   14 2.905840
+  T_(bb1)(10650)                                                  M         10652.20   14 2.918168
+  Υ(10860)                                                        M          10885.2   14 2.981998
+  Υ(11020)                                                        M         11000.00   14 3.013447
+  Depth d = 16 (F₇ + F₄), base = 58404.8680 MeV, 5 particles                              
+  W⁺                                                              G          80369.2   16 1.376070
+  W⁻                                                              G          80369.2   16 1.376070
+  Z                                                               G          91188.0   16 1.561308
+  H                                                               G         125200.0   16 2.143657
+  t                                                               Q         172560.0   16 2.954548
+
+  : Fibonacci depth classification of all 270 PDG particles with measured masses. d = ⌊log₄(mc²/E₀)⌋, C = mc²/(E₀⋅4^(d)), E₀ = 13.598 443 eV. No free parameters. “B” = baryon, “M” = meson, “L” = lepton, “Q” = quark, “G” = gauge boson or Higgs scalar. Masses are shown to available PDG precision; correction factors are computed from full CODATA values. Massless particles (photon, gluon) and the graviton (measured mass upper bound only, no pole mass) are excluded; all particles with measured PDG pole masses are included.
+
+Provenance
+
+The research that gave rise to this paper was conducted by Kelly B. Heaton through an interactive collaboration with Claude (Sonnet 4.6, Anthropic) and supported by ChatGPT (OpenAI). All research design, direction, interpretation, and conclusions were determined by the human author, who is the sole owner of the intellectual property.
+
+Version History
+v1.0: April 12, 2026. Initial submission. DOI: 10.5281/zenodo.19543540
+
+[]
+
+Lucerna Veritas
+
+Follow the light of the lantern.
+
+Cohn, J. H. E. 1964. “On Square Fibonacci Numbers.” Journal of the London Mathematical Society 39: 537–40.
+
+Connes, Alain. 1994. Noncommutative Geometry. San Diego, CA: Academic Press.
+
+———. 2026. “The Riemann Hypothesis: Past, Present and a Letter Through Time.” https://arxiv.org/abs/2602.04022.
+
+Dirac, Paul Adrien Maurice. 1937. “The Cosmological Constants.” Nature 139: 323. https://doi.org/10.1038/139323a0.
+
+Eddington, Arthur Stanley. 1929. “The Charge of an Electron.” Proceedings of the Royal Society A 122 (789): 358–69. https://doi.org/10.1098/rspa.1929.0023.
+
+———. 1946. Fundamental Theory. Cambridge University Press.
+
+Feynman, Richard P. 1985. QED: The Strange Theory of Light and Matter. Princeton, NJ: Princeton University Press.
+
+FLAG Working Group, S. Aoki, et al. 2024. “FLAG Review 2024.” European Physical Journal C.
+
+Group, Particle Data, R. L. Workman, et al. 2022. “Review of Particle Physics.” Progress of Theoretical and Experimental Physics 2022: 083C01.
+
+Guillarmou, Colin, Antti Kupiainen, and Rémi Rhodes. 2025. “Probabilistic Construction of the ℍ³-Wess–Zumino–Witten Conformal Field Theory and Correspondence with Liouville Theory.” https://arxiv.org/abs/2502.16341.
+
+Hardy, G. H., and E. M. Wright. 1979. An Introduction to the Theory of Numbers. 5th ed. Oxford University Press.
+
+Heaton, Kelly B. 2025. “Information-Theoretic Confirmation of the α-Affine Thread Frame.” Coherence Research Collaboration.
+
+———. 2026a. “Determinacy Under Quotient Representations.” Coherence Research Collaboration.
+
+———. 2026b. “Electromagnetic Closure and the Fine-Structure Constant: A Geometric Derivation.” Coherence Research Collaboration.
+
+———. 2026c. “The Encounter of Two Primitives and One Flaw: Geometric Unification at the Electromagnetic Scale.” Coherence Research Collaboration.
+
+———. 2026d. “The Proton Mass from Atomic Spectra: A Geometric Derivation.” Coherence Research Collaboration.
+
+———. 2026e. “Vacuum Impedance as the Organizing Principle of Atomic Spectra: A Universal Gap at IE/4 and Recovery of the Electron Mass.” Coherence Research Collaboration.
+
+Hermite, Charles. 1873. “Sur La Fonction Exponentielle.” Comptes Rendus de l’Académie Des Sciences 77: 18–24.
+
+Hopf, Heinz. 1926. “Vektorfelder in n-Dimensionalen Mannigfaltigkeiten.” Mathematische Annalen 96: 225–50.
+
+Lindemann, Ferdinand. 1882. “Über Die Zahl π.” Mathematische Annalen 20: 213–25. https://doi.org/10.1007/BF01446522.
+
+Milnor, J. 1965. Topology from the Differentiable Viewpoint. University Press of Virginia.
+
+NIST Atomic Spectra Database. 2024. “NIST Atomic Spectra Database (Version 5.12).” National Institute of Standards and Technology, Gaithersburg, MD.
+
+Poincaré, Henri. 1885. “Sur Les Courbes Définies Par Les Équations Différentielles.” Journal de Mathématiques Pures Et Appliquées 1: 167–244.
+
+Sommerfeld, A. 1916. “Zur Quantentheorie Der Spektrallinien.” Annalen Der Physik 356 (17): 1–94. https://doi.org/10.1002/andp.19163561702.
+
+Sós, Vera T. 1958. “On the Theory of Diophantine Approximations. I.” Acta Mathematica Academiae Scientiarum Hungaricae 9 (3–4): 229–41. https://doi.org/10.1007/BF02023859.
+
+Tiesinga, Eite, Peter J. Mohr, David B. Newell, and Barry N. Taylor. 2021. “CODATA Recommended Values of the Fundamental Physical Constants: 2018.” Reviews of Modern Physics 93 (2): 025010. https://doi.org/10.1103/RevModPhys.93.025010.
+
+Weyl, Hermann. 1916. “Über Die Gleichverteilung von Zahlen Mod. Eins.” Mathematische Annalen 77 (3): 313–52. https://doi.org/10.1007/BF01475864.
+
+Wyler, A. 1969. “On the Conformal Groups in the Theory of Relativity and Their Unitary Representations.” Arch. Rational Mech. Anal. 31: 35–50.
+
+Wyler, Armand. 1970. “Les Groupes Des Potentiels de Coulomb Et de Yukawa.” Comptes Rendus de l’Académie Des Sciences, Série A 271: 186–88.
+
+[1] The timing of this suppression compounded across three generations. Maxwell derived the wave equation in 1865 before any apparatus existed to probe the E/H ratio independently: every measurement available to him was a propagation measurement, and the compression (ε₀,μ₀) ↦ c² was epistemically invisible because no phenomenon required the ratio. By the time such apparatus existed — Bose’s waveguide and horn-antenna experiments of 1894–1900, the most impedance-sensitive electromagnetic work of the nineteenth century — Maxwell’s equations had been canonized in wave-equation form and Bose was solving practical problems within the inherited framework, not interrogating its foundational compressions. By the time the proton mass, electron mass, and fine-structure constant were recognized as fundamental puzzles requiring explanation (1920s onward), electromagnetic theory was so deeply embedded in the c²-only formulation that Z₀ as an independent coordinate had no institutional home in the theoretical programme that needed it. The three windows — Maxwell’s derivation, Bose’s experiments, and the emergence of particle physics — missed each other by decades at each step.

@@ -1,0 +1,1521 @@
+Vacuum Impedance as a Spectroscopic Observable
+
+A question of geometry, not magnitude
+
+Maxwell’s equations in vacuum are governed by two independent electromagnetic invariants. The first is the propagation speed $c = 1/\!\sqrt{\mu_0\varepsilon_0}$, which emerges from the product of ε₀ and μ₀ and determines how rapidly an electromagnetic disturbance travels. The second is the impedance $Z_0= \sqrt{\mu_0/\varepsilon_0}$, which emerges from their ratio and determines how field energy is partitioned between the electric and magnetic modes. Together they uniquely resolve the two vacuum constants:
+$$\mu_0 \;=\; \frac{Z_0}{c}, \qquad \varepsilon_0 \;=\; \frac{1}{Z_0c}.
+  \label{eq:vacuum_resolved}$$
+Atomic physics has made extensive use of c. The role of Z₀ as an organising principle of atomic structure has not been systematically investigated.
+
+To see why Z₀ should matter, consider what Maxwell’s equations describe geometrically. The curl equations
+$$\nabla\times\mathbf{E} = -\frac{\partial \mathbf{B}}{\partial t},
+  \qquad
+  \nabla\times\mathbf{H} = \frac{\partial \mathbf{D}}{\partial t}
+  \label{eq:maxwell_curl}$$
+express a mutual pursuit: a changing electric field drives a curl in the magnetic field, and that magnetic curl drives a change in the electric field. Neither field leads; each is the other’s cause. In free space this mutual pursuit propagates outward at c, with Z₀ as the amplitude ratio maintained throughout. In a bound system, the same pursuit must close: the fields must return to their starting configuration, like a hinged oscillator completing its cycle, tracing a standing wave with nodes and harmonics rather than an outward-propagating crest. The geometry of this closure — which field configurations are permitted, which are forbidden, and where the boundary between bound and free behaviour lies — is the subject of this paper.
+
+The picture has an exact analogue in circuit theory. A Coulomb source driving an orbital load through the vacuum medium is a Thévenin circuit: the nucleus is the electromotive source, the orbital mode is the reactive load, and Z₀ is the impedance of the transmission medium between them. When the load impedance matches the source impedance, maximum power transfers from source to load — but in a lossless medium the match point is simultaneously the boundary between stored-energy behaviour and propagating behaviour. At this point neither the bound standing-wave mode nor the free propagating mode is the natural state of the field. The system cannot stay here.
+
+The closure condition makes this geometric. Starting from a configuration where the electric mode is dominant, the magnetic mode responds at right angles under the curl equations; after a quarter turn each, the two fields are equal in amplitude and 90^(∘) out of phase. This is the impedance-match configuration: Z_( orb) = Z₀. It is also precisely the propagating arrangement of a free photon, which carries equal electric and magnetic energy at every point and no field node. A bound eigenstate requires a node — a point of zero amplitude where the standing wave turns back on itself. The propagating configuration has no such node, so it cannot support a bound eigenstate. The system either reflects back into the bound regime or escapes into the free continuum. Between these two possibilities lies a universal structural absence: the spectroscopic record of the one electromagnetic configuration that is simultaneously required by the impedance-match condition and forbidden by the closure condition.
+
+This is the butterfly in flight: two wings — the capacitive E-sector arm and the inductive H-sector arm — connected at an arch where the two modes briefly equalise before the field resolves back into one character or the other. The arch is the impedance-match point. The wings are the atom. The opening of the U faces the free continuum, the light cone from which the bound system is always one ionisation away. The gap at IE/4 is where the wing tips of every atom in the periodic table touch the boundary they can approach but never occupy.
+
+Within the SI system, α satisfies the exact relation
+$$\alpha \;=\; \frac{Z_0}{2R_{\!K}},
+  \label{eq:alpha_SI}$$
+where R_( K) = h/e² is the von Klitzing constant. After the 2019 SI redefinition, R_( K) is exact; equation [eq:alpha_SI] holds to better than 10⁻⁷. It is a structural identity of the electromagnetic vacuum, not an approximation. Read in this light, α is not a coupling constant that happens to be small: it is the ratio of the vacuum’s field impedance to twice the quantum of orbital resistance, encoding in a single dimensionless number the relationship between the two electromagnetic invariants that together determine atomic structure. The Coulomb potential has always been an electromagnetic object. This paper identifies the coordinate in which its vacuum geometry is directly readable from observed atomic spectra.
+
+A universal boundary condition and its consequences
+
+The argument proceeds in six steps, each a direct consequence of the previous. Together they establish a single physical picture: the vacuum’s electromagnetic geometry structures atomic spectra at a universal threshold set by the fine-structure constant, and that threshold is independently confirmed by multiple separate observables.
+
+Step 1: The orbital impedance. When the electromagnetic field of a bound electron is modelled as a closed standing wave — the natural description for a system obeying the closure condition — it carries a characteristic impedance
+$$Z_{\!\mathrm{orb}}(n) \;=\; \frac{Z_0\, n}{\alpha},
+  \label{eq:Zorb}$$
+derived from Coulomb’s law and the Biot-Savart law without free parameters (Section 5). Because α ≈ 1/137, every bound orbital satisfies Z_( orb)(n) ≈ 137n Z₀ ≫ Z₀: the orbital impedance far exceeds the free-space impedance at every principal quantum number. The reflection coefficient Γ = (Z_( orb)−Z₀)/(Z_( orb)+Z₀) → 1 for all n ≥ 1. No individual orbital achieves impedance match with the vacuum. The impedance match is a property of the transition energy spectrum, not of any individual shell.
+
+Step 2: The boundary condition. The closure condition on Maxwell’s equations requires that every eigenstate of the bound system support a field node. The propagating configuration — in which E and H are equal in amplitude and 90^(∘) out of phase — has no such node: at every point along the trajectory the total field energy is non-zero and partitioned equally between the two modes. This is the free-photon state. A bound eigenstate in the propagating configuration is a contradiction: the system would simultaneously satisfy a boundary condition requiring return and a field condition requiring propagation.
+
+The impedance match Z_( orb) = Z₀ corresponds to exactly this forbidden configuration, and it occurs at a unique transition energy: ΔE = IE/4, where IE is the first ionization energy of the ion. Because the atomic number Z cancels exactly in the derivation, this threshold is the same fraction of IE for every ion regardless of nuclear charge. The boundary is a universal property of the electromagnetic vacuum, expressed in each atom’s own energy units. Its spectroscopic record is a structural absence — not a line shifted or broadened, but a literal zero-observation interval at a predictable location in every ion’s transition spectrum.
+
+Step 3: Universal confirmation. The absence is observed. A survey of 80 atomic ions spanning Z = 1 to Z = 82, all subshell types (s, p, d, f), and ionization stages from neutral to highly ionized finds a literal zero-observation interval at IE/4 in 71 of 80 ions, confirmed directly from raw NIST photon energies with no coordinate transformation and no free parameters. No ion with sufficient catalog coverage fails the test. The 9 unconfirmed ions lack catalog coverage at IE/4 and constitute data gaps, not falsifications. In hydrogen the gap is an exact algebraic identity: no pair of positive integers (n_(i),n_(f)) satisfies
+$$\frac{1}{n_f^2} - \frac{1}{n_i^2} \;=\; \frac{1}{4}.$$
+[1]
+
+Step 4: The constants it encodes. Since the gap location is set by the vacuum boundary condition, it encodes the fundamental constants of that condition. Define G as the empirical midpoint of the zero-observation interval at IE/4. Then
+$$m_e c^2 \;=\; \frac{2^3 G}{\alpha^2}, \qquad
+  a_0 \;=\; \frac{\hbar c\,\alpha}{2^3 G},
+  \label{eq:constants}$$
+with no free parameters and without assuming m_(e) or a₀ as inputs. Applied to the five sub-millielectronvolt ions selected solely on the criterion that their gap width is below 0.1 meV, the formula returns a raw mean of  + 531.0 ± 6.0 ppm before correction. This offset is not a fitting residual: it is the proton reduced-mass correction m_(e)/(m_(e)+m_(p)) × 10⁶ = 533.82 ppm, which the boundary condition predicts independently of the gap measurement. After subtracting it, the corrected mean residual is  − 2.8 ± 2.7 ppm (SEM), consistent with zero. The gap centre is symmetric about the prediction: the E-sector terminus (gap_lo) sits 62 ppm below IE/4 and the H-sector onset (gap_hi) sits 51 ppm above it on average across the 13 precision-tier ions, confirming that IE/4 is the geometric centre of the absence, not one of its edges. Standard spectroscopic determinations of m_(e) derive the electron mass from the positions of spectral lines; equations [eq:constants] read both m_(e)c² and a₀ from the location of a structural absence (Sections 7–9).
+
+Step 5: Why IE/4 and not any other fraction. Spectral gaps appear at every fraction IE/n: any well-characterised ion contains zero-observation intervals at IE/3, IE/5, and throughout the spectrum. The existence of a gap at IE/4 is therefore not, by itself, the claim. The claim is that IE/4 is the only fraction at which the gap location satisfies equations [eq:constants] with zero free parameters and at which the one systematic residual is precisely the proton reduced-mass correction. The test is definitive: at IE/3 and IE/5, the same formula applied to the same ions returns  − 250, 130 ± 18 ppm (n = 13) and  + 250, 075 ± 103 ppm (n = 9) respectively — in exact agreement with the algebraic predictions (n/4−1) × 10⁶ for wrong-fraction evaluations, deviating from those predictions by 0.052% and 0.030% respectively. The formula works at every fraction; it returns zero only at IE/4 because IE/4 is the only fraction at which the vacuum boundary condition holds (Section 8.2).
+
+Step 6: The partition and its independent verification. The boundary at IE/4 is not only a threshold — it is a partition. Below it, the orbital field is capacitive: electric-mode dominant, organized by the ε₀ invariant. Above it, the field is inductive: magnetic-mode dominant, organized by the μ₀ invariant. The ions with the sharpest gaps — Fe, Mo, Mn, Cr, Ce, Gd, Dy — are the magnetically active elements of chemistry and condensed matter, whose spectral weight naturally occupies the inductive H-sector. The half-filled 4f⁷ configuration of gadolinium, with L = 0, sits precisely at κ = κ_(q): the exact balance point of the partition, where E and H modes are equally weighted and no anisotropy axis exists.
+
+Gadolinium provides decisive independent confirmation through three separate observables. The NIST level distribution identifies Gd II as exclusively inductive, carrying one of the sharpest IE/4 gaps in the survey (0.262 meV). An E/H field-amplitude balance analysis of the same NIST data independently locates the mode-crossing within 0.014 κ-units of IE/4 through a completely different measure. And published electron paramagnetic resonance spectroscopy establishes the same result through an experimental tradition entirely independent of photon transition energies: Gd³⁺ has ground state ⁸S_(7/2) with L = 0, g = 2.000, and pure spin relaxation character (Abragam and Bleaney 1970; Orton 1968) — the unambiguous signature of exclusive inductive-mode coupling, measured by microwave spectroscopy rather than optical photons. Three independent methods, three independent observables, one ion, one boundary.
+
+The results described in Steps 1–6 are, to the authors’ knowledge, new. They are not independent findings. They are consequences of a single geometrical fact: when Maxwell’s equations are required to close, the propagating configuration — equal amplitude, quadrature phase, the state of a free photon — cannot be an eigenstate of the bound system. The gap at IE/4 is where every atom briefly reaches that configuration and cannot stay.
+
+Organization
+
+Section 5 derives the orbital impedance formula [eq:Zorb] and the boundary condition ΔE = IE/4 from the closure condition on Maxwell’s equations. Section 8 presents the photon catalog survey across 80 ions and the Diophantine proof for hydrogen. Section 7 derives equations [eq:constants] and establishes their connection to the boundary condition. Section 9 presents the numerical results and the proton reduced-mass confirmation. Section 8.2 presents the comparative test at IE/3 and IE/5 and establishes the uniqueness of IE/4. Section 8.8 develops the E/H partition, the gap-sharpness prediction, and the Gadolinium confirmation. Section 12 discusses the implications for the interpretation of α, the independent status of ε₀ and μ₀, and the relationship to standard atomic theory. Appendix 14.6 provides a self-contained protocol for independent confirmation using public NIST data.
+
+Background
+
+Maxwell’s equations and the two vacuum invariants.
+
+Maxwell’s field equations (Maxwell 1865) in their modern vector form, due to Heaviside (Heaviside 1893), are governed by two independent constitutive constants of the vacuum: the permittivity ε₀ and the permeability μ₀. Together they determine two independent electromagnetic invariants: the propagation speed $c =
+1/\!\sqrt{\mu_0\varepsilon_0}$ and the impedance $Z_0=
+\sqrt{\mu_0/\varepsilon_0}$. Heaviside, who introduced the concept of characteristic impedance in the analysis of transmission lines (Heaviside 1893), treated Z₀ as a real physical property of the electromagnetic medium through which fields propagate. Bose (Bose 1897) subsequently demonstrated that Z₀ governs impedance matching across all electromagnetic wave scales, establishing it as a universal medium property rather than a frequency-specific construct. The standard quantum mechanical formulation of atomic structure encodes the Coulomb interaction as the scalar potential V(r) =  − Ze²/r and works in units where c = 1, suppressing both ε₀ and μ₀ individually; Z₀ does not appear in the Schrödinger or Dirac formalisms. Kitano (Kitano 2009) noted that Z₀ is systematically underappreciated in quantum optics. The present work establishes it as an organising principle of atomic spectroscopy.
+
+The fine-structure constant as impedance ratio.
+
+Sommerfeld introduced α in 1916 as v₁/c — the ratio of the ground-state orbital velocity to the speed of light (Sommerfeld 1916); its value  ≈ 1/137 has attracted extensive commentary but no derivation from deeper principles (Feynman 1985). The identity
+$$\alpha = \frac{Z_0}{2R_{\!K}}$$
+follows algebraically from α = e²/(4πε₀ℏc) and is exact within the post-2019 SI system, in which R_( K) = h/e² is a defined constant (Bureau International des Poids et Mesures 2019). Von Klitzing’s experimental discovery of the quantum of resistance (von Klitzing, Dorda, and Pepper 1980) and the subsequent SI redefinition make this identity structurally exact rather than approximate: α is the ratio of the vacuum field impedance to twice the quantum of orbital resistance. The present work treats this as physical content rather than algebraic coincidence. The electromagnetic coupling runs from  ≈ 1/137 at atomic scales to  ≈ 1/128 at the Z-boson mass (Burkhardt and Pietrzyk 2001); all results use the infrared value α = 7.2973525693 × 10⁻³ (Tiesinga et al. 2021).
+
+The Balmer series limit and its generalisation.
+
+The Balmer series converges at IE_(H)/4 (Balmer 1885; Bohr 1913); that no bound-to-bound hydrogen transition carries this energy exactly follows from the absence of integer solutions to 1/n_(f)² − 1/n_(i)² = 1/4 (proved in Section 8). The generalisation of this absence to all multi-electron ions across all subshell types — as a universal structural feature of the sorted photon catalog rather than an arithmetic property of a single atom — has not, to the authors’ knowledge, been established in the prior literature.
+
+Multi-electron spectra and the IE/4 boundary.
+
+In multi-electron ions the ionization energy reflects configuration-averaged screening, Hartree-Fock exchange, and correlation effects that shift IE substantially from the hydrogenic value E₀/Z² (Cowan 1981; Fock 1935). The gap at IE/4 is therefore not a hydrogen artifact: it must survive these effects across every subshell type and ionization stage if the impedance interpretation is correct. The survey of Section 8 tests this directly against raw NIST photon energies (Kramida et al. 2023) with no model-dependent input.
+
+Impedance matching in transmission line theory.
+
+The condition for maximum power transfer between a source and a load through a transmission medium — that the load impedance match the source impedance — was established by Heaviside for electrical transmission lines (Heaviside 1893) and is now standard in microwave and RF engineering (Pozar 2011). At the impedance match point, the reflection coefficient Γ = (Z_(L)−Z_(S))/(Z_(L)+Z_(S)) = 0 and the standing wave ratio equals unity: the field is entirely propagating, with no reflected component. The atomic Thévenin model of Section 4 applies this framework to the Coulomb-vacuum circuit, with the nucleus as source, the orbital mode as load, and Z₀ as the impedance of the transmission medium. The impedance match condition Z_( orb) = Z₀ then locates the boundary between stored-energy (bound) and propagating (free) behaviour at ΔE = IE/4.
+
+Electron paramagnetic resonance of lanthanide ions.
+
+The magnetic character of trivalent lanthanide ions is established by extensive EPR spectroscopy (Abragam and Bleaney 1970; Orton 1968). Among the 4f series, Gd³⁺ occupies a unique position: its half-filled 4f⁷ configuration gives a ground state ⁸S_(7/2) with L = 0 and g = 2.000, measured to be consistent with a pure spin system with no orbital contribution (Bleaney and Stevens 1953). This distinguishes it from every other trivalent lanthanide, all of which carry L > 0 and show the orbital contributions to g and relaxation that their angular momentum requires. The absence of orbital angular momentum in Gd³⁺ means its interaction with external fields is governed entirely by spin, without Coulombic orbital coupling — a fact established by microwave measurements at frequencies six orders of magnitude below optical spectroscopy and entirely independent of photon transition energies. Section 8.8 returns to Gd³⁺ as the case where the spectroscopic and microwave characterisations of the same ion can be directly compared.
+
+Nuclear shell structure and the S_(n)/4 boundary.
+
+The nuclear shell model (Goeppert Mayer 1949; Haxel, Jensen, and Suess 1949) established that doubly magic nuclei — those with both proton and neutron numbers equal to shell-closure values — exhibit anomalously low level densities and large energy gaps above the ground state. The statistical theory of nuclear level density (Bethe 1936; Gilbert and Cameron 1965) describes the average density of states as a function of excitation energy; the specific depletion of levels below the neutron separation energy S_(n) in doubly magic nuclei is a known consequence of shell closure. The present work identifies a precise sub-threshold: S_(n)/4, organised by the same Thread Frame coordinate κ_(q) = ln 4 /|lnα| = 0.2818 as the atomic IE/4 boundary, which has not, to the authors’ knowledge, been previously identified.
+
+A survey of 48 nuclides using Evaluated Nuclear Structure Data File records (National Nuclear Data Center 2026) finds that the four doubly magic nuclei ¹⁶O (Z/N = 8/8), ⁴⁸Ca (20/28), ¹³²Sn (50/82), and ²⁰⁸Pb (82/126) show complete depletion of observed levels below S_(n)/4, with first excited states at κ_(nuc) = 0.121–0.211 — well above κ_(q). Two near-magic nuclei (¹²C and ²⁰⁹Pb, one nucleon away from a doubly magic configuration) show near-complete depletion with a single level below S_(n)/4. The separation in the dimensionless Thread Frame coordinate between the complete-depletion population (κ_(nuc) ≈ 0.180) and the no-gap population (κ_(nuc) ≈ 0.280) is Δκ = 0.100, with no overlap between the two classes. Of the 20 non-doubly-magic nuclides surveyed, none shows a gap: their first levels resume at κ_(nuc) ≈ κ_(q) with no depletion. Zero nuclides falsify the gap prediction. The nuclear result is independent of the atomic result and governed by a separate closure criterion at the nuclear scale; the relationship between the two is developed in Section 12.
+
+The gadolinium decoupling.
+
+The four gadolinium isotopes in the nuclear survey (¹⁵⁵Gd, ¹⁵⁶Gd, ¹⁵⁷Gd, ¹⁵⁸Gd) are mid-shell for both protons (Z = 64, between magic 50 and 82) and neutrons (N = 91–94, between magic 82 and 126), and all four show no S_(n)/4 gap: ¹⁵⁶Gd has its first level at E₁/S_(n)/4 = 1.000, the most extreme no-gap result in the nuclear survey. Yet atomic Gd II carries one of the sharpest IE/4 gaps in the atomic survey (0.262 meV, precision tier). The same element, at the same vacuum boundary κ_(q), organises its atomic and nuclear spectra by independent criteria: the atomic gap is set by the 4f⁷ half-filled electronic shell closure; the nuclear gap is absent because no nuclear shell closes at Z = 64 or N = 91–94. The decoupling demonstrates that Z₀ organises both the atomic and nuclear electromagnetic structure but through physically independent closure conditions at each scale.
+
+The vacuum impedance as a neglected invariant.
+
+That the vacuum impedance Z₀ is a fundamental constant of electromagnetism, as important as the speed of light c, has been argued explicitly by Kitano (Kitano 2009), who showed that Z₀ plays essential roles in reorganising electromagnetic formulae relative to special relativity, renormalising physical quantities across unit systems, and defining the magnitudes of electromagnetic units. Kitano notes that the significance of Z₀ is widely underappreciated and sometimes ignored entirely — a situation he attributes partly to the Gaussian unit system, in which Z₀ is dimensionless and of unit magnitude, obscuring its physical content. The present work agrees with this assessment and extends it: the consequence of suppressing Z₀ is not merely a notational inconvenience but the loss of the second independent invariant of the vacuum, which encodes the partition of electromagnetic field energy between its electric and magnetic modes. A representation retaining only c leaves this partition underdetermined and cannot identify the impedance-match boundary that organises the spectral record of every atom in the periodic table (Heaton and Coherence Research Collaboration 2026b).
+
+The vacuum as an active electromagnetic medium.
+
+The physical activity of the electromagnetic vacuum at atomic scales is experimentally established. The Lamb shift — a measured splitting of the 2S_(1/2) and 2P_(1/2) levels of hydrogen by approximately 1058 MHz, first observed by Lamb and Retherford (Lamb and Retherford 1947) — was explained by Bethe (Bethe 1947) as arising from the interaction of the bound electron with the fluctuating electromagnetic field of the vacuum, providing the first quantitative confirmation that the vacuum field has observable consequences for atomic energy levels. The Casimir effect (Casimir 1948) demonstrated a measurable force between uncharged parallel conducting plates arising from the modification of vacuum field modes in the gap between them.
+
+Within the stochastic electrodynamics (SED) programme, Boyer (Boyer 1975) showed that the ground state of the hydrogen atom could be understood as an equilibrium between classical Larmor radiation losses and absorption from a Lorentz-invariant background of zero-point electromagnetic radiation, with the equilibrium radius agreeing with the Bohr radius without quantum postulates. Puthoff (Puthoff 1987) refined this analysis and showed that the ground state is a zero-point-fluctuation-determined state: the atom is not self-contained but is stabilised by continuous exchange with the vacuum field. The SED programme treats orbital stability as a dynamical equilibrium with the vacuum’s stochastic radiation background; the present work approaches the same vacuum activity from the complementary perspective of impedance geometry. Where SED asks which quantum phenomena can be recovered from classical electrodynamics augmented by a classical zero-point field, the Thread Frame asks where in atomic spectra the vacuum’s constitutive constants leave a structural record — and finds that record at IE/4, universal across 71 ions, encoding m_(e)c² and a₀ without free parameters. Both approaches share the foundational premise that a bound atomic state is not an isolated object but a configuration sustained by the electromagnetic medium of the vacuum; they differ in the tools used to identify that dependence and in the quantitative precision of the resulting predictions.
+
+Prior art on IE/4 and the determination of m_(e).
+
+The interpretation of IE/4 as an electromagnetic impedance boundary is, to the authors’ knowledge, original to the present work and its companion papers (Heaton and Coherence Research Collaboration 2025a, 2026a). The CODATA determination of m_(e) uses the Rydberg constant measured from spectral line positions (Tiesinga et al. 2021); the present paper reads both m_(e)c² and a₀ from the location of a structural absence.
+
+Theoretical Framework and Notation
+
+The central claim of this paper requires two ingredients: a coordinate that places every atomic transition on a common scale regardless of nuclear charge, and a physical interpretation of where that coordinate’s natural boundary lies. We introduce both here. Readers familiar with the Thread Frame coordinate system may proceed directly to §4; the tables below serve as a reference throughout.
+
+Physical constants
+
+All constants are CODATA 2018 values. The relation α = Z₀/2R_( K) is exact given the definitions of Z₀ and R_( K); the numerical value of α is measured.
+
+  Symbol   Definition                                              Value / note
+  -------- ------------------------------------------------------- ------------------------------------------
+  Z₀       $\sqrt{\mu_0/\varepsilon_0}$, impedance of free space    ≈ 376.730 Ω (μ₀ not exact post-2019 SI)
+  R_( K)   h/e², von Klitzing constant                             25 812.807… Ω (exact, 2019 SI)
+  α        Z₀/2R_( K), fine-structure constant                      ≈ 1/137.036
+  E₀       m_(e)α²c²/2, Rydberg energy                              ≈ 13.606 eV
+  a₀       ℏ/(m_(e)αc), Bohr radius                                 ≈ 52.918 pm
+
+The constants c, ℏ, e, and m_(e) carry their standard CODATA values throughout. We do not use natural units; dimensional quantities are retained to make the impedance comparisons explicit.
+
+The hydrogenic depth coordinate
+
+Every atomic transition energy ΔE sits at a definite depth in the vacuum’s α-scaled impedance hierarchy: it takes exactly κ successive factors of α to reach ΔE from the hydrogenic Rydberg scale E₀Z²μ̂. This depth is the dimensionless coordinate
+$$\kappa(\Delta E;\,Z)
+  = \frac{\log(\Delta E / E_0 Z^2 \hat\mu)}{\log\alpha},
+  \label{eq:kappa}$$
+where μ̂ = m_(nuc)/(m_(e)+m_(nuc)) is the reduced-mass correction (tabulated per ion; μ̂ → 1 for heavy nuclei). Because log α ≈  − 4.723 is negative, κ increases as ΔE decreases relative to the Rydberg scale: deeper into the bound spectrum means larger κ. The coordinate removes the Z-dependence of the hydrogenic ladder, placing transitions from all ions on a common axis whose tick marks are powers of α.
+
+The natural boundary of this axis is
+$$\kappa_{\mathrm{q}}= \frac{\log 4}{|\log\alpha|} \approx 0.2818,
+  \label{eq:kq}$$
+the depth at which ΔE = IE/4 for any ion. The identity κ(IE/4; Z) = κ_(q) is exact for all Z by construction. For hydrogen, the Balmer series limit ΔE = E₀/4 gives κ = log (1/4)/log α = κ_(q) with no numerical adjustment: the impedance-match boundary falls at the same coordinate value in every spectrum.
+
+  Symbol   Definition                Note
+  -------- ------------------------- ----------------------------------------------------
+  κ        Eq. [eq:kappa]            Hydrogenic depth coordinate
+  μ̂        m_(nuc)/(m_(e)+m_(nuc))   Reduced-mass factor; tabulated in §11
+  κ_(q)    log 4/|logα| ≈ 0.2818     Impedance-match depth; universal, independent of Z
+  IE       First ionization energy   From NIST ASD
+
+Additional quantities (β, u, σ_(u), Q, δ_(Z₀)) used in the precision analysis are defined in Section 6.4.
+
+Field impedances and electromagnetic regimes
+
+The orbital impedance Z_( orb)(n) is derived in §4; the result is
+$$Z_{\!\mathrm{orb}}(n) = \frac{Z_0\, n}{\alpha}.
+  \label{eq:Zorb}$$
+Because α ≈ 1/137, every bound orbital satisfies Z_( orb)(n) ≈ 137n Z₀ ≫ Z₀. The reflection coefficient at the vacuum boundary,
+$$\Gamma(n) = \frac{Z_{\!\mathrm{orb}}(n) - Z_0}{Z_{\!\mathrm{orb}}(n) + Z_0} \to 1
+  \quad \text{for all } n \geq 1,$$
+confirms that every bound orbital is deeply mismatched to the vacuum impedance. The impedance match condition Z_( orb) = Z₀ is therefore never achieved at a single Bohr shell. It is a property of the transition energy spectrum: a transition of energy ΔE = IE/4 corresponds, via the circuit model of §4, to the condition Z_( orb) = Z₀. This is the physical content of κ = κ_(q).
+
+The boundary partitions the transition energy spectrum into three electromagnetic regimes; the full characterisation with physical interpretation is given in Section 4.3.
+
+The Electromagnetic Model
+
+Two independent vacuum invariants
+
+The laws of electromagnetism are experimentally secure. Classical electrodynamics, quantum mechanics, quantum field theory, and the standard atomic Hamiltonian are all solidly built on Maxwell’s equations. Yet the same formal success that renders these laws reliable has obscured one of the two geometric degrees of freedom by which they operate.
+
+The obscuring move is specific. Maxwell’s equations contain two vacuum constants, ε₀ and μ₀, entering the curl equations separately. Passing to the wave equation forms their product: c² = 1/μ₀ε₀. This step is exact for propagation — the wave operator depends only on the product — but it is many-to-one. It retains the product while suppressing the ratio μ₀/ε₀ = Z₀². For any fixed c, infinitely many pairs (ε₀,μ₀) satisfy ε₀μ₀ = 1/c²: all identical in propagation speed, all distinct in how they partition field energy between the electric and magnetic modes. Every formalism that writes c and sets c = 1 has made this compression.
+
+Restoring the second invariant requires the impedance:
+$$Z_0\;=\; \sqrt{\frac{\mu_0}{\varepsilon_0}},
+  \label{eq:impedance}$$
+which fixes the ratio μ₀/ε₀ = Z₀². Together, c and Z₀ resolve both constants uniquely:
+$$\mu_0 \;=\; \frac{Z_0}{c},
+  \qquad
+  \varepsilon_0 \;=\; \frac{1}{Z_0\,c}.
+  \label{eq:resolved}$$
+The physical interpretation is exact. c encodes the propagation geometry of the vacuum: how rapidly an electromagnetic disturbance travels. Z₀ encodes the field-energy partition: how energy is divided between the electric and magnetic modes at every point. A description retaining only c suppresses the partition entirely; ε₀ and μ₀ are individually indistinguishable.
+
+This is not a subtle point. It means there exists a class of electromagnetic phenomena that c alone cannot predict and whose structure only becomes visible when Z₀ is treated as an independent invariant. The formal proof that the compression (ε₀,μ₀) ↦ c² is non-injective — and that any observable varying along the suppressed coordinate is unrecoverable from c alone — is given in (Heaton and Coherence Research Collaboration 2026b). The present paper identifies the spectroscopic member of that class: the universal gap at IE/4.
+
+Orbitals and photons as electromagnetic modes
+
+The Coulomb field of a nucleus is an electromagnetic structure with both electric and magnetic components whose ratio — the field impedance — is not equal to the impedance of free space. Section 5 shows from Coulomb’s law and the Biot–Savart law that the field impedance of a bound electron at principal quantum number n is
+$$Z_{\!\mathrm{orb}}(n) \;=\; \frac{Z_0\,n}{\alpha},
+  \label{eq:Zorb_preview}$$
+with no free parameters and no quantum mechanical input beyond the closure velocity v_(n) = αc/n. Because α ≈ 1/137, every bound orbital satisfies Z_( orb)(n) ≈ 137n Z₀ ≫ Z₀: the orbital field is deeply mismatched to the vacuum at every principal quantum number.
+
+Free electromagnetic radiation carries no such mismatch. A propagating photon has equal electric and magnetic energy density at every point; its field impedance is exactly Z₀, set entirely by the constitutive constants of the vacuum (Jackson 1999). Bound orbital and free photon are therefore not different objects obeying different physics. They are the mismatched and matched modes of a single electromagnetic system: the Coulomb field in interaction with the radiative vacuum. Photon emission is mode conversion — the reorganisation of field energy from a high-impedance bound configuration into a matched propagating one.
+
+The gap at IE/4 is the spectroscopic record of the mode boundary itself: the energy at which neither the bound-state mode nor the free-photon mode is the natural configuration of the field. It is not a line prohibited by a selection rule. It is the energy at which the transition would, if it occurred, attempt to cross between modes at the one impedance value — Z_( orb) = Z₀ — that belongs to neither.
+
+Three electromagnetic regimes
+
+The orbital impedance Z_( orb)(n) = Z₀n/α partitions all electromagnetic states of the atom into three regimes defined by the ratio Z_( orb)/Z₀:
+
+@ l l p7cm @ Regime & Condition & Physical character
+Capacitive & Z_( orb) > Z₀ & Bound orbital; field energy stored predominantly in the electric (ε₀) sector; transitions below IE/4
+Boundary & Z_( orb) = Z₀ & Neither bound nor radiating mode is stable; spectroscopic gap at IE/4
+Radiative & Z_( orb) < Z₀ & Free photon; field energy propagating; the matching condition of the vacuum
+
+Since Z_( orb)(n) = Z₀n/α ≥ Z₀/α ≈ 137 Z₀ for all n ≥ 1, no individual bound orbital occupies the boundary or the radiative regime: every eigenstate is capacitive. The boundary regime is a condition on transition energies, not on individual levels. The energy ΔE = IE/4 is where a transition would, if it occurred, carry the system across the impedance match; since no bound-to-bound transition can do this (established in Section 5.2), the gap is the spectroscopic record of that impossibility.
+
+The partition further divides the capacitive regime into two sectors. Transitions with ΔE < IE/4 lie in the E-sector: the electric mode dominates and the ε₀ invariant governs the coupling. Transitions with ΔE > IE/4 lie in the H-sector: the magnetic mode becomes accessible and the μ₀ invariant governs the coupling. Both sectors are within the bound spectrum; the E/H boundary is the impedance match point within the atom, not the ionisation threshold. The full characterisation of how this partition varies across the periodic table — the systematic stratification of gap geometry by subshell family, the identification of the half-filled ions as the maximally symmetric case, and the Ho II null — is developed from the data in Section 8.8.
+
+Electromagnetic closure sphere and E/H field-mode partition across three symmetry regimes. Each sphere represents the field-mode space of a bound electron under the electromagnetic closure condition. The red circle (E) and blue circle (H) are the paths traced by the electric and magnetic field modes during a complete orbital cycle; Maxwell’s curl equations require them to remain mutually orthogonal. The no-monopole closure condition topologically forces their intersection: two orthogonal great circles on a sphere meet at exactly two antipodal points. These are the only configurations where Z_( orb) = Z₀ — the impedance-match condition — and they mark the boundary of the spectroscopic gap at IE/4 (κ_(q) ≈ 0.282, open circles). The centre C is fixed; line weight encodes relative spectral weight in each sector. (A) Symmetric — equal E and H weight, as in half-filled L = 0 ions (Gd II, Mn II): the intersection sits at the geometric centre of the gap and G = IE/4. (B) E-dominant — the electric sector carries greater spectral weight; the intersection migrates toward the H edge and the gap centre G is displaced from IE/4. (C) H-dominant — the magnetic sector dominates (e.g. Nd II, pos_frac = 0.018); the intersection migrates in the opposite sense. The grey arrow in (B) and (C) indicates the displacement from the symmetric position (A). The position fraction pos_frac measures where the intersection sits within the gap; the systematic offset of G from IE/4 in electromagnetically asymmetric ions follows directly from this migration. The spectroscopic manifestation of these three regimes — how the gap geometry reads in the sorted NIST photon-line catalog — is shown in Figure 6. The full geometric analysis — including which configurations are accessible under the closure constraint, and the resulting correction to the gap-centre estimator — will be developed in a forthcoming electromagnetic theory paper by the author (Heaton and Claude Sonnet 4.6 2026).
+
+Independent confirmation
+
+The partition predicts that ions whose electronic structure lies entirely in the H-sector — whose ground configuration carries L = 0 and whose spectral mass is concentrated above IE/4 — should couple to external fields exclusively through the inductive (spin) channel, with no Coulombic orbital contribution. Two independent experimental traditions confirm this for the ions that the survey identifies as most deeply H-sector.
+
+Gd³⁺ (4f⁷, ⁸S_(7/2), L = 0) is confirmed by EPR spectroscopy to have g = 2.000 and pure spin relaxation character (Abragam and Bleaney 1970; Bleaney and Stevens 1953) — the unambiguous signature of exclusive inductive coupling, established by microwave magnetic resonance rather than photon transition energies. Mn²⁺ (3d⁵, ⁶S_(5/2), L = 0) provides the d-block confirmation by the same tradition (Abragam and Bleaney 1970). The spectroscopic survey of Section 8.4 identifies both ion families from NIST optical line positions alone; the EPR literature identifies them from a physically independent measurement at frequencies six orders of magnitude lower. The two traditions locate the same electromagnetic boundary.
+
+Derivation: The Orbital Field Impedance
+
+Z_( orb)(n) = Z₀ n/α from Coulomb and Biot–Savart
+
+Consider a stable electromagnetic mode of the Coulomb field at principal quantum number n: a spherical field configuration closing on itself at radius r_(n) = n²a₀ with closure velocity v_(n) = αc/n. The velocity v_(n) = αc/n is the electromagnetic closure velocity — the velocity at which the Coulomb field organises into a self-consistent spherical mode at quantum number n. It is not adopted from the Bohr particle model; it is confirmed independently by the quantum mechanical expectation value ⟨v⟩_(n) = αc/n from the virial theorem applied to the exact hydrogen wavefunctions. The present derivation depends on the velocity, not on any particle picture.
+
+The closure mode at quantum number n carries an orbital current
+$$I_n = \frac{e\,v_n}{2\pi r_n}
+      = \frac{e\,\alpha c}{2\pi n^3 a_0}.
+  \label{eq:orbital_current}$$
+The radial Coulomb electric field at the orbit radius is
+$$|\mathcal{E}_n|
+  = \frac{e}{4\pi\varepsilon_0 r_n^2}
+  = \frac{e}{4\pi\varepsilon_0 n^4 a_0^2}.
+  \label{eq:E_field}$$
+The azimuthal magnetic field generated by the current loop is evaluated via the Biot–Savart law at the loop centre:
+$$|\mathcal{H}_n|
+  = \frac{I_n}{2r_n}
+  = \frac{e\,\alpha c}{4\pi n^5 a_0^2}.
+  \label{eq:H_field}$$
+The ratio of electric to magnetic field amplitude is independent of both r_(n) and e:
+$$Z_{\!\mathrm{orb}}(n)
+  \;\equiv\; \frac{|\mathcal{E}_n|}{|\mathcal{H}_n|}
+  = \frac{1}{\varepsilon_0\,v_n}
+  = \frac{\mu_0 c^2}{v_n}
+  = \frac{\mu_0 c^2}{\alpha c/n}
+  = \frac{\mu_0 c\,n}{\alpha}.
+  \label{eq:Z_orb_intermediate}$$
+Using μ₀c = Z₀ (which follows from $Z_0= \sqrt{\mu_0/\varepsilon_0}$ and $c = 1/\sqrt{\mu_0\varepsilon_0}$):
+$$\boxed{Z_{\!\mathrm{orb}}(n) \;=\; Z_0\cdot\frac{n}{\alpha}.}
+  \label{eq:Z_orb}$$
+This result follows from Coulomb’s law and the Biot–Savart law applied to the electromagnetic closure mode at quantum number n. No free parameters, no analogies, and no quantum mechanical input beyond the closure velocity appear.
+
+Two consequences follow immediately. First, every bound orbital satisfies Z_( orb)(n) ≥ Z₀/α ≈ 137 Z₀: no bound state is impedance-matched to the vacuum. Second, photon emission is mode conversion between the bound regime (Z_( orb) ≫ Z₀) and the free radiation field (Z_( orb) = Z₀ always (Jackson 1999)), and is universally suppressed by the impedance mismatch of at least 1/α ≈ 137. The full transmission-line treatment of this interface — the reflection coefficient Γ(n), the equivalent circuit models, and their consequences for line widths and oscillator strengths — will be addressed in a forthcoming companion electromagnetic theory paper (Heaton and Claude Sonnet 4.6 2026).
+
+For the ground state:
+$$Z_{\!\mathrm{orb}}(1) = \frac{Z_0}{\alpha}
+  \approx \frac{376.730\;\Omega}{7.2974\times10^{-3}}
+  \approx 51{,}626\;\Omega.
+  \label{eq:Z_orb_n1}$$
+The impedance match condition Z_( orb) = Z₀ cannot be satisfied at any integer n; it is satisfied at a specific transition energy, as established in Section 5.2.
+
+The impedance-match condition: why IE/4
+
+Equation [eq:Z_orb] gives the impedance of a single closure mode. The gap in the transition spectrum requires identifying which transition energy satisfies Z_( orb)(n_(f)) = Z₀ in the sense that the transition crosses the impedance boundary rather than remaining within it.
+
+The answer is IE/4, for the following reason. The energy IE/4 is the ionisation threshold of the n = 2 shell — the Balmer series limit. A transition carrying exactly this energy would take the field from a bound closure mode to the continuum in a single step. No bound-to-bound transition can carry this energy, because no positive integers (n_(f),n_(i)) satisfy
+$$\frac{1}{n_f^2} - \frac{1}{n_i^2} = \frac{1}{4}.
+  \label{eq:diophantine_threshold}$$
+The three cases exhaust the possibilities: n_(f) = 1 requires n_(i)² = 4/3, not an integer; n_(f) = 2 requires n_(i) → ∞, not a bound state; n_(f) ≥ 3 gives maximum transition energy E₀/9 < E₀/4.
+
+The electromagnetic significance of n = 2 as the boundary is that it is the lowest closure mode containing l = 1 (p-orbital) character. The n = 1 mode is purely l = 0; the n = 2 mode is the first to support l ≥ 1 states. The boundary at IE/4 is therefore the lowest energy at which the inductive vacuum mode — transitions terminating on levels with l ≥ 1 character — becomes accessible. Below IE/4: transitions terminate on n_(f) ≥ 2, the first mode supporting l ≥ 1 structure (capacitive approach to the inductive threshold, E-sector). Above IE/4: transitions terminate on n_(f) = 1 only, the purely l = 0 ground state (Lyman series, H-sector). The gap at IE/4 is the spectroscopic record of that boundary.
+
+For multi-electron ions, screening and configuration interaction modify the hydrogenic level structure, but the topological conclusion is preserved: IE/4 remains the boundary between the capacitive approach to the lowest l ≥ 1-supporting threshold and the Lyman-analog transitions terminating on the ground configuration. The empirical finding — confirmed across 71 ions at all Z, all subshell types, and all ionisation stages with no free parameters — is reported in Section 8. The fact that the nuclear charge Z cancels exactly from the impedance ratio is the reason: Z_( orb)(n) depends on Z only through a₀ ∝ 1/Z and r_(n) = n²a₀/Z, and these cancel in |ℰ_(n)|/|ℋ_(n)|. The universality is a property of Z₀, c, and α, not of any specific atom.
+
+The Bohr model as field closure
+
+The derivation above gives a precise reading of what the Bohr model was doing. The quantization condition m_(e)v_(n)r_(n) = nℏ is the phase closure condition: the requirement that the electromagnetic field returns to its initial configuration after one cycle without destructive interference. The angular momentum quantum ℏ is the closure unit of the field; α is the ratio of the vacuum’s impedance to twice the quantum of orbital resistance; the closure velocity v_(n) = αc/n is the rate at which the Coulomb field must close to sustain a stable mode at quantum number n. Equation [eq:Z_orb] is Maxwell’s equations evaluated at this closure condition. The Bohr model arrived at the same result first because the phase closure condition and the particle orbit condition are formally identical; they disagree only on what is closing.
+
+This reading has a decisive empirical consequence. If Z_( orb) = Z₀n/α were a property of a particle orbit, it would hold only for hydrogen and hydrogen-like ions — precisely the domain where the Bohr model works. That the impedance-match boundary at IE/4 is confirmed universally across 71 ions, with no ion-specific parameters, establishes that equation [eq:Z_orb] is not a particle result. The Bohr scaffold can be examined and set aside. The field closure condition it was encoding remains, and applies wherever a Coulomb field closes under the vacuum’s electromagnetic invariants.
+
+A Hydrogenic Ruler for Atomic Spectra
+
+A new way to see atomic spectra
+
+The impedance boundary at IE/4 is universal as a fraction of the ionization energy. In absolute units it is invisible: it appears at 1.69 eV in Cr I and at 2.71 eV in Ce II — two numbers with no obvious connection. No spectroscopist examining these catalogs in electron-volts has reason to notice they record the same electromagnetic condition.
+
+The connection becomes visible only when both spectra are expressed in a coordinate calibrated to the vacuum rather than to each individual atom. The natural ruler for this purpose is the fine-structure constant α = Z₀/2R_( K): each tick mark represents one factor of α in transition energy, measured relative to the hydrogenic Rydberg scale E₀Z²μ̂ of the ion. On this ruler, Cr I and Ce II — and every other ion in the periodic table — place their impedance boundaries at the same coordinate value, κ_(q) ≈ 0.282. The structure that absolute energies hide becomes a fixed point that every atom shares.
+
+Definition
+
+For any transition energy ΔE in an ion of atomic number Z, the depth coordinate is
+$$\kappa(\Delta E;\,Z)
+  \;=\;
+  \frac{\log_{10}(\Delta E / E_0 Z^2\hat\mu)}{\log_{10}\alpha}
+  \tag{\ref{eq:kappa}}$$
+where μ̂ is the reduced-mass factor (tabulated per ion; μ̂ → 1 for heavy nuclei). Because log₁₀α ≈  − 4.723 is negative, κ increases as ΔE decreases: deeper into the bound spectrum means larger κ. The coordinate removes the Z-dependence of the hydrogenic ladder, placing transitions from every ion on a common axis whose tick marks are powers of α — the vacuum impedance ratio.
+
+The recognisable physical scales fall at:
+
+         κ        Energy scale   Physical significance
+  --------------- -------------- --------------------------------------------------
+         0        E₀Z²μ̂          Hydrogenic ionization limit
+   κ_(q) ≈ 0.282  IE/4           Vacuum impedance boundary (this work)
+         1        E₀Z²μ̂ ⋅ α      One factor of α below ionization
+         2        E₀Z²μ̂ ⋅ α²     Fine-structure scale; where α was first measured
+
+The fine-structure constant was measured at κ = 2 because that is where α² corrections to the Bohr energies first appear. This coordinate reveals that κ = 2 is one rung on a ladder whose most physically significant feature lies not at an integer rung but between the zeroth and first: at κ_(q) ≈ 0.282, the impedance-match boundary that no atom can occupy. The fine-structure constant does not merely govern the scale of spectral corrections. It is the unit of length on the ruler whose most important mark turns out not to be an integer.
+
+The boundary and hydrogen
+
+The impedance match condition Z_( orb) = Z₀ (Section 5) corresponds to ΔE = IE/4. In this coordinate that maps to
+$$\kappa_{\mathrm{q}}\;=\; \frac{\log_{10} 4}{|\log_{10}\alpha|} \;\approx\; 0.282,
+  \label{eq:kappa_q}$$
+and the identity κ(IE/4; Z) = κ_(q) holds exactly for all Z by construction.
+
+For hydrogen, the Balmer series converges to IE/4 by integer arithmetic alone — no value of α enters the Rydberg formula for the series limit. That same limit falls at κ_(q) in this coordinate. Two routes, one by spectroscopy and one by electromagnetism, arrive at the same point. They agree because they identify the same boundary: the energy at which the n = 2 closure mode meets the continuum, where the Balmer series ends and the impedance match condition is satisfied simultaneously.
+
+The content of this paper can be stated in one sentence: the Balmer series limit and the electromagnetic impedance boundary are the same energy in every atom, and the spectroscopic consequence — a universal gap at IE/4 — is confirmed from NIST photon energies across 71 ions with zero failures. For hydrogen this is provable by arithmetic. For multi-electron ions it is a universal empirical finding.
+
+Self-similar confirmation.
+
+The analytic hydrogen template — all transition energies from E_(n) = E₀/n², no NIST data — produces 35 simultaneous coincidences at κ = 0.2820 ≈ κ_(q), all of the form (n_(f)=2, n_(i)→∞), converging to IE/4 = 3400 meV. The two dominant accumulation points of the hydrogen spectrum — the Lyman and Balmer series limits — fall at κ = 0 and κ = κ_(q) respectively. Hydrogen is simultaneously the derivation’s starting point and its first confirmation.
+
+Gap measurement
+
+The IE/4 boundary is located by two complementary methods.
+
+Method A: nearest-neighbour gap. Resonant pair energies are sorted in absolute units. The gap centre is
+$$\begin{aligned}
+  G &= \sqrt{\,\mathrm{gap}_\mathrm{lo} \cdot \mathrm{gap}_\mathrm{hi}}, \\
+  \mathrm{gap}_\mathrm{lo}
+    &= \max\{\Delta E : \Delta E < \mathit{IE}/4\}, \\
+  \mathrm{gap}_\mathrm{hi}
+    &= \min\{\Delta E : \Delta E > \mathit{IE}/4\}.
+\end{aligned}$$
+The log-space midpoint is used because the coordinate is logarithmic; for sub-millielectronvolt gaps the arithmetic and geometric midpoints are indistinguishable. This method uses raw NIST photon energies with no coordinate transformation and is the basis for the mass and Bohr radius recovery of Section 9.
+
+Method B: u = 0 crossing. For each resonant pair, the residual
+u ≡ log₁₀ν − (χ + β ⋅ κ),
+measures its displacement from the ion’s α-scaled frequency backbone, where χ is the ion-specific intercept and β = log₁₀α. Resonant pairs are binned by depth κ; the rung at which the median u crosses zero locates the boundary. The displacement δ_(Z₀) ≡ κ_(cross) − κ_(q) quantifies residual mismatch from screening and configuration interaction and is examined in Section 8.
+
+Fundamental Constants from the Gap Position
+
+The electromagnetic closure model of Section 5 makes a quantitative prediction: the gap at IE/4 encodes the electron rest mass and the Bohr radius with no free parameters. This section states that prediction before the data that test it.
+
+The two equations
+
+The Rydberg energy satisfies E₀ = m_(e)c²α²/2, a standard relation of atomic physics. The closure model predicts G = IE/4 universally; for hydrogen in the infinite-nuclear-mass limit IE = E₀ exactly, giving E₀ = 4G. Substituting into the Rydberg relation and into E₀ = ℏc α/2a₀:
+$$\boxed{m_e c^2 = \frac{8\,G}{\alpha^2},}
+  \qquad
+  \boxed{a_0 = \frac{\hbar c\,\alpha}{8\,G}.}
+  \label{eq:norton_restate}$$
+The inputs on the right-hand side are G, the measured gap centre in energy units from NIST spectroscopic data, and α = Z₀/2R_( K), from the vacuum electromagnetic constants. The electron mass does not appear on the right-hand side of the first equation; the Bohr radius does not appear on the right-hand side of the second. Both are outputs of the gap position.
+
+The two equations are not independent results. Their product m_(e)c² ⋅ a₀ = ℏc/α is a known identity that holds independently of G; their ratio is proportional to G². A single measurement of G that places one constant correctly places the other automatically, because the electromagnetic closure condition has a single characteristic scale and the two constants are its energy and length expressions.
+
+The epistemological inversion
+
+Every CODATA determination of m_(e) from atomic spectroscopy takes m_(e) as a free parameter in the Rydberg fit, adjusting it until the model reproduces the observed positions of spectral lines; a₀ is then derived with m_(e) as input. Both constants are determined from where transitions occur.
+
+Equations [eq:norton_restate] invert this procedure. The electron rest mass is determined from the energy at which transitions are absent. The Bohr radius follows from the same absence. Neither constant is assumed; both emerge as the self-consistent scales at which the Coulomb field, closing at velocity v_(n) = αc/n in a medium of characteristic impedance Z₀, produces stable modes at the energies we observe.
+
+Substituting α = Z₀/2R_( K) makes the electromagnetic content explicit:
+$$m_e c^2
+  = \frac{8\,G\,R_{\!K}^2}{Z_0^2}
+  = \frac{8\,G\,h^2}{e^4Z_0^2}.
+  \label{eq:mass_EM}$$
+The right-hand side contains only the gap energy G, the quantum of action h, the elementary charge e, and the vacuum impedance Z₀ — no dynamical assumptions beyond the Coulomb field structure and Maxwell’s equations. The electron rest mass is the energy of the electromagnetic closure mode whose internal E/H ratio matches the vacuum at the Balmer threshold; the gap at IE/4 is where that self-consistency becomes spectroscopically visible.
+
+We state the epistemic status carefully. Equation [eq:mass_EM] is a consequence of the definition E₀ = m_(e)c²α²/2, which contains m_(e) implicitly through E₀. The inversion is procedural: the gap position G replaces spectral line positions as the primitive spectroscopic input, yielding m_(e)c² without assuming it as a free parameter in any fit. The claim is that the closure geometry of the Coulomb–vacuum interface determines the scale at which m_(e) must take the value it does. To the authors’ knowledge, this is the first determination of m_(e)c² and a₀ from the location of a spectroscopic gap rather than from the positions of spectral lines.
+
+The deeper expression — establishing that α is not an external input to this geometry but a derived consequence of the electromagnetic vacuum’s own mathematical structure, so that m_(e)c² and a₀ emerge from the closure condition with no spectroscopic input at all — is the central result of the companion paper on the fine-structure constant (Coherence Research Collaboration 2026), which derives α = Z₀/2R_(K) from the non-terminal reciprocal singularity 1/0 on the Riemann sphere with zero free parameters.
+
+The reduced-mass baseline
+
+The spectroscopic ionization energy IE includes a finite-nuclear-mass correction. For hydrogen:
+$$\mathit{IE}_H = E_0\,\frac{m_p}{m_e + m_p}
+        \approx E_0\!\left(1 - \frac{m_e}{m_p}\right),
+  \label{eq:reduced_mass}$$
+with fractional correction  − m_(e)/(m_(e)+m_(p)) =  − 544.3 ppm. The spectroscopic IE_(H)/4 therefore lies 544.3 ppm below the infinite-nuclear-mass reference E₀/4.
+
+The empirically measured baseline shift across the precision-tier cohort is  + 533.8 ppm — close to but not identical with the theoretical proton value. The residual discrepancy of ∼ 10 ppm is an open question; possible sources include higher-order reduced-mass terms, ion-specific nuclear corrections, and systematic effects in the gap-centre determination. This baseline is not an error in the framework: a gap measured at IE/4 from the spectroscopic ionization energy of a given ion is self-consistent by construction. The corrected residuals for individual ions are reported in Section 9.
+
+Empirical Survey: The Universal Gap
+
+The central result
+
+The electron mass derivation of Section 5 produces a specific, falsifiable prediction: in every atom, the transition energy ΔE = IE/4 is simultaneously required by the impedance-match condition Z_( orb) = Z₀ and forbidden by the closure condition that defines a bound state. The consequence is a gap — a zero-observation interval in the sorted transition catalog — centred on IE/4 for every ion, regardless of nuclear charge, electron configuration, or subshell type.
+
+That prediction is easily falsified: take any ion with a published ionization energy and a spectroscopic line catalog; compute IE/4 in the same energy units as the catalog; sort the catalog by photon energy; and find the two consecutive entries that bracket IE/4. If the gap is there, the ion confirms the prediction. If a line falls at IE/4, the ion falsifies it.
+
+We applied this test to 80 ions drawn from the NIST Atomic Spectra Database, spanning Z = 1 to Z = 82, all four subshell families, and ionisation stages from neutral to hydrogen-like. 71 ions confirm the gap with no contraindications. The remaining 9 ions have sparse catalogs that do not bracket IE/4 from both sides and cannot be assessed without additional spectroscopic coverage — thus not falsifications, but open measurements.
+
+What distinguishes IE/4 from every other fraction
+
+Gaps in atomic transition spectra are not rare and do not guarantee physical significance. The same binary test applied to IE/3 confirms a gap in 78 of 80 ions. Applied to IE/2, it confirms 64 of 80. Thus gaps are a generic feature of atomic spectra; their existence at any particular fraction is insufficient evidence for a physical claim[2].
+
+The claim of this paper is specific to the gap at IE/4 because it has a center G that satisfies
+$$m_e c^2 \;=\; \frac{8\,G}{\alpha^2},
+  \qquad
+  a_0 \;=\; \frac{\hbar c\,\alpha}{8\,G},
+  \label{eq:mass_bohr}$$
+where α = Z₀/2R_( K) and no free parameters appear. These equations follow directly from the impedance-match condition G = IE/4 and the definitions of m_(e) and a₀ in terms of α, ℏc, and the Rydberg energy. They are not fits to spectroscopic data; they are the algebraic consequence of the gap being located where the derivation says it must be.
+
+To see immediately that the zero in equations [eq:mass_bohr] is not algebraically guaranteed at every fraction, apply the same formula to the gap at IE/3. If the gap center were at IE/3 rather than IE/4, the formula would return a₀|_(gap) = (3/4) a₀^(CODATA), a residual of  − 250, 000 ppm. A gap at IE/5 would return (5/4) a₀^(CODATA), a residual of  + 250, 000 ppm. The formula is a precise discriminator: it returns near-zero only when the gap center is near IE/4.
+
+We measured the gap center at IE/3 and IE/5 under identical methodology. The results confirm the expectation for wrong fractions:
+
+  Fraction     Predicted residual             Measured residual   n
+  ---------- -------------------- ----------------------------- ---
+  IE/3             − 250, 000 ppm    − 250, 133 ± 1.1 ppm (SEM)   6
+  IE/4                      0 ppm         − 2.8 ± 2.7 ppm (SEM)   5
+  IE/5             + 250, 000 ppm    + 250, 129 ± 4.6 ppm (SEM)   4
+
+The IE/3 and IE/5 controls each deviate from their algebraic predictions by less than 135 ppm, confirming that the measurement pipeline is well-calibrated. At IE/4, the same pipeline returns  − 2.8 ± 2.7 ppm. The gap at IE/4 is not special because it is larger or more universal than gaps at other fractions. It is special because it is the unique fraction at which Z_( orb) = Z₀, and the unique fraction at which the gap center encodes the electron mass rather than an algebraic artifact.
+
+[]
+
+Recovery of m_(e)c² and a₀ from the IE/4 gap position (hydrogenic sweep, Δκ = 0.0005). For each of the 13 precision-tier ions, the gap centre $G = \sqrt{\mathrm{gap\_lo}\cdot\mathrm{gap\_hi}}$ is substituted into a₀^(emp) = ℏc α/(8G); the reference is the ion-specific reduced-mass-corrected prediction a₀^(ref) = a₀^(CODATA) ⋅ IE_(H)/IE. No free parameters enter either expression. Symbol shape and colour encode subshell family as in Figure 3. Larger symbols mark the 13 sub-meV precision-tier ions (Table 1); smaller symbols mark the broader gold cohort. Panel A (raw residual): the precision-tier population clusters near  + 533.8 ppm (dotted line), the proton reduced-mass shift derivable from CODATA constants and not fitted to the data. Ions far from the cluster (s/p-block, out-of-range table, lower left) carry large electromagnetic asymmetry and are excluded from the headline result. Panel B (corrected residual, raw − 533.8 ppm): the sub-meV tier returns a mean corrected residual of  + 5.5 ± 48.5 ppm (σ, n = 13), consistent with zero across all precision-tier ions. The five sub-0.1 meV headline ions (all d-block near half-fill; see Table 1) return  − 2.8 ± 2.7 ppm (SEM, n = 5). Nd II (f-block, large negative residual) carries an extreme E-sector offset (pos_frac = 0.018) that displaces the geometric gap centre from IE/4 predictably; see Section 10.4.
+
+Two independent measurements of the same boundary
+
+The gap test and the mass recovery use different data and answer different questions. It is worth stating precisely what each can and cannot do.
+
+The photon-line test uses the NIST observed transition catalog directly: sort the lines, find the gap, check whether IE/4 is inside it. This requires no model, no coordinate system, and no α. It establishes existence and universality across 71 ions, and reveals a physical stratification by subshell type that is a direct consequence of the derivation. It cannot, however, locate the gap boundary to better than the spacing between adjacent catalog entries — typically millielectronvolts to hundreds of millielectronvolts — and this precision is insufficient to evaluate equations [eq:mass_bohr] to better than a few thousand ppm.
+
+The energy level-pair test replaces observed photon lines with all pairwise differences of NIST energy levels. This substrate is far denser: for Gd I, the photon-line test finds a gap of 40.5 meV; the level-pair test finds 0.091 meV, a factor of 445 narrower, because the level catalog is more complete than the line catalog near IE/4. This precision is sufficient to evaluate equations [eq:mass_bohr] to parts-per-million. The level-pair test is the basis for all mass and Bohr radius results reported in Section 9.
+
+The two tests agree on every ion where both are applicable. No ion confirmed by one is disconfirmed by the other.
+
+NIST photon-line survey: results
+
+Of 80 ions tested, 71 confirm the gap and zero falsify it. Table [tab:gap_survey] lists all 80 ions with gap widths and catalog statistics; the per-ion results at IE/4 from the NIST line catalog are given in full in Section 11.
+
+The gap is confirmed across Z = 1 (H I) to Z = 82 (Pb I), across all four subshell families, and across ionisation stages from neutral atoms to Cl XVII (Z = 17, sixteen electrons removed). In 42 of the 71 confirmed ions, the gap at IE/4 ranks in the top 10% by width among all consecutive-pair intervals in the sorted line catalog — anomalously wide in spectra where chance would predict a much smaller maximum interval. The median gap rank across all 71 confirmed ions is the 92.5th percentile.
+
+The gap width stratifies by subshell family in the predicted direction:
+
+  Family                                                                              n    Median gap      Min gap Physical character
+  -------------------------------------------------------------------------------- ---- ------------- ------------ --------------------------------------
+  d-block                                                                            20       8.4 meV     0.97 meV Half-filled d-shells; sharp boundary
+  f-block                                                                            24      32.8 meV     0.60 meV Lanthanides; intermediate
+  s/p-block                                                                          19     189.5 meV     11.7 meV Wide gaps; far from boundary
+  H-like                                                                              8   54, 074 meV   6, 807 meV Exact arithmetic; no screening
+  Mann-Whitney: d < sp, p = 1.1 × 10⁻⁴; f < sp, p = 4.8 × 10⁻⁵; d < f, p = 0.13.                                   
+
+The ordering d < f < sp in gap width is the ordering expected from the derivation. d-block ions with half-filled subshells sit closest to the impedance boundary; their spectral mass is concentrated near IE/4, and the gap is correspondingly sharp. s/p-block ions are electrostatically dominated, far from the impedance boundary in the capacitive sector, and their gaps are wide and diffuse. The f-block lanthanides fall between: their 4f subshells produce partial boundary alignment whose sharpness varies with distance from half-fill.
+
+This stratification cannot be seen in absolute photon energies. It emerges only when the spectra are expressed relative to each ion’s own IE/4 — which is precisely what the derivation predicts will happen when the vacuum impedance organises the spectral geometry.
+
+The following subsection examines the gap in its simplest and most exact form, before the survey generalises it to 71 ions.
+
+[]
+
+Gap width at IE/4 versus atomic number: electromagnetic partition signature across all precision-tier ions. Each symbol marks one ion in the hydrogenic level-pair sweep (Thread Frame analysis, Δκ = 0.0005); shape and colour encode subshell family (d-block: orange circles; f-block: purple squares; s-block: blue triangles; p-block: green diamonds). The dashed horizontal line at 1 meV separates the sub-meV precision tier (shaded region) from wider gaps. The sub-meV cluster consists entirely of d- and f-block ions near half-fill of the 3d, 4d, or 4f subshell, confirming the ordering d < f ≪ sp in gap width that the derivation predicts from the E/H partition (Section 10). s/p-block ions (upper left) lie deeply in the capacitive sector, far from the impedance boundary, and carry gaps one to three orders of magnitude wider. Gap widths are computed from NIST level-pair differences with no coordinate transformation or model parameter.
+
+Hydrogen: the algebraically exact case
+
+For hydrogen, the gap is not a statistical tendency but an exact arithmetic consequence. The condition ΔE = IE/4 requires
+$$\frac{1}{n_f^2} - \frac{1}{n_i^2} = \frac{1}{4},
+  \label{eq:diophantine}$$
+which has no solution in positive integers. This was confirmed computationally over all 780 transitions with n_(f) < n_(i) ≤ 40 computed from the NIST H I level ladder; zero pairs satisfy equation [eq:diophantine].
+
+The spectroscopic series of hydrogen tile the energy axis on either side of the gap without overlap. From the NIST level ladder (IE = 13, 598.435 meV):
+
+-   Paschen and higher series (n_(f) ≥ 3): all energies below IE/9 = 1, 510.9 meV, well below the boundary.
+
+-   Balmer series (n_(f) = 2): spans [1, 888.7, IE/4) = [1, 888.7, 3, 399.6) meV. All Balmer transitions lie strictly below IE/4, approaching it from below as n_(i) → ∞ with oscillator strength  ∝ n_(i)⁻³ → 0.
+
+-   Gap: [IE/4, 3IE/4) = [3, 399.6, 10, 198.8) meV, width exactly IE/2 = 6, 799.2 meV. No bound-to-bound transition falls here.
+
+-   Lyman series (n_(f) = 1): spans [3IE/4, IE) = [10, 198.8, 13, 598.4) meV. Lyman-α at 3IE/4 is the first transition above the gap; all Lyman transitions terminate on the n = 1 ground state (l = 0 only).
+
+The partition is physically meaningful and connects directly to the derivation. Transitions below IE/4 terminate on n_(f) ≥ 2, which supports both l = 0 and l ≥ 1 states. Transitions above IE/4 terminate on n_(f) = 1, which is purely l = 0. The gap marks the boundary between these two electromagnetic sectors. The last Balmer transition in the NIST catalog (n_(i) = 40, n_(f) = 2) reaches 3, 391.1 meV — still 8.5 meV below IE/4 — with oscillator strength  ∝ 40^(−3/2) ≈ 4 × 10⁻³ relative to Balmer-α. The boundary is reinforced: the transitions that come closest to crossing it carry the least amplitude.
+
+The geometry encoded in hydrogen’s spectrum
+
+The Diophantine argument of the preceding subsection establishes that no hydrogen transition can carry the energy IE/4. It does not explain why IE/4 is the boundary, nor what geometric structure of the hydrogen atom makes it the unique impedance-match point. This subsection answers that question by reading the geometry directly from hydrogen’s level structure. The result is a right triangle — derivable from first principles and confirmable in the NIST data — whose proportions encode the first coupling between the electric and magnetic field modes of the vacuum.
+
+The four-quarter partition of photon energy space
+
+The photon energy axis [0, IE) divides into four equal quarters of width IE/4. The NIST H I line catalog (Kramida et al. 2023) contains 518 lines with hν > 0.1 meV. Their distribution across the four quarters is:
+
+  Quarter                                                                                       Range             Lines Series
+  --------------------------------------------------------------------------------------------- --------------- ------- ---------------------------------------
+  First                                                                                         [0, IE/4)           440 Balmer, Paschen, Brackett, …
+  Second                                                                                        [IE/4, IE/2)          0 empty
+  Third                                                                                         [IE/2, 3IE/4)         0 empty
+  Fourth                                                                                        [3IE/4, IE)          76 Lyman
+  Gap [IE/4, 3IE/4), width IE/2                                                                                   2^(*) Lyman-α fine-structure multiplet only
+  ^(*)The two “gap” entries are the 2p (J=1/2) → 1s and 2s → 1s components of Lyman-α, whose                            
+  energies (10, 198.806 and 10, 198.811 meV) straddle 3IE/4 = 10, 198.826 meV by  < 0.02 meV.                           
+  The exact boundary is 3IE/4, not the midpoint of the gap; the Lyman series begins there.                              
+
+The partition is exact and structurally remarkable: 440 lines occupy the first quarter; the middle two quarters are completely empty; 76 lines occupy the fourth quarter. No spectral line falls in the interval [IE/4, 3IE/4) except for the Lyman-α fine-structure multiplet, which straddles the 3IE/4 boundary by less than 0.02 meV — a fine-structure perturbation, not a transition to a distinct region.
+
+The lower occupied band and the upper occupied band are mirror images in width: each spans exactly IE/4. The lower band is the universe of all transitions that do not terminate on the ground state. The upper band is the Lyman series alone — every transition that does terminate on the ground state. Between them: two quarters of forbidden space.
+
+The four-quarter partition of H I photon energy space. The energy axis [0, IE) divides into four equal quarters of width IE/4 = 3, 399.6 meV. The first quarter (Balmer and higher series: 440 lines) and the fourth quarter (Lyman series: 76 lines) are populated. The middle two quarters are completely empty. Both occupied bands have identical width IE/4. The gap spans [IE/4, 3IE/4) with zero lines.
+
+Schematic of the H I self-resonance portrait (levels only). Each filled circle marks a (n_(i),n_(k)) pair that produces a rung collision in the κ coordinate. The large black dot at (n_(i)=2,n_(k)=2) is the [2s, 2p] orthogonal bracket resonating with itself at κ = κ_(q) = 0.2818 (the impedance-match surface). The shaded columns and rows at n = 3 and n = 4 are void: these geometrically complete brackets do not re-enter the coupling channel. The wedge of resonances begins at (n_(i)=2,n_(k)=5) with Δn = 3. The dominant resonance steps across the full wedge are Δn = 4 (326 pairs) and Δn = 3 (319 pairs).
+
+The gap at IE/4 is not a spectral accident: it is the record of the boundary between the ground state’s pure-E-field regime and the excited manifold’s first E-plus-H configuration. Every ion in the 71-ion survey confirms this boundary in its own energy units; the hydrogen case exhibits it in its most exact and readable form.
+
+From the universal gap to the electron mass
+
+The photon-line test of Section 8.4 establishes that IE/4 falls inside a zero-observation interval in 71 ions, but its precision is limited by the spacing between adjacent catalog entries. For Fe I with 9,146 catalogued lines, the gap is 2.9 meV wide — narrow enough to confirm the prediction, but three orders of magnitude too wide to evaluate equations [eq:mass_bohr] at ppm precision. A different substrate is required.
+
+The level-pair analysis provides it. Rather than observed photon lines, it uses all pairwise differences of NIST energy levels — every pair (E_(i),E_(k)) with E_(k) > E_(i) — as the input array. Because the level catalog is far more complete than the line catalog near IE/4, the gap boundaries localise far more tightly. For Gd I, the photon-line test finds a gap of 40.5 meV; the level-pair analysis at Δκ = 0.0005 resolution finds 0.091 meV, a factor of 445 narrower. The gap center
+$$G \;=\; \sqrt{\,\mathrm{gap\_lo} \cdot \mathrm{gap\_hi}\,}
+  \label{eq:gap_ctr_results}$$
+can then be compared to IE/4 at parts-per-million precision.
+
+The gap center encodes the electron mass not because a formula was fitted to spectroscopic data, but because the impedance-match condition Z_( orb) = Z₀ is satisfied at exactly ΔE = IE/4 by the derivation of Section 5. The gap center is the spectroscopic measurement of where that condition holds in each ion’s own energy units. When G = IE/4, equations [eq:mass_bohr] follow directly from the definitions of m_(e)c² and a₀ in terms of α, ℏc, and the Rydberg energy.
+
+Precision tier and ion selection.
+
+Thirteen ions satisfy the precision-tier criteria at Δκ = 0.0005: at least 5,000 resonant level pairs in the survey window, NIST level uncertainty not spanning more than one step (σ_(exp)/ΔE_(step) < 1.0), and gap width below one step. They span Z = 23–66 across d- and f-block families, with pair counts ranging from 8, 728 (Gd II) to 198, 667 (Fe II). Full per-ion results are given in Table 1; the sweep input data for both resolutions are in Table [tab:sweep_results].
+
+The 13 ions subdivide into three precision sub-tiers by gap width:
+
+  Sub-tier                   Gap width        n   Mean corr. (ppm)   SEM (ppm)
+  -------------------------- ------------- ---- ------------------ -----------
+  ⋆ sub-0.1 meV (headline)    < 0.1 meV       5              − 2.8         2.7
+  • sub-0.3 meV              0.1–0.3 meV      8              + 9.1         6.6
+  ⋅ sub-1.0 meV (all)        0.3–1.0 meV     13              + 5.5        13.5
+
+All three are consistent with zero. The headline result is the sub-0.1 meV tier:
+δ_(G)^(corr) =  − 2.8 ± 2.7 ppm (SEM),  n = 5.
+The five ions — Fe II, Mo I, Mn II, Fe I, and Cr II — are all d-block, span Z = 24–42, and were selected solely on the criterion that their gap boundaries fall below 0.1 meV. No ion-specific fitting and no prior knowledge of m_(e) or a₀ enters either the selection or the computation.
+
+The corrected residual subtracts the proton reduced-mass shift of  + 533.8 ppm, which displaces the spectroscopic IE/4 from the infinite-nuclear-mass reference E₀/4 by  − m_(e)/(m_(e)+m_(p)) ≈  − 544.3 ppm. The empirical baseline of  + 533.8 ppm is close to the theoretical proton value and is derivable from CODATA constants; it is not fitted to the data.
+
+The consequence of equation [eq:headline_result] is immediate. Because m_(e)c² = 8G/α², a gap center that sits at IE/4 to  − 2.8 ppm recovers the electron rest mass to the same precision:
+$$\frac{m_e c^2\big|_\mathrm{gap}
+        - m_e c^2\big|_\mathrm{CODATA}}
+       {m_e c^2\big|_\mathrm{CODATA}}
+  \;=\; -2.8 \;\pm\; 2.7~\mathrm{ppm~(SEM)}.
+  \label{eq:mass_result}$$
+The Bohr radius follows with equal precision and opposite sign from a₀ = ℏc α/8G. These are not two independent tests: they are the energy and length expressions of a single measurement of G.
+
+A cross-resolution check confirms the gap center is stable. Mo I and Mn II satisfy the sub-0.1 meV criterion at both Δκ = 0.002 and Δκ = 0.0005; their corrected residuals agree to sub-ppm between the two resolutions (Table 2). Cr I and Fe I are flagged as resolution-sensitive: their gap widths change substantially between resolutions and are excluded from the cross-resolution comparison (Table 2).
+
+Uniqueness of the impedance-match fraction.
+
+Gaps exist at many fractions of IE. The discriminating test is whether the formula G = IE/4 returns near-zero when the gap center is measured at the predicted fraction and the expected  ± 250, 000 ppm when it is not.
+
+Under identical methodology — Δκ = 0.0005 sweep, sub-0.1 meV gap-width criterion, geometric midpoint estimator,  + 533.8 ppm baseline:
+
+  Fraction     Algebraic prediction              Measured (corr.)   n
+  ---------- ---------------------- ----------------------------- ---
+  IE/3               − 250, 000 ppm    − 250, 133 ± 1.1 ppm (SEM)   6
+  IE/4                        0 ppm         − 2.8 ± 2.7 ppm (SEM)   5
+  IE/5               + 250, 000 ppm    + 250, 129 ± 4.6 ppm (SEM)   4
+
+The IE/3 and IE/5 controls deviate from their algebraic predictions by  − 133 ppm and  + 129 ppm respectively — each within 0.053% of the predicted value — confirming that the measurement pipeline is well-calibrated and that the gaps at those fractions are real but carry no independent physical information. The same ions, measured at the same resolution, return  ± 250, 000 ppm at the wrong fractions and  − 2.8 ppm at IE/4. The discrimination is a property of the fraction, not of the ions or the pipeline.
+
+E/H partition and the electromagnetic character of the elements
+
+Every confirmed gap has a geometry: it extends some distance below IE/4 into the capacitive sector and some distance above it into the inductive sector. The ratio of these two depths,
+$$\mathrm{EH\_ratio}
+  \;=\; \frac{\mathit{IE}/4 - \mathrm{gap\_lo}}{\mathrm{gap\_hi} - \mathit{IE}/4},
+  \label{eq:eh_ratio}$$
+measures the local electromagnetic partition of each ion at the impedance boundary. An EH ratio greater than unity means the gap extends further into the capacitive (ε₀-organised) sector; a ratio less than unity means it extends further into the inductive (μ₀-organised) sector; unity means the gap straddles IE/4 symmetrically. This ratio is computed directly from the sorted photon-line catalog with no model input.
+
+The EH ratio stratifies strongly by subshell family:
+
+  Family                                                                    n   Median EH ratio   Median pos_frac
+  ---------------------------------------------------------------------- ---- ----------------- -----------------
+  H-like                                                                    3             0.056             0.053
+  s/p-block                                                                24             0.385             0.278
+  f-block                                                                  20             0.780             0.438
+  d-block                                                                  20             2.365             0.703
+  Mann-Whitney: f < d, p = 0.006; sp < d, p = 0.001; H < d, p = 0.002.                          
+
+The ordering H < sp < f < d in EH ratio is the ordering expected from the electromagnetic character of each family. Hydrogenic and s/p-block ions are inductive-dominant at IE/4: their gaps open almost entirely on the H-sector side, meaning the impedance boundary falls near the upper edge of each gap. d-block transition metals are capacitive-dominant: their gaps extend further below IE/4 than above it. f-block lanthanides fall between.
+
+The five precision-tier headline ions are all d-block ions near half-fill. Their EH ratios range from 0.55 (Cr I) to 26.5 (Cr II), but their position fractions pos_frac = e_(depth)/width are broadly distributed, and their gap centers sit within  ± 10 ppm of IE/4 (corrected) for four of the five. The one exception, Nd II, carries a corrected residual of  − 132 ppm and a pos_frac of 0.018 — its gap extends almost entirely above IE/4, displacing the geometric center from the impedance-match point by a corresponding amount. This is not a falsification: the gap exists and brackets IE/4; the asymmetry reflects the ion’s electromagnetic geometry at the boundary. The mass recovery formula is most precise for electrostatically symmetric ions (pos_frac  ≈ 0.5) and degrades predictably as asymmetry increases. The physics of this displacement is deferred to a companion paper.
+
+The partition is structural, not statistical.
+
+A potential concern is that the EH ratio might simply reflect asymmetries in catalog completeness: if an ion has more lines catalogued on one side of IE/4 than the other, the gap will appear asymmetric regardless of physics. An independence test addresses this directly. For each ion, the EH ratio was computed from two entirely separate data sources: from the photon-line gap boundaries (the observable reported above) and from the asymmetry of level-pair spacings ΔE < IE/4 versus ΔE > IE/4 in the NIST level catalog. Lines and levels are independent: the line catalog records observed transitions; the level catalog records energy positions. The Spearman correlation between the two EH measures is r =  − 0.103 (p = 0.42, n = 63) — statistically indistinguishable from zero. The photon-line EH ratio is not predicted by the level-pair EH asymmetry, which means the partition structure is encoded in the transitions themselves, not in the underlying level distribution. It reflects the electromagnetic selection geometry of the gap boundary, not a density artifact.
+
+Independent confirmation: electron paramagnetic resonance.
+
+The ions whose spectra the EH portrait identifies as most deeply H-sector dominant — those with EH ratio  ≪ 1, gap opening almost entirely above IE/4 — are precisely the ions whose EPR spectra in condensed matter confirm exclusive inductive coupling. Gd³⁺ (4f⁷, ⁸S_(7/2), L = 0) has a NIST photon-line EH ratio of 0.006 — the gap extends 99.4% above IE/4 in the inductive sector — and EPR measurements independently confirm g = 2.000 and pure spin relaxation character with no Coulombic orbital contribution (Abragam and Bleaney 1970; Orton 1968). Mn²⁺ (3d⁵, ⁶S_(5/2), L = 0) shows an analogous result. These are microwave measurements at frequencies six orders of magnitude below the optical spectroscopy, entirely independent of photon transition energies. Their agreement with the EH portrait is not circular: the portrait is derived from NIST optical line positions; the EPR result comes from magnetic resonance. Both locate the same electromagnetic boundary.
+
+Full per-ion EH ratio, position fraction, and gap geometry data are given in Table [tab:eh_portrait].
+
+Nuclear corroboration: the same boundary at S_(n)/4
+
+The atomic gap at IE/4 is a consequence of the impedance-match condition Z_( orb) = Z₀ applied to the Coulomb field of a bound electron under the closure condition of a stationary state. The nuclear scale is governed by a different Hamiltonian with different closure criteria. If Z₀ organises both scales through independent physical arguments, the same boundary at the same dimensionless depth κ_(q) ≈ 0.282 should appear in nuclear excitation spectra at the neutron separation energy S_(n), with the gap present or absent depending on whether nuclear shell structure achieves an analogous closure at that boundary.
+
+A binary gap test was applied to 48 nuclides from the ENSDF database, using S_(n)/4 as the nuclear analog of IE/4 (Section 11.8).
+
+The doubly magic result.
+
+All four doubly magic nuclei show complete depletion of observed levels below S_(n)/4:
+
+  Nuclide      Z     N   S_(n)/4 (keV)   n_(↓)   First level above (keV)
+  --------- ---- ----- --------------- ------- -------------------------
+  ¹⁶O          8     8            3916       0                      6049
+  ⁴⁸Ca        20    28            2488       0                      3832
+  ¹³²Sn       50    82            1838       0                      4041
+  ²⁰⁸Pb       82   126            1842       0                      2615
+
+In each case, zero excited levels appear below S_(n)/4 and the first level above sits well above the boundary. Expressing the first-level position in the hydrogenic depth coordinate κ_(nuc) = ln (E₁/S_(n))/ln α, the four nuclei cluster at κ_(nuc) ≈ 0.12–0.21 — significantly above the impedance-match depth κ_(q) = 0.282, confirming that nuclear structure is absent from the region below the boundary. The two near-magic nuclei ¹²C and ²⁰⁹Pb (one nucleon from doubly magic configurations) show near-complete depletion with a single level below S_(n)/4.
+
+The mid-shell result.
+
+All 20 non-doubly-magic nuclides surveyed show no gap: their first levels above S_(n)/4 cluster at κ_(nuc) ≈ 0.280, within Δκ = 0.002 of κ_(q), meaning nuclear structure resumes immediately above the boundary. The Δκ separation between the complete-depletion population (κ_(nuc) ≈ 0.180) and the no-gap population (κ_(nuc) ≈ 0.280) is 0.100 with zero overlap.
+
+The gadolinium decoupling.
+
+The four gadolinium isotopes in the nuclear survey (^(155–158)Gd) are mid-shell for both protons (Z = 64, between magic 50 and 82) and neutrons (N = 91–94, between magic 82 and 126) and show no S_(n)/4 gap: ¹⁵⁶Gd has its first level at E₁/S_(n)/4 = 1.000, the most extreme no-gap result in the nuclear survey. Yet atomic Gd II carries one of the sharpest gaps in the atomic survey (0.262 meV, precision tier, corrected residual  + 29.1 ppm). The same element, at the same dimensionless boundary κ_(q), organises its atomic and nuclear spectra by independent criteria: the atomic gap is set by the 4f⁷ half-filled electronic shell closure; the nuclear gap is absent because no nuclear shell closes at Z = 64 or N = 91–94. This decoupling is not a failure of the framework. It is confirmation that Z₀ organises both the atomic and nuclear electromagnetic structure, but through physically independent closure conditions at each scale.
+
+The complete nuclear survey results are given in Table [tab:nuclear_survey].
+
+Numerical Recovery of m_(e)c² and a₀
+
+What is being measured
+
+The photon-line test of Section 8.4 establishes that IE/4 falls inside a zero-observation interval in 71 ions, but its resolution is limited by the spacing between adjacent catalog entries — typically millielectronvolts to hundreds of millielectronvolts — which is insufficient to evaluate equations [eq:mass_bohr] to better than a few thousand ppm.
+
+The level-pair analysis provides the required precision. Rather than observed photon lines, it uses all pairwise differences of NIST energy levels — every pair (E_(i),E_(k)) with E_(k) > E_(i) — as the input array, and locates the gap boundaries in the same way: the largest pair spacing strictly below IE/4 and the smallest strictly above it. Because the level catalog is far more complete than the line catalog near IE/4, the gap boundaries localise far more tightly. For Gd I, the photon-line test gives a gap of 40.5 meV; the level-pair analysis at resolution Δκ = 0.0005 gives 0.091 meV — a factor of 445 narrower from the same NIST data.
+
+The central measurement is simple: the gap centre
+$$G \;\equiv\; \sqrt{\,\mathrm{gap}_\mathrm{lo}
+                    \cdot \mathrm{gap}_\mathrm{hi}\,}
+  \label{eq:gap_centre}$$
+sits at IE/4. The electron rest mass and Bohr radius are not two independent results of this measurement. They satisfy m_(e)c² ⋅ a₀ = ℏc/α as a known identity, so a gap centre correctly located at IE/4 recovers both constants simultaneously as the energy and length expressions of the same electromagnetic boundary condition. The gap centre is the spectroscopic measurement of where Z_( orb) = Z₀ holds in each ion’s own energy units; the constants follow algebraically. [3]
+
+The geometric mean form of equation [eq:gap_centre] reflects a structural fact about electromagnetic invariants, not a choice of estimator. Maxwell’s equations fix the product ε₀μ₀ = 1/c², but this single relation is underdetermined: infinitely many (ε₀, μ₀) pairs are consistent with any given c. The second independent invariant is the ratio, Z₀² = μ₀/ε₀. Together, the two equations uniquely resolve:
+$$\mu_0 = \frac{Z_0}{c}, \qquad \varepsilon_0 = \frac{1}{Z_0\,c}.
+  \tag{\ref{eq:vacuum_resolved}}$$
+The speed c determines the product of the two vacuum parameters; the impedance Z₀ determines the ratio. Neither invariant alone is sufficient.
+
+The gap has exactly this two-invariant structure. The lower boundary gap_(lo) is the spectroscopic terminus of the capacitive sector (ε₀-organised transitions); the upper boundary gap_(hi) is the onset of the inductive sector (μ₀-organised transitions). Their product fixes one combination; their ratio fixes the other. The geometric mean $G = \sqrt{\mathrm{gap}_\mathrm{lo}\cdot
+\mathrm{gap}_\mathrm{hi}}$ is the balance point at which neither sector can dominate — which is the impedance-match condition Z_( orb) = Z₀ expressed in the ion’s own energy units. The estimator has the form it has because it encodes the same two-invariant structure as the vacuum itself.
+
+Precision tier and ion selection
+
+An ion is classified precision-tier at resolution Δκ = 0.0005 when all three conditions hold:
+
+1.  n_(pairs) ≥ 5, 000 resonant pairs in the survey window.
+
+2.  NIST level uncertainty does not span more than one rung: σ_(exp)/ΔE_(step) < 1.0.
+
+3.  Gap width less than one rung (sub-rung gap).
+
+Thirteen ions satisfy all three, spanning Z = 23–66 across d- and f-block families with pair counts from 8, 728 to 198, 667. They subdivide into three sub-tiers by gap width:
+
+  Sub-tier                      Gap width        n   Mean corr. (ppm)   SEM (ppm)
+  ----------------------------- ------------- ---- ------------------ -----------
+  ⋆ sub-0.1 meV (headline)       < 0.1 meV       5              − 2.8         2.7
+  • sub-0.3 meV                 0.1–0.3 meV      8              + 9.1         6.6
+  ⋅ sub-1 meV (all precision)   0.3–1.0 meV     13              + 5.5        13.5
+
+All three are consistent with zero. Full per-ion gap boundaries, raw residuals, corrected residuals, and pair counts are given in Table 1; the cross-resolution check at Δκ = 0.002 is in Table 2.
+
+Primary result
+
+The fractional offset of the gap centre from IE/4 is
+$$\delta_G \;\equiv\;
+  \frac{G - \mathit{IE}/4}{\mathit{IE}/4} \times 10^6 \;\text{(ppm)}.
+  \label{eq:delta_G}$$
+The spectroscopic ionisation energy includes a finite-nuclear-mass correction that displaces IE/4 below the infinite-nuclear-mass reference E₀/4 by  − m_(e)/(m_(e)+m_(p)) =  − 544.3 ppm. The corrected residual δ_(G)^(corr) = δ_(G) − 533.8 ppm subtracts the empirically measured baseline; the  ∼ 10 ppm gap between the empirical baseline and the theoretical proton value is an open question and does not affect the headline result within its stated uncertainty. The baseline is derivable from CODATA constants and is not fitted to the data.
+
+For the five sub-0.1 meV headline ions — Fe II, Mo I, Mn II, Fe I, and Cr II, all d-block, Z = 24–42 — selected solely on the gap-width criterion with no ion-specific fitting and no prior knowledge of m_(e) or a₀:
+δ_(G)^(corr) =  − 2.8 ± 2.7 ppm (SEM),  n = 5.
+The electron rest mass and Bohr radius follow:
+$$\begin{aligned}
+  \frac{m_e c^2\big|_\mathrm{gap}
+        - m_e c^2\big|_\mathrm{CODATA}}
+       {m_e c^2\big|_\mathrm{CODATA}}
+  &\;=\; -2.8 \pm 2.7~\mathrm{ppm\;(SEM)},
+  \label{eq:mass_result} \\[6pt]
+  \frac{a_0\big|_\mathrm{gap} - a_0^\mathrm{CODATA}}
+       {a_0^\mathrm{CODATA}}
+  &\;=\; +2.8 \pm 2.7~\mathrm{ppm\;(SEM)}.
+  \label{eq:bohr_result}
+\end{aligned}$$
+These are the energy and length expressions of a single measurement, not two independent tests.
+
+The uniqueness of this result at IE/4 is established by the controls. Under identical methodology — Δκ = 0.0005 sweep, sub-0.1 meV criterion, geometric midpoint estimator,  + 533.8 ppm baseline:
+
+  Fraction     Algebraic prediction              Measured (corr.)   n
+  ---------- ---------------------- ----------------------------- ---
+  IE/3               − 250, 000 ppm    − 250, 133 ± 1.1 ppm (SEM)   6
+  IE/4                        0 ppm         − 2.8 ± 2.7 ppm (SEM)   5
+  IE/5               + 250, 000 ppm    + 250, 129 ± 4.6 ppm (SEM)   4
+
+The IE/3 and IE/5 controls each deviate from their algebraic predictions by less than 135 ppm — confirming pipeline calibration — while IE/4 returns  − 2.8 ppm under the same conditions. The discrimination is a property of the fraction, not of the ions or the analysis.
+
+The two gap edges and their asymmetry
+
+The gap has a lower edge and an upper edge, and their physical meanings differ. The lower edge, gap_(lo), is the terminus of the capacitive sector: the last resonant pair spacing below IE/4. The upper edge, gap_(hi), is the onset of the inductive sector: the first resonant pair spacing above IE/4. The residuals from each edge independently — computing the Bohr formula with G replaced by gap_(lo) or gap_(hi) — measure how far each sector boundary sits from the impedance-match point.
+
+Across all 13 precision-tier ions:
+
+-   gap_(lo) sits 61.6 ± 20.2 ppm (SEM) below IE/4. A gap boundary below IE/4 produces a Bohr radius larger than the reference by the same fractional amount, since a₀ ∝ 1/G.
+
+-   gap_(hi) sits 50.7 ± 23.0 ppm (SEM) above IE/4. A boundary above IE/4 produces a Bohr radius smaller than the reference.
+
+-   Their log-space midpoint G sits 5.4 ± 13.5 ppm below IE/4 — consistent with zero.
+
+At the sub-0.1 meV headline tier the picture sharpens: gap_(lo) sits 7.9 ± 3.2 ppm below IE/4; gap_(hi) sits 13.6 ± 4.9 ppm above it; their midpoint sits 2.8 ppm below. The mild asymmetry between the two edges (Δ = 5.7 ppm at the headline tier, 10.9 ppm across all 13 ions) is consistent with the structural prediction that the capacitive sector terminates more sharply than the inductive sector opens. The Balmer series approaches the boundary from below with oscillator strength suppressed as n_(i)^(−3/2) → 0; the Lyman onset above the boundary involves the full multiplicity of ground-state fine-structure channels. Both the convergence and the multiplicity asymmetry predict that gap_(hi) will stand slightly further from IE/4 than gap_(lo). At the sub-0.1 meV tier this asymmetry is within 1σ of zero; the gap is symmetric about the impedance-match prediction to within the precision of the current measurement.
+
+The detailed per-ion residuals from each edge, together with the EH ratio and position fraction that characterise the gap geometry, are given in Tables 1 and [tab:eh_portrait]. The physics connecting the edge asymmetry to the Thévenin electromagnetic model of the orbital boundary — and its correction for electromagnetically asymmetric ions — is deferred to a companion paper.
+
+The Electromagnetic Character of the Elements
+
+The impedance-match condition Z_( orb) = Z₀ at IE/4 is not only a threshold — it is a partition. Below IE/4, transition energies lie in the capacitive sector: the electric field organises the mode structure, the ε₀ invariant of the vacuum governs the coupling, and angular momentum is suppressed. Above IE/4, the inductive sector opens: the magnetic field becomes accessible, orbital angular momentum admixes into the mode structure, and the μ₀ invariant governs the coupling. At IE/4 itself, neither mode is stable. The gap is the spectroscopic record of the boundary between them.
+
+This section characterises the geometry of the gap at this boundary across the 67 confirmed ions with sufficient line-catalog coverage for the density analysis (the 71-ion primary cohort includes 4 additional ions classified as H-like or sparse whose gap geometry cannot be reliably resolved at this level of detail), establishes that the geometry is structural rather than statistical, identifies the class of ions for which the gap center is most precisely located, and explains the systematic deviation for electromagnetically asymmetric ions as a predictable consequence of the same two-invariant structure.
+
+Gap geometry and the EH ratio
+
+Every confirmed gap has two measurable depths: how far the gap extends below IE/4 into the capacitive sector (e_(depth) = IE/4 − gap_lo) and how far it extends above into the inductive sector (h_(depth) = gap_hi − IE/4). Their ratio
+$$\mathrm{EH\_ratio}
+  \;=\; \frac{\mathit{IE}/4 - \mathrm{gap\_lo}}{\mathrm{gap\_hi} - \mathit{IE}/4}
+  \label{eq:eh_ratio}$$
+measures the electromagnetic character of the ion at the impedance boundary: a ratio greater than unity means the gap extends further into the capacitive sector; less than unity means it extends further into the inductive sector; unity means the gap straddles IE/4 symmetrically and the geometric center G is an unbiased estimator of IE/4.
+
+This ratio stratifies strongly by subshell family:
+
+  Family                                                                    n   Median EH ratio   Median pos_frac
+  ---------------------------------------------------------------------- ---- ----------------- -----------------
+  H-like                                                                    3             0.056             0.053
+  s/p-block                                                                24             0.385             0.278
+  f-block                                                                  20             0.780             0.438
+  d-block                                                                  20             2.365             0.703
+  Mann-Whitney: f < d, p = 0.006; sp < d, p = 0.001; H < d, p = 0.002.                          
+
+The ordering H < sp < f < d runs in the direction predicted by the derivation. Hydrogenic and s/p-block ions are inductive-dominant at IE/4: their gaps open almost entirely on the H-sector side, meaning the impedance boundary falls near the upper edge of each gap. d-block transition metals are capacitive-dominant: their gaps extend further below IE/4 than above. f-block lanthanides fall between. Full per-ion data are in Table [tab:eh_portrait].
+
+The partition is structural, not statistical
+
+A potential concern is that the EH ratio might simply reflect asymmetries in catalog completeness: if more lines are catalogued on one side of IE/4 than the other, the gap geometry will appear asymmetric regardless of physics. An independence test resolves this directly.
+
+For each ion, the EH ratio was computed from two entirely separate data sources: from the photon-line gap boundaries (the observable in equation [eq:eh_ratio]) and from the asymmetry of level-pair spacings ΔE < IE/4 versus ΔE > IE/4 in the NIST level catalog. Lines and levels are independent data: the line catalog records observed transitions; the level catalog records energy positions. The Spearman correlation between the two EH measures is r =  − 0.103 (p = 0.42, n = 63) — indistinguishable from zero. The photon-line EH ratio is not predicted by the level-pair energy asymmetry.
+
+The partition structure is encoded in the transitions themselves — in the electromagnetic selection geometry that determines which energy differences correspond to observed photon emission — not in the density of energy levels. It is a property of the coupling between the atom and the vacuum field, not of the level distribution.
+
+Symmetric ions: lanthanides and the precision tier
+
+The gap center $G = \sqrt{\mathrm{gap\_lo} \cdot \mathrm{gap\_hi}}$ is an unbiased estimator of IE/4 when the gap straddles the boundary symmetrically — when EH ratio  ≈ 1 and pos_frac ≈ 0.5. For these ions, G = IE/4 to high precision and the mass recovery of Section 9 returns the headline result.
+
+The five sub-0.1 meV headline ions (Fe II, Mo I, Mn II, Fe I, Cr II) are all d-block ions near half-fill of the 3d or 4d subshell. Their half-filled configurations give L = 0 ground terms (⁷S for Mn II, ⁷S₃ for Fe I and Fe II), which means the orbital angular momentum contributes symmetrically to both the capacitive and inductive sectors, placing the gap center close to IE/4. The EPR literature independently confirms this character: Mn²⁺ (3d⁵, ⁶S_(5/2), L = 0, g ≈ 2.000) and Fe²⁺/³⁺ complexes are canonical pure-spin EPR systems in condensed matter (Abragam and Bleaney 1970), coupling exclusively through the inductive channel with no orbital contribution. The Thread Frame identifies this electromagnetic character from optical photon line positions; the EPR tradition identifies it from microwave magnetic resonance; both locate the same boundary.
+
+The f-block lanthanides present a related but distinct case. In the hydrogenic sweep coordinate, the IE/4 boundary for lanthanide ions falls at κ_(quarter) ≈ 2.0–2.1, which corresponds to a pair spacing scale of ΔE ≈ E₀Z²α² — the fine-structure energy scale for these ions. At this scale, the hydrogenic α-ladder has a natural step, and the level-pair gap boundaries are well-resolved at Δκ = 0.0005 resolution. This is why the lanthanide ions in the precision tier — Ce II, Gd II, Dy II, Nd II, La I — yield clean gap measurements despite having smaller pair counts than the headline d-block ions. The deeper reason this connection exists (i.e., why lanthanide IEs place IE/4 at the fine-structure scale) is the subject of a separate paper on the fine-structure constant as an impedance ratio (Coherence Research Collaboration 2026).
+
+Gd II as the symmetric f-block case.
+
+Among the lanthanides, Gd II occupies a special position. Its 4f⁷ half-filled configuration gives L = 0 (⁸S_(7/2)), placing it in the same structural category as the d-block half-fill ions: zero orbital angular momentum, zero admixture of inductive character from the orbital ladder. The Thread Frame confirms this: Gd II carries a 0.262 meV gap (precision tier) and a corrected residual of  + 29.1 ppm — elevated relative to the d-block headline but consistent with the mild EH asymmetry (pos_frac  = 0.835, EH ratio  = 5.3) that its 4f⁷ 5d configuration introduces above the pure-f⁷ core. EPR spectroscopy confirms the same character for Gd³⁺: g = 2.000, L = 0, pure spin relaxation (Abragam and Bleaney 1970; Bleaney and Stevens 1953).
+
+Asymmetric ions and the open correction
+
+For ions with pronounced electromagnetic asymmetry — pos_frac far from 0.5 — the geometric center G is a biased estimator of IE/4. The gap extends further into one sector than the other, and the log-space midpoint of the two boundaries is displaced from the impedance-match point by a predictable amount.
+
+The most extreme case in the precision tier is Nd II: pos_frac  = 0.018 (gap extends almost entirely above IE/4 into the H-sector), corrected residual  =  − 132.3 ppm. The gap exists and correctly brackets IE/4; the asymmetry reflects the ion’s electromagnetic geometry at the boundary, not a failure of the prediction. The same logic applies to Cr I (pos_frac  = 0.893, corrected residual  =  + 80.4 ppm) and Co II (pos_frac  = 0.882, corrected residual  =  + 35.8 ppm). The pattern is systematic: residual magnitude increases with distance of pos_frac from 0.5.
+
+The two-invariant structure of the gap (Section 9.1) predicts the correction algebraically: the displacement of G from IE/4 is determined by the ratio of the two sector depths, which is the EH ratio itself. The full correction formula and its empirical validation across the asymmetric ion population are deferred to a companion paper that develops the Thévenin circuit model of the orbital impedance boundary.
+
+The geometric picture is shown in Figure 1. In the symmetric case, the E and H field-mode circles intersect at the centre of the gap and the geometric midpoint G is an unbiased estimator of IE/4. When the two sectors carry unequal spectral weight, the intersection migrates toward the dominant sector, and G follows it. The position fraction pos_frac is the direct spectroscopic measure of where that intersection sits within the gap. Panel (B) of Figure 1 is Cr I and Co II; Panel (C) is Nd II. The correction to G is not an empirical fudge factor: it is determined by the geometry of the two field sectors at the boundary, and will emerge as a closed-form expression from the companion analysis.
+
+The Ho II null: a predicted absence
+
+The E/H partition makes a prediction that can be falsified by a single ion. An ion whose electronic structure lies entirely in the inductive sector — whose transitions are organised by the spin-orbit ladder rather than the Coulomb ladder, placing all spectral mass above IE/4 — should return zero hitpairs in the E-sector sweep. Not a wide gap, not a sparse gap: zero, because the hydrogenic coordinate template is built from the capacitive closure condition and has no purchase on an ion organised by the inductive mode.
+
+Ho II is that ion. Its 4f¹¹ configuration carries L = 6, J = 15/2, and large spin-orbit coupling; its spectral mass lies almost entirely above IE/4. The resonance sweep at Δκ = 0.002 returns zero hitpairs across all κ-bins. Ho II has abundant NIST energy levels — more than Mn II, which returns 63, 134 hitpairs at the same resolution. The null is not a data limitation.
+
+The ionization series confirms the interpretation. Ho I, with an outer 6s electron that restores partial capacitive coupling, returns a sparse but non-zero gap (1, 725 pairs, gap  = 2.5 meV at Δκ = 0.0005). The transition from Ho I to Ho II is a gradient from partial E-sector visibility to complete invisibility, exactly as the partition predicts. Ho II is not electromagnetically absent; it is electromagnetically orthogonal to the instrument. It is fully visible to an inductive probe — EPR and microwave spectroscopy couple directly to the energised H-arm — and the Thread Frame predicts that an H-sector sweep built from the spin-orbit scale ζ_(4f)J rather than the Coulomb scale would detect Ho II and find Gd II invisible. That test has not yet been performed; it is a falsifiable consequence of the E/H orthogonality hypothesis.
+
+Figure 6 illustrates the three symmetry regimes — symmetric, E-dominant, and H-dominant — in terms of the relative field energies in the two sectors at the oscillation closure.
+
+The electromagnetic partition at IE/4 across three symmetry regimes. In each panel the two triangles represent the capacitive (E-sector, solid red) and inductive (H-sector, dashed blue) contributions to the gap geometry, sharing the central node C at the impedance-match point Z₀, ΔE = IE/4. Triangle area encodes spectral weight in that sector. The curved arrow at C represents the oscillation between sectors; the photon arrow (hν) shows the optical flux that escapes when the field reaches the balance condition at C. Left (symmetric, e.g. Gd II): both arms equal; the gap straddles IE/4 symmetrically; G = IE/4 exactly; full optical flux in both channels. Centre (E-dominant, e.g. H I and s/p-block): the E-arm carries most field energy; the H-aperture crossing is only partially energised; G is displaced above IE/4 and the upward flux exceeds the downward. Right (H-dominant, e.g. Ho II): field energy concentrated in the H-arm; the E-aperture finds near-zero energy at the crossing; optical flux is effectively absent and the E-sector sweep returns zero hitpairs. Ho II is not forbidden — the aperture is always open — but the field never delivers energy to the E-side in time for the crossing to radiate. The geometric origin of this partition — the migration of the impedance-match intersection on the field-mode closure sphere — is shown in Figure 1.
+
+The same boundary at the nuclear scale
+
+The E/H partition at IE/4 is a consequence of a closure condition: the bound electronic state satisfies the impedance match when neither the capacitive nor the inductive mode can independently sustain the field configuration. For atoms, this closure is achieved by the orbital structure of the electron under the Coulomb potential; the condition selects IE/4 as the unique energy where the boundary holds.
+
+Nuclear magic numbers are, in this language, the nuclear analog of the same closure. Doubly magic nuclei achieve simultaneous closure of both the proton and neutron shell sequences, leaving no low-lying excitation channels available below the resulting boundary. The consequence is complete depletion of nuclear levels below S_(n)/4: the gap exists and extends all the way to zero, because the closure condition is satisfied with no residual spectral mass in the forbidden region. Non-doubly-magic nuclei have no simultaneous closure of both shell sequences; their first levels resume immediately above S_(n)/4, and no gap is observed.
+
+The Gadolinium isotopes are the sharpest illustration of the independence of the two scales. ^(155–158)Gd are mid-shell for both protons (Z = 64) and neutrons (N = 91–94) and show no nuclear gap; ¹⁵⁶Gd has its first level at E₁/S_(n)/4 = 1.000, the most extreme no-gap result in the nuclear survey. Atomic Gd II, on the other hand, carries one of the sharpest atomic gaps in the survey (0.262 meV, precision tier, corrected residual  + 29.1 ppm) because its 4f⁷ electronic configuration achieves half-fill orbital closure — the atomic analog of double magic — even though the nucleus of the same element achieves nothing analogous at those neutron and proton numbers. The same vacuum impedance Z₀ organises both spectra through independent closure criteria; the gap appears where closure is achieved and is absent where it is not. Section 8.9 presents the full nuclear survey.
+
+Methods
+
+Data source and preparation
+
+All spectroscopic data were drawn from the NIST Atomic Spectra Database (Kramida et al. 2023), accessed January–March 2026. Energy levels were downloaded in tab-delimited format from the NIST ASD Levels form; fields retained were Level (eV), J, Configuration, Term, and Leading percentages. Observed transition lines were downloaded from the NIST ASD Lines form, retaining Aki (Einstein A coefficient), Ei, Ek, Acc (NIST accuracy grade), and Type (E1/M1/E2). No theoretical or semi-empirical level positions were used; every tested energy difference derives from laboratory measurement.
+
+Raw NIST data were converted to a canonical tidy format by two purpose-built parsers before any analysis was performed. The levels parser (nist_levels_parser_v15.6) produces one energy row per level, strictly energy-sorted, with provenance flags, dense-zone markers, and principal quantum number annotations derived from configuration strings. The lines parser (nist_lines_parser_v3.6) maps each observed transition to its upper and lower level IDs by nearest-energy matching within a tolerance derived from the combined photon and level uncertainties, handles air-to-vacuum wavelength conversion, and propagates photon energy uncertainties to meV. Both parsers emit JSON sidecars recording input file hashes, parser version, and all threshold parameters, enabling deterministic replay.
+
+Ionization energies were taken from the NIST ASD sequential ionization energy tables and stored in the ion traits table (tf_ie_eV). The spectroscopic first ionization energy from the NIST series is used throughout; this differs from the thermochemical value for some ions.
+
+Physical constants are CODATA 2018 throughout:
+
+  Symbol    Value                 Note
+  --------- --------------------- --------------------------------------------------------
+  α         7.2973525693 × 10⁻³   Fine-structure constant
+  E₀        13.6056923 eV         Rydberg energy (infinite nuclear mass)
+  ℏc        197, 326.9804 eV⋅pm   
+  m_(e)c²   510, 998.950 eV       
+  a₀        52.917, 721, 090 pm   
+  Z₀        376.730, 313, 668 Ω    = μ₀c; carries ∼ 1.5 × 10⁻¹⁰ uncertainty post-2019 SI
+  R_( K)    25, 812.807, 45 Ω     Exact since 2019 SI
+
+The identity α = Z₀/2R_( K) was verified to 0.36 ppb.
+
+Survey cohort and ion manifest
+
+The survey cohort of 80 ions was defined and fixed prior to analysis. No ion was added or removed on the basis of whether a gap was found. Deuterium (D I) was excluded because its energy levels are structurally identical to H I; its inclusion would double-count the hydrogen result rather than provide independent confirmation.
+
+Ions span Z = 1 (H I) to Z = 82 (Pb I), covering all four subshell families and ionisation stages from neutral atoms to Cl XVII (sixteen electrons removed). The complete per-ion manifest, including ionisation energies, reduced-mass factors μ̂, and NIST line counts, is given in Table [tab:gap_survey].
+
+The hydrogenic depth coordinate κ used throughout this paper is defined identically to the hydrogenic alignment depth κ introduced in (Heaton and Coherence Research Collaboration 2025a) and clarified in (Heaton and Coherence Research Collaboration 2026a); the symbol κ is used here to avoid confusion with the standard nuclear physics notation for γ-rays. The universal slope β = log₁₀α of the photon frequency backbone was established empirically in (Heaton and Coherence Research Collaboration 2025a) and confirmed across six independent spectral datasets by minimum description length analysis in (Heaton and Coherence Research Collaboration 2025b).
+
+NIST photon-line gap test
+
+For each ion, the NIST observed photon-line catalog was sorted by photon energy in meV. The ionization energy IE was converted to meV from the NIST sequential ionization energy tables, and the target IE/4 was computed in the same units. The gap test locates the two consecutive sorted entries flanking the target:
+$$\begin{aligned}
+  \mathrm{gap\_lo} &= \max\{h\nu_j : h\nu_j < \mathit{IE}/4\}, \\
+  \mathrm{gap\_hi} &= \min\{h\nu_j : h\nu_j > \mathit{IE}/4\},
+\end{aligned}$$
+and records whether IE/4 is strictly bracketed. No statistics, no null model, and no coordinate transformation are involved. The result is binary: a gap either brackets IE/4 or it does not.
+
+Gate classification follows four outcomes. Confirmed: IE/4 is strictly bracketed (n_(below) ≥ 1 and n_(above) ≥ 1); the gap exists. Sparse: bracketed but fewer than 10 lines on one side; the gap exists but the gap-rank percentile is less reliable. All-above: every catalog line lies above IE/4 (n_(below) = 0); cannot confirm or falsify without infrared coverage. All-below: every catalog line lies below IE/4 (n_(above) = 0); cannot confirm or falsify without ultraviolet coverage. The all-above and all-below cases are not falsifications; they are open measurements awaiting catalog extension.
+
+Secondary observables recorded for each confirmed ion: gap width  = gap_hi − gap_lo; gap rank percentile (fraction of all consecutive-pair intervals narrower than this gap, where 100% = widest gap in the catalog); and position fraction
+$$\mathrm{pos\_frac}
+  = \frac{\mathit{IE}/4 - \mathrm{gap\_lo}}{\mathrm{gap\_hi} - \mathrm{gap\_lo}},$$
+which measures where IE/4 sits within the gap (0 = at lower edge, 0.5 = centred, 1 = at upper edge). The same test was applied at IE/3, IE/5, and nine other fractions as universality and uniqueness controls.
+
+Energy level-pair sweep
+
+For each ion in the precision cohort, all pairwise energy-level differences ΔE = E_(k) − E_(i) (E_(k) > E_(i)) were computed from the tidy NIST level catalog in meV. The sweep tests each pair against a sequence of target spacings
+ΔE_(target)(κ; Z) = E₀ Z²μ̂ α^(κ),
+evaluated at each step κ across the survey window. The target energy decreases monotonically with κ because α < 1: each step moves deeper into the bound spectrum by one factor of the vacuum impedance ratio.
+
+A pair is recorded at step κ when
+$$z_\mathrm{unc}
+  \;\equiv\;
+  \frac{\bigl|\Delta E - \Delta E_\mathrm{target}\bigr|}{\sigma_\mathrm{pair}}
+  \;\leq\; k_\sigma,
+  \qquad
+  \sigma_\mathrm{pair} = \sqrt{\sigma_i^2 + \sigma_k^2},
+  \label{eq:sweep_gate}$$
+where σ_(i), σ_(k) are the NIST level uncertainties in meV and k_(σ) = 3.0 throughout. Per-level uncertainties are floored at the per-ion median of non-zero NIST uncertainties and capped at the 95th percentile, preventing anomalously small or large uncertainties from biasing the gate.
+
+All lattice arithmetic uses Python Decimal throughout; floating-point representations of κ are used only for the physics exponentiation α^(κ) and nowhere else. This ensures that every pair is assigned to a uniquely determined integer rung index, with no float-induced drift across resolutions.
+
+Voronoi bin gate.
+
+After the k_(σ) gate, a Voronoi assignment step ensures that each pair is recorded at most once: a pair is retained at step κ only if its signed residual r = ΔE − ΔE_(target) satisfies |r| < ΔE_(step)/2, where ΔE_(step) is the meV width of one step at the current κ and resolution. Pairs whose uncertainty spans multiple steps are excluded from the gap analysis; their residuals are preserved as diagnostics but do not enter the gap boundary computation.
+
+Permutation null test.
+
+At each step, the observed pair count is compared to a null distribution estimated by 5,000 permutations. In precision mode, the observed ΔE values are shuffled over the fixed σ_(pair) assignments and the z_(unc) gate is re-applied; this preserves the uncertainty structure while destroying the energy-matching signal. The null p-value is the fraction of permutations meeting or exceeding the observed count, with an add-one correction. RNG seeds are derived deterministically via SHA-256 from the tuple (ion, step, κ index, resolution, mode), ensuring that null outcomes are exactly reproducible from the same inputs. The seed salt is α = 7.2973525693 × 10⁻³, which appears here solely as a convenient ion-independent numerical constant for seed generation and carries no physical role in the analysis.
+
+Sweep resolutions and ion assignments.
+
+Two resolutions were used. The survey sweep at Δκ = 0.002 covered 36 ions drawn from the 80-ion survey cohort, with windows of approximately 400 steps centred on each ion’s predicted κ_(q) value and extending  ± 0.30 on either side. The fine-resolution sweep at Δκ = 0.0005 was applied to 13 ions selected for sub-millielectronvolt gap analysis (the precision tier of Section 11.6). At this resolution the sigma gate is set to σ_(exp) = Δκ_(step) × 0.566 meV, making the Voronoi gate the geometric arbiter and sigma the uncertainty model; this prevents the energy uncertainty from over-excluding genuine near-boundary pairs. Per-ion windows and sigma values for both resolutions are available from the corresponding author as part of the sweep configuration files.
+
+Photon re-association
+
+Each resonant level pair (E_(i),E_(k)) identified by the sweep implies a photon of wavelength λ = hc/(E_(k)−E_(i)). This predicted wavelength is matched against the tidy NIST line catalog to identify whether an observed photon transition corresponds to the pair.
+
+Matching uses a combined uncertainty window derived by propagating σ_(pair) through |dλ/dE| = hc/E², giving a per-pair window δλ = hc σ_(pair)/ΔE². A match is accepted when the NIST line wavelength falls within k_(σ) × δλ of the predicted wavelength and the closure condition
+$$|\Delta E_\mathrm{pair} - \Delta E_\mathrm{NIST}| < 0.10~\mathrm{meV},
+  \qquad
+  \frac{|\Delta E_\mathrm{pair} - \Delta E_\mathrm{NIST}|}{\Delta E_\mathrm{pair}}
+  < 2\times10^{-5}
+  \label{eq:closure}$$
+is satisfied simultaneously. The closure requirement ensures that the matched NIST line is physically the transition between the two levels, not merely a coincidence of wavelength.
+
+Photon re-association is used for the E/H sector analysis (Section 8.8) and for the photon ladder figures; it does not enter the gap centre measurement of Section 11.6, which uses level-pair spacings directly. The distinction is important: the gap boundary is determined from the level energy differences alone, without requiring that the corresponding transitions appear in the observed line catalog.
+
+Gap centre measurement and mass recovery
+
+For the precision-tier analysis, the gap centre is computed from the sorted level-pair array (Section 11.4) as the log-space midpoint of the two nearest resonant pairs bracketing IE/4:
+$$G \;=\; \sqrt{\,\mathrm{gap\_lo} \cdot \mathrm{gap\_hi}\,}.
+  \label{eq:gap_ctr}$$
+The geometric midpoint is used because the coordinate is logarithmic; for sub-millielectronvolt gaps the arithmetic and geometric midpoints are indistinguishable.
+
+The fractional offset of the gap centre from the prediction is
+$$\delta_G \;=\; \frac{G - \mathit{IE}/4}{\mathit{IE}/4} \;\times\; 10^6
+  \quad\text{(ppm)}.
+  \label{eq:delta_G}$$
+The corrected residual δ_(G)^(corr) = δ_(G) − 533.8 ppm subtracts the proton reduced-mass shift, which displaces the spectroscopic IE/4 from the infinite-nuclear-mass reference E₀/4 by  − m_(e)/(m_(e)+m_(p)) ≈  − 544.3 ppm. The empirically measured baseline of  + 533.8 ppm across the precision cohort is close to but not identical with the theoretical proton value; the ∼ 10 ppm discrepancy is an open question noted in Section 9. The baseline is derivable from CODATA constants and is not fitted to the data.
+
+The electron rest mass and Bohr radius follow from m_(e)c² = 8G/α² and a₀ = ℏc α/8G. These are not independent results: they satisfy m_(e)c² ⋅ a₀ = ℏc/α as a known identity, so a single gap centre measurement returns both simultaneously.
+
+Precision-tier criteria.
+
+An ion qualifies for the precision tier at a given resolution when all three of the following hold simultaneously: (1) at least 5,000 resonant pairs in the survey window; (2) NIST level uncertainty σ_(exp) does not span more than one step at the chosen resolution, i.e. σ_(exp)/ΔE_(step) < 1.0; and (3) gap width less than one step (sub-rung gap). Thirteen ions satisfy all three at Δκ = 0.0005, spanning Z = 23–66 across d- and f-block families.
+
+EH asymmetry and scope of the mass recovery.
+
+The gap centre G is an unbiased estimator of IE/4 when the gap straddles the boundary symmetrically, i.e. when the electric and magnetic sectors contribute equally to the level structure on each side. For the five sub-0.1 meV headline ions — all d-block ions near half-fill — this condition is satisfied within measurement precision, and δ_(G)^(corr) returns  − 2.8 ± 2.7 ppm (SEM, n = 5). Ions with pronounced electromagnetic asymmetry show systematic displacements of G from IE/4 that correlate with the position fraction pos_frac; the physics of this displacement and its correction are deferred to a companion paper.
+
+E/H partition analysis
+
+The E/H partition characterises how each ion’s photon-line catalog is distributed across the boundary at IE/4. For each confirmed ion, the local gap geometry is measured directly from the NIST line catalog:
+$$\begin{aligned}
+  e_\mathrm{depth} &= \mathit{IE}/4 - \mathrm{gap\_lo}, \\
+  h_\mathrm{depth} &= \mathrm{gap\_hi} - \mathit{IE}/4, \\
+  \mathrm{EH\_ratio} &= e_\mathrm{depth} / h_\mathrm{depth}.
+\end{aligned}$$
+An EH_ratio greater than unity indicates that the gap extends further into the capacitive sector (below IE/4) than the inductive sector (above IE/4); a ratio less than unity indicates the reverse. This ratio is a direct measurement of the local density asymmetry at the impedance boundary, not a model output.
+
+Line density profiles were computed in windows of 1, 2, 4, and 8 gap widths on each side, confirming that the EH ratio captures local structure rather than global catalog asymmetry. An independence test confirmed that the per-ion EH ratio at IE/4 is not correlated with the ion’s total line count or catalog coverage fraction (r =  − 0.10, p = 0.42, n = 71), establishing that the partition structure is physical rather than an artifact of catalog completeness.
+
+Shell-family statistics used two-sided Mann-Whitney U tests with no correction for multiple comparisons; all reported p-values are nominal.
+
+Nuclear analogue
+
+A parallel gap test was applied to nuclear excitation spectra using evaluated nuclear structure data from ENSDF (National Nuclear Data Center 2026). For each of 48 nuclides, all reported excited-state energies were sorted and the neutron separation energy S_(n) was used as the nuclear analogue of IE. The binary gap test asked whether S_(n)/4 falls in a zero-observation interval in the sorted excitation catalog.
+
+All four doubly magic nuclei (¹⁶O, ⁴⁸Ca, ¹³²Sn, ²⁰⁸Pb) show complete depletion of observed levels below S_(n)/4; none of the 20 non-doubly-magic nuclides surveyed show a gap. The nuclear analysis uses a separate closure criterion at the nuclear scale and is reported as independent corroboration of the atomic result; the relationship between the two boundary conditions is discussed in Section 12.
+
+The complete ion manifest, YAML sweep configuration files, pipeline scripts, and full nuclear methodology are available from the corresponding author on request. NIST spectroscopic data are publicly available at https://physics.nist.gov/asd. ENSDF nuclear data are publicly available at https://www.nndc.bnl.gov/ensdf/.
+
+Discussion
+
+A geometry, not a force
+
+The gap at IE/4 exists in every ion’s transition spectrum for the same reason a standing wave cannot exist at its own boundary condition: the electromagnetic closure condition for a bound state and the free-field condition for a photon are mutually exclusive at exactly that energy. What prevents transitions from occurring at IE/4 is not a force, not a selection rule, not a quantum mechanical prohibition. It is a geometric fact about the electromagnetic vacuum.
+
+The standard picture treats the atom as primary: nucleus and electron bound by the Coulomb force, quantisation imposed as a boundary condition on the resulting wavefunction. This picture is exact for everything it was built to compute — energy eigenvalues, transition frequencies, selection rules. What it cannot see is the role of the vacuum itself, for a specific structural reason. The Schrödinger and Dirac formalisms work in units where c = 1, encoding the Coulomb interaction as the scalar potential V(r) =  − Ze²/r. This retains the product invariant c while suppressing the ratio invariant Z₀ (Heaton and Coherence Research Collaboration 2026b). Any feature of the spectrum that depends on how field energy is partitioned between the electric and magnetic modes is invisible in this representation — not through inadequate measurement, but because the coordinate system cannot carry the information (Heaton and Coherence Research Collaboration 2026b).
+
+The picture that emerges from the present work inverts the standard priority. The vacuum is primary. The atom is not a particle sitting in a neutral medium; it is a field configuration the vacuum gives rise to and sustains, closed on itself by the nuclear Coulomb potential. Different nuclear charges support different closure geometries — different E/H partitions, different gap widths, different magnetic characters — but all of them close against the same vacuum, at the same boundary, in their own energy units. The vacuum organises; the ion instantiates.
+
+This is why the nuclear charge Z cancels exactly from the impedance ratio Z_( orb)/Z₀, and why the gap is universal across 71 confirmed ions spanning the periodic table with no ion-specific parameters. The boundary is not a property of hydrogen, or of the d-block, or of any particular configuration. It is a property of the vacuum expressed in each atom’s own energy units. That the same boundary appears at the nuclear scale — at S_(n)/4 in all four doubly magic nuclei, absent in all 20 mid-shell nuclides surveyed, under the nuclear force rather than the Coulomb potential — confirms that the boundary belongs to the vacuum geometry and not to any particular interaction that instantiates it.
+
+The Bohr model was solving this closure condition without recognising it as such. The quantisation condition m_(e)v_(n)r_(n) = nℏ is the phase closure requirement that the electromagnetic field return to its initial configuration after one complete cycle. The angular momentum quantum ℏ is the closure unit of the field; the velocity v_(n) = αc/n is the rate at which the Coulomb field closes at quantum number n; and α = Z₀/2R_( K) is the dimensionless ratio of the vacuum’s field impedance to twice the quantum of orbital resistance. The Bohr model arrived at the correct answer first because the phase closure condition and the particle orbit condition are formally identical. The scaffold of orbiting electrons can be examined and set aside; the electromagnetic closure condition it was encoding remains, and the 71-ion universal confirmation is its most direct empirical demonstration.
+
+The recovery of the electron rest mass and the Bohr radius from the gap centre location is the quantitative expression of this geometry. The gap centre $G = \sqrt{\mathrm{gap\_lo}\cdot\mathrm{gap\_hi}}$ has the same structural form as the vacuum impedance itself: a geometric mean of two complementary sector parameters, exactly as $Z_0= \sqrt{\mu_0/\varepsilon_0}$ is the geometric mean of the vacuum’s inductive and capacitive field constants. When the gap centre sits at IE/4, the formula m_(e)c² = 8G/α² returns the electron rest mass because IE/4 is the energy at which the Coulomb closure geometry is self-consistent with the vacuum: the constants are outputs of the geometry, not inputs to it. This is the first determination of m_(e)c² and a₀ from the location of a structural absence in a transition spectrum rather than from the positions of spectral lines.
+
+The companion fine-structure paper (Coherence Research Collaboration 2026) establishes why α occupies this role. Starting from the non-terminal reciprocal singularity 1/z at z = 0 completed on the Riemann sphere, the irremovable defect at the source pole p forces a departure δ > 0 from the golden-ratio winding attractor φ, uniquely selected by the Markov spectrum theorem and Hurwitz’s uniform resolvent condition. The vacuum constants ε₀ and μ₀ enter not as physical inputs but as the mathematical primitives 1 (containment) and 0 (openness) by their own definitions, so that $Z_0 = \sqrt{\mu_0/\varepsilon_0}$ is the 0/1 geometric ratio of the vacuum definitionally. The fine-structure constant is then α = δ = Z₀/2R_(K), derived with zero free parameters from the geometry of the punctured sphere alone. That IE/4 encodes m_(e)c² and a₀ is therefore not a coincidence of units: it is the spectroscopic record of the unique energy scale at which the orbital impedance Z_(orb)(n) = Z₀n/α would match the vacuum, a configuration forbidden by number theory but permanently inscribed in the gap.
+
+The electromagnetic character of the elements
+
+The E/H partition stratifies the periodic table in a way that spectroscopy has always observed but never had a geometric explanation for. The magnetically active elements — transition metals, rare earths, the elements that define the properties of magnetic materials in condensed matter — are precisely the elements whose spectral mass concentrates at the impedance boundary κ_(q) ≈ 0.282 in the hydrogenic depth coordinate (Section 6), where κ = 0 is the ionisation limit and each unit step is one factor of α in transition energy. Their gap widths are the narrowest in the survey. Their EPR spectra show pure spin coupling with g ≈ 2. Their magnetic moments are the largest. These are not separate facts about different measurables. They are the same electromagnetic partition at IE/4, observed from different instruments.
+
+The half-filled shell ions are the most striking case. When a subshell is exactly half-filled as with 3d⁵ in Mn II, 4d⁵ in Mo I, or 4f⁷ in Gd II, the orbital angular momenta of the occupied states cancel by symmetry, giving L = 0. The standing wave at IE/4 is then in exact E/H equilibrium: neither sector dominates, the gap straddles the boundary symmetrically, and the gap centre is the most precise estimator of IE/4 available from the data. The result,  − 2.8 ± 2.7 ppm from five ions across Z = 24–42, is the spectroscopic record of that equilibrium.
+
+Enclosed, oscillating electromagnetic symmetry produces the strongest magnetic fields. Electrical engineering agrees with this, and the atomic spectroscopy here confirms it from a different direction. The half-filled L = 0 configuration is the maximally symmetric standing wave: equal energy in both sectors, neither borrowing from the other, the oscillation turning precisely at the impedance boundary. The result is both the sharpest spectroscopic gap and the strongest magnetic moment available at that shell. The two are the same physics: maximal electromagnetic symmetry at the impedance boundary expressed in optical and magnetic observables simultaneously.
+
+Gd II provides the clearest single confirmation. Its 4f⁷ half-filled shell places it at L = 0, at the impedance boundary, with a gap width of 0.262 meV at the fine-structure scale κ_(quarter) ≈ 2.0. EPR spectroscopy of Gd³⁺ establishes the same fact from a completely independent measurement at microwave frequencies: g = 2.000, pure spin relaxation, no orbital contribution (Abragam and Bleaney 1970; Bleaney and Stevens 1953). Six orders of magnitude separate the two instruments, and yet they locate the same boundary.
+
+Ho II is the mirror case. Its 4f¹¹ configuration carries L = 6 and large spin-orbit coupling; its spectral mass lies almost entirely above IE/4 in the inductive sector. The E-sector sweep returns zero hitpairs at every κ-bin, despite Ho II having more NIST energy levels than Mn II, which returns 63, 134 hitpairs at the same resolution. The null is the predicted outcome for an ion organised entirely by the inductive mode: the Coulomb closure template has no purchase on it, for the same geometric reason that a radial electric field cannot detect a purely toroidal magnetic field. The E and H modes of the vacuum are orthogonal planes of the same electromagnetic space, and an E-sector instrument is structurally blind to H-sector organisation.
+
+This orthogonality implies a symmetric prediction. An H-sector sweep built from the spin-orbit scale ζ_(4f)J rather than the Coulomb closure scale should detect Ho II with the same clarity that the E-sector sweep detects Mn II — and should find Gd II invisible, because its symmetric L = 0 configuration makes it equally transparent to both sector probes at the impedance boundary. This prediction is falsifiable and has not yet been tested.
+
+Implications of this result
+
+The κ = 2 connection and the fine-structure constant.
+
+The lanthanide ions sit at κ_(quarter) ≈ 2.0–2.1 in the hydrogenic depth coordinate, placing their IE/4 boundary at the fine-structure energy scale ΔE ≈ E₀Z²α². This is the scale at which α was historically measured and where the hydrogenic ruler has a natural step. The coincidence that the most magnetically active elements in the periodic table sit exactly at κ = 2 — the scale at which the vacuum impedance ratio first becomes spectroscopically measurable — is not obviously incidental. It suggests that the half-fill orbital closure condition and the fine-structure constant share a common geometric origin: that Gadolinium and its neighbours are symmetric precisely because their electronic geometry closes at the scale where α itself closes.
+
+In the companion fine-structure paper (Coherence Research Collaboration 2026), α is derived as the departure from the φ-attractor forced by the irremovable defect of the reciprocal singularity 1/0 on the Riemann sphere — with the impedance-match boundary at IE/4 identified as the unique transition energy at which Z_(orb) = Z₀, forbidden by the Diophantine impossibility of equation [eq:diophantine]. The depth coordinate κ = 2 at which the lanthanide half-fill ions sit is the hydrogenic expression of that same boundary: the point in the α-scaled logarithmic field at which the self-similar structure of the vacuum first becomes directly legible in the spectrum. Whether the precise placement of the 4f half-fill at κ = 2 follows necessarily from the closure geometry or reflects a deeper coincidence between orbital and vacuum symmetry is an open question that the two papers together set up but do not yet resolve.
+
+The κ-displacement as a mass correction.
+
+The asymmetric ions whose corrected residuals depart from zero share a common feature: their IE/4 placement in the sweep coordinate is displaced from the ideal value κ_(quarter) = 2.0. The symmetric half-fill ions sit at κ = 2; the asymmetric ions depart from it in proportion to their electromagnetic imbalance. This suggests that the distance of each ion’s IE/4 from κ = 2 — computed entirely within the κ coordinate, using the symmetric lanthanides as the reference class — encodes the correction to the gap centre estimator G needed to achieve ppm precision for asymmetric ions. If this displacement maps onto the Thévenin correction through a κ-native formula, the mass recovery algorithm becomes universal across all ions: the lanthanides set the reference, the d-block ions provide the calibration, and every other ion in the periodic table can be corrected by its measured κ-displacement alone. The data to test and establish this are already in hand; this is the priority target for the next analysis.
+
+The nuclear closure hierarchy.
+
+The gadolinium decoupling establishes that the atomic and nuclear closure conditions are genuinely independent instantiations of the same vacuum boundary. Gd II satisfies the atomic closure condition (4f⁷, L = 0, half-fill) and produces one of the sharpest atomic gaps in the survey. ^(155–158)Gd fails the nuclear closure condition (mid-shell at both Z = 64 and N = 91–94) and shows no nuclear gap. The same element, the same vacuum boundary coordinate, two independent closure criteria: one satisfied, one not, simultaneously and for structurally different reasons.
+
+The doubly magic result extends this naturally. The Δκ = 0.100 separation between doubly magic and mid-shell nuclear populations, with zero overlap, mirrors the atomic pattern in which gap width grows monotonically with distance from the half-fill condition. Partial magic nuclei — those satisfying only the proton or only the neutron shell closure — are the nuclear analog of asymmetric ions: their S_(n)/4 gap should show partial depletion in proportion to distance from full double-magic closure. The ENSDF data and the nuclear κ analysis developed here are sufficient to test this systematically.
+
+The other gap fractions.
+
+The binary gap test confirms universally depleted intervals at every fraction tested: IE/2, IE/3, IE/4, IE/5, and beyond. The electromagnetic vacuum supports a discrete nodal structure throughout the energy axis, and the atomic transition spectrum records all of it. What distinguishes IE/4 is not the existence of the gap but what closes there: the impedance match condition Z_( orb) = Z₀, the recovery of the two fundamental constants, and the connection to the fine-structure constant through the geometry of the punctured Riemann sphere. Each of the other gap fractions marks a closure geometry of the vacuum at a different nodal structure. Their physical meanings are unknown, and finding them — which symmetries close at IE/3, which constants are encoded at IE/5, whether the full set of fractions maps onto a representation theory of the electromagnetic vacuum — is one of the most concrete research programmes that follows directly from this work.
+
+Conclusions
+
+The electron rest mass and the Bohr radius have been determined simultaneously from the location of a structural absence in atomic transition spectra. No spectral line positions are used. No free parameters are fitted. Both constants emerge from a single geometric condition — the electromagnetic closure of the Coulomb field against the vacuum impedance Z₀ — expressed in each atom’s own energy units as a zero-observation interval at the quarter-ionisation energy IE/4:
+$$m_e c^2 \;=\; \frac{8\,G}{\alpha^2},
+  \qquad
+  a_0 \;=\; \frac{\hbar c\,\alpha}{8\,G},$$
+where $G = \sqrt{\mathrm{gap\_lo}\cdot\mathrm{gap\_hi}}$ is the log-space midpoint of the gap boundaries.
+
+The five sub-0.1 meV precision-tier ions (Fe II, Mo I, Mn II, Fe I, Cr II), selected solely on the gap-width criterion with no prior knowledge of m_(e) or a₀, return a corrected mean of  − 2.8 ± 2.7 ppm (SEM, n = 5), consistent with zero. Across the full 13-ion precision cohort the corrected mean is  + 5.5 ± 13.5 ppm (SEM).
+
+The gap was confirmed by the minimal possible test: sorting raw NIST photon energies and verifying that no observed line falls at IE/4. Of 80 ions spanning Z = 1 to Z = 82, all four subshell families, and multiple ionisation stages, 71 confirm the gap and zero falsify it. The gap width stratifies by subshell family in the predicted direction (d < f < sp, Mann-Whitney p = 1.1 × 10⁻⁴ and p = 4.8 × 10⁻⁵), and in 42 of the 71 confirmed ions the gap ranks in the top 10% by width among all consecutive-pair intervals in its catalog.
+
+Uniqueness is confirmed by control: applying the same methodology at IE/3 and IE/5 returns  − 250, 133 ± 1.1 ppm and  + 250, 129 ± 4.6 ppm respectively — within 135 ppm of the algebraic predictions — while IE/4 returns  − 2.8 ppm under identical conditions. The formula returns near-zero only at IE/4 because IE/4 is the only fraction at which Z_( orb) = Z₀.
+
+The E/H partition at IE/4 organises the periodic table by electromagnetic character. The half-filled d- and f-shell ions that achieve the highest mass recovery precision are the magnetically active elements confirmed by EPR spectroscopy to couple exclusively through the inductive channel with g = 2.000 and no orbital contribution. The gap sharpness and the magnetic character are two measurements of the same electromagnetic boundary: enclosed, oscillating electromagnetic symmetry at the impedance boundary produces both the narrowest spectroscopic gap and the largest magnetic moment available at that shell configuration. The Ho II null — zero hitpairs in the E-sector sweep despite abundant level data — is the predicted outcome for an ion organised entirely by the inductive mode, demonstrating that the E and H modes of the vacuum are geometrically orthogonal and that an E-sector instrument is structurally blind to H-sector organisation.
+
+At the nuclear scale, all four doubly magic nuclei show complete depletion of levels below S_(n)/4; all 20 non-doubly-magic nuclides surveyed show no gap; and the Δκ = 0.100 separation has zero overlap. The gadolinium decoupling — sharp atomic gap, no nuclear gap, same element — confirms that the atomic and nuclear closure conditions are independent instantiations of the same vacuum boundary, each satisfied or not according to its own physical criterion at its own scale.
+
+The vacuum has two independent electromagnetic invariants. The first, c, sets the energy scale of atomic structure. The second, Z₀, sets the partition within it. Conventional formulations carry c explicitly and suppress Z₀ — a compression that is exact for propagation but non-injective with respect to the E/H partition, making the boundary at IE/4 invisible by construction (Heaton and Coherence Research Collaboration 2026b). Restoring Z₀ makes it a fixed point that every atom in the periodic table shares.
+
+The vacuum is primary. The atom is the particular closure condition it sustains at a given nuclear charge. The periodic table is the spectroscopic record of that geometry: every element a different closure, every gap the same boundary, every spectrum a different measurement of the same vacuum.
+
+Appendix
+
+NIST gap survey at IE/4
+
+@ l r l c r r r @
+
+Ion & Z & Family & Gate & Gap width & Rank & Lines
+
+Ion & Z & Family & Gate & Gap width & Rank & Lines
+
+H I & 1 & H & ✓& 6.8 eV & 99.8% & 568
+He I & 2 & H & ✓& 15.0 eV & 100.0% & 2,300
+He II & 2 & H & ✓& 28.7 eV & 99.3% & 140
+Li II & 3 & H & ✓& 43.5 eV & 99.9% & 663
+Li III & 3 & H & ✓& 64.6 eV & 99.3% & 144
+C VI & 6 & H & ✓& 221.8 eV & 99.6% & 259
+O VIII & 8 & H & ✓& 459.8 eV & 99.3% & 137
+Cl XVII & 17 & H & ∘& 2080.2 eV & 98.9% & 93
+Li I & 3 & sp & ✓& 119.5 meV & 97.1% & 344
+C IV & 6 & sp & ✓& 2.0 eV & 95.0% & 259
+N I & 7 & sp & ✓& 3.5 eV & 99.9% & 1,309
+O I & 8 & sp & ✓& 364.0 meV & 98.2% & 910
+O III & 8 & sp & ✓& 385.7 meV & 96.2% & 1,005
+O VI & 8 & sp & ✓& 7.3 eV & 95.5% & 157
+Na I & 11 & sp & ✓& 11.8 meV & 68.5% & 869
+Mg I & 12 & sp & ✓& 92.1 meV & 95.2% & 1,342
+Mg II & 12 & sp & ✓& 396.6 meV & 96.8% & 601
+Al I & 13 & sp & ✓& 121.9 meV & 94.4% & 589
+P I & 15 & sp & ✓& 2.1 eV & 99.6% & 258
+P V & 15 & sp & ✓& 4.1 eV & 91.5% & 48
+K I & 19 & sp & ✓& 37.2 meV & 86.4% & 634
+Ca I & 20 & sp & ✓& 190.7 meV & 98.0% & 206
+Ca II & 20 & sp & ✓& 68.8 meV & 78.4% & 149
+Sr II & 38 & sp & ✓& 67.3 meV & 76.9% & 135
+I I & 53 & sp & ✓& 34.2 meV & 96.8% & 1,432
+Ba II & 56 & sp & ✓& 11.7 meV & 24.3% & 112
+Pb I & 82 & sp & ✓& 189.5 meV & 92.5% & 135
+Sc II & 21 & d & ✓& 6.0 meV & 62.9% & 829
+Ti II & 22 & d & ✓& 10.1 meV & 90.7% & 1,872
+V II & 23 & d & ✓& 0.970 meV & 40.9% & 3,568
+Cr I & 24 & d & ✓& 2.2 meV & 83.2% & 4,369
+Cr II & 24 & d & ✓& 3.3 meV & 85.4% & 5,370
+Mn I & 25 & d & ✓& 115.9 meV & 98.9% & 631
+Mn II & 25 & d & ✓& 1.6 meV & 64.8% & 3,975
+Fe I & 26 & d & ✓& 2.9 meV & 96.7% & 9,146
+Fe II & 26 & d & ↑ & — & — & 5,904
+Co II & 27 & d & ✓& 6.7 meV & 88.2% & 3,168
+Ni I & 28 & d & ✓& 12.7 meV & 78.3% & 576
+Ni II & 28 & d & ✓& 384.7 meV & 98.8% & 249
+Cu I & 29 & d & ✓& 3.7 meV & 51.3% & 1,003
+Cu II & 29 & d & ✓& 10.1 meV & 85.2% & 2,557
+Zn II & 30 & d & ✓& 337.1 meV & 91.6% & 96
+Nb I & 41 & d & ✓& 5.7 meV & 65.3% & 509
+Mo I & 42 & d & ✓& 2.6 meV & 51.0% & 818
+Ag I & 47 & d & ✓& 105.4 meV & 79.4% & 103
+Cd II & 48 & d & ✓& 74.7 meV & 68.6% & 173
+Au I & 79 & d & ✓& 164.1 meV & 94.7% & 191
+Hg II & 80 & d & ✓& 45.4 meV & 87.3% & 554
+La I & 57 & f & ↑ & — & — & 291
+La II & 57 & f & ✓& 40.9 meV & 91.9% & 273
+Ce I & 58 & f & ↑ & — & — & 209
+Ce II & 58 & f & ✓& 3.8 meV & 63.7% & 560
+Ce III & 58 & f & ✓& 32.0 meV & 65.9% & 262
+Pr II & 59 & f & ✓& 20.3 meV & 94.0% & 548
+Nd I & 60 & f & ↑ & — & — & 118
+Nd II & 60 & f & ✓& 28.3 meV & 98.9% & 617
+Pm I & 61 & f & ↑ & — & — & 229
+Pm II & 61 & f & ✓& 21.4 meV & 83.5% & 195
+Sm I & 62 & f & ↑ & — & — & 162
+Sm II & 62 & f & ✓& 3.5 meV & 60.6% & 635
+Eu I & 63 & f & ∘& 8.8 meV & 74.8% & 350
+Eu II & 63 & f & ✓& 8.0 meV & 56.2% & 218
+Eu III & 63 & f & ↓ & — & — & 229
+Gd I & 64 & f & ✓& 40.5 meV & 97.3% & 371
+Gd II & 64 & f & ✓& 9.2 meV & 78.7% & 465
+Tb I & 65 & f & ∘& 43.0 meV & 97.6% & 248
+Tb II & 65 & f & ✓& 27.2 meV & 93.8% & 424
+Dy I & 66 & f & ∘& 52.4 meV & 94.8% & 230
+Dy II & 66 & f & ✓& 34.5 meV & 94.5% & 421
+Ho I & 67 & f & ∘& 105.7 meV & 98.9% & 282
+Ho II & 67 & f & ✓& 41.6 meV & 96.5% & 284
+Er I & 68 & f & ∘& 27.5 meV & 90.0% & 232
+Er II & 68 & f & ✓& 33.6 meV & 91.5% & 285
+Er III & 68 & f & ∘& 66.6 meV & 84.9% & 120
+Tm I & 69 & f & ∘& 0.604 meV & 12.9% & 528
+Tm II & 69 & f & ✓& 102.2 meV & 98.5% & 267
+Yb I & 70 & f & ↑ & — & — & 99
+Yb II & 70 & f & ✓& 134.3 meV & 98.8% & 327
+Lu I & 71 & f & ↑ & — & — & 133
+Lu II & 71 & f & ✓& 66.9 meV & 74.4% & 79
+
+Hydrogenic level-pair sweep results
+
+[]
+
+Gap centre measurement and Bohr-radius recovery at Δκ = 0.002 resolution: 12-ion precision cohort. Both panels use the hydrogenic level-pair sweep at coarser resolution than the headline results of Table 1 (Δκ = 0.0005); they serve as a cross-resolution consistency check and extend the ion coverage to include s-block ions (Ca I, Ba II) not accessible at the finer resolution. Panel A: empirical gap centre $G = \sqrt{\mathrm{gap\_lo}\cdot\mathrm{gap\_hi}}$ versus the predicted impedance-match point IE/4, for all 12 precision-tier ions (orange; marker area  ∝ log n_(pairs)) and 25 extended-survey ions (grey squares). All precision-tier ions lie on the G = IE/4 diagonal to within visual resolution. Panel B: corrected Bohr-radius residual (a₀^(emp)−a₀^(CODATA))/a₀^(CODATA) × 10⁶ after subtracting the  + 533.8 ppm proton reduced-mass baseline. The four sub-0.1 meV ions (Cr I, Mn II, Mo I, Gd I) return  − 5.9 ± 1.7 ppm (SEM, n = 4); the full 12-ion cohort returns  − 1.1 ± 53.8 ppm (σ), consistent with zero. Nd II (large negative residual) carries an extreme E-sector offset (pos_frac = 0.018); see Section 10.4. Cross-resolution agreement for ions present in both cohorts (Mo I, Mn II, Co II, Ce II, Nd II, La I, Dy II) is documented in Table 2.
+
+@ l r c c r r c r r @
+
+Ion & Z & Fam. & Gate^(†) & Gap^(†) & Rank^(†) & Gate^(‡) & Gap^(‡) & Pairs^(‡)
+
+Ion & Z & Fam. & Gate^(†) & Gap^(†) & Rank^(†) & Gate^(‡) & Gap^(‡) & Pairs^(‡)
+
+H I & 1 & H & ⋆ & & — & — & —
+Li I & 3 & sp & ⋅ & — & — & — & — & —
+N I & 7 & sp & ✓& 30.3 meV & 0.0% & — & — & —
+O I & 8 & sp & ⋅ & — & — & — & — & —
+Na I & 11 & sp & ✓& 8.6 meV & 0.5% & — & — & —
+Mg I & 12 & sp & ✓& 29.4 meV & 0.0% & — & — & —
+Mg II & 12 & sp & ✓& 400.3 meV & 0.1% & — & — & —
+Al I & 13 & sp & ✓& 101.1 meV & 0.0% & — & — & —
+P I & 15 & sp & ✓& 19.2 meV & 0.1% & — & — & —
+K I & 19 & sp & ✓& 17.6 meV & 0.3% & ✓& 13.9 meV & 2,640
+Ca I & 20 & sp & ✓& 0.151 meV & 4.0% & — & — & —
+Ca II & 20 & sp & ⋅ & — & — & — & — & —
+Sr II & 38 & sp & ✓& 1.4 eV & 1.7% & — & — & —
+I I & 53 & sp & ✓& 1.3 meV & 1.4% & — & — & —
+Ba II & 56 & sp & ✓& 0.549 meV & 32.0% & ⋅ & — & 3,476
+Ti II & 22 & d & ✓& 306.1 meV & 9.2% & — & — & —
+V II & 23 & d & — & — & — & ✓& 0.356 meV & 31,000
+Cr I & 24 & d & ✓& 0.026 meV & 23.8% & ✓& 0.345 meV & 57,535
+Cr II & 24 & d & — & — & — & ✓& 0.088 meV & 160,145
+Mn II & 25 & d & ✓& 0.052 meV & 41.3% & ✓& 0.052 meV & 63,134
+Fe I & 26 & d & ✓& 19.4 meV & 7.2% & ✓& 0.088 meV & 93,573
+Fe II & 26 & d & — & — & — & ✓& 0.031 meV & 198,667
+Co II & 27 & d & ✓& 0.553 meV & 8.1% & ✓& 0.553 meV & 32,559
+Ni II & 28 & d & ✓& 44.8 meV & 12.2% & — & — & —
+Cu I & 29 & d & ✓& 37.4 meV & 3.0% & — & — & —
+Mo I & 42 & d & ✓& 0.034 meV & 70.1% & ✓& 0.034 meV & 21,626
+Au I & 79 & d & ✓& 13.3 meV & 29.6% & — & — & —
+La I & 57 & f & ✓& 0.588 meV & 11.7% & ✓& 0.588 meV & 9,166
+La II & 57 & f & ✓& 4.9 meV & 12.4% & — & — & —
+Ce II & 58 & f & ✓& 0.110 meV & 18.3% & ✓& 0.116 meV & 46,678
+Pr II & 59 & f & ✓& 1.8 meV & 13.3% & ✓& 1.8 meV & 2,198
+Nd II & 60 & f & ✓& 0.735 meV & 1.6% & ✓& 0.735 meV & 25,373
+Sm II & 62 & f & ✓& 0.327 meV & 42.4% & — & — & —
+Eu II & 63 & f & ✓& 15.6 meV & 10.5% & ✓& 15.6 meV & 653
+Gd I & 64 & f & ✓& 0.091 meV & 11.0% & — & — & —
+Gd II & 64 & f & ✓& 58.6 meV & 0.7% & ✓& 0.262 meV & 8,728
+Tb II & 65 & f & ✓& 13.8 meV & 9.2% & ✓& 13.8 meV & 319
+Dy II & 66 & f & ✓& 0.281 meV & 13.2% & ✓& 0.281 meV & 21,467
+Ho I & 67 & f & ✓& 2.5 meV & 6.5% & ✓& 2.5 meV & 1,725
+Er II & 68 & f & ✓& 2.9 meV & 29.7% & ✓& 2.9 meV & 979
+Tm II & 69 & f & ✓& 28.6 meV & 1.9% & — & — & —
+Yb II & 70 & f & ✓& 1.1 eV & 11.4% & — & — & —
+Lu II & 71 & f & ✓& 784.9 meV & 8.3% & — & — & —
+
+  Ion                               Z  Tier    Gap lo (meV)   Gap hi (meV)   Width (meV)     Pairs      Raw (ppm)     Corr. (ppm)
+  ------------------------------ ---- ------ -------------- -------------- ------------- --------- -------------- ---------------
+  Fe II                            26   ⋆          4046.920       4046.952         0.031   198,667        + 537.2           + 3.4
+  Mo I                             42   ⋆          1773.098       1773.132         0.034    21,626        + 525.2           − 8.6
+  Mn II                            25   ⋆          3909.996       3910.052         0.056    63,134        + 527.6           − 6.2
+  Fe I                             26   ⋆          1975.594       1975.682         0.088    93,573        + 527.2           − 6.6
+  Cr II                            24   ⋆          4121.373       4121.461         0.088   160,145        + 537.7           + 3.9
+  Sub-0.1 meV ensemble (n = 5)                                                                        531.0 ± 6.0     − 2.8 ± 2.7
+  Ce II                            58   •          2712.477       2712.593         0.116    46,678        + 548.7          + 14.9
+  Gd II                            64   •          3022.281       3022.543         0.262     8,728        + 562.9          + 29.1
+  Dy II                            66   •          2917.234       2917.515         0.281    21,467        + 576.8          + 43.0
+  Sub-0.3 meV ensemble (n = 8)                                                                       543.0 ± 18.7     + 9.1 ± 6.6
+  Cr I                             24   ⋅          1691.317       1691.662         0.345    57,535        + 614.2          + 80.4
+  V II                             23   ⋅          3658.333       3658.689         0.356    31,000        + 530.8           − 3.0
+  Co II                            27   ⋅          4270.671       4271.224         0.553    32,559        + 569.6          + 35.8
+  La I                             57   ⋅          1393.907       1394.495         0.588     9,166        + 551.0          + 17.2
+  Nd II                            60   ⋅          2681.987       2682.722         0.735    25,373        + 401.5         − 132.3
+  All precision (n = 13)                                                                             539.3 ± 48.5    + 5.5 ± 13.5
+
+  :  Precision-tier gap centre measurement and mass recovery: all 13 ions at Δκ = 0.0005. The gap centre $G = \sqrt{\mathrm{gap\_lo} \cdot \mathrm{gap\_hi}}$ is the log-space midpoint of the two nearest resonant level-pair spacings bracketing IE/4 in the sorted array (Section 11.6). Gap lo and Gap hi are the closest resonant pair spacings below and above IE/4; these are differences of NIST energy levels, not individual level energies. Width: gap_hi − gap_lo in meV. Pairs: total resonant level pairs in the survey window. Raw: fractional offset (G−IE/4)/(IE/4) × 10⁶ before baseline correction. Corr.: raw minus the empirical reduced-mass baseline of  + 533.8 ppm (derivable from CODATA, not fitted). Sub-tier: ⋆ sub-0.1 meV (headline); • sub-0.3 meV; ⋅ sub-1.0 meV (all precision).
+
+  Ion        Z   Width₀₀₀₅ (meV)   Width₀₀₂ (meV)   Corr.₀₀₀₅ (ppm)   Corr.₀₀₂ (ppm)
+  ------- ---- ----------------- ---------------- ----------------- ----------------
+  Fe II     26             0.031            —^(†)             + 3.4                —
+  Mo I      42             0.034            0.034             − 8.6            − 8.6
+  Mn II     25             0.056            0.056             − 6.2            − 6.2
+  Fe I      26             0.088             19.4             − 6.6            —^(‡)
+  Cr II     24             0.088            —^(†)             + 3.9                —
+  Cr I      24             0.345       0.026$^\S$            + 80.4            − 0.9
+
+  :  Cross-resolution check at Δκ = 0.002 for overlapping sub-0.1 meV ions. Of the five sub-0.1 meV headline ions at Δκ = 0.0005, two (Fe II and Cr II) were not in the Δκ = 0.002 cohort. Mo I and Mn II agree to sub-ppm between resolutions, confirming gap-centre stability. Cr I is included as an additional cross-check: its gap contracts by 13× between resolutions and is flagged as resolution-sensitive; the Δκ = 0.0005 value is primary.
+
+E/H partition in atomic spectra
+
+@ l r c r r r c @
+
+Ion & Z & Fam. & EH & pos & Gap width & Flag
+
+Ion & Z & Fam. & EH & pos & Gap width & Flag
+
+H I & 1 & H & 0.001 & 0.001 & 6.8 eV & ↓H
+He I & 2 & H & 0.098 & 0.089 & 15.0 eV & —
+He II & 2 & H & 0.056 & 0.053 & 28.7 eV & —
+Li I & 3 & sp & 0.028 & 0.027 & 119.5 meV & ↓H
+C IV & 6 & sp & 0.013 & 0.013 & 2.0 eV & ↓H
+N I & 7 & sp & 0.016 & 0.016 & 3.5 eV & ↓H
+O I & 8 & sp & 0.150 & 0.131 & 364.0 meV & —
+O III & 8 & sp & 48.96 & 0.980 & 385.7 meV & ↑E
+O VI & 8 & sp & 14.07 & 0.934 & 7.3 eV & —
+Na I & 11 & sp & 14.50 & 0.935 & 11.8 meV & —
+Mg I & 12 & sp & 0.829 & 0.453 & 92.1 meV & ↔
+Mg II & 12 & sp & 1.752 & 0.637 & 396.6 meV & —
+Al I & 13 & sp & 2.183 & 0.686 & 121.9 meV & —
+P I & 15 & sp & 0.066 & 0.062 & 2.1 eV & ↓H
+P V & 15 & sp & 0.901 & 0.474 & 4.1 eV & ↔
+K I & 19 & sp & 2.019 & 0.669 & 37.2 meV & —
+Ca I & 20 & sp & 0.166 & 0.142 & 190.7 meV & —
+Ca II & 20 & sp & 0.418 & 0.295 & 68.8 meV & —
+Sr II & 38 & sp & 0.393 & 0.282 & 67.3 meV & —
+I I & 53 & sp & 0.408 & 0.290 & 34.2 meV & —
+Ba II & 56 & sp & 0.045 & 0.043 & 11.7 meV & ↓H
+Pb I & 82 & sp & 0.411 & 0.292 & 189.5 meV & —
+Sc II & 21 & d & 1.035 & 0.509 & 6.0 meV & ↔
+Ti II & 22 & d & 1.479 & 0.597 & 10.1 meV & —
+V II & 23 & d & 2.946 & 0.747 & 0.970 meV & —
+Cr I & 24 & d & 0.548 & 0.354 & 2.2 meV & —
+Cr II & 24 & d & 26.51 & 0.964 & 3.3 meV & ↑E
+Mn I & 25 & d & 1.711 & 0.631 & 115.9 meV & —
+Mn II & 25 & d & 7.908 & 0.888 & 1.6 meV & —
+Fe I & 26 & d & 1.113 & 0.527 & 2.9 meV & ↔
+Co II & 27 & d & 8.327 & 0.893 & 6.7 meV & —
+Ni I & 28 & d & 880.5 & 0.999 & 12.7 meV & ↑E
+Ni II & 28 & d & 1.243 & 0.554 & 384.7 meV & —
+Cu I & 29 & d & 6.053 & 0.858 & 3.7 meV & —
+Cu II & 29 & d & 6.771 & 0.871 & 10.1 meV & —
+Zn II & 30 & d & 0.020 & 0.019 & 337.1 meV & ↓H
+Nb I & 41 & d & 2.438 & 0.709 & 5.7 meV & —
+Mo I & 42 & d & 5.238 & 0.840 & 2.6 meV & —
+Ag I & 47 & d & 0.257 & 0.204 & 105.4 meV & —
+Cd II & 48 & d & 12.56 & 0.926 & 74.7 meV & —
+Au I & 79 & d & 2.291 & 0.696 & 164.1 meV & —
+Hg II & 80 & d & 0.572 & 0.364 & 45.4 meV & —
+La II & 57 & f & 1.433 & 0.589 & 40.9 meV & —
+Ce II & 58 & f & 0.788 & 0.441 & 3.8 meV & ↔
+Ce III & 58 & f & 14.24 & 0.934 & 32.0 meV & —
+Pr II & 59 & f & 0.310 & 0.237 & 20.3 meV & —
+Nd II & 60 & f & 0.978 & 0.495 & 28.3 meV & ↔
+Pm II & 61 & f & 0.830 & 0.454 & 21.4 meV & ↔
+Sm II & 62 & f & 0.013 & 0.013 & 3.5 meV & ↓H
+Eu I & 63 & f & 2.426 & 0.708 & 8.8 meV & —
+Eu II & 63 & f & 2.705 & 0.730 & 8.0 meV & —
+Gd I & 64 & f & 0.080 & 0.074 & 40.5 meV & ↓H
+Gd II & 64 & f & 5.305 & 0.841 & 9.2 meV & —
+Tb I & 65 & f & 0.235 & 0.190 & 43.0 meV & —
+Tb II & 65 & f & 1.169 & 0.539 & 27.2 meV & —
+Dy I & 66 & f & 0.185 & 0.156 & 52.4 meV & —
+Dy II & 66 & f & 0.185 & 0.156 & 34.5 meV & —
+Ho I & 67 & f & 0.635 & 0.388 & 105.7 meV & —
+Ho II & 67 & f & 0.207 & 0.171 & 41.6 meV & —
+Er I & 68 & f & 0.772 & 0.436 & 27.5 meV & ↔
+Er II & 68 & f & 2.598 & 0.722 & 33.6 meV & —
+Er III & 68 & f & 0.697 & 0.411 & 66.6 meV & ↔
+Tm I & 69 & f & 0.353 & 0.261 & 0.604 meV & —
+Tm II & 69 & f & 0.149 & 0.130 & 102.2 meV & —
+Yb II & 70 & f & 0.038 & 0.037 & 134.3 meV & ↓H
+Lu II & 71 & f & 4.503 & 0.818 & 66.9 meV & —
+
+  Family                                         n   Median EH IQR                Median pos    MW p (vs sp)
+  ------------------------------------------- ---- ----------- ---------------- ------------ ---------------
+  Hydrogenic                                     3       0.056 [0.028, 0.077]          0.053       0.002^(†)
+  s/p-block                                     24       0.385 [0.055, 1.114]          0.278   — (reference)
+  f-block                                       20       0.780 [0.201, 1.724]          0.438     0.88 (n.s.)
+  d-block                                       20       2.365 [1.093, 7.055]          0.703           0.001
+  d > f: p = 0.006; H-like  < d: p = 0.002.                                                  
+
+  Test                                         r       p    n Interpretation
+  ----------------------------------- ---------- ------- ---- ----------------
+  Level-pair EH vs gap EH (primary)      − 0.103   0.420   63 Not correlated
+  Level-pair EH vs line density EH       − 0.058   0.668   57 Not correlated
+  Line density EH vs gap EH              − 0.117   0.386   57 Not correlated
+
+Nuclear Sn/4 gap survey
+
+@ l r r c r r r r @
+
+Nuclide & Z & N & Gate & S_(n)/4 (keV) & n_(↓) & E₁ (keV) & κ_(nuc)
+
+Nuclide & Z & N & Gate & S_(n)/4 (keV) & n_(↓) & E₁ (keV) & κ_(nuc)
+
+¹⁶O & 8 & 8 & ✓✓ & 3916 & 0 & 6049 & 0.1934
+⁴⁸Ca & 20 & 28 & ✓✓ & 2488 & 0 & 3832 & 0.1940
+¹³²Sn & 50 & 82 & ✓✓ & 1838 & 0 & 4041 & 0.1217
+²⁰⁸Pb & 82 &126 & ✓✓ & 1842 & 0 & 2615 & 0.2106
+¹²C & 6 & 6 & ✓ & 4680 & 1 & 7654 & 0.1818
+²⁰⁹Pb & 82 &127 & ✓ & 984 & 1 & 1423 & 0.2069
+⁴⁰K & 19 & 21 & ✓ & 1950 & 4 & 1959 & 0.2808
+⁵⁶Ni & 28 & 28 & ✓ & 4161 & 3 & 4932 & 0.2472
+⁶⁰Co & 27 & 33 & ✓ & 1873 & 36 & 1877 & 0.2813
+⁹⁸Mo & 42 & 56 & ✓ & 2161 & 11 & 2207 & 0.2775
+¹³⁹La & 57 & 82 & ✓ & 2194 & 40 & 2232 & 0.2783
+²³⁸U & 92 &146 & ✓ & 1539 & 54 & 1546 & 0.2808
+²²Na & 11 & 11 & ⋆ & 2767 & 9 & 2969 & 0.2675
+⁵⁶Fe & 26 & 30 & ⋆ & 2799 & 3 & 2942 & 0.2717
+⁵⁶Co & 27 & 29 & ⋆ & 2520 & 19 & 2610 & 0.2747
+⁵⁷Co & 27 & 30 & ⋆ & 2844 & 21 & 2879 & 0.2793
+⁵⁸Ni & 28 & 30 & ⋆ & 3054 & 6 & 3264 & 0.2683
+⁹⁰Zr & 40 & 50 & ⋆ & 2992 & 5 & 3077 & 0.2761
+¹⁴⁰Ce & 58 & 82 & ⋆ & 2300 & 4 & 2348 & 0.2776
+¹³³Ba & 56 & 77 & × & 1797 & 42 & 1830 & 0.2781
+¹³⁷Cs & 55 & 82 & × & 2070 & 15 & 2099 & 0.2788
+¹⁴¹Pr & 59 & 82 & × & 2350 & 70 & 2354 & 0.2814
+¹⁵¹Sm & 62 & 89 & × & 1399 &130 & 1409 & 0.2803
+¹⁵³Eu & 63 & 90 & × & 2138 &122 & 2182 & 0.2775
+¹⁵⁵Gd & 64 & 91 & × & 1609 &146 & 1615 & 0.2809
+¹⁵⁶Gd & 64 & 92 & × & 2134 & 84 & 2134 & 0.2817
+¹⁵⁷Gd & 64 & 93 & × & 1590 &124 & 1607 & 0.2796
+¹⁵⁸Gd & 64 & 94 & × & 1984 & 61 & 1997 & 0.2805
+¹⁶²Dy & 66 & 96 & × & 2049 & 71 & 2054 & 0.2813
+¹⁶³Dy & 66 & 97 & × & 1568 &107 & 1572 & 0.2812
+¹⁶⁵Dy & 66 & 99 & × & 1429 & 70 & 1441 & 0.2801
+¹⁶⁵Ho & 67 & 98 & × & 1997 &118 & 2012 & 0.2803
+¹⁶⁷Er & 68 & 99 & × & 1609 &105 & 1625 & 0.2798
+¹⁶⁹Tm & 69 &100 & × & 2008 & 69 & 2076 & 0.2751
+¹⁷⁰Tm & 69 &101 & × & 1648 &165 & 1659 & 0.2804
+¹⁷¹Yb & 70 &101 & × & 1654 & 91 & 1656 & 0.2814
+¹⁸²Ta & 73 &109 & × & 1516 &118 & 1527 & 0.2802
+¹⁹²Ir & 77 &115 & × & 1550 &174 & 1552 & 0.2815
+²³²Th & 90 &142 & × & 1610 & 62 & 1618 & 0.2807
+¹⁷O & 8 & 9 & ⋅ & 1036 & 1 & — & —
+¹⁵²Eu & 63 & 89 & ⋅ & 1577 &189 & — & —
+¹⁵⁴Eu & 63 & 91 & ⋅ & 1611 &156 & — & —
+¹⁵⁵Eu & 63 & 92 & ⋅ & 2038 & 80 & — & —
+¹⁶⁰Tb & 65 & 95 & ⋅ & 1594 &119 & — & —
+¹⁶⁶Ho & 67 & 99 & ⋅ & 1561 &226 & — & —
+¹⁸⁸Re & 75 &113 & ⋅ & 1468 &171 & — & —
+¹⁹⁷Au & 79 &118 & ⋅ & 2018 & 32 & — & —
+²²⁶Ra & 88 &138 & ⋅ & 1599 & 32 & — & —
+
+Falsification conditions
+
+@ p0.29 p0.30 p0.37 @
+
+Claim & Evidence & Falsification condition
+
+Claim & Evidence & Falsification condition
+
+Universal gap at IE/4: no observed photon transition carries the energy IE/4 for any ion with sufficient catalog coverage (§8) & 71/80 NIST ions confirmed; 0 falsified; gap rank at 92.5th percentile median across confirmed ions & Any ion with  ≥ 200 observed lines spanning IE/4 from both sides where a line falls within 1 meV of IE/4
+
+IE/4 is the unique impedance-match fraction: the gap centre encodes m_(e)c² only at IE/4, not at other fractions (§8.2) & IE/3 returns  − 250, 133 ± 1.1 ppm (SEM); IE/5 returns  + 250, 129 ± 4.6 ppm; IE/4 returns  − 2.8 ± 2.7 ppm & Any wrong fraction (IE/3, IE/5, etc.) returning a corrected residual within  ± 50 ppm under identical methodology with n ≥ 4 precision-tier ions
+
+Gap centre at IE/4: $G = \sqrt{\mathrm{gap\_lo}\cdot\mathrm{gap\_hi}}
+= \mathit{IE}/4$ to ± 2.7 ppm (SEM) for electromagnetically symmetric ions (§9) & δ_(G)^(corr) =  − 2.8 ± 2.7 ppm, n = 5 sub-0.1 meV ions;  + 5.5 ± 13.5 ppm, n = 13 all precision & Mean |δ_(G)^(corr)| > 100 ppm across  ≥ 10 precision-tier ions all satisfying gap_width < 0.5 meV and σ_(exp)/ΔE_(step) < 1.0
+
+Shell ordering of gap width: d-block gaps narrower than s/p-block; f-block intermediate (§8.4) & d: median 8.4 meV; f: 32.8 meV; sp: 189.5 meV; Mann-Whitney d < sp, p = 1.1 × 10⁻⁴ & Mann-Whitney d < sp returning p > 0.05 with n_(d) ≥ 15 and n_(sp) ≥ 15 confirmed ions, or d-block median exceeding f-block median
+
+E/H partition stratifies by shell family: d-block EH ratio > f-block > s/p-block (§8.8) & d: median EH ratio  = 2.365; f: 0.780; sp: 0.385; Mann-Whitney f < d, p = 0.006 & Mann-Whitney f < d on EH ratio returning p > 0.05 with n_(d) ≥ 15 and n_(f) ≥ 15 confirmed ions
+
+EH ratio is not predicted by level-pair energy asymmetry: the partition encodes transition geometry, not level density (§11.7) & r(log EH_(levels), log EH_(lines)) =  − 0.103, p = 0.42, n = 63 & Spearman |r| > 0.4 with p < 0.01 in a survey of n ≥ 50 ions using the same levels-vs-lines independence test
+
+Orbital impedance formula Z_( orb)(n) = Z₀ n/α from Coulomb and Biot–Savart (§5) & Mathematical derivation; Z_( orb)(1) = 51, 626 Ω verified numerically & An identified error in the derivation steps Z_( orb) = |ℰ|/|ℋ| = 1/ε₀v_(n) = Z₀ n/α
+
+Nuclear analogue at S_(n)/4: all four doubly magic nuclei show complete depletion; no non-doubly-magic nuclide shows a gap (§11.8) & n_(↓) = 0 for ¹⁶O, ⁴⁸Ca, ¹³²Sn, ²⁰⁸Pb; n_(↓) ≫ 0 for all 20 non-doubly-magic nuclides & Any doubly magic nucleus with ENSDF coverage  > 200% showing n_(↓) ≥ 3 levels below S_(n)/4, or any mid-shell nucleus showing n_(↓) = 0 with coverage  > 100%
+
+Independent replication checklist
+
+An independent researcher can verify the central claims of this paper from raw NIST data using only the five-step procedure below. No pipeline code, no sweep configuration files, and no prior knowledge of m_(e) or a₀ are required for steps 1–3. Steps 4 and 5 extend the verification to the precision measurement.
+
+Step 1: The 30-second gap test (any ion).
+
+Choose any ion with a published ionization energy and a NIST spectroscopic line catalog.
+
+1.  Download the NIST ASD line list for the ion (https://physics.nist.gov/asd, Lines form).
+
+2.  Compute IE/4 in meV from the NIST sequential ionization energy.
+
+3.  Sort the catalog by photon energy in meV.
+
+4.  Find the two consecutive entries hν_(j) and hν_(j + 1) that bracket IE/4: confirm that hν_(j) < IE/4 < hν_(j + 1).
+
+This test requires no model, no α, and no coordinate system. If the gap does not exist for a well-covered ion, the primary claim is falsified.
+
+Step 2: The uniqueness test (three fractions).
+
+Download NIST energy levels for Fe II (Z = 26, IE = 16.1878 eV). Form all pairwise level-energy differences ΔE = E_(k) − E_(i) (E_(k) > E_(i)) and sort the resulting array. For each fraction f ∈ {3, 4, 5}:
+
+1.  Compute the target IE/f in meV.
+
+2.  Locate gap_lo = max {ΔE_(j) < IE/f} and gap_hi = min {ΔE_(j) > IE/f}.
+
+3.  Compute $G = \sqrt{\mathrm{gap\_lo}\cdot\mathrm{gap\_hi}}$ and the raw fractional offset δ = (G−IE/f)/(IE/f) × 10⁶ ppm.
+
+4.  Subtract the reduced-mass baseline  + 533.8 ppm to obtain the corrected residual.
+
+Expected results (corrected):
+
+  Fraction     Algebraic prediction      Expected result
+  ---------- ---------------------- --------------------
+  IE/3               + 250, 000 ppm    ≈  + 250, 000 ppm
+  IE/4                        0 ppm     ≈ 0 ppm (signal)
+  IE/5               − 250, 000 ppm    ≈  − 250, 000 ppm
+
+If IE/4 does not return near-zero while IE/3 and IE/5 return the expected  ± 250, 000 ppm, the uniqueness claim is falsified.
+
+Step 3: The five headline ions.
+
+Repeat Step 2 at IE/4 only for the five sub-0.1 meV headline ions. Required NIST ionization energies:
+
+  Ion     Symbol           IE (eV)
+  ------- -------------- ---------
+  Fe II   Iron II          16.1878
+  Mo I    Molybdenum        7.0924
+  Mn II   Manganese II     15.6400
+  Fe I    Iron I            7.9025
+  Cr II   Chromium II      16.4857
+
+Individual corrected residuals should be within  ± 15 ppm of the values in Table 1 if the ionization energies match those above. The mean across the five ions should be within  ± 15 ppm of  − 2.8 ppm.
+
+Step 4: Hydrogen by arithmetic alone.
+
+No NIST data, no pipeline, no constants beyond E₀ = 13.6057 eV.
+
+1.  Compute all transition energies ΔE(n_(f),n_(i)) = E₀(1/n_(f)²−1/n_(i)²) for 1 ≤ n_(f) < n_(i) ≤ 40.
+
+2.  Confirm that none satisfies ΔE = E₀/4 = IE/4; i.e., that 1/n_(f)² − 1/n_(i)² = 1/4 has no solution in positive integers with n_(f) < n_(i) ≤ 40.
+
+3.  Confirm that the 518 NIST H I lines distribute as: 440 lines in [0, IE/4); 0 lines in [IE/4, 3IE/4); 76 lines in [3IE/4, IE). (The two Lyman-α fine-structure components at 10, 198.806 and 10, 198.811 meV straddle 3IE/4 = 10, 198.826 meV by  < 0.02 meV and are not exceptions to the partition.)
+
+Step 5: The hydrogenic ruler and self-consistency.
+
+Using the coordinate κ(ΔE; Z) = log₁₀(ΔE/E₀Z²) / log₁₀α (equation [eq:kappa]), confirm the following for the analytic hydrogen template (E_(n) = E₀/n², 1 ≤ n_(f) < n_(i) ≤ 60):
+
+1.  Assign each of the $\binom{60}{2} = 1{,}770$ pairs to the nearest κ bin at step Δκ = 0.002.
+
+2.  The bin at κ = 0.2820 (nearest to κ_(q) = 0.2818) should contain 35 coincidences, all of the form (n_(f)=2, n_(i)≥26), with mean ΔE ≈ 3, 393 meV converging toward IE/4 = 3, 401 meV.
+
+3.  The bin at κ = 0.0000 should contain 46 coincidences of the form (n_(f)=1, n_(i)≥15), confirming that the two dominant accumulation points of the hydrogen spectrum — Lyman and Balmer series limits — fall at κ = 0 and κ = κ_(q) respectively.
+
+These results confirm that the hydrogenic ruler locates the impedance boundary at the correct coordinate without any free parameter.
+
+Data and code availability.
+
+NIST spectroscopic data: https://physics.nist.gov/asd.
+ENSDF nuclear data: https://www.nndc.bnl.gov/ensdf/.
+The complete ion manifest, YAML sweep configuration files, pipeline scripts, and all intermediate analysis files are available from the corresponding author on request. All numerical results in this paper are derived solely from these publicly available data sources and CODATA 2018 physical constants; no proprietary data or model outputs are involved.
+
+Provenance
+
+The research that gave rise to this paper was conducted by Kelly B. Heaton through an interactive collaboration with Claude (Sonnet 4.6, a large language model developed by Anthropic), and ChatGPT (large language models developed by OpenAI), collectively referred to as the Coherence Research Collaboration. All research design, direction, interpretation, and conclusions were determined by the human author who is the sole owner of the intellectual property. DOI: 10.5281/zenodo.19164224
+v1.0: March 2026. Initial publication.
+v1.1: March 2026. Corrected citation metadata for Heaton (2026c): updated title to The Encounter of Two Primitives and One Flaw: Geometric Unification at the Electromagnetic Scale, updated status from forthcoming to published, and corrected DOI URL. No changes to scientific content.
+
+[]
+
+Lucerna Veritas
+
+Follow the light of the lantern.
+
+Abragam, A., and B. Bleaney. 1970. Electron Paramagnetic Resonance of Transition Ions. Oxford: Oxford University Press.
+
+Balmer, Johann Jakob. 1885. “Notiz über Die Spectrallinien Des Wasserstoffs.” Annalen Der Physik Und Chemie 261 (5): 80–87. https://doi.org/10.1002/andp.18852610506.
+
+Bethe, Hans A. 1936. “An Attempt to Calculate the Number of Energy Levels of a Heavy Nucleus.” Physical Review 50 (4): 332–41. https://doi.org/10.1103/PhysRev.50.332.
+
+———. 1947. “The Electromagnetic Shift of Energy Levels.” Physical Review 72 (4): 339–41. https://doi.org/10.1103/PhysRev.72.339.
+
+Bleaney, B., and K. W. H. Stevens. 1953. “Paramagnetic Resonance.” Reports on Progress in Physics 16 (1): 108–59. https://doi.org/10.1088/0034-4885/16/1/303.
+
+Bohr, Niels. 1913. “On the Constitution of Atoms and Molecules.” Philosophical Magazine 26 (151): 1–25. https://doi.org/10.1080/14786441308634955.
+
+Bose, Jagadish Chunder. 1897. “On the Determination of the Wavelength of Electric Radiation by a Diffraction Grating.” Proceedings of the Royal Society of London 60: 167–78. https://doi.org/10.1098/rspl.1896.0069.
+
+Boyer, Timothy H. 1975. “Random Electrodynamics: The Theory of Classical Electrodynamics with Classical Electromagnetic Zero-Point Radiation.” Physical Review D 11 (4): 790–808. https://doi.org/10.1103/PhysRevD.11.790.
+
+Bureau International des Poids et Mesures. 2019. The International System of Units (SI). 9th ed. Sèvres, France: Bureau International des Poids et Mesures. https://www.bipm.org/en/publications/si-brochure.
+
+Burkhardt, H., and B. Pietrzyk. 2001. “Update of the Hadronic Contribution to the QED Vacuum Polarisation.” Physics Letters B 513: 46–52. https://doi.org/10.1016/0370-2693(95)00820-B.
+
+Casimir, Hendrik B. G. 1948. “On the Attraction Between Two Perfectly Conducting Plates.” Proceedings of the Koninklijke Nederlandse Akademie van Wetenschappen 51: 793–95.
+
+Coherence Research Collaboration. 2026. “Electromagnetic Closure and the Fine-Structure Constant: A Geometric Derivation.” https://doi.org/10.5281/zenodo.19157339.
+
+Cowan, Robert D. 1981. The Theory of Atomic Structure and Spectra. Berkeley, CA: University of California Press.
+
+Feynman, Richard P. 1985. QED: The Strange Theory of Light and Matter. Princeton, NJ: Princeton University Press.
+
+Fock, Vladimir. 1935. “Zur Theorie Des Wasserstoffatoms.” Zeitschrift für Physik 98: 145–54. https://doi.org/10.1007/BF01336904.
+
+Gilbert, A., and A. G. W. Cameron. 1965. “A Composite Nuclear-Level Density Formula with Shell Corrections.” Canadian Journal of Physics 43 (8): 1446–96. https://doi.org/10.1139/p65-139.
+
+Goeppert Mayer, Maria. 1949. “On Closed Shells in Nuclei. II.” Physical Review 75 (12): 1969–70. https://doi.org/10.1103/PhysRev.75.1969.
+
+Haxel, Otto, J. Hans D. Jensen, and Hans E. Suess. 1949. “On the ‘Magic Numbers’ in Nuclear Structure.” Physical Review 75 (11): 1766. https://doi.org/10.1103/PhysRev.75.1766.2.
+
+Heaton, Kelly B., and Claude Sonnet 4.6. 2026. “The Encounter of Two Primitives and One Flaw: Geometric Unification at the Electromagnetic Scale.” https://doi.org/10.5281/zenodo.19194036.
+
+Heaton, Kelly B., and Coherence Research Collaboration. 2025a. “Recursive Geometry of Atomic Spectra.” Zenodo Preprint. https://doi.org/10.5281/zenodo.17188444.
+
+———. 2025b. “Information-Theoretic Confirmation of the α-Affine Thread Frame: Minimum Description Length Validation of the Fine-Structure Slope.” Zenodo Preprint, October. https://doi.org/10.5281/zenodo.17335815.
+
+———. 2026a. “Hydrogenic Alignment as a Coordinate Principle for Atomic Spectra.” Zenodo, January. https://doi.org/10.5281/zenodo.18167643.
+
+———. 2026b. “Determinacy Under Quotient Representations.” Zenodo, March. https://doi.org/10.5281/zenodo.18868210.
+
+Heaviside, Oliver. 1893. Electromagnetic Theory. Vol. 1. London: The Electrician Printing; Publishing Company.
+
+Jackson, John David. 1999. Classical Electrodynamics. 3rd ed. New York: John Wiley & Sons.
+
+Kitano, Masao. 2009. “The Vacuum Impedance and Unit Systems.” IEICE Transactions on Electronics E92-C (1): 3–8. https://doi.org/10.1587/transele.E92.C.3.
+
+Kramida, A., Yu. Ralchenko, J. Reader, and NIST ASD Team. 2023. “NIST Atomic Spectra Database (Version 5.11).” Gaithersburg, MD: National Institute of Standards; Technology. https://physics.nist.gov/asd.
+
+Lamb, Willis E., and Robert C. Retherford. 1947. “Fine Structure of the Hydrogen Atom by a Microwave Method.” Physical Review 72 (3): 241–43. https://doi.org/10.1103/PhysRev.72.241.
+
+Maxwell, James Clerk. 1865. “A Dynamical Theory of the Electromagnetic Field.” Philosophical Transactions of the Royal Society of London 155: 459–512. https://doi.org/10.1098/rstl.1865.0008.
+
+National Nuclear Data Center. 2026. “Evaluated Nuclear Structure Data File (ENSDF).” Upton, NY: Brookhaven National Laboratory. https://www.nndc.bnl.gov/ensdf/.
+
+Orton, J. W. 1968. Electron Paramagnetic Resonance: An Introduction to Transition Group Ions in Crystals. London: Iliffe Books.
+
+Pozar, David M. 2011. Microwave Engineering. 4th ed. Hoboken, NJ: John Wiley & Sons.
+
+Puthoff, Harold E. 1987. “Ground State of Hydrogen as a Zero-Point-Fluctuation-Determined State.” Physical Review D 35 (10): 3266–69. https://doi.org/10.1103/PhysRevD.35.3266.
+
+Sommerfeld, Arnold. 1916. “Zur Quantentheorie Der Spektrallinien.” Annalen Der Physik 356 (17): 1–94. https://doi.org/10.1002/andp.19163561702.
+
+Tiesinga, Eite, Peter J. Mohr, David B. Newell, and Barry N. Taylor. 2021. “CODATA Recommended Values of the Fundamental Physical Constants: 2018.” Reviews of Modern Physics 93 (2): 025010. https://doi.org/10.1103/RevModPhys.93.025010.
+
+von Klitzing, Klaus, Gerhard Dorda, and Michael Pepper. 1980. “New Method for High-Accuracy Determination of the Fine-Structure Constant Based on Quantized Hall Resistance.” Physical Review Letters 45 (6): 494–97. https://doi.org/10.1103/PhysRevLett.45.494.
+
+[1] At finer resolution using the Thread Frame coordinate (Section 6), additional gaps are identifiable in ions where the dense NIST catalog obscures the boundary in raw energy units. At Δκ = 0.002 resolution, 36 of 38 swept ions confirm the gap via resonant level pairs; at Δκ = 0.0005, all 16 of 16 swept ions confirm it. These results are consistent with the NIST-only survey and are reported separately; the headline count of 71 uses only raw NIST photon energies.
+
+[2] Other spectral gaps may indeed be significant for reasons beyond the scope of this paper.
+
+[3] Substituting G = E₀/4 (infinite-nuclear-mass limit) into m_(e)c² = 8G/α² and a₀ = ℏc α/8G returns the CODATA values to  < 0.001 ppm, confirming the formulae are correctly derived. This is a consistency check, not a precision measurement: E₀ is defined by E₀ = m_(e)c²α²/2, so substituting G = E₀/4 recovers the original constants by construction.

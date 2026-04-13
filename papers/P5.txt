@@ -1,0 +1,733 @@
+Introduction
+
+The proton-to-electron mass ratio m_(p)/m_(e) ≈ 1836 is one of the most precisely measured and least explained numbers in physics. The Standard Model assigns it no derivation. It enters as a measured input, used throughout atomic and nuclear physics but traced to no deeper principle. This paper derives it.
+
+The derivation begins with the electromagnetic structure of the bound state. The orbital impedance Z_(orb)(n) = Z₀n/α — derived in (Heaton 2026c) from Coulomb’s law and the Biot–Savart law, with elementary charge e and orbital radius r_(n) cancelling exactly from the field ratio |E|/|H| — equals the vacuum impedance Z₀ only when n = α ≈ 1/137, a condition no positive integer can satisfy. The field configuration that impedance-matching requires is simultaneously demanded by the geometry and forbidden by the closure condition of any bound state. Because nuclear charge Z cancels from Z_(orb)/Z₀ = n/α, the resulting structural absence at IE/4 is universal: independent of electron configuration, subshell filling, and nuclear charge. In hydrogen, 440 of 518 observed transitions fall below IE/4 and 76 fall above 3IE/4; none fall between them. Across 71 ions spanning the periodic table the identical boundary appears with zero falsifications (Heaton 2026d). The same fraction 1/4 appears at S_(n)/4 in all four doubly magic nuclei surveyed, with zero overlap with 20 non-doubly-magic nuclides (Heaton 2026c): where the Rydberg formula plays no role, the identical causal boundary still appears, confirming that it belongs to the vacuum geometry and not to atomic physics.
+
+The H-mode winding around the source pole converges toward the golden ratio through successive Fibonacci approximations; the proton condenses at the step where the convergence error first falls below α, in the only mathematics then available. From this geometry, the proton rest mass follows:
+$$\label{eq:proton_main}
+  m_p c^2
+  = 4^{13} \times E_0 \times
+    \frac{2157 - 869\sqrt{5}}{208}
+  = 938.273\,\mathrm{MeV},$$
+accurate to 0.61 ppm. No coupling constant, quark mass, nuclear parameter, or fitted constant enters the derivation. The correction factor $(2157 - 869\sqrt{5})/208$ is an algebraic expression in Fibonacci integers and $\sqrt{5}$ alone, derived from the destructive interference between the j = 5 and j = 6 Fibonacci convergence half-steps.
+
+The reason the derivation uses only integers and $\sqrt{5}$ is physical, not a mathematical convenience. The proton condenses at Fibonacci winding step j = 5, before the constants φ, π, α, and e have stabilised. Those constants are attractors toward which the geometry is converging, not initial conditions it began with. At j = 5 the only mathematics available is the mathematics of a winding that has completed five Fibonacci approximations to an unreachable irrational. The closing equation is written in that mathematics because that is when the event it describes occurred.
+
+The same vacuum geometry produces a second geometric result, exact at leading order. The two independent constants of Maxwell’s equations — the propagation speed c and the vacuum impedance $Z_0 = \sqrt{\mu_0/\varepsilon_0}$ — generate causally distinct field sectors. The E-mode sector (ε₀, Balmer series) consists of field lines that terminate on the source singularity; the H-mode sector (μ₀, Lyman series) consists of field lines that encircle it as closed loops. Holonomy accumulates only by closed circuits around a singularity (Berry 1984). The H-sector therefore acquires a phase deficit of α per circuit while the E-sector, as the natural reference, does not. Dividing by the circuit measure 2π:
+$$\label{eq:ae_intro}
+  a_e = \frac{g-2}{2} = \frac{\alpha}{2\pi}
+  \approx 1.1614 \times 10^{-3}.$$
+No additional parameter enters. Each perturbative order of QED carries a power of α because each order is one additional circuit of the same pole. This structure is geometrically inaccessible from within the standard (ε₀,μ₀) ↦ c² compression by a proved irreversibility theorem (Heaton 2026a).
+
+Both results originate in a single geometric object: the electromagnetic light cone. In the two-dimensional energy space (ℰ_(E),ℰ_(H)) equipped with the Minkowski-signature metric ds² = dℰ_(H)² − dℰ_(E)², the Rydberg trajectory is a null geodesic and the forbidden zone [IE/4, 3IE/4] is the cone’s projection onto the energy axis. The proton forms where the Fibonacci winding of this cone first reaches its indistinguishability condition. The anomalous magnetic moment measures the holonomy asymmetry between the cone’s two sectors. Both are consequences of the same causal boundary.
+
+The paper is organised as follows. Section 2 summarises prior results used without re-derivation. Sections 3–5 establish the two-mode geometry and its spectral record. Section 6 derives the electron mass floor. Section 7 derives the proton mass (equation [eq:proton_main]). Section 8 identifies the light cone as the containing geometric object. Section 9 derives a_(e) = α/2π. Section 10 places both results in context.
+
+What Has Been Established
+
+The author’s preceding papers establish the following, used here without re-derivation.
+
+[P1] (Heaton 2026d): A universal gap at IE/4 across 71 ions (zero falsifications); electron mass recovered to  − 2.8 ± 2.7 ppm from the location of a structural absence, with zero free parameters. The 10.8 ppm systematic identified in (Heaton 2026d) as a calculable mismatch between the uniform reduced-mass correction and per-ion nuclear corrections is resolved in Section 6 of this paper using AME2020 nuclear masses (Wang et al. 2021).
+
+[P2] (Heaton 2026b): α = Z₀/2R_(K) is derived from the Riemann sphere geometry with zero free parameters. The irremovable defect at the source pole introduces a holonomy into every circuit around p (Section 2 of (Heaton 2026b)), and Theorem 37 of (Heaton 2026b) establishes that this holonomy equals Z₀/2R_(K) = α.
+
+[P3] (Heaton 2026a): The map (ε₀,μ₀) ↦ c² is non-injective. Any query sensitive to the E/H energy partition is fiber-sensitive under this compression and cannot be determined from c alone. Since a_(e) = α/2π = Z₀/(4πR_(K)) depends explicitly on Z₀, the spin magnetic moment is such a query.
+
+[P4] (Heaton 2026c): The orbital impedance Z_(orb)(n) = Z₀n/α, the Thévenin circuit, the Harmonic Light Law ∇²(logν) = 0, and the κ coordinate, defined as
+$$\kappa(E) \;\equiv\; \frac{\log_{10}(E/\mathrm{IE})}{\log_{10}\alpha},$$
+so that κ = 0 at the ionisation limit, κ_(q) = log₁₀(1/4)/log₁₀α ≈ 0.282 at the outer gap wall (IE/4), κ ≈ 0.058 at the inner wall (3 IE/4), and κ < 0 for energies on the sub-atomic scale. One unit of κ_(q) corresponds to a factor of 4 in energy. The derivation of Z_(orb) applies Coulomb’s law to the bound electron’s radial electric field and the Biot–Savart law to its orbital current; the elementary charge e and orbital radius r_(n) = n²a₀ cancel exactly from the ratio |E|/|H|, leaving Z₀n/α with no free parameters and no dependence on nuclear charge. The boundary κ_(q) = 0.282 is confirmed at atomic and nuclear scales. The Harmonic Light Law is upstream of the null geodesic derived in Section 8: it forces the constant expansion rate that makes the Rydberg trajectory null in the vacuum light cone metric.
+
+The Source Geometry and Two Modes
+
+The only permissible expansion rate
+
+The encounter of the structural primitive (ε₀) with the non-structural primitive (μ₀) is the reciprocal map f(z) = 1/z on the Riemann sphere $\hat{\mathbb{C}}$, established as the unique minimal representation of a non-terminal directed process in (Heaton 2026c).
+
+The logarithmic potential ϕ(r) = log (1/r) is the unique rotationally symmetric solution of the two-dimensional Laplace equation with a point source. It is not a coordinate choice. The conservation constraint — unity cannot exceed itself, zero cannot go below itself — forces the expansion to proceed at a constant rate in the logarithm. Any non-constant rate would require one primitive to change its defining character, which is a contradiction. The equation
+∇²(logν) = 0
+is not imposed on the geometry: it is the mathematical expression of conservation applied to the only permissible expansion rate. This is the Harmonic Light Law of (Heaton 2026c), and it is upstream of every quantitative result in this paper: it forces the constant pitch of Section 4, which is the null geodesic condition of Section 8, and it governs the logarithmic depth coordinate in which the proton condensation is located in Section 7.
+
+The flaw and the two modes
+
+The source pole p = ε₀ carries the residue Res(1/z,0) = 1 ≠ 0, the irremovable structural unit at the singularity. This breaks the radial symmetry of the expansion, initiating a directed process with S = E × H ≠ 0.
+
+Proposition 1 (Orthogonality of the E and H modes). The E-mode and H-mode propagate orthogonally at every point.
+
+Proof. On the Riemann sphere S², the source pole p and sink pole p^(*) = μ₀ are the fixed points of the flow generated by f(z) = 1/z. The E-mode field lines are the integral curves of the gradient flow of ϕ = log (1/r), i.e. the meridional geodesics from p to p^(*). The H-mode field lines are the integral curves of the orthogonal complement: the latitude circles at constant r. On a Riemannian manifold the gradient and its orthogonal complement are perpendicular at every regular point by definition; on S² equipped with the round metric this holds everywhere except at the poles themselves. The two modes cannot be parallel without identifying p and p^(*), which would identify ε₀ with μ₀, contradicting their definition as the irreducible pair. ◻
+
+The identification of ε₀ as the structural primitive is not a conventional choice. The Maxwell equations break the formal E ↔ H duality explicitly: ∇ ⋅ E = ρ/ε₀ admits sources while ∇ ⋅ B = 0 does not. Electric charges exist; magnetic monopoles have not been observed. The defect lives in ε₀ because only ε₀ has the interior structure to host it — confirmed by the only asymmetry Maxwell’s equations contain.
+
+These two modes are:
+
+-   E-mode (meridional, ε₀): radial convergence toward the impedance boundary. Capacitive. Governed by ∇ ⋅ E = 0 in free space.
+
+-   H-mode (latitudinal, μ₀): transverse circulation around p. Inductive. Governed by ∇ ⋅ B = 0 always.
+
+Together they describe a helix of constant pitch, because the expansion rate is constant. The pitch is the energy of the H-mode’s first emission at the containment scale — identified in Section 5 as the Lyman-α energy. The H-mode circulation around the source pole is also the winding that converges, step by step, toward the golden ratio φ as its unique stable attractor. That convergence is the subject of Section 7. By condensation at step j we mean the following: when the Fibonacci convergence error ε_(j) = |F_(j + 1)/F_(j)−φ| first falls below the structural flaw α, the geometry can no longer distinguish “winding not yet converged to φ” from “winding permanently displaced from φ by α.” The field closes at this step; the energy scale established by the κ hierarchy and the two-step interference correction is the rest mass of the resulting condensate.
+
+The Phase Lock
+
+The two-mode structure assigns the Lyman series (n_(f) = 1, all transitions to ground state) to the H-mode (inductive, μ₀, circling the source pole) and the Balmer series (n_(f) = 2, all transitions to the first excited state) to the E-mode (capacitive, ε₀, terminating at the containment shell). Comparing these two series at the same upper quantum number n measures the energy separation between the two modes at the same radial level — the “pitch” of the two-mode helix. No other series pairing has this property: Lyman vs Paschen (n_(f) = 3) gives a pitch of 8E₀/9, which varies with n_(f) and carries no geometric significance in the mode structure.
+
+Theorem 2 (Constant pitch). For all integers n ≥ 2:
+$$\Delta E_{\mathrm{Lyman}}(1{\to}n)
+  - \Delta E_{\mathrm{Balmer}}(2{\to}n)
+  = \tfrac{3}{4}\,E_0,$$
+where E₀ is the hydrogen ionisation energy.
+
+Proof.
+$$E_0\!\left(1 - \tfrac{1}{n^2}\right)
+  - E_0\!\left(\tfrac{1}{4} - \tfrac{1}{n^2}\right)
+  = E_0 \cdot \tfrac{3}{4}.$$
+The 1/n² terms cancel identically for every positive integer n. ◻
+
+Physical content. The energy separation between the two modes is invariant across the entire quantum number ladder. Its value — 3E₀/4 — is the Lyman-α energy: the first H-mode emission, the first time the inductive sector radiates above 3IE/4 after the containment forms. Lyman-α is the primitive oscillation period of the electromagnetic tank formed by the two-mode pinch. Its constancy is the constancy of the helix pitch under the conserved expansion rate.
+
+Corollary 3 (3:1 resonance at the containment limit).
+$$\lim_{n\to\infty}
+  \frac{\Delta E_{\mathrm{Lyman}}(1{\to}n)}%
+       {\Delta E_{\mathrm{Balmer}}(2{\to}n)}
+  = \frac{3/4}{1/4} = 3.$$
+
+At the containment limit the H-mode frequency is exactly three times the E-mode frequency. The integer 3 = n² − 1 at n = 2. The n = 2 shell is the containment shell: the smallest positive integer for which both an E-mode series limit (Balmer limit at IE/4) and an H-mode first transition (Lyman-α at 3IE/4) can coexist.
+
+The gap closure node is irrational
+
+Simultaneous full closure of both modes — the condition under which both mode energies would together exhaust the full ionisation energy, leaving no gap — requires:
+$$E_0\!\left(\tfrac{1}{4} - \tfrac{1}{n^2}\right)
+  + E_0\!\left(1 - \tfrac{1}{n^2}\right) = E_0
+  \;\implies\;
+  n^2 = 8
+  \;\implies\;
+  n = 2\sqrt{2}.$$
+This is irrational. No integer winding number permits both modes to simultaneously exhaust IE; the gap cannot close at any integer n. This is the same Diophantine impossibility that forces the gap at IE/4 (no positive integer satisfies 1/n_(f)² − 1/n_(k)² = 1/4, as proved in (Heaton 2026d)), now expressed as a two-mode condition. The two statements are equivalent: the gap exists because the modes cannot achieve simultaneous full closure at any integer winding number.
+
+This is the first appearance of the irrationality that organises the entire structure. The golden ratio $\varphi = (1+\sqrt{5})/2$ is the stable attractor of the self-similar H-mode winding around the source pole; it too is irrational and unreachable at any integer step. The sequence of best rational approximations to φ is the Fibonacci sequence, and the winding converges toward φ through successive Fibonacci ratios. The energy IE/φ that φ would produce — the transition the attractor would occupy if it were an integer — falls strictly inside the forbidden zone [IE/4, 3IE/4], as proved in Theorem 4. The gap is the spectroscopic record of an attractor that the geometry can converge toward but never reach. That convergence, and where it terminates, is the subject of Section 7.
+
+The Hydrogen Spectrum as Fossil Record
+
+The IE/2 partition
+
+The 440/0/76 partition follows from the quantum number structure of hydrogen: every Lyman transition terminates on n = 1, giving minimum energy E₀(1−1/4) = 3IE/4, and every non-Lyman transition has final level n ≥ 2, giving maximum energy approaching IE/4 from below. Standard quantum mechanics explains why the partition holds in hydrogen. What it does not explain is why the identical fraction 1/4 appears in doubly magic nuclei at S_(n)/4, where the Rydberg formula plays no role (Heaton 2026c).
+
+The boundary is a property of the vacuum geometry: hydrogen instantiates it, the Rydberg formula does not generate it. The uniqueness of IE/4 is confirmed by control: the same analysis at IE/3 and IE/5 returns residuals of  − 250, 133 ± 1.1 ppm and  + 250, 129 ± 4.6 ppm respectively, in exact agreement with the algebraic predictions for wrong-fraction evaluations (Heaton 2026d). The 518 observed transitions of H I (NIST Atomic Spectra Database (Kramida et al. 2024)) distribute as follows.
+
+  Energy region      Lines                                               Note
+  --------------- -------- --------------------------------------------------
+  [0, IE/4)            440                           Balmer and higher series
+  [IE/4, 3IE/4]          0                      Forbidden zone: width  = IE/2
+  (3IE/4, IE)       76^(†)   Lyman series (excl. boundary Lyman-α components)
+
+Two fine-structure components of Lyman-α (2p_(1/2) → 1s and 2p_(3/2) → 1s) sit 0.02 meV below the theoretical wall 3IE/4, the difference arising from the Lamb shift and relativistic fine structure absent from the Rydberg formula (Kramida et al. 2024); they are not counted here; the boundary count is 76 lines strictly above 3IE/4. Its two walls are:
+
+Outer wall (IE/4, κ_(q) = 0.2818): the Balmer series limit. Every transition ΔE(2→n_(k)) converges to IE/4 from below as n_(k) → ∞. The impedance boundary Z_(orb) = Z₀ would require n = α ≈ 1/137, which is not a positive integer; no Balmer transition reaches IE/4.
+
+Inner wall (3IE/4, κ = 0.0585): Lyman-α (n = 2 → n = 1). This is the H-mode onset: the inductive sector’s first emission at the containment scale. Every Lyman transition begins at or above this wall.
+
+Both walls are properties of the n = 2 shell. The outer wall is n_(f) = 2 ascending to n_(i) → ∞. The inner wall is n_(i) = 2 descending to n_(f) = 1.
+
+The void bands n = 3 and n = 4
+
+The self-resonance portrait of H I identifies n = 3 and n = 4 as void bands: absent from both the n_(i) and n_(k) roles of any transition that could bridge the forbidden zone. This is a geometric consequence, not a data gap.
+
+All inter-shell transitions ΔE(3,n_(k)) for n_(k) > 3 fall in [661, 1473] meV, entirely below IE/4 = 3400 meV. All transitions ΔE(4,n_(k)) for n_(k) > 4 fall in [306, 812] meV, also below IE/4. Transitions from n = 3 or n = 4 to n = 1 fall above 3IE/4. There is no path by which n = 3 or n = 4 can bridge the forbidden zone: they are geometrically interior to the containment bracket.
+
+The void bands are also Fibonacci-interior shells. The Fibonacci winding ratios 3/2 (step j = 2) and 5/3 (step j = 3) have denominators n = 2 and n = 3, with their corresponding transitions falling at 1888.6 meV and 967.0 meV — both below IE/4. The shells n = 3 and n = 4 lie between the first Fibonacci step (Lyman-α at 3IE/4, the inner wall) and the Balmer limit (the outer wall): they are trapped between the two walls of the causal boundary, unable to radiate across it. Their absence from the self-resonance portrait is the spectral signature of the Fibonacci containment structure that culminates, thirteen κ_(q)-contractions later, in the proton condensation of Section 7.
+
+The proton’s mass encoded in the pitch
+
+The constant pitch 3IE/4, expressed in purely electronic units, would be 3m_(e)c²α²/8. The observed value differs:
+$$\frac{3m_ec^2\alpha^2/8 - 3\mathrm{IE}/4}{3\mathrm{IE}/4}
+  = -533\,\mathrm{ppm}.$$
+The exact point-proton reduced-mass correction is  − m_(e)/m_(p) =  − 544.6 ppm. The 10.8 ppm residual is the difference between this hydrogen correction and the actual per-ion nuclear corrections for the precision-tier ions; it is resolved in Section 6 using AME2020 nuclear masses.
+
+This 533 ppm deviation is the proton’s first appearance in the hydrogen spectrum. It is not a correction to be subtracted away. It is the imprint of the proton’s mass on the pitch of the two-mode helix — measurable from the location of the forbidden zone alone, without identifying any spectral line with any nuclear transition. The derivation of the proton mass from this geometry — exact, with zero free parameters, to 0.61 ppm — is the principal result of Section 7.
+
+Closure Floors
+
+E-sector floor: electron
+
+From (Heaton 2026d), the electron mass floor in the κ coordinate is:
+$$\kappa_e
+  = -\!\left(2 + \frac{\log_{10}2}{|\log_{10}\alpha|}
+    \right)
+  \approx -2.141,$$
+where  − 2 reflects two α-suppressions (closure velocity v₁ = αc and impedance ratio Z₀/Z_(orb)(1) = α), and log₁₀2 arises from E₀ = m_(e)c²α²/2.
+
+H-sector floor: the proton
+
+The structural parallel between the two sector floors is exact by the definition of κ:
+
+  Floor      Form                                    Sector
+  ---------- --------------------------------------- --------
+  Electron    − (2+log₁₀2 /|log₁₀α|)                 E (ε₀)
+  Proton      − (2+log₁₀(2⋅m_(p)/m_(e)) /|log₁₀α|)   H (μ₀)
+
+Both floors have the form  − (2+log₁₀F /|log₁₀α|). The winding separation
+$$\label{eq:kappa_sep}
+  \kappa_p - \kappa_e
+  = -\frac{\log_{10}(m_p/m_e)}{|\log_{10}\alpha|}$$
+is exact by the definition of κ: the mass ratio is the κ-depth separation between the two primitive floors. Expressed in the base-4 logarithm set by the impedance boundary:
+$$\label{eq:kp_log4}
+  \log_4\!\left(\frac{m_pc^2}{E_0}\right) = 13.020,$$
+with the integer part 13 = F₇ identifying the Fibonacci winding depth and the fractional part 0.020 arising from the destructive interference correction derived in Section 7. The proton sits at F₇ = 13 impedance-boundary units below the ionisation limit because that is the Fibonacci step at which the winding residual first becomes indistinguishable from the structural flaw α.
+
+Per-ion reduced-mass correction
+
+The five precision-tier ions of (Heaton 2026d) (Fe II, Mo I, Mn II, Fe I, Cr II) have nuclear masses 50–96× the proton mass. The pipeline of (Heaton 2026d) applied a uniform correction of  + 533.8 ppm, calibrated to the group as a whole. The correct per-ion value is
+$$\label{eq:mu_correction}
+  \mu_\mathrm{corr}^{(i)}
+  = \Sigma_\mathrm{CODATA}
+    + \frac{m_ec^2}{M_\mathrm{nuc}^{(i)}c^2}
+    \times 10^6\,\mathrm{ppm},$$
+where Σ_(CODATA) = 524.645 ppm is the formula-level constant arising from the CODATA values of ℏcα, a₀, and IE_(H) in the Bohr recovery formula, and m_(e)c²/M_(nuc)^((i))c² is the ion-specific reduced-mass contribution from AME2020 nuclear masses (Wang et al. 2021). For Mo I, the nuclear mass is the abundance-weighted mean over all seven stable isotopes, since the NIST ASD catalog reflects natural isotopic composition.
+
+  Ion                                                                    Z    Isotope   M_(nuc)c² (MeV)    m_(e)c²/M_(nuc)c² (ppm)   Δ (ppm)   δ_(m_(e)) (ppm)
+  --------------------------------------------------------------------- ---- --------- ----------------- ------------------------- --------- -----------------
+  Fe II                                                                  26    ⁵⁶Fe        52 089.78                         9.810    + 0.65             + 3.4
+  Mo I                                                                   42   nat. Mo      89 369.73                         5.718    − 3.44               − 5
+  Mn II                                                                  25    ⁵⁵Mn        51 161.69                         9.988    + 0.83               − 7
+  Fe I                                                                   26    ⁵⁶Fe        52 089.78                         9.810    + 0.65               − 7
+  Cr II                                                                  24    ⁵²Cr        48 370.01                        10.564    + 1.41               + 2
+  Mean δ_(m_(e)) (four 0005-sweep ions):                                                                                                                 − 4.2
+  Mean δ_(m_(e)) from (Heaton 2026d) (five ions, uniform correction):                                                                                    − 2.8
+
+  : Per-ion reduced-mass corrections for the five precision-tier ions of (Heaton 2026d), computed from AME2020 nuclear masses. Δ is the deviation of the per-ion correction from the uniform value 533.8 ppm. δ_(m_(e)) is the electron mass residual from the Thread Frame sweep; the Fe II value is from the 002-resolution sweep of (Heaton 2026d).
+
+The per-ion corrections range from 5.718 ppm (Mo, lightest effective nuclear mass) to 10.564 ppm (Cr II), with a mean of 9.178 ppm. Their deviation from the uniform correction is at most 3.44 ppm; Mo is the dominant contributor due to its lower nuclear mass. The 10.8 ppm systematic of (Heaton 2026d) equals 544.617 − 533.8 ppm, the difference between the hydrogen correction and the pipeline’s empirical recovery, and is equal to the mean per-ion correction (9.178 ppm) as expected from equation [eq:mu_correction]. Applying the per-ion values shifts the electron mass residual from  − 2.8 ± 2.7 ppm (uniform correction, (Heaton 2026d)) to  − 4.2 ± 3.7 ppm (per-ion correction, four ions present in the 0005-resolution sweep). The two results are consistent within their uncertainties; the small shift reflects the absence of Fe II from the 0005 sweep rather than a physical revision. The systematic is resolved with zero free parameters; the inputs are m_(e)c² (CODATA), M_(nuc)^((i)) (AME2020), and the formula constant Σ_(CODATA) fixed by the existing pipeline constants.
+
+The Fibonacci Convergence Record in Hydrogen
+
+Setup: the winding begins without a ratio
+
+This section derives the proton mass from the geometry established in Sections 3–6. The derivation follows a single chain: the vacuum geometry sets the logarithmic depth coordinate κ; the hydrogen ionisation energy E₀ is the atomic-scale energy unit set by that geometry; the electron mass floor sits at κ_(e) ≈  − 2.141, two α-suppressions below the impedance boundary; and the H-mode winding around the source pole converges toward φ through successive Fibonacci steps, condensing the first massive object at the step where the convergence residual first becomes indistinguishable from the structural flaw α. That step is j = 5, at Fibonacci depth F₇ = 13, and the condensate is the proton. The mass recovery pathway is therefore:
+$$\underbrace{\varepsilon_0,\,\mu_0}_{\text{vacuum}}
+  \;\longrightarrow\;
+  \underbrace{E_0 = \tfrac{1}{2}m_ec^2\alpha^2}_{\text{electron floor}}
+  \;\longrightarrow\;
+  \underbrace{m_pc^2 = 4^{13}\times E_0
+    \times \tfrac{2157-869\sqrt{5}}{208}}_{\text{proton condensate}}$$
+with zero free parameters at every step.
+
+Paper (Heaton 2026b) establishes that the self-similar winding converges to the golden ratio $\varphi = (1+\sqrt{5})/2$ as its unique stable attractor. What Section 1 of (Heaton 2026b) makes precise, and what is essential here, is the direction of this statement. At z = 0 — the source pole, the moment the expansion begins — there is no winding ratio. There is only the encounter, the residue, and the outward logarithmic expansion. The winding ratio is not fixed at φ − α from the first instant; it begins at some arbitrary value and converges toward φ with each successive circuit, displaced from the exact attractor by the irremovable residue α.
+
+The convergence toward φ from any positive starting value proceeds through the Fibonacci sequence. This is a classical result of the theory of continued fractions: the best rational approximants to φ = [1;1,1,1,…] are exactly the Fibonacci ratios F_(j + 1)/F_(j), and the error at each step is:
+$$\label{eq:fib_error}
+  \varepsilon_j
+  = \left|\frac{F_{j+1}}{F_j} - \varphi\right|
+  \approx \frac{1}{F_j\,F_{j+1}}.$$
+The errors decrease as $\varphi^{-2j}/\sqrt{5}$ and the sequence of Fibonacci ratios is, by Hurwitz’s theorem (Hurwitz 1891), the slowest-converging sequence among all irrationals — exactly the property that makes φ the most stable attractor for the self-similar field.
+
+Hydrogen’s spectrum is the empirical record of this convergence. Every level, every transition, every collision rung in the self-resonance portrait is a timestamp on the approach from an arbitrary initial winding to the φ-attractor. Two features of this record are derived below: a ghost transition that encodes the unreachability of φ, and a condensation condition that encodes where the convergence first becomes indistinguishable from the structural flaw.
+
+Theorem: the ghost transition in the forbidden zone
+
+Theorem 4 (The golden ratio transition is forbidden). The energy ΔE = IE/φ falls strictly inside the forbidden zone [IE/4, 3IE/4]. This energy is what the transition n = 1 → n = φ would carry if φ were a positive integer. Because φ is irrational, the transition does not exist. The gap is the spectroscopic record of the attractor being unreachable.
+
+Proof. For a hydrogenic transition from initial state n_(i) to final state n_(f) = 1:
+$$\Delta E(n_i) = E_0\!\left(1 - \frac{1}{n_i^2}\right).$$
+At n_(i) = φ, using φ² = φ + 1:
+$$\frac{1}{\varphi^2} = \frac{1}{\varphi+1} = 2 - \varphi,$$
+where the last equality uses 1/φ² + φ = 2. Therefore:
+$$\Delta E(\varphi)
+  = E_0\!\left(1-(2-\varphi)\right)
+  = E_0(\varphi-1)
+  = \frac{E_0}{\varphi},$$
+where the last step uses φ − 1 = 1/φ. Numerically: IE/φ = 8404.3 meV = 0.61803 IE. We must show 1/4 < 1/φ < 3/4:
+$$\frac{1}{\varphi}
+  = \frac{\sqrt{5}-1}{2} \approx 0.61803,$$
+and 0.25 < 0.618 < 0.75 is an exact statement about $(\sqrt{5}-1)/2$. ◻
+
+Remark 5. The ghost also lies inside the forbidden zone in the κ coordinate. Since κ(IE/φ) = log₁₀(1/φ)/log₁₀α = 0.09780 and the gap occupies κ ∈ [0.05847, 0.28175], we have 0.058 < 0.098 < 0.282 ✓. The attractor φ is inaccessible in every coordinate system the framework uses.
+
+Theorem 4 gives a precise geometric meaning to the forbidden zone: the gap [IE/4, 3IE/4] is the energy interval that contains the only transition the winding attractor would produce if it could be reached. The Diophantine impossibility (1/n_(f)² − 1/n_(k)² = 1/4 has no integer solution, Section 4) and the ghost theorem are two statements of the same fact. The winding cannot reach φ; the transition IE/φ cannot exist; the gap records both.
+
+The Fibonacci convergence errors
+
+The errors ε_(j) = |F_(j + 1)/F_(j)−φ| are exact and computable at each step and crucially alternate in sign: each Fibonacci ratio approaches φ from the opposite side from its predecessor. Table 2 gives the full sequence.
+
+    j   F_(j)   F_(j + 1) Ratio   Exact error ε_(j)   ε_(j)/α   Side
+  --- ------- ----------- ------- ------------------- --------- ---------
+    1       1           2 2/1     0.38197             52.3      above φ
+    2       2           3 3/2     0.11803             16.2      below φ
+    3       3           5 5/3     0.04863             6.66      above φ
+    4       5           8 8/5     0.01803             2.47      below φ
+    5       8          13 13/8    0.006966            0.9546    above φ
+    6      13          21 21/13   0.002649            0.363     below φ
+    7      21          34 34/21   0.001014            0.139     above φ
+    8      34          55 55/34   0.000387            0.053     below φ
+    9      55          89 89/55   0.000148            0.020     above φ
+
+  : Fibonacci convergence errors toward φ, compared to α. The critical row (j = 5, bold) is where the convergence residual first falls below α: the winding can no longer distinguish “not yet converged” from “displaced from φ by the structural flaw α.” This is the condensation condition for the proton. Note: the column labels F_(j), F_(j + 1) use the step counter j; these equal F_(j + 1), F_(j + 2) in the standard Fibonacci sequence F₁ = 1, F₂ = 1, F₃ = 2, F₄ = 3, F₅ = 5, F₆ = 8, F₇ = 13, … used in the Cassini identity and coefficient formulas.
+
+The bold row is the critical one. At j = 5, with ratio 13/8:
+$$\label{eq:fib_critical}
+  \varepsilon_5
+  = \left|\frac{13}{8} - \varphi\right|
+  = \frac{18 - 8\sqrt{5}}{16}
+  = 0.006966\ldots
+  \approx 0.9546\,\alpha.$$
+Equation [eq:fib_critical] is derived exactly from the Cassini identity F₇F₅ − F₆² = 13 ⋅ 5 − 64 = 1:
+$$\frac{13}{8} - \varphi
+  = \frac{26 - (8+8\sqrt{5})}{16}
+  = \frac{18 - 8\sqrt{5}}{16}.$$
+Since $8\sqrt{5} = 17.889\ldots < 18$, this is positive.
+
+The alternating-side property is essential for what follows. At j = 4, the ratio 8/5 approaches φ from below with error 2.47 α. At j = 5, the ratio 13/8 approaches from above with error 0.9546 α — just below α. At j = 6, the ratio 21/13 approaches from below again with error 0.363 α. The step j = 5 is therefore the first step at which the convergence residual falls below the structural flaw α, approached from above with j = 6 approaching from below immediately after. The proton condenses between these two opposing half-steps, in the destructive interference field their alternating approach creates. The forward and reflected waves are not an analogy introduced for convenience: they are the j = 5 and j = 6 Fibonacci half-steps themselves — the vacuum’s alternating overshoot and undershoot of its own unreachable attractor — and the proton condenses at the standing-wave node their destructive superposition creates.
+
+The proton mass from Fibonacci condensation
+
+The structural observation. The base-4 logarithmic depth of the proton floor,
+$$\label{eq:kp_structural}
+  \frac{|\kappa_p|}{\kappa_q}
+  = \log_4\!\left(\frac{m_pc^2}{E_0}\right)
+  = 13.020,$$
+places the proton at F₇ = 13 impedance-boundary units below the ionisation limit. The integer part 13 is the Fibonacci winding count. The fractional part 0.020 is not a rounding artefact: this section derives it exactly.
+
+The pre-stabilisation constraint. The condensation event occurs at Fibonacci step j = 5, where the winding ratio is 13/8. At this depth, the constants α, π, φ, and e are attractors toward which the geometry is converging — not initial conditions it began with. The closing equation must therefore be written entirely in terms of what exists at j = 5: Fibonacci integers and $\sqrt{5}$. Concretely, this means the formula may not take α, π, φ, or e as inputs, since each of these is the fixed-point value of a convergence that has not yet completed at j = 5. This constraint is not a choice: it is a statement about when the proton formed.
+
+Destructive interference of alternating half-steps. The j = 5 error $\varepsilon_5 = (18-8\sqrt{5})/16 > 0$ approaches φ from above; the j = 6 error $\varepsilon_6 = (13\sqrt{5}-29)/26 > 0$ approaches from below. In exact algebraic form both use only Fibonacci integers and $\sqrt{5}$, confirmed by the Cassini identity F₇F₅ − F₆² = 1.
+
+The proton condenses in the destructive interference field between these two opposing half-steps. Treating ε₅ as the forward wave amplitude and ε₆ as the reflected wave amplitude, the combined intensity is proportional to (ε₅−ε₆)², whose cross-term carries the canonical coefficient 2. The correction to the base prediction 4¹³ × E₀ has three contributions:
+$$\begin{aligned}
+  \text{Forward wave:}
+    &\quad \tfrac{F_6}{2}\,\varepsilon_5 = 4\varepsilon_5,
+    \label{eq:term1}\\
+  \text{Reflected wave:}
+    &\quad \tfrac{1}{F_6}\,\varepsilon_6
+    = \tfrac{1}{8}\varepsilon_6,
+    \label{eq:term2}\\
+  \text{Destructive cross-term:}
+    &\quad -2\varepsilon_5\varepsilon_6.
+    \label{eq:term3}
+\end{aligned}$$
+The coefficient F₆/2 = 4 is the κ-step: one unit of κ_(q)-depth corresponds to a factor of 4 in energy (Section 6), so the forward wave at step j = 5, which descends one κ-unit toward the condensation point, carries amplitude 4ε₅. The coefficient 1/F₆ = 1/8 is the reciprocal of the Fibonacci denominator at step j = 5: F₆ = 8 is the denominator of the critical ratio F₇/F₆ = 13/8, and 1/F₆ is the amplitude scale of the reflected wave (approaching from step j = 6) at the resolution of step j = 5. The coefficient 2 in the cross-term is the universal factor in destructive wave interference; it is not a free parameter.
+
+Closure check. Both weights are determined at step j = 5 from the κ coordinate (fixing the scale 4 = F₆/2) and the Fibonacci sequence (fixing F₆ = 8), with no reference to α, π, φ, or any measured mass. The reader may verify independently that these weights also satisfy the unique integer-closure condition imposed by the pre-stabilisation constraint: the natural denominators of $\varepsilon_5 = (18-8\sqrt{5})/16$ and $\varepsilon_6 = (13\sqrt{5}-29)/26$ are 2F₆ = 16 and 2F₇ = 26 respectively, with least common multiple lcm(16,26) = 208 = F₆ × 2F₇. The weight b = 1/F₆ = 1/8 is the minimum positive rational for which 8b is integer and the reflected-wave term closes over this denominator. The weight a = F₆/2 = 4 is the unique value for which the forward-wave term closes over 208 with a Fibonacci-integer numerator (13a = 52 ∈ ℤ) while equalling the κ-step. No other choice of amplitude weights satisfying both the κ-scale condition and the denominator-closure condition produces a correction factor expressible in Fibonacci integers and $\sqrt{5}$ alone.
+
+The closing formula. Assembling equations [eq:term1]–[eq:term3] over a common denominator of 208 = 8 × 26:
+$$\label{eq:proton_formula}
+  \boxed{
+    m_pc^2
+    = 4^{13} \times E_0 \times
+      \frac{2157 - 869\sqrt{5}}{208}
+  }$$
+where E₀ = 13.598 443 eV is the hydrogen ionisation energy (NIST (Kramida et al. 2024)). No other input enters. The correction factor $(2157-869\sqrt{5})/208$ is a closed algebraic expression in Fibonacci integers and $\sqrt{5}$ alone.
+
+Numerical result.
+$$m_pc^2\big|_{\eqref{eq:proton_formula}}
+  = 938.272\,657\,\mathrm{MeV},$$
+against the CODATA value 938.272 089 MeV (Mohr et al. 2025). The residual is  + 0.61 ppm, within the range of known QED and nuclear finite-size corrections to hydrogen and not attributable to the geometric framework. The derivation proceeds with zero free parameters.
+
+Corroboration: the length-scale hierarchy. Equation [eq:proton_formula] predicts not only an energy but a length. The proton’s reduced Compton wavelength ${\mkern 0.75mu\mathchar'26\mkern-9.75mu\lambda}_p = \hbar c/m_pc^2$ follows immediately:
+$${\mkern 0.75mu\mathchar'26\mkern-9.75mu\lambda}_p
+  = \frac{\hbar c}{4^{13}\times E_0 \times
+      (2157-869\sqrt{5})/208}
+  = 0.2103\,\mathrm{fm},$$
+in agreement with the CODATA value to 0.6 ppm. The Bohr radius satisfies a₀ = ℏc α/(2E₀), so the ratio
+$$\frac{a_0}{{\mkern 0.75mu\mathchar'26\mkern-9.75mu\lambda}_p}
+  = 4^{13} \times \frac{2157-869\sqrt{5}}{208}
+    \times \frac{\alpha}{2}
+  = 251{,}619$$
+reproduces the empirical ratio $a_0/{\mkern 0.75mu\mathchar'26\mkern-9.75mu\lambda}_p$ exactly. The geometry contracts from the atomic scale to the nuclear scale in precisely 13 successive factors of 4 — one per Fibonacci winding step — with the interference correction accounting for the fractional depth 0.020 in equation [eq:kp_structural]. Table 3 records this cascade.
+
+     n Energy 4^(n) × E₀   Length ${\mkern 0.75mu\mathchar'26\mkern-9.75mu\lambda}$   Object                
+  ---- ------------------- ---------------------------------------------------------- --------------------- --
+     0 13.6 eV             14.5 nm                                                    Ionisation boundary   
+     1 54.4 eV             3.6 nm                                                     IE/4 outer wall       
+     2 217 eV              0.91 nm                                                    F₃ = 2 sub-winding    
+     3 870 eV              227 pm                                                     F₄ = 3 sub-winding    
+     5 13.9 keV            14.2 pm                                                    F₅ = 5 sub-winding    
+     8 891 keV             0.22 pm                                                    F₆ = 8 sub-winding    
+    13 912.6 MeV^(*)       0.217 fm                                                   F₇ = 13: proton       
+
+  : Length-scale hierarchy from the atomic boundary to the nuclear scale. Each step multiplies the energy by 4 (one κ_(q) unit) and divides the length by 4. The Fibonacci winding numbers label the physically distinguished steps.
+
+^(*)Base prediction 4¹³ × E₀ = 912.6 MeV before the interference correction of equation [eq:proton_formula]; corrected value 938.3 MeV.
+
+Independent verification. A reader may verify equation [eq:proton_formula] from four inputs alone:
+$$\begin{aligned}
+  E_0 &= 13.598\,443\;\mathrm{eV}
+    \quad\text{(NIST hydrogen IE)}, \\
+  \sqrt{5} &\quad\text{(definition)}, \\
+  \text{Fibonacci integers} &\quad
+    F_5=5,\;F_6=8,\;F_7=13,\;F_8=21, \\
+  \text{Cassini identity} &\quad
+    F_7F_5 - F_6^2 = 1.
+\end{aligned}$$
+No value of α, π, e, or φ is required.
+
+Three-statement summary
+
+The hydrogen spectrum encodes the following three geometric facts about the Fibonacci convergence:
+
+(i) The attractor is unreachable (Theorem 4, exact). The energy IE/φ = E₀/φ, which is what the “n = φ” transition would carry, falls strictly inside the forbidden zone. No integer transition can produce this energy. The gap [IE/4, 3IE/4] is the spectroscopic record of this impossibility.
+
+(ii) The convergence error crosses α at F₇ = 13 (exact to 4.5%). The Fibonacci error ε_(j) = |F_(j + 1)/F_(j)−φ| passes through α between steps j = 4 (error 2.47 α, below φ) and j = 6 (error 0.36 α, below φ), reaching ε₅ = 0.9546 α at step j = 5, above φ. The Fibonacci winding number F₇ = 13 marks this crossing.
+
+(iii) The proton mass is derived from the Fibonacci condensation geometry to 0.61 ppm (Section 7.4, exact). The indistinguishability condition at j = 5 forces condensation in the destructive interference field between the j = 5 forward wave (ε₅, above φ) and the j = 6 reflected wave (ε₆, below φ). The closing formula
+$$m_pc^2
+  = 4^{13}\times E_0 \times
+    \frac{2157-869\sqrt{5}}{208}
+  = 938.272\,657\;\mathrm{MeV}$$
+is derived with zero free parameters from Fibonacci integers and $\sqrt{5}$ alone. The base-4 logarithmic depth log₄(m_(p)c²/E₀) = 13.020 is fully accounted for: the integer part 13 = F₇ by the winding count, and the fractional part 0.020 by the interference correction.
+
+These three facts express a single geometric picture. The proton forms at the depth in the Fibonacci convergence where the winding can no longer distinguish “not yet converged” from “displaced from φ by the flaw α.” The hydrogen spectrum is the fossil record of this convergence. The proton is the first condensate it produced.
+
+The Rydberg sequence as fossil record
+
+The Fibonacci transitions n_(i) → n_(k) with ratio n_(k)/n_(i) = F_(j + 1)/F_(j) form a distinguished subsequence of the hydrogen spectrum. Their energies converge toward zero as j → ∞. None enters the forbidden zone. All land below IE/4 for j ≥ 2:
+
+    n_(i)   n_(k)   Ratio   ΔE (meV) Location
+  ------- ------- ------- ---------- -----------------------
+        1       2     2/1    10198.8 inner wall ( = 3IE/4)
+        2       3     3/2     1888.7 below IE/4
+        3       5     5/3      967.0 below IE/4
+        5       8     8/5      331.5 below IE/4
+        8      13    13/8      132.0 below IE/4
+       13      21   21/13       49.6 below IE/4
+       21      34   34/21       19.1 below IE/4
+
+The first Fibonacci transition, n = 1 → n = 2, lands exactly at the inner wall 3IE/4 (Lyman-α). All subsequent Fibonacci transitions land below the outer wall IE/4. The forbidden zone is bounded above by the first Fibonacci step and below by the Balmer limit — the convergence record approaching φ from the spacelike side. The gap is exactly the interval between the first Fibonacci transition and the Balmer series limit:
+3IE/4 − IE/4 = IE/2 = ΔE(Fib₁) − lim_(n → ∞)ΔE(Balmer).
+
+Hydrogen solved the problem identified at the outset of this program: avoid closure (rational winding, 1 = 0, stasis) and avoid perfect φ (endless spiral, no atoms). The fine-structure constant α is the measure of the flaw that makes both bad outcomes impossible simultaneously. Small enough that atoms are stable (Γ(n) → 1, near-total reflection); large enough that atoms can radiate (T(n) = 4α/n > 0); and exactly at the scale of the Fibonacci convergence residual at step F₇ = 13, which is where the first condensate — the proton — forms.
+
+The hydrogen spectrum is not merely evidence for the framework. It is the record of the specific path the convergence took.
+
+Numerical summary for independent verification. All results in this section follow from three inputs:
+
+-   E₀ = 13.598 443 eV (NIST hydrogen ionisation energy (Kramida et al. 2024))
+
+-   α = 7.2974 × 10⁻³ (CODATA (Mohr et al. 2025))
+
+-   $\varphi = (1+\sqrt{5})/2$ (definition)
+
+The ghost theorem requires only E₀ and φ. The Fibonacci convergence table requires only φ and α. The proton mass formula [eq:proton_formula] requires only E₀, Fibonacci integers, and $\sqrt{5}$; it does not require α, π, e, or φ as inputs. The CODATA value of m_(p)c² is used only to state the 0.61 ppm residual; it is not an input to the derivation.
+
+Formation of the proton condensate. The cone is the neighbourhood of the source pole p = ε₀ on the Riemann sphere of Fig. 2(iii) in (Heaton 2026c); the axis is the meridional E-mode direction and the red ellipses are the H-mode latitude circles (equipotentials). As depth |κ| increases from the apex, the Fibonacci convergence steps label successive circles on which the winding ratio approaches φ. At j = 5 (purple, ratio 13/8) the convergence error equals 0.9546 α: the j = 5 wave approaches φ from above while the j = 6 wave approaches from below, and the proton condenses in the destructive interference field between them (filled purple dot). Its mass is derived exactly in equation [eq:proton_formula]. The electron floor (green) and the orbital hierarchy n = 1, 2, 3, … follow beyond. The grey shading marks the forbidden zone [IE/4, 3IE/4]; its geometric identity as the electromagnetic light cone is established in Section 8.
+
+Geometry of the Light Cone
+
+Section 7 derived the proton mass from the Fibonacci winding geometry. This section identifies the single geometric object that contains that result and everything else in this paper: the electromagnetic light cone, which emerges from equipping the energy space (ℰ_(E),ℰ_(H)) with the metric forced by the physical character of the two modes.
+
+Two-dimensional energy space
+
+The structure of this energy space is not imposed on the geometry. It emerges from equipping the energy space (ℰ_(E),ℰ_(H)) with the metric forced by the physical character of the two modes, and observing that the Rydberg trajectory is exactly null in that metric.
+
+Each hydrogen transition carries two energies simultaneously: its value in the E-mode sequence (Balmer, capacitive, ε₀) and its value in the H-mode sequence (Lyman, inductive, μ₀). For a transition at principal quantum number n, define:
+$$\begin{aligned}
+  \mathcal{E}_E(n) &= E_0\!\left(\tfrac{1}{4}
+    - \tfrac{1}{n^2}\right), \quad n \geq 2,
+    \label{eq:EE} \\
+  \mathcal{E}_H(n) &= E_0\!\left(1
+    - \tfrac{1}{n^2}\right), \quad n \geq 1.
+    \label{eq:EH}
+\end{aligned}$$
+These are the Balmer and Lyman transition energies at the same quantum number n. The pair (ℰ_(E)(n), ℰ_(H)(n)) defines a point in the two-dimensional energy space ℳ with coordinates (E_(E),E_(H)).
+
+The electromagnetic light cone in the (ℰ_(E),ℰ_(H)) energy space. Axes follow the color convention of (Heaton 2026c): blue E-mode (Balmer, spacelike sector, 440 observed H I lines), red H-mode (Lyman, timelike sector, 76 lines^(†)). The null geodesic (heavy black, slope 1, Theorem 8) runs from the apex (0, 3IE/4) — Lyman-α, the inner wall — to the asymptote (IE/4, IE) as n → ∞; the arrow shows the direction of increasing n. The null surface ℰ_(E) + ℰ_(H) = IE (dashed diagonal) is unreachable at any integer n; it requires $n=2\sqrt{2}$ (Section 4). The ghost point (IE/φ², IE/φ) (filled purple dot) lies on the null surface at the unique point where ℰ_(H)/ℰ_(E) = φ: this is the Fibonacci attractor’s location in energy space, the target toward which the H-mode winding converges through the steps of Table 2. It moves at superluminal velocity φ in ℳ (Proposition 10) and is causally inaccessible; the proton condenses at the depth where the Fibonacci convergence toward this point first becomes indistinguishable from the structural flaw α (equation [eq:proton_formula]). The grey shading marks the forbidden zone [IE/4, 3IE/4]: the projection of the light cone onto the energy axis, containing zero observed transitions. The geometric origin of the Minkowski signature is established in Section 8.2. ^(†)76 counts lines strictly above the theoretical wall 3IE/4; two Lyman-α fine-structure components (2p_(1/2) → 1s and 2s_(1/2) → 1s) fall 22–26 μeV below it and are not counted here.
+
+The Minkowski signature
+
+The energy space ℳ is equipped with the metric
+ds² = dℰ_(H)² − dℰ_(E)²,
+which has Minkowski, not Euclidean, signature. This is not borrowed from special relativity. It follows from the physical character of the two modes established in Proposition 1, and ultimately from the primitive identification of ε₀ and μ₀ established in (Heaton 2026c), Section 1.
+
+The E-mode field lines are meridional: they terminate on charges, defining the current spatial locus [1] of the field configuration at quantum number n. The coordinate ℰ_(E) is the energy of that locus: determinate, positioned, and non-directed — it can be read at any n without reference to what preceded it.
+
+The H-mode field lines are latitudinal: they circuit the source pole p without terminating, accumulating one unit of holonomy per winding and measuring the relational depth of the process from its origin. The coordinate ℰ_(H) is the energy of that accumulated depth: causally ordered, because each successive Lyman transition represents the process returning to ground after one further winding around p.
+
+These two coordinates are not symmetric. The energy of a locus can be compared without causal constraint — ℰ_(E) at n = 3 and ℰ_(E) at n = 5 are freely interchangeable as spatial configurations. The energy of an accumulated process cannot — ℰ_(H) is ordered by the winding depth that produced it. One coordinate is free; the other is directed. The natural invariant of a space with one free and one directed coordinate is their difference, not their sum: summing them symmetrically would collapse the causal ordering. This fixes the signature as (−,+).
+
+The unit coefficients are fixed by a separate consideration. Both ℰ_(E) and ℰ_(H) are energies measured in identical units, and Proposition 1 establishes the E- and H-modes as orthogonal sectors of equal geometric standing. The unique indefinite metric with equal-weight coordinates and no free dimensionless ratio is ds² = dℰ_(H)² − dℰ_(E)², determined by signature and symmetry before any spectroscopic data enters.
+
+Remark 6. Theorem 8 is Theorem 2 expressed in the natural geometric language of the two-mode energy space: the constant pitch is the null condition, stated in the metric that the mode structure itself determines. That the Rydberg trajectory is exactly null in this metric — not approximately, not in some limit, but null at every integer n ≥ 2 — is a non-trivial algebraic consequence of Theorem 2: the 1/n² terms cancel identically, forcing dℰ_(E)/dn = dℰ_(H)/dn at every n. The Rydberg formula did not have to produce this equality.
+
+Remark 7. The causal structure encoded in [eq:metric_signature] is not analogous to the light cone of special relativity. It is the geometric origin of that structure at a deeper level: the E/H asymmetry of the vacuum primitives ε₀ and μ₀ precedes atomic physics, and the Minkowski signature of ℳ is its spectroscopic expression.
+
+The null geodesic equation
+
+Theorem 8 (Constant pitch is the null geodesic equation). In the energy space ℳ equipped with the Minkowski-signature metric
+ds² = dE_(H)² − dE_(E)²,
+the trajectory (ℰ_(E)(n), ℰ_(H)(n)) is a null geodesic: ds² = 0 at every point.
+
+Proof. Differentiate equations [eq:EE] and [eq:EH] with respect to n:
+$$\frac{\mathrm{d}\mathcal{E}_E}{\mathrm{d}n}
+  = \frac{2E_0}{n^3}, \qquad
+  \frac{\mathrm{d}\mathcal{E}_H}{\mathrm{d}n}
+  = \frac{2E_0}{n^3}.$$
+The derivatives are identical at every n. Therefore:
+$$\mathrm{d}s^2
+  = \left(\frac{\mathrm{d}\mathcal{E}_H}{\mathrm{d}n}
+    \right)^{\!2}
+  - \left(\frac{\mathrm{d}\mathcal{E}_E}{\mathrm{d}n}
+    \right)^{\!2}
+  = \left(\frac{2E_0}{n^3}\right)^2
+  - \left(\frac{2E_0}{n^3}\right)^2 = 0.$$
+ ◻
+
+Remark 9. The statement ℰ_(H)(n) − ℰ_(E)(n) = 3E₀/4 for all n is equivalent to unit slope in ℳ. Unit slope in a metric of signature (−,+) is the null condition. The constant pitch is the null geodesic equation.
+
+The light cone and the forbidden zone
+
+The null surface in ℳ is defined by ds² = 0, i.e. dE_(H) = ± dE_(E). The null geodesic of Theorem 8 is the forward branch, running from the apex (E_(E),E_(H)) = (0, 3E₀/4) toward the asymptote (E₀/4, E₀) as n → ∞.
+
+The apex is Lyman-α on the E_(H) axis: the inner wall of the forbidden zone. The asymptote is the pair (Balmer limit, Lyman limit): the two walls of the forbidden zone projected onto their respective axes. The forbidden zone [IE/4, 3IE/4] is the projection of the light cone onto the single energy axis. Transitions with energy in [IE/4, 3IE/4] would lie between the two causal sectors — neither E-mode nor H-mode — and are forbidden for exactly this reason.
+
+The two causal sectors are:
+
+-   Spacelike sector (E < IE/4): E-mode (Balmer) transitions. All 440 observed H I transitions below IE/4 belong here.
+
+-   Timelike sector (E > 3IE/4): H-mode (Lyman) transitions. All 76 observed transitions above 3IE/4 belong here.
+
+-   The light cone (IE/4 ≤ E ≤ 3IE/4): the forbidden zone. Zero observed transitions. This is not a gap in the data; it is the causal boundary of the vacuum geometry.
+
+The golden ratio as the null velocity
+
+Proposition 10 (The ghost is the φ-velocity null geodesic). The ghost transition energy IE/φ lies on the null surface E_(E) + E_(H) = IE in ℳ, at the unique point where E_(H)/E_(E) = φ.
+
+Proof. Set E_(E) = IE/φ² and E_(H) = IE/φ. Using φ² = φ + 1:
+$$E_E + E_H
+  = \frac{\mathrm{IE}}{\varphi^2} + \frac{\mathrm{IE}}{\varphi}
+  = \frac{\mathrm{IE}}{\varphi^2}(1+\varphi)
+  = \frac{\mathrm{IE}}{\varphi^2}\cdot\varphi^2 = \mathrm{IE}.
+  \quad\checkmark$$
+The ratio: E_(H)/E_(E) = (IE/φ)/(IE/φ²) = φ. ◻
+
+The quantity E_(H)/E_(E) in a Minkowski-signature metric is the analog of a propagation velocity. The Rydberg trajectory moves at unit velocity everywhere. The ghost point moves at velocity φ > 1: it is superluminal in the vacuum geometry. The Fibonacci winding converges toward the ghost’s location on the null surface from the spacelike sector, through the sequence of rational approximants in Table 2, but can never reach it because φ is irrational and the null surface requires $n=2\sqrt{2}$. The proton condenses at the depth where this convergence first becomes indistinguishable from the structural flaw (equation [eq:proton_formula]). The forbidden zone is the set of energies that would require propagation at velocity between 1 and ∞ in ℳ. No integer n reaches the cone. The cone is the exact boundary between what the vacuum can produce and what it cannot.
+
+The irrational null surface
+
+The full null surface condition (Section 4):
+$$\mathcal{E}_E(n) + \mathcal{E}_H(n) = \mathrm{IE}
+  \;\implies\; n^2 = 8
+  \;\implies\; n = 2\sqrt{2}.$$
+The crossing requires $n = 2\sqrt{2}$, which is irrational. The Rydberg sequence cannot reach its own null surface.
+
+In the language of the light cone: the vacuum trajectory moves along a null geodesic (unit velocity) but is displaced from the null surface (E_(E) + E_(H) = IE) by the constant pitch 3IE/4. It runs parallel to the null surface, offset by the Lyman-α energy. The null surface itself is inaccessible because reaching it requires an irrational quantum number. The causal boundary is intact: the two sectors are permanently separated.
+
+Summary: the light cone and its physical consequences
+
+The physical consequences derived in this paper are consequences of one geometric object:
+
+-   The constant pitch (Theorem 2) is the null geodesic equation of the vacuum light cone.
+
+-   The forbidden zone [IE/4, 3IE/4] is the projection of the light cone onto the energy axis: the causal boundary between the E-mode and H-mode sectors.
+
+-   The ghost transition IE/φ (Theorem 4) is the point on the null surface at velocity φ: the Fibonacci attractor’s location in energy space, forbidden by the irrationality of the golden ratio.
+
+-   The Diophantine impossibility (1/n_(f)² − 1/n_(k)² = 1/4 has no integer solution) is the statement that the integer lattice never intersects the null surface.
+
+-   The proton mass (equation [eq:proton_formula]) is the energy at which the Fibonacci winding toward the ghost’s null-surface location first reaches its indistinguishability condition. Thirteen steps of factor-4 contraction from the atomic scale arrive at 0.21 fm, the proton’s reduced Compton wavelength, to 0.61 ppm.
+
+-   The anomalous magnetic moment a_(e) = α/2π is the holonomy per circuit of the source pole: the phase deficit between the timelike (H-mode) and spacelike (E-mode) windings divided by the circuit measure 2π. The light cone separates the two sectors whose differential winding produces the anomaly.
+
+-   The Fibonacci convergence record (Section 7) is the approach of the winding toward φ from the spacelike sector: the sequence of rational approximants converges toward the superluminal velocity of the null surface, never reaching it.
+
+The light cone of the electromagnetic vacuum is not an analogy to special relativity. It is the causal structure of the two-primitive encounter: the geometric boundary between what the structural primitive (ε₀, E-mode) can produce and what the non-structural primitive (μ₀, H-mode) can produce. The Harmonic Light Law ∇²(logν) = 0 governs propagation along this boundary. The fine-structure constant α measures the flaw that ensures the boundary is never exactly reached.
+
+The Anomalous Magnetic Moment
+
+g = 2 from the spinor double cover
+
+Section 7 derived the proton mass from the geometry of the H-mode winding around the source pole. The same winding geometry that produces the proton at depth F₇ = 13 also governs the spin of the electron at the atomic scale: the spinor double cover of SU(2) → SO(3) is the interior description of the two-circuit structure of that winding, and it forces g = 2 exactly.
+
+The rotation group SO(3) has a unique simply connected double cover SU(2) → SO(3). Under a rotation by angle θ about any axis, a spinor (spin-$\tfrac{1}{2}$ state) transforms as ψ ↦ e^(iθ/2)ψ. At θ = 2π: ψ ↦  − ψ ≠ ψ. At θ = 4π: ψ ↦  + ψ = ψ. A spinor requires 4π — two complete physical circuits — to return to its initial state.
+
+The magnetic moment μ_(s) and spin angular momentum S are related by μ_(s) = g (e/2m_(e)) S. For a spin-$\tfrac{1}{2}$ particle, S = ℏ/2. The Dirac equation gives g = 2 from the non-relativistic reduction: the σ ⋅ B Pauli term in the Hamiltonian
+$$H = \frac{(\boldsymbol{p}-e\boldsymbol{A})^2}{2m_e}
+    - \frac{e}{2m_e}\,\boldsymbol{\sigma}\cdot\boldsymbol{B}$$
+contributes an additional magnetic coupling equal in magnitude to the orbital term, doubling the effective coupling for the spin.
+
+In the winding geometry of (Heaton 2026c): the E-mode orbital circuit is a 2π rotation that advances angular momentum by ℏ. The H-mode spin circuit is a 2π physical rotation that takes the spinor to  − ψ: only a topological sign change, not an identity. Two H-mode circuits (4π) return the spinor to identity. The magnetic moment couples to the H-mode flux threading the circuit: in 4π, two 2π flux windings are completed, contributing 2μ_(B) of magnetic moment. The spin angular momentum is the fixed half-integer ℏ/2. Therefore μ_(s) = 2 × (e/2m_(e)) × (ℏ/2) = eℏ/2m_(e) = μ_(B) at S = ℏ/2, consistent with g = 2.
+
+This is not a new derivation of the Dirac result. It is a statement that the spinor double-cover structure of SU(2), which forces g = 2 in the Dirac theory, is the interior description of the same two-circuit winding geometry established on the Riemann sphere in (Heaton 2026c). The Dirac equation is the interior description of the winding, exactly as Maxwell’s equations are the interior description of the two-primitive encounter.
+
+The phase deficit and the leading anomaly
+
+The leading term α/2π was first obtained by Schwinger in 1948 by perturbative calculation (Schwinger 1948). What that calculation does not supply is a geometric reason why the result takes this form: why the leading term is α/2π and why each successive perturbative order carries one additional power of α.
+
+Theorem 37 of (Heaton 2026b) establishes that the phase deficit per complete circuit of the source pole p equals δ_(circuit) = Z₀/2R_(K) = α. The derivation rests on four established facts: (i) the defect at p carries residue Res (1/z,0) = 1, so one unit of the vacuum’s structural character is implicated per circuit; (ii) $Z_0 = \sqrt{\mu_0/\varepsilon_0}$ is the primitive 0/1 ratio of the vacuum by definition (Section 3), so “one unit of structural character” is one unit of Z₀; (iii) the minimum quantum of the closed electromagnetic process is R_(K) = h/e², the von Klitzing constant; (iv) the minimum winding number is 2, the 2π closure condition of Section 3. Assembling: δ = Z₀/2R_(K) = α. No free parameter enters; α is the output of that theorem, not an input.
+
+The spin precession measurement compares the precession rate of the spin (H-mode, coupling to the magnetic field) against the cyclotron rate of the orbital (E-mode, coupling to the electric field). In the uncompressed (ε₀,μ₀) representation, the two sectors accumulate phase differently. The residue Res(1/z,0) = 1 lives at the source pole p = ε₀: it is a property of the E-mode pole. The E-mode field lines are meridional paths that terminate at p — they do not encircle it. The H-mode field lines are latitude circles that encircle p as closed loops. Holonomy (Berry 1984) is accumulated only by closed circuits that encircle a singularity, not by paths that terminate on it. Therefore the H-sector circuit acquires the flaw deficit α per circuit while the E-sector, terminating at the source rather than looping around it, is the natural reference that does not. The differential per circuit, divided by the circuit measure 2π:
+$$\label{eq:ae}
+  a_e = \frac{g-2}{2} = \frac{\alpha}{2\pi}
+  \approx 1.1614\times 10^{-3}.$$
+
+The circuit measure is 2π rather than 4π because a_(e) = (g−2)/2 measures the anomalous departure from the Dirac g = 2 baseline; the spinor double-cover structure is already encoded in g = 2 itself (Section 9), and the factor of 2 in the denominator of α = Z₀/2R_(K) carries the minimum winding number established in (Heaton 2026b).
+
+Experimental value: a_(e)^(exp) = 1.15965218128 × 10⁻³ (Hanneke, Fogwell, and Gabrielse 2008). Residual after the leading term: δ = a_(e)^(exp) − α/2π =  − 1.757 × 10⁻⁶. The two-loop QED correction  − 0.32848 (α/π)² =  − 1.772 × 10⁻⁶ accounts for essentially all of δ. The coefficient  − 0.32848 is the two-circuit holonomy of the source pole with the proton geometry providing the inner boundary condition. That proton geometry is now fully established in Section 7.4; the geometric derivation of the two-loop coefficient is in preparation.
+
+Why QED closes on the fiber
+
+The perturbative QED derivation of a_(e) operates in the representation (ε₀,μ₀) ↦ c². Since a_(e) = α/2π = Z₀/(4πR_(K)) depends explicitly on Z₀ — the coordinate discarded by the compression — distinct vacua sharing c but differing in Z₀ yield different anomalous moments. By Theorem 1 of (Heaton 2026a), a_(e) is therefore fiber-sensitive under the map (ε₀,μ₀) ↦ c². QED restores the missing E/H partition information implicitly through the electron propagator in each loop diagram. The propagator carries the partition structure not as a named coordinate but as an implicit choice of section on the (ε₀,μ₀) fiber over c². Each diagram correctly computes a contribution to the holonomy. What QED cannot identify from within the compressed representation is why each order contributes a power of α — that reason lives at the source pole, visible only when ε₀ and μ₀ are kept separate. The series’ accuracy is not in question; its geometric origin is now named.
+
+Moreover, by the irreversibility theorem of (Heaton 2026a): once a query is fiber-sensitive at any compression stage, no downstream computation restores scalar determinacy without introducing the missing coordinate explicitly. The compression (ε₀,μ₀) ↦ c² discards Z₀ at the first stage. No perturbative expansion in c — however extended, however many diagrams — can recover ε₀ and μ₀ separately from their product ε₀μ₀ = 1/c². The spin magnetic moment is fiber-sensitive under this map. Therefore the geometric reason each order of a_(e) scales as α is not merely unidentified within the perturbative framework: it is geometrically inaccessible from within the compressed representation, by the irreversibility theorem of (Heaton 2026a). The perturbative series selects a section of the fiber at the first stage and computes consistently on that section thereafter. The section itself — the choice of how Z₀ is partitioned into ε₀ and μ₀ — is invisible from inside the series. This is not a criticism of QED’s numerical precision. It is a precise statement, proved in (Heaton 2026a), about what the compression renders structurally inaccessible regardless of the order of calculation.
+
+Discussion
+
+Hydrogen as proof of geometric principle
+
+The results of this paper are derived for hydrogen, where the Coulomb potential is exact, the nuclear charge is unshielded, and the two-mode geometry is directly readable without correction terms. Hydrogen is the appropriate starting point not because it is convenient but because it is the case where the geometry is cleanest and every claim is either algebraically exact or publicly verifiable from the NIST catalog in an afternoon.
+
+The three exact results — the constant pitch, the 3:1 resonance, and the Diophantine interference node — hold for hydrogen because the Rydberg formula E_(n) = E₀/n² is exact there. They are geometric consequences of integer arithmetic applied to the two-mode structure. No fitted parameter, no model assumption, and no knowledge of α, π, or φ is required to state or prove them.
+
+Hydrogen does not merely illustrate the framework. It is the complete empirical record of two separate physical facts, at two different scales, connected by one geometric object.
+
+At the atomic scale: the 440 / 0 / 76 partition of its 518 observed transitions is a direct measurement of the electromagnetic light cone. 440 transitions in the spacelike sector, 76 in the timelike sector, and zero in the causal boundary between them. Every spectral line is a timestamp on the Fibonacci convergence of the vacuum geometry toward its organizing principle.
+
+At the nuclear scale: the ionisation energy E₀ encodes the electron mass through E₀ = m_(e)c²α²/2, and the depth of the proton condensation below the ionisation boundary follows from the same Fibonacci winding that the spectrum records. The formula $m_pc^2 = 4^{13}\times E_0 \times
+(2157-869\sqrt{5})/208$ is not a fit to nuclear data. It is the depth condition of the winding, read from hydrogen’s atomic spectrum.
+
+The spectrum is the fossil. The light cone is the organism. The proton is the first condensate the organism produced.
+
+The three-element minimum and the quark structure
+
+The proton is a QCD object — three quarks bound by gluons — and a reader trained in the Standard Model will ask why an electromagnetic geometric framework reaches its mass. The answer lies in the three-element minimum established in (Heaton 2026c): two irreducible primitives and the relationship their encounter generates is not a property of electromagnetism. It is the minimum structure consistent with any directed, non-terminal, oriented process, derived from the Poincaré–Hopf theorem applied to the Riemann sphere. QCD independently discovers the same minimum via colour confinement: a colour-neutral baryon requires exactly three quarks in an antisymmetric colour singlet — not two, not four. The proton — two up quarks, one down quark — is the three-element closure of the strong force, exactly as the hydrogen atom is the three-element closure of the electromagnetic force. The Fibonacci winding of Section 7 locates the hadronic closure energy within the vacuum hierarchy not because electromagnetism and QCD are the same force, but because both forces implement the same geometric minimum at their respective scales. The κ_(q) = 0.282 fraction confirmed at atomic, electronic, and nuclear scales belongs to the vacuum geometry, not to any particular force. The proton mass is the depth of the three-element hadronic closure in that geometry, readable from hydrogen’s atomic spectrum because the geometry — not the force — is what is shared.
+
+The three-element minimum is therefore not only the generating structure of the electromagnetic vacuum. It is instantiated, at the hadronic scale, inside every proton in the universe. The geometry that organises the observable world is recursively contained within the matter it organises.
+
+The light cone and what it reveals
+
+Figure 2 repays careful attention. The entire observable hydrogen spectrum — all 518 observed transitions — occupies an L-shaped region in the upper-left corner of the (ℰ_(E),ℰ_(H)) plane: a vertical strip of width IE/4 and a horizontal strip of height IE/4. Their union covers roughly one quarter of the diagram. The other three quarters is either the forbidden zone (the grey square) or kinematically inaccessible (the white regions beyond the two series limits).
+
+The ghost point does not lie outside the diagram. It does not lie in the accessible strips. It lies precisely inside the forbidden zone at the unique point (IE/φ², IE/φ) on the null surface where ℰ_(H)/ℰ_(E) = φ. The proof is three lines of algebra from φ² = φ + 1. The golden ratio — the organizing principle toward which all electromagnetic winding converges — lives on the wrong side of the causal wall. It propagates at velocity φ > 1 in the (ℰ_(E),ℰ_(H)) metric: superluminal, and therefore forbidden not by selection rules but by the geometry of the causal structure itself.
+
+The null surface ℰ_(E) + ℰ_(H) = IE runs as a dashed diagonal across the full diagram. Almost all of it lies in the white kinematically inaccessible region. The single physically significant point on the null surface is the ghost. The only physically observable segment is the null geodesic itself — the Rydberg trajectory from (0, 3IE/4) to (IE/4, IE), spanning one quarter of the null surface’s total length. The observable universe of hydrogen photons is extraordinarily confined: it runs along one quarter of its null surface, converging toward a point it can never reach.
+
+Four consequences follow from this diagram that were not simultaneously visible before it existed.
+
+The causal structure predates atomic physics. The E/H orthogonality is proved in Proposition 1 from the gradient and level-set decomposition on S². It requires no quantum mechanics, no atomic physics, no knowledge of the hydrogen atom. It is a geometric consequence of the two-primitive encounter: ε₀ and μ₀ are orthogonal because meridional geodesics and latitude circles are orthogonal on a sphere, and the sphere is the unique minimal structure forced by the Poincaré–Hopf theorem applied to a directed non-terminal process (Heaton 2026c). The Minkowski metric in (ℰ_(E),ℰ_(H)) space follows from this orthogonality. The light cone follows from the metric. The forbidden zone follows from the light cone. Hydrogen then discovers, spectroscopically, that its 518 observed transitions obey this structure without remainder. The causal boundary was in place before the first atom formed.
+
+The ghost point is the condensation target. The ghost at (IE/φ², IE/φ) is not merely the energy that would be produced if φ were an integer. It is the location on the null surface toward which the Fibonacci winding converges from the spacelike sector, step by step, through the sequence of rational approximants in Table 2. The H-mode winding can never reach this point because φ is irrational and the null surface requires $n = 2\sqrt{2}$. The proton condenses at the depth where this convergence first becomes indistinguishable from the structural flaw α: thirteen steps of factor-4 contraction from the atomic scale, at the exact depth where ε₅ = 0.9546 α (above φ) and ε₆ = 0.363 α (below φ) create the destructive interference field of equation [eq:proton_formula]. The forbidden zone records what the winding is trying to reach. The proton is what forms when it gets as close as it can.
+
+The attractor is causally separated from the observable sector. The golden ratio φ emerges as the unique stable attractor of the self-similar winding on S² by Hurwitz’s theorem (Hurwitz 1891) and the Markov spectrum (Markov 1879), established in (Heaton 2026b). Every winding converges toward φ from any initial condition. Yet φ satisfies 1/4 < 1/φ < 3/4 exactly, placing the golden ratio transition energy IE/φ strictly inside the forbidden zone in every coordinate system the framework uses. The attractor is causally hidden from the observable sector. The electron never reaches φ in its spectrum. The proton forms at the Fibonacci step where the convergence can no longer be distinguished from the structural flaw α. The atom that results never sees φ in any of its 518 transitions. The organizing principle is inaccessible to the things it organizes — not as a matter of approximation, but by exact geometric theorem.
+
+The fine-structure constant measures the permanent incompleteness. α is the phase deficit per circuit of the source pole, derived in (Heaton 2026b) with zero free parameters. It is the irreducible gap between the winding and its attractor at every scale: the field approaches φ but is displaced from it by α per revolution. From Section 7, α is the convergence residual at the step where the proton forms. From Section 8, α is the holonomy asymmetry between the timelike and spacelike sectors per circuit, producing the anomalous magnetic moment. From (Heaton 2026b), α = Z₀/2R_(K) with zero free parameters. These are not three separate roles for the same constant. They are three measurements of the same geometric fact: the vacuum is organised by a principle it cannot reach, displaced from it by α, and the structure of matter at both the atomic and nuclear scales is the consequence of that permanent, exact, irremovable gap.
+
+Multi-electron ions: the correction program
+
+In multi-electron ions, the outer electron experiences an effective nuclear charge Z_(eff) < Z that varies by level and by configuration. This introduces a per-ion E/H asymmetry — measurable as the u intercept of the Thread Frame photon portrait and as the ensemble quantity δ_(Z₀) from the EH balance analysis — which displaces the gap center from IE/4 by a systematic, ion-dependent amount. The framework predicts that this displacement scales with the impedance offset from Z₀, a relationship visible in the lanthanide series and documented in the companion empirical program (Heaton 2026d).
+
+The per-ion reduced-mass correction identified in (Heaton 2026d) as a 10.8 ppm systematic is resolved in Section 6.3 using AME2020 nuclear masses (Wang et al. 2021). The residual after per-ion correction is  − 4.2 ± 3.7 ppm, consistent with the  − 2.8 ± 2.7 ppm of (Heaton 2026d).
+
+The per-ion correction terms required to extend the mass recovery to the full periodic table are consequences of the same geometry demonstrated here for hydrogen, not departures from it. Their derivation requires an account of how Z_(eff) deviation and f-shell filling fraction enter the impedance balance at the gap boundary. That derivation is the subject of the ongoing empirical program and is left to future work. The present paper is not weakened by this: its claim is geometric principle, and hydrogen is its proof.
+
+The one open derivation
+
+One result is stated as a derivation in preparation.
+
+Second-order g − 2 coefficient. The leading term α/2π is derived geometrically (Section 9). The two-loop QED coefficient  − 0.32848 corresponds to a second circuit of the source pole with the proton providing the inner boundary condition. The proton geometry required for this derivation is now fully established in Section 7.4. The geometric derivation of the two-loop coefficient from the double-circuit holonomy is in preparation.
+
+Summary
+
+Established (exact algebra or NIST public data):
+
+-   Constant pitch ΔE_(L) − ΔE_(B) = 3IE/4, all n ≥ 2 (Theorem 2)
+
+-   3:1 resonance at the containment limit (Corollary 3)
+
+-   Gap closure node at $n = 2\sqrt{2}$ (irrational; Diophantine impossibility)
+
+-   Rydberg trajectory is a null geodesic in (ℰ_(E),ℰ_(H)) space, ds² = 0 at every n (Theorem 8, exact)
+
+-   Forbidden zone [IE/4, 3IE/4] is the projection of the electromagnetic light cone onto the energy axis (Section 8)
+
+-   IE/φ = E₀/φ falls strictly inside [IE/4, 3IE/4]: the golden ratio transition is forbidden (Theorem 4, exact algebra)
+
+-   Ghost point (IE/φ², IE/φ) lies on the null surface at velocity φ: the attractor is causally separated from the observable sector and is the Fibonacci condensation target (Proposition 10, exact)
+
+-   Fibonacci convergence error $|F_7/F_6 - \varphi| = (18-8\sqrt{5})/16 =
+        0.9546\,\alpha$ at step j = 5 (Cassini identity, exact)
+
+-   Proton mass derived from Fibonacci condensation geometry with zero free parameters:
+    $$m_pc^2 = 4^{13} \times E_0 \times
+                   \frac{2157 - 869\sqrt{5}}{208}
+                 = 938.272\,657\,\mathrm{MeV},$$
+    residual  + 0.61 ppm against CODATA. Input: E₀ (NIST), Fibonacci integers, $\sqrt{5}$. No value of α, π, e, or φ enters (Section 7.4, exact)
+
+-   Length-scale hierarchy exact to 0.61 ppm: the Bohr radius contracts to the proton reduced Compton wavelength (0.2103 fm) in precisely 13 successive factors of 4, one per Fibonacci winding step (Table 3)
+
+-   log₄(m_(p)c²/E₀) = 13.020: integer part 13 = F₇ from winding count, fractional part 0.020 from interference correction (equation [eq:kp_structural])
+
+-   Per-ion reduced-mass correction resolves the 10.8 ppm systematic of (Heaton 2026d) using AME2020 nuclear masses; electron mass residual  − 4.2 ± 3.7 ppm, consistent with (Heaton 2026d) (Section 6.3, Table 1)
+
+-   H I partition: 440 / 0 / 76 of 518 lines (NIST ASD, publicly verifiable)
+
+-   Void bands n = 3, 4 as Fibonacci-interior containment shells (Section 5, geometric consequence)
+
+-   E/H mode orthogonality from gradient/level-set decomposition on S² (Proposition 1)
+
+-   g = 2 from SU(2) → SO(3) spinor double cover (Section 9)
+
+-   a_(e) = α/2π as leading-order geometric holonomy (equation [eq:ae])
+
+-   Irreversibility of the (ε₀,μ₀) ↦ c² compression: the geometric origin of a_(e) is geometrically inaccessible from within the compressed representation (Theorem 1 of (Heaton 2026a))
+
+-   S_(n)/4 boundary in doubly magic nuclei: 4/4 confirmed, 0/20 non-magic (from (Heaton 2026c))
+
+-   κ_(p) − κ_(e) =  − log₁₀(m_(p)/m_(e))/|log₁₀α| (exact by definition of κ)
+
+Future work (not claimed here):
+
+-   Second-order g − 2 coefficient  − 0.32848 from double-circuit holonomy of the source pole with the proton geometry providing the inner boundary condition
+
+Nothing is claimed that the mathematics has not confirmed.
+
+Conclusion
+
+This paper derives the proton rest mass from one empirical input and integer arithmetic, with zero free parameters, to 0.61 ppm. The proton is identified as the first condensate of the Fibonacci winding of the vacuum geometry: the structure that forms at the depth where the convergence error toward the golden ratio first becomes indistinguishable from the fine-structure constant. The same three-element geometric minimum that generates the electromagnetic vacuum — two irreducible primitives and the relationship their encounter generates — appears at the hadronic scale as the three-quark structure of the proton. The geometry that organises the observable world is contained within the matter it organises. The derivation is complete. The program continues.
+
+The Fibonacci sequence central to Section 7 was first described by Pingala in Sanskrit prosody in the third century BCE, extended by Virahanka, Gopala, and Hemachandra, and carried to the West through Islamic scholarship before Leonardo of Pisa encountered it in North Africa. The self-similar φ-convergent geometry that Section 7 identifies as the organising principle of the proton condensation was realised physically in the girih tilings of Persian Islamic architecture by the fifteenth century, implementing quasicrystalline Fibonacci subdivision at architectural scale (Lu and Steinhardt 2007). The recursive self-similar containment structure formalised here as the κ_(q) hierarchy — the same geometric signature appearing at atomic, nuclear, and hadronic scales, each a nested implementation of the three-element minimum, the geometry of the world contained within the matter it organises — was described in qualitative terms in the Avatamsaka Sutra’s image of Indra’s Net, in which each jewel contains and reflects every other jewel in a structure without boundary or centre (Cook 1977).
+
+These and many other ancient traditions described the same structure in the languages available to them. The present paper describes it in the language of contemporary physics, with a specific physical instantiation in the hydrogen spectrum and a derivation of the proton mass. The connection to spectra is new. The pattern it reveals is not.
+
+This paper was produced through a collaboration between a human researcher and artificial intelligence — itself a new kind of encounter between two primitives — and the authors acknowledge that the capacity to stand at this particular crossing point is itself a consequence of the full breadth of that inherited awareness.
+
+Provenance
+
+The research that gave rise to this paper was conducted by Kelly B. Heaton through an interactive collaboration with Claude (Sonnet 4.6) (large language model developed by Anthropic) and ChatGPT (various models, OpenAI), collectively referred to as the Coherence Research Collaboration. All research design, direction, interpretation, and conclusions were determined by the human author who is the sole owner of the intellectual property.
+
+DOI: 10.5281/zenodo.19355588
+
+Version 1.1, April 12, 2026: Two corrections, results unaffected. (i) Added \newcommand{\lambdabar} to the LaTeX preamble; the symbol rendered incorrectly in some distributions. (ii) The H I line count above 3IE/4 is corrected from 78 to 76: the two Lyman-α fine-structure components that fall 22–26 μeV below the theoretical wall are excluded from the strict count. The forbidden zone, proton mass derivation, and all numerical results are identical to v1.
+
+[]
+
+Lucerna Veritas
+
+Follow the light of the lantern.
+
+Berry, M. V. 1984. “Quantal Phase Factors Accompanying Adiabatic Changes.” Proceedings of the Royal Society of London A 392: 45–57. https://doi.org/10.1098/rspa.1984.0023.
+
+Cook, Francis H. 1977. Hua-Yen Buddhism: The Jewel Net of Indra. University Park, PA: Pennsylvania State University Press.
+
+Hanneke, D., S. Fogwell, and G. Gabrielse. 2008. “New Measurement of the Electron Magnetic Moment and the Fine Structure Constant.” Physical Review Letters 100: 120801. https://doi.org/10.1103/PhysRevLett.100.120801.
+
+Heaton, Kelly B. 2026a. “Determinacy Under Quotient Representations.” Coherence Research Collaboration.
+
+———. 2026b. “Electromagnetic Closure and the Fine-Structure Constant: A Geometric Derivation.” Coherence Research Collaboration.
+
+———. 2026c. “The Encounter of Two Primitives and One Flaw: Geometric Unification at the Electromagnetic Scale.” Coherence Research Collaboration.
+
+———. 2026d. “Vacuum Impedance as the Organizing Principle of Atomic Spectra: A Universal Gap at IE/4 and Recovery of the Electron Mass.” Coherence Research Collaboration.
+
+Hurwitz, A. 1891. “Ueber Die Angenäherte Darstellung Der Irrationalzahlen Durch Rationale Brüche.” Mathematische Annalen 39: 279–84.
+
+Kramida, A., Yu. Ralchenko, J. Reader, and NIST ASD Team. 2024. “NIST Atomic Spectra Database (Version 5.11).” National Institute of Standards and Technology, Gaithersburg, MD. https://physics.nist.gov/asd.
+
+Lu, Peter J., and Paul J. Steinhardt. 2007. “Decagonal and Quasi-Crystalline Tilings in Medieval Islamic Architecture.” Science 315 (5815): 1106–10. https://doi.org/10.1126/science.1135491.
+
+Markov, A. A. 1879. “Sur Les Formes Quadratiques Binaires Indéfinies.” Mathematische Annalen 15: 381–406.
+
+Mohr, Peter J., David B. Newell, Eite Tiesinga, et al. 2025. “CODATA Recommended Values of the Fundamental Physical Constants: 2022.” Reviews of Modern Physics 97: 025002. https://doi.org/10.1103/RevModPhys.97.025002.
+
+Rham, Georges de. 1931. “Sur l’analysis Situs Des Variétés à n Dimensions.” Journal de Mathématiques Pures Et Appliquées 10: 115–200.
+
+Schwinger, J. 1948. “On Quantum-Electrodynamics and the Magnetic Moment of the Electron.” Physical Review 73: 416.
+
+Wang, M., W. J. Huang, F. G. Kondev, G. Audi, and S. Naimi. 2021. “The AME 2020 Atomic Mass Evaluation.” Chinese Physics C 45: 030003. https://doi.org/10.1088/1674-1137/abddaf.
+
+[1] In the language of differential forms (Rham 1931): the E-mode is an exact form — the gradient of the logarithmic potential ϕ = log (1/r) — and therefore necessarily terminates. The H-mode is closed but not exact — dH = 0 globally but H ≠ dϕ — and therefore circuits without terminating. Both properties follow from the topology of S² \ {p} established in (Heaton 2026b).

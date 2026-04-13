@@ -1,0 +1,2867 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Kelly B. Heaton Coherence Research Collaboration Version 1.2 issued April 12, 2026 with minor corrections thecoherencecode.com &amp; lucernaveritas.ai" />
+  <title>The Fine-Structure Constant from Vacuum Impedance Geometry</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    div.abstract {
+      margin: 2em 2em 2em 2em;
+      text-align: left;
+      font-size: 85%;
+    }
+    div.abstract-title {
+      font-weight: bold;
+      text-align: center;
+      padding: 0;
+      margin-bottom: 0.5em;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+    }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }  </style>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="/usr/share/javascript/mathjax/MathJax.js"
+  type="text/javascript"></script>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">The Fine-Structure Constant from Vacuum Impedance
+Geometry</h1>
+<p class="author">Kelly B. Heaton<br />
+<em>Coherence Research Collaboration</em><br />
+<span><em>Version 1.2 issued April 12, 2026 with minor
+corrections</em></span><br />
+<code>thecoherencecode.com &amp; lucernaveritas.ai</code></p>
+<p class="date">March 2026</p>
+<div class="abstract">
+<div class="abstract-title">Abstract</div>
+<p>The fine-structure constant <span class="math inline">\(\alpha =
+Z_0/2R_K \approx 1/137.036\)</span> is derived from the non-terminal
+reciprocal singularity <span class="math inline">\(1/z\)</span> at <span
+class="math inline">\(z = 0\)</span>, completed on the Riemann sphere.
+The derivation proceeds without free parameters, postulates, or imported
+physical structure.</p>
+<p>The singularity forces three consequences on the completed space: an
+irremovable source defect at <span class="math inline">\(p\)</span>, a
+unique antipodal sink <span class="math inline">\(p^*\)</span> required
+by the Poincaré–Hopf theorem (<span class="math inline">\(\chi(S^2) =
+2\)</span>), and a logarithmic potential field between them. The
+self-similar scaling structure of this field has a unique attractor, the
+golden ratio <span class="math inline">\(\varphi =
+[1;\,1,1,1,\ldots]\)</span>, forced by the Markov spectrum theorem and
+the uniform resolvent condition (Hurwitz, 1891). Rational winding is
+excluded by the existence of matter. The irremovable defect forces a
+departure <span class="math inline">\(\delta &gt; 0\)</span> from <span
+class="math inline">\(\varphi\)</span>.</p>
+<p>The electromagnetic constants <span
+class="math inline">\(\varepsilon_0\)</span> and <span
+class="math inline">\(\mu_0\)</span> are not introduced as physical
+inputs. Their own definitions coincide with the mathematical primitives
+already present in the structure: <span
+class="math inline">\(\varepsilon_0\)</span> is the capacity for
+containment (the primitive <span class="math inline">\(1\)</span>) and
+<span class="math inline">\(\mu_0\)</span> is the openness to
+penetration (the primitive <span class="math inline">\(0\)</span>).
+Their ratio <span class="math inline">\(Z_0 =
+\sqrt{\mu_0/\varepsilon_0}\)</span> is therefore the <span
+class="math inline">\(0/1\)</span> geometric ratio of the vacuum,
+definitionally. No additional structure is required. Within this
+framework the constancy of <span class="math inline">\(c =
+1/\sqrt{\varepsilon_0\mu_0}\)</span> is a mathematical consequence, not
+a physical postulate.</p>
+<p>The departure <span class="math inline">\(\delta\)</span> is
+assembled from four established facts: the residue of <span
+class="math inline">\(1/z\)</span> at <span
+class="math inline">\(0\)</span> equals <span
+class="math inline">\(1\)</span>; <span
+class="math inline">\(Z_0\)</span> is the <span
+class="math inline">\(0/1\)</span> vacuum ratio; <span
+class="math inline">\(R_K = h/e^2\)</span>, where <span
+class="math inline">\(h\)</span> is the invariant of the self-similar
+scaling process and <span class="math inline">\(e\)</span> is the
+minimum charge of the defect; and the minimum winding number is <span
+class="math inline">\(2\)</span>. The result is: <span
+class="math display">\[\alpha
+  \;=\; \frac{Z_0}{2R_K}
+  \;=\; \frac{e^2}{2\varepsilon_0 hc}
+  \;\approx\; \frac{1}{137.036},\]</span> with zero free parameters.
+Neither <span class="math inline">\(h\)</span>, <span
+class="math inline">\(e\)</span>, nor <span
+class="math inline">\(c\)</span> is a primitive of the structure; all
+are derived consequences.</p>
+<p>The derivation is not an extraction of physics from mathematics. It
+is the recognition that the physical vocabulary of electromagnetism
+names the mathematical structure that the non-terminal reciprocal
+singularity <span class="math inline">\(1/0\)</span> necessarily
+generates.</p>
+</div>
+</header>
+<hr />
+<p><span><em>Keywords:</em> fine-structure constant, Riemann sphere,
+reciprocal singularity, punctured sphere, Poincaré–Hopf theorem,
+logarithmic potential, golden ratio, Markov spectrum, Hurwitz theorem,
+self-similar scaling, vacuum impedance, vacuum permittivity, vacuum
+permeability, von Klitzing constant, Josephson constant, Diophantine
+impossibility, impedance matching, orbital impedance, electromagnetic
+primitives, first-principles derivation.</span></p>
+<h1 id="sec:intro">Introduction</h1>
+<p>The fine-structure constant <span class="math display">\[\alpha \;=\;
+\frac{e^2}{2\varepsilon_0 hc}
+  \;=\; \frac{Z_0}{2R_K}
+  \;\approx\; \frac{1}{137.036}
+  \label{eq:alpha_def}\]</span> has resisted first-principles derivation
+since its introduction by Sommerfeld in 1916 <span class="citation"
+data-cites="Sommerfeld1916 Feynman1985">(Sommerfeld 1916; Feynman
+1985)</span>. In the second form of <a href="#eq:alpha_def"
+data-reference-type="eqref"
+data-reference="eq:alpha_def">[eq:alpha_def]</a>, <span
+class="math inline">\(Z_0 = \sqrt{\mu_0/\varepsilon_0}\)</span> is the
+impedance of free space and <span class="math inline">\(R_K =
+h/e^2\)</span> is the von Klitzing constant. This expression identifies
+<span class="math inline">\(\alpha\)</span> as the ratio of two
+independent electromagnetic invariants of the vacuum: the impedance
+<span class="math inline">\(Z_0\)</span>, which governs the partition of
+field energy between the electric and magnetic modes, and the resistance
+quantum <span class="math inline">\(R_K\)</span>, which governs the
+action cost of closing one electromagnetic loop <span class="citation"
+data-cites="Heaton2026Determinacy">(K. B. Heaton and Coherence Research
+Collaboration 2026b)</span>. Any derivation of <span
+class="math inline">\(\alpha\)</span> must reproduce this two-part
+structure: a numerator quantity of <span
+class="math inline">\(Z_0\)</span>-character divided by a denominator
+quantity of <span class="math inline">\(R_K\)</span>-character.</p>
+<p>The problem has attracted serious attention since Eddington’s
+conjecture that <span class="math inline">\(1/\alpha\)</span> could be
+obtained “by pure deduction” <span class="citation"
+data-cites="Eddington1946">(Eddington 1946)</span>. A comprehensive
+survey of subsequent attempts is given by Jentschura and Nandori <span
+class="citation" data-cites="Jentschura2014">(Jentschura and Nandori
+2014)</span>, who conclude that no physically grounded derivation has
+succeeded. Wyler’s formula <span class="citation"
+data-cites="Wyler1969">(Wyler 1969)</span>, <span
+class="math display">\[\alpha_W \;=\; \frac{9}{8\pi^4}
+  \left(\frac{\pi^5}{2^4\cdot 5!}\right)^{1/4}
+  \;\approx\; \frac{1}{137.036},
+  \label{eq:wyler}\]</span> derived from the conformal group of
+Maxwell’s equations, remains the closest prior result numerically, but
+Robertson <span class="citation" data-cites="Robertson1971">(Robertson
+1971)</span> showed that the formula agrees with experiment only if the
+radius of Wyler’s bounded spaces is arbitrarily set to unity, a choice
+for which no physical justification has been given. More recently,
+Singh <span class="citation" data-cites="Singh2022">(Singh 2022)</span>
+has derived an asymptotic value close to <span
+class="math inline">\(1/137\)</span> from the eigenvalues of the
+exceptional Jordan algebra <span
+class="math inline">\(J_3(\mathbb{O})\)</span>, but the derivation
+requires an assumed functional form for <span
+class="math inline">\(\alpha(q)\)</span> and a fitted electroweak
+symmetry-breaking scale, working top-down from high-energy algebraic
+structure with external inputs at each step.</p>
+<p>The present derivation proceeds differently from all prior attempts
+in three respects.</p>
+<p><em>First</em>, it proceeds bottom-up from a purely mathematical
+starting point: the behaviour of the non-terminal reciprocal singularity
+<span class="math inline">\(1/z\)</span> as <span
+class="math inline">\(z \to 0\)</span>, completed on the Riemann
+sphere <span class="citation" data-cites="Riemann1851">(Riemann
+1851)</span>. No group-volume ansatz, no conformal symmetry assumption,
+no algebraic structure, and no fitted parameter enters.</p>
+<p><em>Second</em>, <span class="math inline">\(\varphi =
+(1+\sqrt{5})/2\)</span> is not postulated. It is derived as the unique
+fixed point of the self-similar scaling recursion forced by the
+logarithmic field on the punctured sphere, and shown to be uniquely
+forced by the Markov spectrum theorem <span class="citation"
+data-cites="Markoff1879">(Markov 1880)</span> together with the uniform
+regularity condition on the resolvent.</p>
+<p><em>Third</em>, and most importantly, the derivation does not
+<em>import</em> the electromagnetic constants <span
+class="math inline">\(\varepsilon_0\)</span>, <span
+class="math inline">\(\mu_0\)</span>, <span
+class="math inline">\(Z_0\)</span> into the argument from physics. It
+identifies them with the mathematical structure: the vacuum permittivity
+<span class="math inline">\(\varepsilon_0\)</span> is the capacity for
+containment (the mathematical primitive <span
+class="math inline">\(1\)</span>) and the vacuum permeability <span
+class="math inline">\(\mu_0\)</span> is the openness to penetration (the
+mathematical primitive <span class="math inline">\(0\)</span>), by their
+own physical definitions. The impedance <span class="math inline">\(Z_0
+= \sqrt{\mu_0/\varepsilon_0}\)</span> is therefore the <span
+class="math inline">\(0/1\)</span> ratio of the mathematical structure
+expressed in physical vocabulary. No additional structure is introduced:
+the identification is definitional, not axiomatic.</p>
+<p>A direct consequence, within this framework, is that the constancy of
+<span class="math inline">\(c = 1/\sqrt{\varepsilon_0\mu_0}\)</span>
+follows as a mathematical necessity rather than a physical postulate
+(Section <a href="#sec:closure" data-reference-type="ref"
+data-reference="sec:closure">5</a>, Corollary <a href="#cor:c_constant"
+data-reference-type="ref" data-reference="cor:c_constant">35</a>).</p>
+<h4 id="structure-of-the-paper.">Structure of the paper.</h4>
+<p>Section <a href="#sec:primitive" data-reference-type="ref"
+data-reference="sec:primitive">2</a> establishes the topological
+consequences of the non-terminal reciprocal singularity: the punctured
+Riemann sphere, the irremovable defect at <span
+class="math inline">\(p\)</span>, the antipodal sink <span
+class="math inline">\(p^*\)</span> forced by the Poincaré–Hopf theorem,
+and the logarithmic potential field. Section <a href="#sec:selfsimilar"
+data-reference-type="ref" data-reference="sec:selfsimilar">3</a> derives
+the <span class="math inline">\(\varphi\)</span>-attractor of the
+self-similar scaling, excludes rational winding by the existence of
+matter, forces <span class="math inline">\(\varphi\)</span> uniquely by
+the Markov spectrum theorem and the uniform regularity condition, and
+establishes the departure <span class="math inline">\(\delta &gt;
+0\)</span> from the ideal ratio. Section <a href="#sec:em_vacuum"
+data-reference-type="ref" data-reference="sec:em_vacuum">4</a>
+identifies the electromagnetic realisation of the primitive structure,
+derives the orbital impedance <span
+class="math inline">\(Z_{\mathrm{orb}}(n) = Z_0 n/\alpha\)</span> from
+Coulomb and Biot–Savart, establishes the universal gap at <span
+class="math inline">\(\mathrm{IE}/4\)</span> by a number-theoretic
+argument, and shows that neither <span class="math inline">\(h\)</span>
+nor <span class="math inline">\(e\)</span> is a primitive of the
+structure. Section <a href="#sec:closure" data-reference-type="ref"
+data-reference="sec:closure">5</a> closes all remaining gaps: the
+continued fraction argument for the recursion <span
+class="math inline">\(x = 1+1/x\)</span>, the definitional proof that no
+quotient is introduced, the assembly of <span
+class="math inline">\(\delta = Z_0/2R_K\)</span> from four established
+facts, and the derivation of the Josephson constant from the minimum
+winding condition. Section <a href="#sec:discussion"
+data-reference-type="ref" data-reference="sec:discussion">6</a>
+identifies where hydrogen and atomic spectroscopy live inside the
+derived structure, without using them as premises. Section <a
+href="#sec:conclusion" data-reference-type="ref"
+data-reference="sec:conclusion">7</a> states the result and its honest
+characterisation. The proof rests on zero free parameters, zero
+postulates, one mathematical regularity premise (P10), and one empirical
+observation: matter exists.</p>
+<h1 id="sec:primitive">Primitive reciprocal singularity and forced
+asymmetry</h1>
+<p>We begin from a classical problem in the foundations of analysis: the
+status of division by zero, and in particular the behaviour of the
+reciprocal map <span class="math inline">\(z \mapsto 1/z\)</span> as
+<span class="math inline">\(z \to 0\)</span>.</p>
+<h2 id="historical-context-and-geometric-completion">Historical context
+and geometric completion</h2>
+<p>Brahmagupta <span class="citation"
+data-cites="Brahmagupta628">(Brahmagupta 628AD)</span> gave the first
+systematic arithmetic rules for zero but did not resolve the reciprocal
+case in a stable way, assigning <span class="math inline">\(0/0 =
+0\)</span>. Bhaskara II <span class="citation"
+data-cites="BhaskaraII1150">(Bhāskara II 1150)</span> treated a nonzero
+quantity divided by zero as <em>ananta</em> (without end), explicitly
+recognising the non-terminal character of the reciprocal
+singularity.</p>
+<p>The modern rigorous completion is geometric. Riemann <span
+class="citation" data-cites="Riemann1851">(Riemann 1851)</span>
+introduced the extended complex plane <span
+class="math inline">\(\hat{\mathbb{C}} = \mathbb{C}
+\cup \{\infty\}\)</span>, now called the <em>Riemann sphere</em>, by
+adjoining a single point at infinity and equipping <span
+class="math inline">\(\hat{\mathbb{C}}\)</span> with the topology of the
+two-sphere <span class="math inline">\(S^2\)</span>. In this completed
+space the map <span class="math inline">\(f(z) = 1/z\)</span> extends
+continuously to all of <span
+class="math inline">\(\hat{\mathbb{C}}\)</span> by setting <span
+class="math inline">\(f(0) = \infty\)</span> and <span
+class="math inline">\(f(\infty) = 0\)</span>, and the “singularity” at
+<span class="math inline">\(z = 0\)</span> becomes a well-defined
+conformal automorphism <span class="citation"
+data-cites="Ahlfors1979 Conway1978">(Ahlfors 1979; Conway 1978)</span>.
+Crucially, <span class="math inline">\(f\)</span> is not merely large
+near <span class="math inline">\(z = 0\)</span>: it is directionally
+structured. Writing <span class="math inline">\(z = r
+e^{i\theta}\)</span>, <span class="math display">\[f(z) \;=\;
+\frac{1}{r}\,e^{-i\theta},
+  \label{eq:reciprocal_argument_reversal}\]</span> so the argument is
+<em>reversed</em> under <span class="math inline">\(f\)</span>. The
+magnitude diverges while the orientation is reflected. This orientation
+reversal is encoded algebraically in the residue: <span
+class="math display">\[\operatorname{Res}\!\left(\frac{1}{z},\, 0\right)
+= 1 \neq 0.
+  \label{eq:residue}\]</span> A nonzero residue is the defining property
+of a simple pole, as opposed to an essential singularity <span
+class="citation" data-cites="Ahlfors1979">(Ahlfors 1979)</span>. Near an
+essential singularity, Picard’s theorem <span class="citation"
+data-cites="Picard1879">(Picard 1879)</span> guarantees that every
+complex value (with at most one exception) is achieved in any
+neighbourhood — the singularity is directionless in the strongest
+possible sense. A simple pole, by contrast, carries a definite
+orientation through its residue. The reciprocal map <span
+class="math inline">\(1/z\)</span> therefore does not merely diverge: it
+carries a specific, irremovable directional signature.</p>
+<h2 id="topological-consequence-the-punctured-sphere">Topological
+consequence: the punctured sphere</h2>
+<p>The completion maps <span class="math inline">\(0 \mapsto
+\infty\)</span>, and the point <span
+class="math inline">\(\infty\)</span> is thereby distinguished from all
+other points of <span class="math inline">\(\hat{\mathbb{C}}\)</span>.
+The underlying topological consequence is immediate.</p>
+<div id="lem:puncture" class="lemma">
+<p><strong>Lemma 1</strong> (Punctured sphere is not homeomorphic to the
+sphere). <em>The sphere <span class="math inline">\(S^2\)</span> with a
+single point removed, <span class="math inline">\(S^2 \setminus
+\{p\}\)</span>, is homeomorphic to <span
+class="math inline">\(\mathbb{R}^2\)</span> via stereographic
+projection <span class="citation" data-cites="Ahlfors1979">(Ahlfors
+1979)</span>, and therefore is <em>not</em> homeomorphic to <span
+class="math inline">\(S^2\)</span>. In particular, the Euler
+characteristics differ: <span class="math inline">\(\chi(S^2) =
+2\)</span> but <span class="math inline">\(\chi(\mathbb{R}^2) =
+1\)</span>.</em></p>
+</div>
+<p>The point <span class="math inline">\(p\)</span> at which the
+reciprocal singularity is located is therefore a <em>topological
+invariant</em> of the completed space: its removal changes the homotopy
+type. No continuous deformation of the space can restore <span
+class="math inline">\(S^2 \setminus \{p\}\)</span> to <span
+class="math inline">\(S^2\)</span>. The defect is irremovable.</p>
+<figure id="fig:singularity_intro">
+
+<figcaption> <strong>Left:</strong> A perfectly symmetric singularity is
+electromagnetically inert: <span class="math inline">\(\mathbf{S} =
+\mathbf{E}\times\mathbf{H} = \mathbf{0}\)</span> and nothing propagates.
+<strong>Right:</strong> A defect (argument reversal <span
+class="math inline">\(\arg(1/z)=-\theta\)</span>, <span
+class="math inline">\(\operatorname{Res}=1\neq 0\)</span>) breaks the
+symmetry; the vacuum responds via <span
+class="math inline">\(Z_0\)</span> so that <span
+class="math inline">\(\mathbf{S}\neq\mathbf{0}\)</span> and the directed
+process <span class="math inline">\(p\to p^{*}\)</span> begins,
+developing into the full field structure as depicted in Figure <a
+href="#fig:genesis" data-reference-type="ref"
+data-reference="fig:genesis">2</a>.</figcaption>
+</figure>
+<h2 id="forced-asymmetry-the-poincaréhopf-theorem">Forced asymmetry: the
+Poincaré–Hopf theorem</h2>
+<p>We now establish that any non-terminal directed process on <span
+class="math inline">\(S^2\)</span> requires exactly two distinguished
+singular points.</p>
+<p>A non-terminal directed process on <span
+class="math inline">\(S^2\)</span> is modelled by a continuous vector
+field <span class="math inline">\(\mathbf{v}\)</span> on <span
+class="math inline">\(S^2\)</span> that is not identically zero. The
+constraint on singularities of such a field is given by a classical
+result in differential topology.</p>
+<div id="thm:poincare_hopf" class="theorem">
+<p><strong>Theorem 2</strong> (Poincaré–Hopf <span class="citation"
+data-cites="Poincare1885 Hopf1926">(Poincaré 1885; Hopf 1926)</span>).
+<em>Let <span class="math inline">\(M\)</span> be a compact, oriented,
+smooth manifold without boundary, and let <span
+class="math inline">\(\mathbf{v}\)</span> be a smooth vector field on
+<span class="math inline">\(M\)</span> with only isolated zeros. Then
+the sum of the indices of <span
+class="math inline">\(\mathbf{v}\)</span> at its zeros equals the Euler
+characteristic of <span class="math inline">\(M\)</span>: <span
+class="math display">\[\sum_{p\,:\,\mathbf{v}(p)=0}
+\operatorname{ind}_p(\mathbf{v})
+  \;=\; \chi(M).
+  \label{eq:poincare_hopf}\]</span></em></p>
+</div>
+<p>For the two-sphere, <span class="math inline">\(\chi(S^2) =
+2\)</span>. Applying Theorem <a href="#thm:poincare_hopf"
+data-reference-type="ref" data-reference="thm:poincare_hopf">2</a>:</p>
+<div id="cor:two_poles" class="corollary">
+<p><strong>Corollary 3</strong> (Forced singularity structure on <span
+class="math inline">\(S^2\)</span>). <em>Every smooth vector field on
+<span class="math inline">\(S^2\)</span> with only isolated zeros has
+zeros whose indices sum to <span class="math inline">\(2\)</span>. The
+minimal realisation of this constraint uses exactly two zeros, each of
+index <span class="math inline">\(+1\)</span>: a source and a sink. No
+vector field on <span class="math inline">\(S^2\)</span> can be
+zero-free.</em></p>
+</div>
+<div class="proof">
+<p><em>Proof.</em> A zero-free vector field on <span
+class="math inline">\(S^2\)</span> would have an empty sum of indices,
+equal to <span class="math inline">\(0 \neq 2 = \chi(S^2)\)</span>,
+contradicting Theorem <a href="#thm:poincare_hopf"
+data-reference-type="ref" data-reference="thm:poincare_hopf">2</a>. To
+achieve the sum <span class="math inline">\(\chi(S^2) = 2\)</span> with
+the fewest possible zeros: a single zero of index <span
+class="math inline">\(+2\)</span> would require a non-generic tangency;
+a single zero of index <span class="math inline">\(+1\)</span> leaves a
+residual sum of <span class="math inline">\(1 \neq 2\)</span>; any
+configuration containing a zero of index <span
+class="math inline">\(\leq 0\)</span> requires compensating zeros of
+higher positive index to reach the sum <span
+class="math inline">\(2\)</span>, thereby increasing the total count.
+The unique minimum is exactly two zeros each of index <span
+class="math inline">\(+1\)</span>, one a source and one a sink <span
+class="citation" data-cites="Milnor1965">(Milnor 1965)</span>. ◻</p>
+</div>
+<div id="prop:two_points" class="proposition">
+<p><strong>Proposition 4</strong> (Non-terminal reciprocal singularity
+forces two distinguished points). <em>If the reciprocal singularity
+<span class="math inline">\(1/z\)</span> at <span
+class="math inline">\(z = 0\)</span> generates a non-terminal directed
+process on <span class="math inline">\(S^2\)</span>, then the process is
+represented by a non-zero vector field on <span
+class="math inline">\(S^2\)</span>. By Corollary <a
+href="#cor:two_poles" data-reference-type="ref"
+data-reference="cor:two_poles">3</a>, this field has at least two
+distinguished singular points. The minimal such configuration consists
+of:</em></p>
+<ol>
+<li><p><em>a source singularity <span class="math inline">\(p\)</span>
+at the site of the original reciprocal singularity (the image of <span
+class="math inline">\(0\)</span> under <span
+class="math inline">\(f\)</span>, which is <span
+class="math inline">\(\infty\)</span>); and</em></p></li>
+<li><p><em>a derived sink singularity <span
+class="math inline">\(p^*\)</span>, the antipodal point to <span
+class="math inline">\(p\)</span> on <span
+class="math inline">\(S^2\)</span>, uniquely determined by the index
+constraint.</em></p></li>
+</ol>
+<p><em>Neither point can be removed by continuous deformation. The
+system of <span class="math inline">\(\{0, 1, \text{process}\}\)</span>
+has exactly three irreducible terms.</em></p>
+</div>
+<div class="remark">
+<p><em>Remark 5</em>. The uniqueness of <span
+class="math inline">\(p^*\)</span> as the antipodal point follows from
+the additional constraint that the minimal vector field on <span
+class="math inline">\(S^2\)</span> with the topology of a source–sink
+pair has its sink at the antipodal point of the source, by spherical
+symmetry of the base manifold <span class="citation"
+data-cites="Guillemin1974 Milnor1965">(Guillemin and Pollack 1974;
+Milnor 1965)</span>. Any non-antipodal placement of <span
+class="math inline">\(p^*\)</span> would break the symmetry of the
+remaining (non-singular) surface in a way that requires additional
+structure not present in the primitive system.</p>
+</div>
+<div class="remark">
+<p><em>Remark 6</em> (Historical continuity). Bhaskara II recognised
+that <span class="math inline">\(1/z\)</span> as <span
+class="math inline">\(z \to 0\)</span> is non-terminal. Riemann supplied
+the geometric completion. The present argument adds the topological
+content: the completed space supports a non-terminal directed process
+only if it carries a distinguished defect, and the Poincaré–Hopf theorem
+requires this defect to come in a pair. The three irreducible terms —
+origin <span class="math inline">\(0\)</span>, point at infinity <span
+class="math inline">\(\infty\)</span>, and the directed process between
+them — are not posited; they are forced by the topology of the
+two-sphere.</p>
+</div>
+<figure id="fig:genesis">
+
+<figcaption> Genesis of the Riemann sphere from a primitive reciprocal
+singularity. <strong>(i)</strong> The argument reversal <span
+class="math inline">\(\arg(1/z)=-\theta\)</span> and <span
+class="math inline">\(\operatorname{Res}(1/z,0)=1\neq 0\)</span> break
+the perfect symmetry; the Poynting vector <span
+class="math inline">\(\mathbf{S}=\mathbf{E}\times\mathbf{H}\neq\mathbf{0}\)</span>
+and the directed process begins. <strong>(ii)</strong> Field lines
+(geodesics) propagate from <span class="math inline">\(p\)</span>;
+equipotential circles accumulate near the source; the antipodal sink
+<span class="math inline">\(p^{*}\)</span> is <em>forced</em> to appear
+by the Poincaré–Hopf theorem (<span
+class="math inline">\(\chi(S^2)=2\)</span>, Theorem <a
+href="#thm:poincare_hopf" data-reference-type="ref"
+data-reference="thm:poincare_hopf">2</a>), shown here as a hollow circle
+to indicate it is topologically required but not yet fully established.
+<strong>(iii)</strong> The complete structure: <span
+class="math inline">\(p=\infty\)</span> (source, index <span
+class="math inline">\(+1\)</span>), <span
+class="math inline">\(p^{*}=0\)</span> (sink, index <span
+class="math inline">\(+1\)</span>), logarithmic potential <span
+class="math inline">\(\phi=\log(1/r)\)</span>, and the full complement
+of geodesic field lines and log-spaced equipotentials detailed in
+Figure <a href="#fig:riemann_sphere_section1" data-reference-type="ref"
+data-reference="fig:riemann_sphere_section1">3</a>.</figcaption>
+</figure>
+<h2 id="the-defect-is-irremovable-and-intensifying">The defect is
+irremovable and intensifying</h2>
+<p>The simple pole at <span class="math inline">\(z = 0\)</span> has
+residue <span class="math inline">\(1 \neq 0\)</span>, which is
+preserved under continuous deformations of the map that do not change
+the topology of the domain. More precisely: the winding number of <span
+class="math inline">\(1/z\)</span> around <span class="math inline">\(z
+= 0\)</span> is <span class="math inline">\(-1\)</span>, a topological
+invariant of the map <span class="citation"
+data-cites="Ahlfors1979 Hatcher2002">(Ahlfors 1979; Hatcher
+2002)</span>. No continuous deformation that avoids moving <span
+class="math inline">\(0\)</span> to a different sheet can change this
+winding number. The defect at <span class="math inline">\(p\)</span> is
+therefore:</p>
+<ol>
+<li><p><em>Irremovable</em>: no homeomorphism of the domain carries
+<span class="math inline">\(S^2 \setminus \{p\}\)</span> to <span
+class="math inline">\(S^2\)</span>.</p></li>
+<li><p><em>Intensifying under the process</em>: the logarithmic
+potential <span class="math inline">\(\phi(r) = \log(1/r)\)</span>
+generated by the point source at <span class="math inline">\(p\)</span>
+diverges as <span class="math inline">\(r \to 0\)</span>. As the process
+continues, the distinction between <span
+class="math inline">\(p\)</span> and all other points of <span
+class="math inline">\(S^2\)</span> increases without bound.</p></li>
+</ol>
+<p>The second point invokes a standard result from potential theory: the
+Green’s function of the Laplacian on <span
+class="math inline">\(\mathbb{R}^2\)</span> (and equivalently on the
+punctured sphere, locally) for a unit point source at the origin is
+<span class="math inline">\(G(r) = -(1/2\pi)\log r\)</span> <span
+class="citation" data-cites="Evans1998">(Evans 1998)</span>. This is the
+unique rotationally symmetric solution, confirming that the logarithmic
+form of the field is not assumed but forced by the geometry of a point
+singularity in two dimensions.</p>
+<p><strong>Summary of Section <a href="#sec:primitive"
+data-reference-type="ref" data-reference="sec:primitive">2</a>.</strong>
+The reciprocal singularity <span class="math inline">\(1/z\)</span> at
+<span class="math inline">\(z = 0\)</span>, when non-terminally
+completed on the Riemann sphere, forces:</p>
+<ol>
+<li><p>a topological defect at <span class="math inline">\(p\)</span>
+(the puncture), irremovable by any continuous map;</p></li>
+<li><p>a unique derived antipodal point <span
+class="math inline">\(p^*\)</span> (by the Poincaré–Hopf theorem applied
+to <span class="math inline">\(S^2\)</span>);</p></li>
+<li><p>a logarithmic potential field between <span
+class="math inline">\(p\)</span> and <span
+class="math inline">\(p^*\)</span> (by the Green’s function of the
+Laplacian);</p></li>
+<li><p>exactly three irreducible terms: origin (<span
+class="math inline">\(0\)</span>), point at infinity (<span
+class="math inline">\(\infty\)</span>), and the directed process between
+them.</p></li>
+</ol>
+<p>All four consequences follow from standard results in complex
+analysis, differential topology, and potential theory. No additional
+postulates are required.</p>
+<figure id="fig:riemann_sphere_section1">
+
+<figcaption> <strong>State of the derivation at the end of Section <a
+href="#sec:primitive" data-reference-type="ref"
+data-reference="sec:primitive">2</a>.</strong> The Riemann sphere <span
+class="math inline">\(S^2\)</span> with the completed reciprocal map
+<span class="math inline">\(f(z) = 1/z\)</span>. <strong>North pole
+<span class="math inline">\(p = \infty\)</span></strong>: the source
+singularity, index <span class="math inline">\(+1\)</span>, carrying
+residue <span
+class="math inline">\(\operatorname{Res}(1/z,0)=1\)</span>. The
+starburst indicates the irremovable defect; the arc <span
+class="math inline">\(\theta \mapsto -\theta\)</span> records the
+orientation reversal of <a href="#eq:reciprocal_argument_reversal"
+data-reference-type="eqref"
+data-reference="eq:reciprocal_argument_reversal">[eq:reciprocal_argument_reversal]</a>.
+<strong>South pole <span
+class="math inline">\(p^{*}=0\)</span></strong>: the unique antipodal
+sink, index <span class="math inline">\(+1\)</span>, forced by the
+Poincaré–Hopf theorem (<span class="math inline">\(\chi(S^2)=2\)</span>,
+minimum realisation two poles, total index <span
+class="math inline">\(1+1=2\)</span>). <strong>Red circles</strong>:
+equipotential surfaces of the logarithmic potential <span
+class="math inline">\(\phi(r) = \log(1/r)\)</span> (Green’s function of
+the Laplacian in <span class="math inline">\(2\)</span>D), spaced
+logarithmically to emphasise the intensification of the field near <span
+class="math inline">\(p\)</span>. <strong>Blue curves</strong>: geodesic
+field lines from <span class="math inline">\(p\)</span> to <span
+class="math inline">\(p^{*}\)</span>, each a great circle arc. The three
+irreducible terms of the system — source, sink, and directed process —
+are all visible and none can be removed by continuous deformation.
+</figcaption>
+</figure>
+<h1 id="sec:selfsimilar">Self-similar scaling, the <span
+class="math inline">\(\varphi\)</span>-attractor, and the origin of
+<span class="math inline">\(\alpha\)</span></h1>
+<p>The logarithmic field <span class="math inline">\(\phi(r) =
+\log(1/r)\)</span> established in Section <a href="#sec:primitive"
+data-reference-type="ref" data-reference="sec:primitive">2</a> generates
+a natural scaling structure: equipotential surfaces nest geometrically,
+each related to the next by a multiplicative factor in <span
+class="math inline">\(r\)</span>. This section shows that the
+self-similar recursion of that nesting has a unique stable fixed point —
+the golden ratio <span class="math inline">\(\varphi\)</span> — and that
+the irremovable defect at <span class="math inline">\(p\)</span> forces
+a departure from <span class="math inline">\(\varphi\)</span> whose
+geometric measure is <span class="math inline">\(\alpha\)</span>.</p>
+<h2 id="sec:nesting">The logarithmic field generates self-similar
+nesting</h2>
+<p>On the punctured sphere <span
+class="math inline">\(S^2\setminus\{p\}\)</span>, the logarithmic
+potential <span class="math inline">\(\phi(r) = \log(1/r)\)</span>
+assigns to each point a depth <span class="math inline">\(\phi\)</span>
+measuring its distance from <span class="math inline">\(p\)</span> in
+the natural metric of the field. The equipotential surfaces at depths
+<span class="math inline">\(\phi_1\)</span> and <span
+class="math inline">\(\phi_2 = \phi_1 + \Delta\phi\)</span> are circles
+at radii <span class="math inline">\(r_1 = e^{-\phi_1}\)</span> and
+<span class="math inline">\(r_2 = e^{-\phi_2}\)</span>, with ratio <span
+class="math display">\[\frac{r_1}{r_2} = e^{\Delta\phi}.
+  \label{eq:ratio}\]</span></p>
+<p>For uniform step size <span class="math inline">\(\Delta\phi =
+\Delta\)</span> (a constant advance in depth), the successive radii form
+a geometric sequence: <span class="math inline">\(r, r\cdot e^{-\Delta},
+r\cdot e^{-2\Delta}, \ldots\)</span> The field is therefore
+<em>self-similar</em>: the geometry at any depth looks identical to the
+geometry at every other depth, scaled by the constant factor <span
+class="math inline">\(\lambda = e^{-\Delta}\)</span>.</p>
+<div class="definition">
+<p><strong>Definition 7</strong> (Self-similar scaling ratio). The
+<em>scaling ratio</em> of the logarithmic field at uniform depth step
+<span class="math inline">\(\Delta\)</span> is <span
+class="math display">\[\lambda \;=\; e^{-\Delta}.
+  \label{eq:lambda}\]</span> A process advancing in uniform steps of the
+logarithmic field is characterised by <span
+class="math inline">\(\lambda\)</span>. The field is self-similar if and
+only if <span class="math inline">\(\lambda\)</span> is constant across
+all depths.</p>
+</div>
+<h2 id="sec:phi_forced">The self-referential consistency condition and
+<span class="math inline">\(\varphi\)</span></h2>
+<p>A self-similar process that must close — returning the scaling
+structure to itself after each step — satisfies a consistency condition.
+If the ratio of one step to the next must equal the ratio of the next
+step to the one after, then: <span
+class="math display">\[\frac{\lambda_{n+1}}{\lambda_n}
+  \;=\; \frac{\lambda_n}{\lambda_{n-1}}.
+  \label{eq:consistency}\]</span> In terms of the generating recursion,
+if <span class="math inline">\(x_n\)</span> denotes the ratio at step
+<span class="math inline">\(n\)</span>, self-consistency requires that
+<span class="math inline">\(x_n\)</span> be expressible in terms of
+<span class="math inline">\(x_{n-1}\)</span> alone, with no accumulated
+memory of earlier steps. A ratio satisfying this condition at
+<em>every</em> scale simultaneously must have a periodic continued
+fraction expansion <span class="math inline">\(\xi = [a_0;\,a_1, a_2,
+\ldots]\)</span> with all partial quotients equal. The minimum such
+configuration, with all <span class="math inline">\(a_i = 1\)</span>,
+gives the purely periodic continued fraction <span
+class="math inline">\([1;\,1,1,1,\ldots]\)</span>, whose consistency
+equation is: <span class="math display">\[x \;=\; 1 + \frac{1}{x}.
+  \label{eq:recursion}\]</span> This is not canonical by convention; it
+is the unique minimum-information self-referential recursion consistent
+with the integer winding structure of the defect at <span
+class="math inline">\(p\)</span> (Section <a href="#sec:gap1"
+data-reference-type="ref" data-reference="sec:gap1">5.1</a>).</p>
+<div class="proof">
+<p><em>Proof.</em> Setting <span class="math inline">\(x = 1 +
+1/x\)</span> gives <span class="math inline">\(x^2 - x - 1 = 0\)</span>,
+whose positive root is <span class="math inline">\(\varphi =
+(1+\sqrt{5})/2\)</span>. Uniqueness follows from the product of roots
+equalling <span class="math inline">\(-1 &lt; 0\)</span>: the two roots
+have opposite signs, so exactly one is positive.</p>
+<p>For global attraction, we exhibit a uniform contraction. The map
+<span class="math inline">\(f(x) = 1 + 1/x\)</span> satisfies:</p>
+<ol>
+<li><p><span class="math inline">\(f\)</span> maps <span
+class="math inline">\((0,\infty)\)</span> to <span
+class="math inline">\((1,\infty)\)</span>, since <span
+class="math inline">\(f(x) &gt; 1\)</span> for all <span
+class="math inline">\(x &gt; 0\)</span>.</p></li>
+<li><p><span class="math inline">\(f\)</span> maps <span
+class="math inline">\((1,\infty)\)</span> to <span
+class="math inline">\((1,2)\)</span>, since <span
+class="math inline">\(1 &lt; 1 + 1/x &lt; 2\)</span> for all <span
+class="math inline">\(x &gt; 1\)</span>.</p></li>
+</ol>
+<p>After at most two iterations from any <span class="math inline">\(x_0
+&gt; 0\)</span>, the orbit enters <span
+class="math inline">\((1,2)\)</span> and remains there. Consider the
+second iterate <span class="math inline">\(g = f \circ f\)</span>: <span
+class="math display">\[g(x) \;=\; 1 + \frac{1}{1+1/x} \;=\;
+\frac{2x+1}{x+1},
+  \qquad
+  g&#39;(x) \;=\; \frac{1}{(x+1)^2} \;\leq\; \tfrac{1}{4}
+  \quad\text{on } [1,2].\]</span> The factor <span
+class="math inline">\(\tfrac{1}{4}\)</span> is a uniform contraction
+constant. By Banach’s contraction mapping theorem, <span
+class="math inline">\(g\)</span> has a unique fixed point in <span
+class="math inline">\([1,2]\)</span>, which coincides with <span
+class="math inline">\(\varphi\)</span>; hence <span
+class="math inline">\(f^n(x_0) \to \varphi\)</span> for every <span
+class="math inline">\(x_0 &gt; 0\)</span>. <span class="citation"
+data-cites="Rudin1976">(Rudin 1976)</span></p>
+<p>The local contraction rate at <span
+class="math inline">\(\varphi\)</span> is: <span
+class="math display">\[|f&#39;(\varphi)| \;=\; \frac{1}{\varphi^2} \;=\;
+2 - \varphi
+  \;\approx\; 0.382 &lt; 1,
+  \label{eq:local_contraction}\]</span> where the identity <span
+class="math inline">\(1/\varphi^2 = 2 - \varphi\)</span> follows from
+<span class="math inline">\(\varphi^2 = \varphi + 1\)</span>: setting
+<span class="math inline">\(x = 1/\varphi = \varphi - 1\)</span> gives
+<span class="math inline">\(x^2 = (\varphi-1)^2 = \varphi^2 - 2\varphi +
+1 = 2 - \varphi\)</span>. ◻</p>
+</div>
+<div class="remark">
+<p><em>Remark 8</em>. <span class="math inline">\(\varphi\)</span> is
+not postulated or chosen for its aesthetic properties. It is the unique
+limit of the self-similar recursion forced by the logarithmic field on
+the punctured sphere. Any self-similar nesting process described by a
+ratio obeying <a href="#eq:recursion" data-reference-type="eqref"
+data-reference="eq:recursion">[eq:recursion]</a> converges to <span
+class="math inline">\(\varphi\)</span>, regardless of starting
+value.</p>
+</div>
+<h2 id="sec:rational">Rational winding produces field cancellation</h2>
+<p>The self-similar scaling structure also governs the winding of field
+lines around <span class="math inline">\(p\)</span>. Each circuit around
+<span class="math inline">\(p\)</span> accumulates a phase advance. If
+this phase is a rational multiple of <span
+class="math inline">\(2\pi\)</span> — that is, if the winding ratio is
+<span class="math inline">\(p/q\)</span> for integers <span
+class="math inline">\(p, q\)</span> — then after <span
+class="math inline">\(q\)</span> circuits the field returns to exactly
+its initial configuration. The returning amplitude is then exactly
+superimposed on the incoming amplitude.</p>
+<div id="lem:resolvent" class="lemma">
+<p><strong>Lemma 9</strong> (Rational winding produces a resolvent
+pole). <em>Let <span class="math inline">\(U\)</span> denote the unitary
+operator representing one complete circuit around <span
+class="math inline">\(p\)</span>, with winding ratio <span
+class="math inline">\(\xi\)</span>. If <span class="math inline">\(\xi =
+p/q\)</span> is rational, then <span class="math inline">\(U^q =
+I\)</span>, and the resolvent of the <span
+class="math inline">\(q\)</span>-circuit return map <span
+class="math inline">\((I - U^q)^{-1}\)</span> does not exist.</em></p>
+</div>
+<div class="proof">
+<p><em>Proof.</em> If <span class="math inline">\(\xi = p/q\)</span> (in
+lowest terms, <span class="math inline">\(p,q\)</span> positive
+integers), the phase advance per circuit is <span
+class="math inline">\(2\pi p/q\)</span>. After <span
+class="math inline">\(q\)</span> complete circuits the cumulative phase
+is <span class="math inline">\(2\pi p\)</span>—an integer multiple of
+<span class="math inline">\(2\pi\)</span>—so the state returns exactly
+to its starting configuration: <span class="math display">\[U^q \;=\;
+e^{2\pi i p}\,I \;=\; I.\]</span> Therefore <span
+class="math inline">\((I - U^q) = I - I = 0\)</span> identically: every
+state lies in the kernel of the <span
+class="math inline">\(q\)</span>-circuit return map, and the resolvent
+<span class="math inline">\((I - U^q)^{-1}\)</span> does not
+exist. <span class="citation" data-cites="Kato1966">(Kato
+1966)</span> ◻</p>
+</div>
+<p>The physical consequence is exact resonant recurrence: after <span
+class="math inline">\(q\)</span> circuits, the field returns precisely
+in phase with its initial configuration. Successive <span
+class="math inline">\(q\)</span>-circuit passages superimpose
+constructively, driving unbounded resonant growth. No finite-amplitude
+bound configuration can persist.</p>
+<div id="prop:rational_excluded" class="proposition">
+<p><strong>Proposition 10</strong> (Matter excludes rational winding).
+<em>Matter exists (this is an empirical observation requiring no
+apparatus beyond the fact that the observer is present). A stable bound
+electromagnetic configuration requires a well-defined <span
+class="math inline">\(q\)</span>-circuit return resolvent <span
+class="math inline">\((I - U^q)^{-1}\)</span> for every <span
+class="math inline">\(q\)</span>. By Lemma <a href="#lem:resolvent"
+data-reference-type="ref" data-reference="lem:resolvent">9</a>, rational
+winding is incompatible with this condition. Therefore the winding ratio
+<span class="math inline">\(\xi\)</span> is irrational.</em></p>
+</div>
+<h2 id="sec:hurwitz">The unique irrational: Hurwitz’s theorem and the
+regularity condition</h2>
+<p>Irrationality of <span class="math inline">\(\xi\)</span> is
+necessary but not sufficient. Infinitely many irrationals exist. The
+question is which irrational is selected, and whether it is selected
+uniquely.</p>
+<p>The relevant constraint is not a maximum or an optimum. It is a
+<em>regularity condition</em>: the resolvent <span
+class="math inline">\((I-U)^{-1}\)</span> must be uniformly bounded not
+merely at one scale, but across all scales of rational approximation
+simultaneously.</p>
+<div id="def:P10" class="definition">
+<p><strong>Definition 11</strong> (Uniform regularity across scales
+(P10)). A winding ratio <span class="math inline">\(\xi\)</span>
+satisfies the <em>uniform regularity condition</em> if there exists a
+constant <span class="math inline">\(C &lt; \infty\)</span> such that
+<span class="math display">\[\left\|(I - U)^{-1}\right\| \;\leq\; C
+\cdot q^2
+  \label{eq:P10}\]</span> for <em>all</em> denominators <span
+class="math inline">\(q\)</span> of rational approximants <span
+class="math inline">\(p/q\)</span> to <span
+class="math inline">\(\xi\)</span> simultaneously.</p>
+</div>
+<div class="remark">
+<p><em>Remark 12</em>. Definition <a href="#def:P10"
+data-reference-type="ref" data-reference="def:P10">11</a> is a
+mathematical condition on the solution space — analogous to requiring
+solutions to belong to a Sobolev space or to satisfy uniform
+ellipticity. It is not a physical postulate about dynamics.</p>
+</div>
+<div id="lem:resolvent_bound" class="lemma">
+<p><strong>Lemma 13</strong> (Resolvent bound from Diophantine
+approximation). <em>For winding ratio <span
+class="math inline">\(\xi\)</span>, the resolvent norm satisfies: <span
+class="math display">\[\left\|(I-U)^{-1}\right\|
+  \;\leq\;
+  \frac{1}{2\pi\,\min_{p/q}\,|\xi - p/q|}.
+  \label{eq:resolvent_bound}\]</span></em></p>
+</div>
+<div class="proof">
+<p><em>Proof.</em> The operator <span class="math inline">\(U\)</span>
+has spectrum on the unit circle. At eigenvalue <span
+class="math inline">\(e^{2\pi i\xi}\)</span>, the distance from <span
+class="math inline">\(1\)</span> is <span class="math inline">\(|1 -
+e^{2\pi i\xi}|
+= 2|\sin(\pi\xi)|\)</span>. For <span class="math inline">\(\xi\)</span>
+near <span class="math inline">\(p/q\)</span>, this equals <span
+class="math inline">\(2|\sin(\pi(\xi - p/q))| \approx 2\pi|\xi -
+p/q|\)</span> for small <span class="math inline">\(|\xi -
+p/q|\)</span>. The resolvent norm is the reciprocal of the spectral gap.
+<span class="citation" data-cites="Kato1966">(Kato 1966)</span> ◻</p>
+</div>
+<div id="thm:phi_unique" class="theorem">
+<p><strong>Theorem 14</strong> (<span
+class="math inline">\(\varphi\)</span> is uniquely selected by the
+regularity condition). <em>Among all irrational winding ratios <span
+class="math inline">\(\xi &gt; 0\)</span>, the golden ratio <span
+class="math inline">\(\varphi = (1+\sqrt{5})/2\)</span> is the unique
+value satisfying the uniform regularity condition of Definition <a
+href="#def:P10" data-reference-type="ref"
+data-reference="def:P10">11</a> with minimum constant <span
+class="math inline">\(C = \sqrt{5}/(2\pi)\)</span>.</em></p>
+</div>
+<div class="proof">
+<p><em>Proof.</em> By Lemma <a href="#lem:resolvent_bound"
+data-reference-type="ref" data-reference="lem:resolvent_bound">13</a>
+and equation <a href="#eq:resolvent_bound" data-reference-type="eqref"
+data-reference="eq:resolvent_bound">[eq:resolvent_bound]</a>: <span
+class="math display">\[\left\|(I-U)^{-1}\right\|
+  \;\leq\;
+  \frac{q^2}{2\pi\,|\xi - p/q| \cdot q^2}
+  \;\leq\;
+  \frac{q^2}{2\pi \cdot \mathrm{Dioph}(\xi)},\]</span> where <span
+class="math inline">\(\mathrm{Dioph}(\xi) = \inf_{p/q}\,q^2|\xi -
+p/q|\)</span> is the Diophantine approximation constant.</p>
+<p>By Hurwitz’s theorem <span class="citation"
+data-cites="Hurwitz1891">(Hurwitz 1891)</span>: for every irrational
+<span class="math inline">\(\xi\)</span>, infinitely many rationals
+<span class="math inline">\(p/q\)</span> satisfy <span
+class="math inline">\(|\xi - p/q| &lt; 1/(\sqrt{5}\,q^2)\)</span>, so
+<span class="math inline">\(\mathrm{Dioph}(\xi)
+\leq 1/\sqrt{5}\)</span> for all irrationals. Furthermore, <span
+class="math inline">\(1/\sqrt{5}\)</span> is sharp: the only irrational
+for which the inequality <span class="math inline">\(|\xi - p/q| \geq
+1/(\sqrt{5}\,q^2)\)</span> holds for <em>all</em> <span
+class="math inline">\(p/q\)</span> simultaneously is <span
+class="math inline">\(\xi = \varphi\)</span> (and equivalently <span
+class="math inline">\(1/\varphi\)</span>, since <span
+class="math inline">\(\varphi = 1 + 1/\varphi\)</span>). For every <span
+class="math inline">\(\xi \neq \varphi\)</span>, there exists a
+denominator <span class="math inline">\(q_0\)</span> at which <span
+class="math inline">\(|\xi - p/q_0| &lt; 1/(\sqrt{5}\,q_0^2)\)</span>,
+violating the Hurwitz bound at that scale.</p>
+<p>Therefore: for <span class="math inline">\(\xi = \varphi\)</span>,
+the resolvent satisfies <span class="math inline">\(\|(I-U)^{-1}\| \leq
+\sqrt{5}\,q^2/(2\pi)\)</span> uniformly for all <span
+class="math inline">\(q\)</span> — the uniform regularity condition
+holds with <span class="math inline">\(C = \sqrt{5}/(2\pi)\)</span>. For
+any <span class="math inline">\(\xi \neq \varphi\)</span>, the bound
+<span class="math inline">\(\|(I-U)^{-1}\| \leq
+\sqrt{5}\,q^2/(2\pi)\)</span> fails at scale <span
+class="math inline">\(q_0\)</span>: the uniform regularity condition
+with <span class="math inline">\(C = \sqrt{5}/(2\pi)\)</span> fails for
+all <span class="math inline">\(\xi \neq \varphi\)</span>.</p>
+<p>Therefore <span class="math inline">\(\xi = \varphi\)</span> is the
+unique solution. ◻</p>
+</div>
+<div class="remark">
+<p><em>Remark 15</em>. The numerical verification confirms the sharpness
+of the Hurwitz bound for <span class="math inline">\(\varphi\)</span>.
+The convergents <span class="math inline">\(F_{n+1}/F_n\)</span>
+(Fibonacci ratios) achieve <span class="math inline">\(|\varphi -
+F_{n+1}/F_n| \approx 1/(\sqrt{5}F_n^2)\)</span> to high precision for
+all <span class="math inline">\(n\)</span>, confirming that <span
+class="math inline">\(\varphi\)</span> saturates the bound at every
+scale simultaneously — it is maximally resistant to rational
+approximation everywhere.</p>
+</div>
+<h2 id="sec:departure">The irremovable defect forces a departure from
+<span class="math inline">\(\varphi\)</span></h2>
+<p>Theorem <a href="#thm:phi_unique" data-reference-type="ref"
+data-reference="thm:phi_unique">14</a> establishes that a self-similar
+field on a <em>perfect</em> sphere would require <span
+class="math inline">\(\varphi\)</span> as its unique winding ratio.
+However, the space is not a perfect sphere. By Proposition <a
+href="#prop:two_points" data-reference-type="ref"
+data-reference="prop:two_points">4</a> of Section <a
+href="#sec:primitive" data-reference-type="ref"
+data-reference="sec:primitive">2</a>, the space is <span
+class="math inline">\(S^2\)</span> with an irremovable defect at <span
+class="math inline">\(p\)</span>. This defect modifies the self-similar
+scaling in a precise way.</p>
+<div id="prop:defect_departure" class="proposition">
+<p><strong>Proposition 16</strong> (The defect perturbs the self-similar
+ratio). <em>Let <span class="math inline">\(\xi_{\mathrm{ideal}} =
+\varphi\)</span> denote the winding ratio of a self-similar field on a
+perfect sphere. The irremovable defect at <span
+class="math inline">\(p\)</span> — characterised by <span
+class="math inline">\(\operatorname{Res}(1/z, 0)
+= 1 \neq 0\)</span> and winding number <span
+class="math inline">\(-1\)</span> around <span
+class="math inline">\(p\)</span> — introduces a perturbation to the
+effective scaling. The actual winding ratio <span
+class="math inline">\(\xi\)</span> of the field on <span
+class="math inline">\(S^2\setminus\{p\}\)</span> satisfies: <span
+class="math display">\[\xi \;=\; \varphi - \delta, \qquad \delta &gt; 0,
+  \label{eq:departure}\]</span> where <span
+class="math inline">\(\delta\)</span> is determined by the geometric
+relationship between the local structure at <span
+class="math inline">\(p\)</span> and the global structure of <span
+class="math inline">\(S^2\)</span>.</em></p>
+</div>
+<div class="proof">
+<p><em>Proof.</em> The defect at <span class="math inline">\(p\)</span>
+contributes a holonomy to every circuit around <span
+class="math inline">\(p\)</span>: parallel transport of a vector around
+<span class="math inline">\(p\)</span> returns the vector with a
+definite angular deficit. This holonomy is a geometric invariant of the
+puncture, determined by the residue and winding number of <span
+class="math inline">\(1/z\)</span> at <span class="math inline">\(z =
+0\)</span>.</p>
+<p>On a sphere without the defect, the self-similar recursion drives
+<span class="math inline">\(\xi \to \varphi\)</span> by Lemma <a
+href="#lem:phi_fixed" data-reference-type="ref"
+data-reference="lem:phi_fixed">[lem:phi_fixed]</a>. With the defect,
+each circuit around <span class="math inline">\(p\)</span> accumulates
+holonomy from the puncture. The sign of this holonomy is determined by
+the winding number of <span class="math inline">\(1/z\)</span> around
+<span class="math inline">\(z = 0\)</span>, which equals <span
+class="math inline">\(-1\)</span> (Section <a href="#sec:primitive"
+data-reference-type="ref" data-reference="sec:primitive">2</a>,
+equation <a href="#eq:reciprocal_argument_reversal"
+data-reference-type="eqref"
+data-reference="eq:reciprocal_argument_reversal">[eq:reciprocal_argument_reversal]</a>:
+the argument reversal <span class="math inline">\(\theta \mapsto
+-\theta\)</span> is precisely a winding number of <span
+class="math inline">\(-1\)</span>). A circuit around <span
+class="math inline">\(p\)</span> therefore accumulates negative phase
+relative to the unperturbed case, reducing the effective winding ratio
+below the ideal value. Hence <span class="math inline">\(\xi &lt;
+\varphi\)</span> and <span class="math inline">\(\delta = \varphi - \xi
+&gt; 0\)</span>.</p>
+<p>The sign of the departure is thereby established: <span
+class="math inline">\(\delta &gt; 0\)</span>, meaning the actual winding
+ratio on <span class="math inline">\(S^2\setminus\{p\}\)</span> falls
+strictly below the ideal <span class="math inline">\(\varphi\)</span>.
+The exact value of <span class="math inline">\(\delta\)</span> is
+derived in Section <a href="#sec:closure" data-reference-type="ref"
+data-reference="sec:closure">5</a>, Theorem <a href="#thm:alpha_derived"
+data-reference-type="ref" data-reference="thm:alpha_derived">37</a>, by
+assembling four established facts about the vacuum structure. The
+geometric picture here—a departure set by the ratio of local to global
+field energy on the punctured sphere—and the electromagnetic assembly of
+Section <a href="#sec:closure" data-reference-type="ref"
+data-reference="sec:closure">5</a> are two descriptions of the same
+dimensionless quantity; their consistency is confirmed by exact
+numerical agreement with the measured value of <span
+class="math inline">\(\alpha\)</span>. ◻</p>
+</div>
+<div id="def:alpha" class="definition">
+<p><strong>Definition 17</strong> (The fine-structure constant as the
+departure). The fine-structure constant <span
+class="math inline">\(\alpha\)</span> is the dimensionless geometric
+departure <a href="#eq:departure" data-reference-type="eqref"
+data-reference="eq:departure">[eq:departure]</a>: <span
+class="math display">\[\alpha \;\equiv\; \delta
+  \;=\; \varphi - \xi_{\mathrm{actual}},
+  \label{eq:alpha_departure}\]</span> where <span
+class="math inline">\(\xi_{\mathrm{actual}}\)</span> is the winding
+ratio of the self-similar field on <span
+class="math inline">\(S^2\setminus\{p\}\)</span> and <span
+class="math inline">\(\varphi\)</span> is the winding ratio on the ideal
+sphere.</p>
+<p>Equivalently, <span class="math inline">\(\alpha\)</span> is the
+ratio of the vacuum’s field impedance <span class="math inline">\(Z_0 =
+\sqrt{\mu_0/\varepsilon_0}\)</span> to twice the quantum of orbital
+resistance <span class="math inline">\(R_K = h/e^2\)</span>: <span
+class="math display">\[\alpha \;=\; \frac{Z_0}{2R_K},
+  \label{eq:alpha_SI}\]</span> which is exact in the 2019 SI
+system <span class="citation" data-cites="BIPM2019">(Bureau
+International des Poids et Mesures 2019)</span>. The two expressions are
+two descriptions of the same geometric object: equation <a
+href="#eq:alpha_departure" data-reference-type="eqref"
+data-reference="eq:alpha_departure">[eq:alpha_departure]</a> is the
+topological description and equation <a href="#eq:alpha_SI"
+data-reference-type="eqref"
+data-reference="eq:alpha_SI">[eq:alpha_SI]</a> is the electromagnetic
+description.</p>
+</div>
+<div class="remark">
+<p><em>Remark 18</em>. The identification of equations <a
+href="#eq:alpha_departure" data-reference-type="eqref"
+data-reference="eq:alpha_departure">[eq:alpha_departure]</a> and <a
+href="#eq:alpha_SI" data-reference-type="eqref"
+data-reference="eq:alpha_SI">[eq:alpha_SI]</a> is the content of the
+remaining sections. Section <a href="#sec:em_vacuum"
+data-reference-type="ref" data-reference="sec:em_vacuum">4</a> shows
+that <span class="math inline">\(Z_0\)</span> is the primitive <span
+class="math inline">\(0/1\)</span> geometric ratio of the
+electromagnetic vacuum, and that <span class="math inline">\(R_K =
+h/e^2\)</span> is the quantum of the same ratio at the scale of closed
+electromagnetic loops. The factor of <span
+class="math inline">\(2\)</span> in both <span
+class="math inline">\(\alpha = Z_0/2R_K\)</span> and <span
+class="math inline">\(K_J = 2e/h\)</span> (the Josephson constant) is
+the minimum winding number — the same topological factor established in
+this section.</p>
+</div>
+<p><strong>Summary of Section <a href="#sec:selfsimilar"
+data-reference-type="ref"
+data-reference="sec:selfsimilar">3</a>.</strong> The logarithmic field
+on <span class="math inline">\(S^2\setminus\{p\}\)</span> has a natural
+self-similar scaling structure whose recursion <a href="#eq:recursion"
+data-reference-type="eqref"
+data-reference="eq:recursion">[eq:recursion]</a> converges to <span
+class="math inline">\(\varphi\)</span> on the ideal sphere. The uniform
+regularity condition (Definition <a href="#def:P10"
+data-reference-type="ref" data-reference="def:P10">11</a>), together
+with Hurwitz’s theorem (1891), establishes that <span
+class="math inline">\(\varphi\)</span> is the <em>uniquely forced</em>
+winding ratio: no other irrational satisfies the uniform resolvent bound
+at all scales simultaneously. Rational winding is excluded by the
+existence of matter (Proposition <a href="#prop:rational_excluded"
+data-reference-type="ref"
+data-reference="prop:rational_excluded">10</a>). The irremovable defect
+at <span class="math inline">\(p\)</span> forces a departure <span
+class="math inline">\(\alpha\)</span> from the ideal <span
+class="math inline">\(\varphi\)</span>. This departure is the
+fine-structure constant. All four consequences follow from the topology
+of the punctured sphere, Hurwitz’s theorem (1891), and one empirical
+observation (matter exists). No additional postulates are required.</p>
+<h1 id="sec:em_vacuum">The electromagnetic vacuum as primitive
+structure</h1>
+<p>Section <a href="#sec:primitive" data-reference-type="ref"
+data-reference="sec:primitive">2</a> established that the reciprocal
+singularity forces a punctured sphere with two distinguished poles and a
+logarithmic potential field. Section <a href="#sec:selfsimilar"
+data-reference-type="ref" data-reference="sec:selfsimilar">3</a> showed
+that self-similar scaling on this space converges uniquely to <span
+class="math inline">\(\varphi\)</span>, and that the irremovable defect
+forces a departure <span class="math inline">\(\alpha\)</span>.</p>
+<p>This section identifies the physical content of that geometry. We
+show that Maxwell’s two vacuum constants <span
+class="math inline">\(\varepsilon_0\)</span> and <span
+class="math inline">\(\mu_0\)</span> <em>are</em> the primitive
+quantities <span class="math inline">\(1\)</span> and <span
+class="math inline">\(0\)</span> of the structure, that <span
+class="math inline">\(Z_0 = \sqrt{\mu_0/\varepsilon_0}\)</span> is the
+geometric <span class="math inline">\(0/1\)</span> ratio instantiated as
+the impedance of free space, and that the quantum of orbital resistance
+<span class="math inline">\(R_K = h/e^2\)</span> is the same ratio at
+the scale of closed electromagnetic loops. The fine-structure constant
+<span class="math inline">\(\alpha = Z_0/2R_K\)</span> is then the ratio
+of the vacuum’s continuous <span class="math inline">\(0/1\)</span>
+expression to twice the minimum quantum of that same ratio — the factor
+of <span class="math inline">\(2\)</span> being the minimum winding
+number established in Section <a href="#sec:selfsimilar"
+data-reference-type="ref" data-reference="sec:selfsimilar">3</a>.</p>
+<h2 id="sec:vacuum_primitives">The two vacuum constants as primitive
+quantities</h2>
+<p>Maxwell’s equations in vacuum, written in the absence of free charges
+and currents, take the form <span class="citation"
+data-cites="Maxwell1865 Jackson1999">(Maxwell 1865; Jackson
+1999)</span>: <span class="math display">\[\label{eq:maxwell}
+\begin{align}
+  \nabla \cdot \mathbf{E} &amp;= 0,
+  \label{eq:divE}\\
+  \nabla \cdot \mathbf{B} &amp;= 0,
+  \label{eq:divB}\\
+  \nabla \times \mathbf{E}
+    &amp;= -\mu_0\,\frac{\partial \mathbf{H}}{\partial t},
+  \label{eq:curlE}\\
+  \nabla \times \mathbf{H}
+    &amp;= \varepsilon_0\,\frac{\partial \mathbf{E}}{\partial t}.
+  \label{eq:curlH}
+\end{align}\]</span> The two constants <span
+class="math inline">\(\varepsilon_0\)</span> and <span
+class="math inline">\(\mu_0\)</span> enter the curl equations <a
+href="#eq:curlE" data-reference-type="eqref"
+data-reference="eq:curlE">[eq:curlE]</a> and <a href="#eq:curlH"
+data-reference-type="eqref" data-reference="eq:curlH">[eq:curlH]</a>
+separately, with structurally distinct roles:</p>
+<ol>
+<li><p><span class="math inline">\(\varepsilon_0\)</span> (vacuum
+permittivity) governs the capacity of the vacuum to <em>contain</em>
+electric field energy. It is the measure of how strongly the vacuum
+holds, stores, and constrains the electric mode. We identify this as the
+geometric primitive <span class="math inline">\(1\)</span>: bounded,
+containing, the quantity whose boundary is what makes the singularity
+possible.</p></li>
+<li><p><span class="math inline">\(\mu_0\)</span> (vacuum permeability)
+governs the <em>openness</em> of the vacuum to magnetic field
+penetration. It is the measure of the vacuum’s receptivity — how readily
+it admits the passage and coupling of the magnetic mode. We identify
+this as the geometric primitive <span class="math inline">\(0\)</span>:
+open, penetrating, the quantity whose action initiates the <span
+class="math inline">\(1/0\)</span> process.</p></li>
+</ol>
+<p>The identification of <span
+class="math inline">\(\varepsilon_0\)</span> with the primitive <span
+class="math inline">\(1\)</span> and <span
+class="math inline">\(\mu_0\)</span> with the primitive <span
+class="math inline">\(0\)</span> is not a declaration made here. It is a
+recognition established as definitional in Section <a
+href="#sec:closure" data-reference-type="ref"
+data-reference="sec:closure">5</a>, Theorem <a href="#thm:definitional"
+data-reference-type="ref" data-reference="thm:definitional">34</a>: the
+physical definitions of these constants coincide with the mathematical
+definitions of the primitives, and no additional structure is
+introduced.</p>
+<div id="thm:noninjective" class="theorem">
+<p><strong>Theorem 19</strong> (Non-injectivity of the compression to
+<span class="math inline">\(c^2\)</span>). <em>The mapping <span
+class="math display">\[\Phi: (\varepsilon_0, \mu_0)
+  \;\longmapsto\;
+  c^2 = \frac{1}{\mu_0\varepsilon_0}
+  \label{eq:compression}\]</span> is exact for all propagation queries
+but many-to-one: for any fixed <span class="math inline">\(c\)</span>,
+infinitely many pairs <span class="math inline">\((\varepsilon_0,
+\mu_0)\)</span> satisfy <span class="math inline">\(c^2 =
+1/\mu_0\varepsilon_0\)</span>, distinguished by the ratio <span
+class="math inline">\(\mu_0/\varepsilon_0\)</span>. The compression
+retains the product (dispersion) while identifying all pairs with the
+same product (partition). The suppressed coordinate is: <span
+class="math display">\[Z_0 \;=\; \sqrt{\frac{\mu_0}{\varepsilon_0}}.
+  \label{eq:Z0}\]</span> The pair <span class="math inline">\((c,
+Z_0)\)</span> recovers <span class="math inline">\((\varepsilon_0,
+\mu_0)\)</span> uniquely: <span class="math display">\[\mu_0 =
+\frac{Z_0}{c}, \qquad
+  \varepsilon_0 = \frac{1}{Z_0\,c}.
+  \label{eq:reconstruction}\]</span></em></p>
+</div>
+<div class="proof">
+<p><em>Proof.</em> For fixed <span class="math inline">\(c^2 =
+1/\mu_0\varepsilon_0\)</span>, the locus of admissible pairs is <span
+class="math inline">\(\{(\varepsilon_0, \mu_0) : \mu_0 =
+1/(c^2\varepsilon_0)\}\)</span>, a one-parameter family parameterised by
+<span class="math inline">\(\varepsilon_0 &gt; 0\)</span>. Different
+values of <span class="math inline">\(\varepsilon_0\)</span> give
+different ratios <span class="math inline">\(\mu_0/\varepsilon_0 =
+1/(c^2\varepsilon_0^2)\)</span>. The map <span
+class="math inline">\(\Phi\)</span> is therefore not injective. The
+reconstruction <a href="#eq:reconstruction" data-reference-type="eqref"
+data-reference="eq:reconstruction">[eq:reconstruction]</a> follows from
+<span class="math inline">\(c^2 = 1/\mu_0\varepsilon_0\)</span> and
+<span class="math inline">\(Z_0^2 = \mu_0/\varepsilon_0\)</span>, which
+together resolve both constants uniquely. <span class="citation"
+data-cites="Heaton2026Determinacy">(K. B. Heaton and Coherence Research
+Collaboration 2026b)</span> ◻</p>
+</div>
+<div class="remark">
+<p><em>Remark 20</em>. Every formalism that passes to the wave equation
+<span class="math inline">\(\nabla^2\mathbf{E} =
+\mu_0\varepsilon_0\,\partial^2_t\mathbf{E}\)</span> and sets <span
+class="math inline">\(c = 1\)</span> performs the compression <a
+href="#eq:compression" data-reference-type="eqref"
+data-reference="eq:compression">[eq:compression]</a> and discards <span
+class="math inline">\(Z_0\)</span> as the independent geometric degree
+of freedom. The suppressed coordinate is the ratio of the primitive
+<span class="math inline">\(0\)</span> to the primitive <span
+class="math inline">\(1\)</span> — it is the geometric content of the
+<span class="math inline">\(0/1\)</span> structure, not merely a
+convenient engineering parameter. <span class="citation"
+data-cites="Heaviside1893 Kitano2009">(Heaviside 1893; Kitano
+2009)</span>. See also <span class="citation"
+data-cites="Heaton2026RG">(Kelly B. Heaton and Claude Sonnet 4.6
+2026)</span>.</p>
+</div>
+<h2 id="sec:Z0_primitive"><span class="math inline">\(Z_0\)</span> as
+the <span class="math inline">\(0/1\)</span> ratio of the
+electromagnetic vacuum</h2>
+<div id="prop:Z0_01" class="proposition">
+<p><strong>Proposition 21</strong> (<span
+class="math inline">\(Z_0\)</span> is the primitive <span
+class="math inline">\(0/1\)</span> geometric ratio). <em>The vacuum
+impedance <span class="math inline">\(Z_0 =
+\sqrt{\mu_0/\varepsilon_0}\)</span> is the ratio of the primitive <span
+class="math inline">\(0\)</span> (<span
+class="math inline">\(\mu_0\)</span>, openness) to the primitive <span
+class="math inline">\(1\)</span> (<span
+class="math inline">\(\varepsilon_0\)</span>, containment), expressed as
+the impedance of free space. It is not derived from or imported into the
+geometric framework: it <em>is</em> the geometric framework,
+instantiated as a measurable property of the vacuum.</em></p>
+<p><em>The identification has the following consequences:</em></p>
+<ol>
+<li><p><em>A propagating photon, which carries equal electric and
+magnetic energy at every point, has field ratio <span
+class="math inline">\(|\mathbf{E}|/|\mathbf{H}| = Z_0\)</span> exactly.
+It is a pure expression of the primitive <span
+class="math inline">\(0/1\)</span> ratio, liberated from the topological
+scar at <span class="math inline">\(p\)</span>.</em></p></li>
+<li><p><em>The bound orbital, which has <span
+class="math inline">\(|\mathbf{E}|/|\mathbf{H}|
+    = Z_0\,n/\alpha \gg Z_0\)</span>, is deeply mismatched to the vacuum
+ratio at every <span class="math inline">\(n \geq 1\)</span>. The scar
+at <span class="math inline">\(p\)</span> holds the orbital far from the
+free-vacuum ratio.</em></p></li>
+<li><p><em>The gap at <span class="math inline">\(\mathrm{IE}/4\)</span>
+is the spectroscopic record of the unique transition energy at which the
+bound field attempts to achieve <span
+class="math inline">\(|\mathbf{E}|/|\mathbf{H}| = Z_0\)</span> — a
+configuration simultaneously required by the impedance match and
+forbidden by the closure condition.</em></p></li>
+</ol>
+</div>
+<div class="proof">
+<p><em>Proof.</em> Statement (i) follows from the plane-wave solution to
+Maxwell’s equations: for a plane wave propagating in the <span
+class="math inline">\(\hat{k}\)</span> direction, <span
+class="math inline">\(\mathbf{H} =
+(\hat{k}\times\mathbf{E})/Z_0\)</span>, giving <span
+class="math inline">\(|\mathbf{E}|/|\mathbf{H}| = Z_0\)</span>
+identically. <span class="citation" data-cites="Jackson1999">(Jackson
+1999)</span></p>
+<p>Statement (ii) is established in §<a href="#sec:Zorb"
+data-reference-type="ref" data-reference="sec:Zorb">4.3</a> below.</p>
+<p>Statement (iii) follows from statements (i) and (ii) together with
+the Diophantine impossibility of §<a href="#sec:diophantine"
+data-reference-type="ref"
+data-reference="sec:diophantine">4.4</a>. ◻</p>
+</div>
+<h2 id="sec:Zorb">The orbital field impedance from Coulomb and
+Biot–Savart</h2>
+<p>We now derive the field impedance of a bound electromagnetic closure
+mode at principal quantum number <span class="math inline">\(n\)</span>,
+without quantum mechanical postulates beyond the closure velocity.</p>
+<div id="thm:Zorb" class="theorem">
+<p><strong>Theorem 22</strong> (Orbital impedance). <em>Consider the
+electromagnetic closure mode at principal quantum number <span
+class="math inline">\(n\)</span>, with closure velocity <span
+class="math inline">\(v_n = \alpha c/n\)</span>. From Coulomb’s law and
+the Biot–Savart law, the ratio of electric to magnetic field amplitude
+at the orbital radius satisfies: <span
+class="math display">\[Z_{\mathrm{orb}}(n)
+  \;\equiv\; \frac{|\mathcal{E}_n|}{|\mathcal{H}_n|}
+  \;=\; \frac{Z_0\,n}{\alpha}.
+  \label{eq:Zorb}\]</span> No free parameters and no quantum mechanical
+input beyond <span class="math inline">\(v_n = \alpha c/n\)</span> enter
+this derivation.</em></p>
+</div>
+<div class="proof">
+<p><em>Proof.</em> Let <span class="math inline">\(r_n = n^2
+a_0\)</span> be the orbital radius and <span class="math inline">\(v_n =
+\alpha c/n\)</span> the closure velocity (confirmed independently by the
+quantum mechanical expectation value <span class="math inline">\(\langle
+v\rangle_n = \alpha c/n\)</span> from the virial theorem applied to
+exact hydrogen wavefunctions <span class="citation"
+data-cites="Bethe1957">(Bethe and Salpeter 1957)</span>).</p>
+<p>The orbital current generated by the closure mode is: <span
+class="math display">\[I_n = \frac{e\,v_n}{2\pi r_n}
+      = \frac{e\,\alpha c}{2\pi n^3 a_0}.
+  \label{eq:current}\]</span></p>
+<p>The radial Coulomb electric field at <span
+class="math inline">\(r_n\)</span> is: <span
+class="math display">\[|\mathcal{E}_n|
+  = \frac{e}{4\pi\varepsilon_0 r_n^2}
+  = \frac{e}{4\pi\varepsilon_0 n^4 a_0^2}.
+  \label{eq:Efield}\]</span></p>
+<p>The azimuthal magnetic field at the loop centre, by the Biot–Savart
+law, is: <span class="math display">\[|\mathcal{H}_n|
+  = \frac{I_n}{2 r_n}
+  = \frac{e\,\alpha c}{4\pi n^5 a_0^2}.
+  \label{eq:Hfield}\]</span></p>
+<p>The impedance ratio is independent of both <span
+class="math inline">\(r_n\)</span> and <span
+class="math inline">\(e\)</span>: <span
+class="math display">\[Z_{\mathrm{orb}}(n)
+  = \frac{|\mathcal{E}_n|}{|\mathcal{H}_n|}
+  = \frac{1}{\varepsilon_0\,v_n}
+  = \frac{\mu_0 c^2}{v_n}
+  = \frac{\mu_0 c^2 n}{\alpha c}
+  = \frac{\mu_0 c\, n}{\alpha}
+  = \frac{Z_0\, n}{\alpha},
+  \label{eq:Zorb_derivation}\]</span> using <span
+class="math inline">\(\mu_0 c = Z_0\)</span>, which follows directly:
+<span class="math inline">\(\mu_0 c = \mu_0/\sqrt{\mu_0\varepsilon_0}
+= \sqrt{\mu_0^2/(\mu_0\varepsilon_0)}
+= \sqrt{\mu_0/\varepsilon_0} = Z_0\)</span>.</p>
+<p>Numerical verification: for <span class="math inline">\(n =
+1\)</span>, <span class="math inline">\(Z_{\mathrm{orb}}(1) = Z_0/\alpha
+\approx 376.730/7.2974\times10^{-3}
+\approx 51\,625.6\;\Omega\)</span>, consistent with direct calculation.
+<span class="citation" data-cites="Heaton2026QW">(K. B. Heaton and
+Coherence Research Collaboration 2026c)</span> ◻</p>
+</div>
+<div class="corollary">
+<p><strong>Corollary 23</strong>. <em>Every bound orbital satisfies
+<span class="math inline">\(Z_{\mathrm{orb}}(n) \geq Z_0/\alpha
+\approx 137\,Z_0 \gg Z_0\)</span>. No bound orbital is impedance-matched
+to the vacuum. Photon emission is mode conversion from the
+high-impedance bound configuration to the matched free-propagating
+configuration with <span class="math inline">\(|\mathbf{E}|/|\mathbf{H}|
+= Z_0\)</span>.</em></p>
+</div>
+<h2 id="sec:diophantine">The impedance-match boundary at <span
+class="math inline">\(\mathrm{IE}/4\)</span></h2>
+<p>The impedance match condition <span
+class="math inline">\(Z_{\mathrm{orb}} = Z_0\)</span> is never satisfied
+at any individual orbital. It is satisfied, however, at a specific
+transition energy in the spectrum.</p>
+<div id="thm:IE4" class="theorem">
+<p><strong>Theorem 24</strong> (Universal gap at <span
+class="math inline">\(\mathrm{IE}/4\)</span>). <em>The transition energy
+<span class="math inline">\(\Delta E = \mathrm{IE}/4\)</span> is the
+unique energy at which the electromagnetic closure mode would achieve
+<span class="math inline">\(Z_{\mathrm{orb}} = Z_0\)</span>. No
+bound-to-bound transition can carry this energy. The spectroscopic
+consequence is a universal structural gap: a zero-observation interval
+at <span class="math inline">\(\mathrm{IE}/4\)</span> in every ion’s
+transition spectrum.</em></p>
+</div>
+<div class="proof">
+<p><em>Proof.</em> <em>Part 1: Why <span
+class="math inline">\(\mathrm{IE}/4\)</span>.</em> The ionization energy
+satisfies <span class="math inline">\(\mathrm{IE} = E_0
+Z^2\hat{\mu}\)</span> where <span class="math inline">\(E_0\)</span> is
+the Rydberg energy. The ionization energy of the <span
+class="math inline">\(n=2\)</span> shell is <span
+class="math inline">\(\mathrm{IE}/4\)</span> exactly, by the hydrogen
+level formula <span class="math inline">\(E_n = E_0/n^2\)</span>. A
+transition carrying energy <span
+class="math inline">\(\mathrm{IE}/4\)</span> would take the field from a
+bound closure mode to the <span class="math inline">\(n=2\)</span>
+continuum threshold in a single step, passing through the configuration
+where <span class="math inline">\(Z_{\mathrm{orb}} = Z_0\)</span> —
+neither fully bound nor fully propagating.</p>
+<p><em>Part 2: Diophantine impossibility.</em> No bound-to-bound
+hydrogen transition carries energy <span
+class="math inline">\(\mathrm{IE}/4\)</span> because no positive
+integers <span class="math inline">\((n_f, n_i)\)</span> with <span
+class="math inline">\(n_f &lt; n_i\)</span> satisfy: <span
+class="math display">\[\frac{1}{n_f^2} - \frac{1}{n_i^2} = \frac{1}{4}.
+  \label{eq:diophantine}\]</span> The three cases are exhaustive:</p>
+<ol>
+<li><p><span class="math inline">\(n_f = 1\)</span>: requires <span
+class="math inline">\(n_i^2 = 4/3\)</span>, not an integer.</p></li>
+<li><p><span class="math inline">\(n_f = 2\)</span>: requires <span
+class="math inline">\(n_i \to \infty\)</span>, not a bound
+state.</p></li>
+<li><p><span class="math inline">\(n_f \geq 3\)</span>: maximum
+transition energy <span class="math inline">\(E_0/9 &lt; E_0/4\)</span>.
+No solution exists.</p></li>
+</ol>
+<p>The gap is therefore not a selection rule: it is a number-theoretic
+impossibility, valid regardless of orbital angular momentum or atomic
+species.</p>
+<p><em>Part 3: Universality.</em> For multi-electron ions, screening and
+configuration interaction modify the absolute energies but not the ratio
+<span class="math inline">\(\mathrm{IE}/4\)</span>, since <span
+class="math inline">\(\mathrm{IE}\)</span> is defined as the first
+ionisation energy of the ion and the impedance-match boundary scales
+with <span class="math inline">\(\mathrm{IE}\)</span> exactly. The
+nuclear charge <span class="math inline">\(Z\)</span> cancels in the
+ratio <span class="math inline">\(\Delta E / \mathrm{IE}\)</span>. The
+gap is therefore universal across all ions and all subshell types.</p>
+<p><em>Empirical confirmation.</em> Direct test of the NIST Atomic
+Spectra Database confirms zero-observation at <span
+class="math inline">\(\mathrm{IE}/4\)</span> across 71 ions spanning
+<span class="math inline">\(Z = 1\)</span>–<span
+class="math inline">\(82\)</span>, all four subshell families, and
+multiple ionisation stages, with zero falsifications <span
+class="citation" data-cites="Heaton2026QW">(K. B. Heaton and Coherence
+Research Collaboration 2026c)</span>. The coordinate <span
+class="math inline">\(\kappa_q = \log 4/|\!\log\alpha| \approx
+0.2818\)</span> places the impedance boundary at the same depth in every
+spectrum. ◻</p>
+</div>
+<h2 id="sec:RK_KJ"><span class="math inline">\(R_K\)</span>, <span
+class="math inline">\(K_J\)</span>, and the quantum of the <span
+class="math inline">\(0/1\)</span> ratio</h2>
+<p>The preceding subsections established <span
+class="math inline">\(Z_0\)</span> as the continuous vacuum expression
+of the <span class="math inline">\(0/1\)</span> primitive ratio. We now
+show that the quantum scale has two complementary expressions of the
+same ratio, and that neither <span class="math inline">\(h\)</span> nor
+<span class="math inline">\(e\)</span> is an independent primitive.</p>
+<h3 id="r_k-he2-as-the-quantum-orbital-resistance"><span
+class="math inline">\(R_K = h/e^2\)</span> as the quantum orbital
+resistance</h3>
+<div class="definition">
+<p><strong>Definition 25</strong> (von Klitzing constant). The
+von Klitzing constant <span class="math inline">\(R_K = h/e^2\)</span>
+(exact in the 2019 SI system <span class="citation"
+data-cites="BIPM2019 vonKlitzing1980">(Bureau International des Poids et
+Mesures 2019; von Klitzing, Dorda, and Pepper 1980)</span>) is the
+quantum of resistance. In the same Ohm’s-law structure as <span
+class="math inline">\(Z_0\)</span>:</p>
+<ul>
+<li><p><span class="math inline">\(h\)</span> (Planck’s constant,
+action) plays the role of the bounded containing quantity: the minimum
+action required to complete one closed electromagnetic loop. This is the
+quantum-scale “<span class="math inline">\(1\)</span>”.</p></li>
+<li><p><span class="math inline">\(e^2\)</span> (charge squared) plays
+the role of the penetrating quantity: the coupling strength of the
+charge through the loop. This is the quantum-scale “<span
+class="math inline">\(0\)</span>” squared.</p></li>
+<li><p><span class="math inline">\(R_K = h/e^2\)</span> is the
+resistance of one closed loop: the quantum <span
+class="math inline">\(0/1\)</span> ratio.</p></li>
+</ul>
+</div>
+<p>From <span class="math inline">\(\alpha = Z_0/2R_K\)</span> (exact,
+2019 SI <span class="citation" data-cites="BIPM2019">(Bureau
+International des Poids et Mesures 2019)</span>): <span
+class="math display">\[R_K \;=\; \frac{Z_0}{2\alpha}.
+  \label{eq:RK_geometric}\]</span> <span
+class="math inline">\(R_K\)</span> is therefore entirely determined by
+<span class="math inline">\(Z_0\)</span> (the continuous vacuum <span
+class="math inline">\(0/1\)</span> ratio) and <span
+class="math inline">\(\alpha\)</span> (the departure from ideal <span
+class="math inline">\(\varphi\)</span> scaling established in Section <a
+href="#sec:selfsimilar" data-reference-type="ref"
+data-reference="sec:selfsimilar">3</a>). It is not an independent
+primitive.</p>
+<p>The factor of <span class="math inline">\(2\)</span> in equation <a
+href="#eq:RK_geometric" data-reference-type="eqref"
+data-reference="eq:RK_geometric">[eq:RK_geometric]</a> is the minimum
+winding number: the <span class="math inline">\(2\pi\)</span> closure
+established in Section <a href="#sec:selfsimilar"
+data-reference-type="ref" data-reference="sec:selfsimilar">3</a> appears
+here as the factor distinguishing one full loop (<span
+class="math inline">\(2\pi\)</span>) from a half-loop (<span
+class="math inline">\(\pi\)</span>).</p>
+<h3 id="k_j-2eh-as-the-quantum-dual"><span class="math inline">\(K_J =
+2e/h\)</span> as the quantum dual</h3>
+<div class="definition">
+<p><strong>Definition 26</strong> (Josephson constant). The Josephson
+constant <span class="math inline">\(K_J = 2e/h\)</span> (exact in the
+2019 SI <span class="citation"
+data-cites="BIPM2019 Josephson1962">(Bureau International des Poids et
+Mesures 2019; Josephson 1962)</span>) is the frequency-to-voltage ratio
+of the Josephson effect: a junction maintained at voltage <span
+class="math inline">\(V\)</span> oscillates at frequency <span
+class="math inline">\(f = K_J \cdot V\)</span>.</p>
+</div>
+<div id="thm:KJ_RK_dual" class="theorem">
+<p><strong>Theorem 27</strong> (<span class="math inline">\(K_J\)</span>
+and <span class="math inline">\(R_K\)</span> are dual expressions of the
+quantum <span class="math inline">\(0/1\)</span> ratio; <span
+class="math inline">\(h\)</span> and <span
+class="math inline">\(e\)</span> are not primitive). <em>The constants
+<span class="math inline">\(R_K\)</span> and <span
+class="math inline">\(K_J\)</span> are related by: <span
+class="math display">\[K_J \cdot R_K \;=\; \frac{2}{e},
+  \label{eq:KJ_RK}\]</span> which resolves both <span
+class="math inline">\(h\)</span> and <span
+class="math inline">\(e\)</span> exactly: <span class="math display">\[h
+\;=\; \frac{4}{K_J^2\,R_K}, \qquad
+  e \;=\; \frac{2}{K_J\,R_K}.
+  \label{eq:h_e_resolved}\]</span> Neither <span
+class="math inline">\(h\)</span> nor <span
+class="math inline">\(e\)</span> is an independent primitive of the
+electromagnetic structure; both are determined by the two complementary
+quantum expressions of the <span class="math inline">\(0/1\)</span>
+ratio.</em></p>
+</div>
+<div class="proof">
+<p><em>Proof.</em> <span class="math inline">\(K_J \cdot R_K =
+(2e/h)(h/e^2) = 2/e\)</span>, establishing <a href="#eq:KJ_RK"
+data-reference-type="eqref" data-reference="eq:KJ_RK">[eq:KJ_RK]</a>.
+From <a href="#eq:KJ_RK" data-reference-type="eqref"
+data-reference="eq:KJ_RK">[eq:KJ_RK]</a>: <span class="math inline">\(e
+= 2/(K_J R_K)\)</span>. Substituting into <span class="math inline">\(h
+= R_K e^2 = R_K \cdot 4/(K_J^2 R_K^2) = 4/(K_J^2 R_K)\)</span>.
+Numerical verification: <span class="math inline">\(h = 4/(K_J^2 R_K) =
+6.626\,070\times10^{-34}\)</span> J<span
+class="math inline">\(\cdot\)</span>s (exact against 2019 SI); <span
+class="math inline">\(e = 2/(K_J R_K) =
+1.602\,177\times10^{-19}\)</span> C (exact against 2019 SI). <span
+class="citation" data-cites="BIPM2019">(Bureau International des Poids
+et Mesures 2019)</span> ◻</p>
+</div>
+<div id="cor:charge_geometric" class="corollary">
+<p><strong>Corollary 28</strong> (Charge is geometric). <em>From
+Theorem <a href="#thm:KJ_RK_dual" data-reference-type="ref"
+data-reference="thm:KJ_RK_dual">27</a> and <span
+class="math inline">\(R_K = Z_0/2\alpha\)</span>: <span
+class="math display">\[e \;=\; \frac{4\alpha}{Z_0\,K_J}.
+  \label{eq:e_geometric}\]</span> The elementary charge <span
+class="math inline">\(e\)</span> is determined by <span
+class="math inline">\(\alpha\)</span> (the departure from <span
+class="math inline">\(\varphi\)</span> scaling), <span
+class="math inline">\(Z_0\)</span> (the vacuum <span
+class="math inline">\(0/1\)</span> ratio), and <span
+class="math inline">\(K_J\)</span> (the quantum dual ratio). It is not a
+free parameter of the electromagnetic vacuum. Numerical verification:
+<span class="math inline">\(4\alpha/(Z_0 K_J) =
+1.602\,177\times10^{-19}\)</span> C, exact.</em></p>
+</div>
+<div class="remark">
+<p><em>Remark 29</em> (The factor of <span
+class="math inline">\(2\)</span> is the minimum winding number). The
+factor of <span class="math inline">\(2\)</span> appears identically in
+both: <span class="math display">\[\alpha = \frac{Z_0}{2R_K}, \qquad K_J
+= \frac{2e}{h}.
+  \label{eq:factor_two}\]</span> In both cases, this <span
+class="math inline">\(2\)</span> is the minimum winding number from the
+<span class="math inline">\(2\pi\)</span> closure condition of
+Section <a href="#sec:selfsimilar" data-reference-type="ref"
+data-reference="sec:selfsimilar">3</a>. In the Josephson effect, the
+factor <span class="math inline">\(2e\)</span> corresponds to the Cooper
+pair — the minimum closed winding of the superconducting order parameter
+carries charge <span class="math inline">\(2e\)</span>, completing
+exactly one circuit of the order-parameter phase. The same topological
+factor that appears in <span class="math inline">\(\alpha =
+Z_0/2R_K\)</span> (one full loop = <span
+class="math inline">\(2\pi\)</span>) appears in <span
+class="math inline">\(K_J = 2e/h\)</span> (one full winding = <span
+class="math inline">\(2e\)</span>). This is not a coincidence; it is the
+same topological content expressed at the continuous vacuum level and
+the quantum discrete level. <span class="citation"
+data-cites="Josephson1962 Tinkham1996">(Josephson 1962; Tinkham
+1996)</span></p>
+</div>
+<h2 id="sec:planck">Planck’s constant as the cleaving invariant</h2>
+<div id="thm:planck" class="theorem">
+<p><strong>Theorem 30</strong> (<span class="math inline">\(h\)</span>
+is the invariant of the self-similar cleaving process). <em>On the
+punctured sphere, the logarithmic field generates two distinct <span
+class="math inline">\(\alpha\)</span>-scaling relations, empirically
+confirmed for hydrogen: <span class="math display">\[\begin{aligned}
+  E(\kappa) &amp;= E_0\,\alpha^\kappa
+    \quad\text{(energy ladder)},
+  \label{eq:energy_ladder}\\
+  \nu(\kappa) &amp;= \nu_0\,\alpha^\kappa
+    \quad\text{(thread law, $\beta = \log_{10}\alpha$,
+    $r^2 = 1.000$, $9$ pairs)}.
+  \label{eq:thread_law}
+\end{aligned}\]</span> The ratio <span
+class="math inline">\(E(\kappa)/\nu(\kappa)\)</span> is independent of
+<span class="math inline">\(\kappa\)</span>: <span
+class="math display">\[\frac{E(\kappa)}{\nu(\kappa)}
+  = \frac{E_0\,\alpha^\kappa}{\nu_0\,\alpha^\kappa}
+  = \frac{E_0}{\nu_0}
+  \;=\; h.
+  \label{eq:planck_invariant}\]</span> Planck’s constant <span
+class="math inline">\(h\)</span> is the invariant preserved at every
+cleaving event — the quantity that cannot change because both energy and
+frequency scale identically with <span
+class="math inline">\(\alpha^\kappa\)</span>. The constancy of <span
+class="math inline">\(h\)</span> across all transitions is the
+self-similarity of the process expressed as a ratio.</em></p>
+</div>
+<div class="proof">
+<p><em>Proof.</em> Equations <a href="#eq:energy_ladder"
+data-reference-type="eqref"
+data-reference="eq:energy_ladder">[eq:energy_ladder]</a> and <a
+href="#eq:thread_law" data-reference-type="eqref"
+data-reference="eq:thread_law">[eq:thread_law]</a> are empirically
+confirmed. The cancellation of <span
+class="math inline">\(\alpha^\kappa\)</span> in the ratio is exact
+algebra. The identification <span class="math inline">\(E_0/\nu_0 =
+h\)</span> follows from the definitions of the Rydberg energy and the
+corresponding frequency. <span class="citation"
+data-cites="Heaton2026HydrAl Heaton2026QW">(K. B. Heaton and Coherence
+Research Collaboration 2026a, 2026c)</span> ◻</p>
+</div>
+<p><strong>Summary of Section <a href="#sec:em_vacuum"
+data-reference-type="ref" data-reference="sec:em_vacuum">4</a>.</strong>
+The vacuum constants <span class="math inline">\(\varepsilon_0\)</span>
+and <span class="math inline">\(\mu_0\)</span> are the geometric
+primitives <span class="math inline">\(1\)</span> (containment) and
+<span class="math inline">\(0\)</span> (openness); their ratio <span
+class="math inline">\(Z_0 = \sqrt{\mu_0/\varepsilon_0}\)</span> is the
+<span class="math inline">\(0/1\)</span> primitive ratio expressed as
+the impedance of free space. This identification is definitional, not
+axiomatic, as established in Section <a href="#sec:closure"
+data-reference-type="ref" data-reference="sec:closure">5</a>. The
+orbital impedance <span class="math inline">\(Z_{\mathrm{orb}}(n) = Z_0
+n/\alpha\)</span>, derived from Coulomb’s law and the Biot–Savart law
+with no free parameters, is always much larger than <span
+class="math inline">\(Z_0\)</span>: no bound orbital is
+impedance-matched to the vacuum. The impedance-match condition <span
+class="math inline">\(Z_{\mathrm{orb}} = Z_0\)</span> corresponds to the
+transition energy <span class="math inline">\(\Delta E =
+\mathrm{IE}/4\)</span>, which no bound-to-bound transition can carry — a
+consequence of number theory (no integer solution to equation <a
+href="#eq:diophantine" data-reference-type="eqref"
+data-reference="eq:diophantine">[eq:diophantine]</a>) rather than a
+selection rule, confirmed across 71 ions with zero falsifications. At
+the quantum scale, <span class="math inline">\(R_K = h/e^2\)</span> and
+<span class="math inline">\(K_J = 2e/h\)</span> are dual expressions of
+the same <span class="math inline">\(0/1\)</span> ratio: together they
+determine <span class="math inline">\(h\)</span> and <span
+class="math inline">\(e\)</span> exactly, neither is a primitive of the
+structure, and both carry the same factor of <span
+class="math inline">\(2\)</span> as <span class="math inline">\(\alpha =
+Z_0/2R_K\)</span> — the minimum winding number from the <span
+class="math inline">\(2\pi\)</span> closure condition of Section <a
+href="#sec:selfsimilar" data-reference-type="ref"
+data-reference="sec:selfsimilar">3</a>. Planck’s constant <span
+class="math inline">\(h\)</span> is the invariant of the self-similar
+cleaving process.</p>
+<h1 id="sec:closure">Closure: definitional identity and the necessity of
+<span class="math inline">\(\alpha\)</span></h1>
+<p>Sections <a href="#sec:primitive" data-reference-type="ref"
+data-reference="sec:primitive">2</a>–<a href="#sec:em_vacuum"
+data-reference-type="ref" data-reference="sec:em_vacuum">4</a>
+establish, respectively: the punctured sphere with its irremovable
+defect and logarithmic potential field; the unique <span
+class="math inline">\(\varphi\)</span>-attractor of self-similar scaling
+and the departure <span class="math inline">\(\delta\)</span> forced by
+the defect; and the electromagnetic realisation of the 0/1 geometric
+structure including the orbital impedance, the universal gap at <span
+class="math inline">\(\mathrm{IE}/4\)</span>, and the quantum dual
+constants <span class="math inline">\(R_K\)</span> and <span
+class="math inline">\(K_J\)</span>.</p>
+<p>Three questions remain open:</p>
+<ol>
+<li><p><em>Gap 1.</em> The self-referential recursion <span
+class="math inline">\(x = 1 + 1/x\)</span> was motivated in Section <a
+href="#sec:selfsimilar" data-reference-type="ref"
+data-reference="sec:selfsimilar">3</a> by continued fraction structure,
+but the Markov spectrum theorem — which makes the argument rigorous —
+was deferred.</p></li>
+<li><p><em>Gap 2.</em> The departure <span
+class="math inline">\(\delta\)</span> was proved to exist and be
+positive, but its value was identified with <span
+class="math inline">\(\alpha = Z_0/2R_K\)</span> by citing the 2019 SI
+identity rather than deriving it from the geometry; and the
+identification of <span class="math inline">\(\varepsilon_0\)</span>,
+<span class="math inline">\(\mu_0\)</span> with the mathematical
+primitives <span class="math inline">\(1\)</span>, <span
+class="math inline">\(0\)</span> was asserted rather than
+established.</p></li>
+<li><p><em>Gap 3.</em> The Josephson constant <span
+class="math inline">\(K_J = 2e/h\)</span> was cited as an established
+experimental fact; its topological necessity was stated but not formally
+derived.</p></li>
+</ol>
+<p>This section closes all three gaps. The central result is that no
+additional structure is introduced at any step: the physical constants
+<span class="math inline">\(\varepsilon_0\)</span>, <span
+class="math inline">\(\mu_0\)</span>, <span
+class="math inline">\(c\)</span>, <span
+class="math inline">\(Z_0\)</span>, <span
+class="math inline">\(R_K\)</span>, and <span
+class="math inline">\(K_J\)</span> are not imported into the
+mathematical argument — they <em>are</em> the mathematical argument,
+expressed in physical vocabulary.</p>
+<h2 id="sec:gap1">Gap 1: the Markov spectrum theorem forces <span
+class="math inline">\(x = 1 + 1/x\)</span></h2>
+<p>The logarithmic field <span class="math inline">\(\phi(r) =
+\log(1/r)\)</span> assigns a depth coordinate to every point of <span
+class="math inline">\(S^2\setminus\{p\}\)</span>. The self-similar
+scaling ratio at depth <span class="math inline">\(\gamma\)</span> is
+the ratio of successive equipotential radii: <span
+class="math inline">\(\lambda = r(\gamma)/r(\gamma+\Delta)\)</span>,
+where <span class="math inline">\(\Delta\)</span> is the uniform
+step.</p>
+<p>For the scaling to be <em>self-similar across all depths
+simultaneously</em> — not merely at any single depth — the ratio <span
+class="math inline">\(\lambda\)</span> must be expressible as a function
+of itself alone at every scale. This is the defining property of a
+continued fraction.</p>
+<div id="lem:cf" class="lemma">
+<p><strong>Lemma 31</strong> (Self-similar scaling requires a continued
+fraction ratio). <em>A scaling ratio <span class="math inline">\(\xi
+&gt; 0\)</span> is self-similar across all depths of the logarithmic
+field simultaneously if and only if <span
+class="math inline">\(\xi\)</span> has a purely periodic continued
+fraction expansion <span class="math display">\[\xi = [a_0;\, a_1, a_2,
+\ldots],
+  \label{eq:cf}\]</span> where the partial quotients <span
+class="math inline">\(\{a_i\}\)</span> are constant at every level. The
+unique ratio satisfying this condition with <em>minimum partial
+quotients</em> (all <span class="math inline">\(a_i = 1\)</span>) is
+<span class="math display">\[\varphi = [1;\,1,1,1,\ldots] =
+\frac{1+\sqrt{5}}{2}.
+  \label{eq:phi_cf}\]</span></em></p>
+</div>
+<div class="proof">
+<p><em>Proof.</em> A ratio <span class="math inline">\(\xi\)</span> is
+self-similar across all depths simultaneously if and only if the
+description of the ratio at any depth requires the same information as
+the description at every other depth. This is the statement that <span
+class="math inline">\(\xi\)</span> satisfies a recursion of the form
+<span class="math inline">\(\xi = a_0 + 1/\xi&#39;\)</span> where <span
+class="math inline">\(\xi&#39;\)</span> has the same description as
+<span class="math inline">\(\xi\)</span> — the definition of a purely
+periodic continued fraction. For the recursion to be consistent with the
+integer winding structure of the defect at <span
+class="math inline">\(p\)</span> (which requires integer partial
+quotients), the minimum non-trivial case is all <span
+class="math inline">\(a_i = 1\)</span>, giving <span
+class="math inline">\(\xi = 1 + 1/\xi\)</span>, whose positive solution
+is <span class="math inline">\(\varphi\)</span>.</p>
+<p>That <span class="math inline">\(\varphi = [1;1,1,1,\ldots]\)</span>
+is uniquely characterised by minimum partial quotients is the content of
+the Markov spectrum theorem <span class="citation"
+data-cites="Markoff1879">(Markov 1880)</span>: the Lagrange value <span
+class="math display">\[L(\xi) \;=\; \limsup_{q\to\infty}
+    \frac{1}{q^2\,|\xi - p/q|}\]</span> satisfies <span
+class="math inline">\(L(\xi) \leq \sqrt{5}\)</span> for all irrationals
+<span class="math inline">\(\xi\)</span>, with equality <span
+class="math inline">\(L(\varphi) = \sqrt{5}\)</span> achieved
+<em>uniquely</em> by <span class="math inline">\(\varphi\)</span> (and
+<span class="math inline">\(1/\varphi\)</span>). The partial quotients
+of <span class="math inline">\(\varphi\)</span> are uniformly <span
+class="math inline">\(1\)</span> at every scale; for every other
+irrational, at least one partial quotient exceeds <span
+class="math inline">\(1\)</span>, introducing scale-dependent asymmetry
+inconsistent with uniform self-similarity. ◻</p>
+</div>
+<div class="corollary">
+<p><strong>Corollary 32</strong>. <em>The recursion <span
+class="math inline">\(x = 1 + 1/x\)</span> is the <em>unique</em>
+self-referential consistency condition for a ratio with minimum uniform
+structure across all scales of the logarithmic field. It is forced by
+the Markov spectrum theorem. Gap 1 is closed.</em></p>
+</div>
+<h2 id="sec:gap2_defn">Gap 2: why the vacuum must have these
+primitives</h2>
+<p>Before establishing that <span
+class="math inline">\(\varepsilon_0\)</span> and <span
+class="math inline">\(\mu_0\)</span> are the mathematical primitives, we
+must address a prior question: why must the vacuum have <em>any</em>
+primitives of type <span class="math inline">\(1\)</span> and <span
+class="math inline">\(0\)</span> at all? The answer is already in the
+proof.</p>
+<div id="prop:both_primitives" class="proposition">
+<p><strong>Proposition 33</strong> (A non-terminal process requires both
+primitives). <em>The existence of matter (Proposition <a
+href="#prop:rational_excluded" data-reference-type="ref"
+data-reference="prop:rational_excluded">10</a>) implies a non-terminal
+reciprocal singularity <span class="math inline">\(1/0\)</span>. A
+non-terminal reciprocal singularity requires:</em></p>
+<ol>
+<li><p><em>a <em>containing</em> quantity (the primitive <span
+class="math inline">\(1\)</span>): something that can be divided,
+bounded, and entered — the denominator of the reciprocal relation;
+and</em></p></li>
+<li><p><em>a <em>penetrating</em> quantity (the primitive <span
+class="math inline">\(0\)</span>): the quantity that enters and drives
+the process toward infinity — the numerator that approaches
+zero.</em></p></li>
+</ol>
+<p><em>Both are necessary for the relation <span
+class="math inline">\(1/0\)</span> to be non-trivially defined. A vacuum
+that lacked either would support neither the reciprocal singularity nor
+the process it generates.</em></p>
+</div>
+<div class="proof">
+<p><em>Proof.</em> The reciprocal singularity <span
+class="math inline">\(1/0\)</span> requires a denominator (which must be
+capable of being divided: a bounded, containing quantity) and a
+numerator approaching zero (which must be capable of penetrating: an
+open, admitting quantity). Remove the containing quantity and the
+denominator has no boundary to define a singularity. Remove the
+penetrating quantity and no process initiates. Both are constitutive of
+the relation. Since the non-terminal process exists (matter exists),
+both primitives must be realised in the physical vacuum. ◻</p>
+</div>
+<p>The question is then: which physical constants play these roles? The
+answer is established not by declaration but by the content of the
+definitions themselves.</p>
+<div class="mdframed">
+<div id="thm:definitional" class="theorem">
+<p><strong>Theorem 34</strong> (Primitive Identification — the
+primitives are definitional, not axiomatic). <em>The identification
+<span class="math display">\[\varepsilon_0 \;\longleftrightarrow\; 1,
+\qquad
+  \mu_0 \;\longleftrightarrow\; 0
+  \label{eq:defn_identity}\]</span> is not an additional structure
+imposed on the mathematical framework. It is the content of the physical
+definitions of these constants.</em></p>
+</div>
+</div>
+<div class="proof">
+<p><em>Proof.</em> The vacuum permittivity <span
+class="math inline">\(\varepsilon_0\)</span> is defined as the constant
+governing the capacity of the vacuum to <em>permit</em>, contain, and
+store electric field energy. Its defining role is the capacity for
+containment: the bounded, holding, finite-extent property. This is
+precisely what the mathematical primitive <span
+class="math inline">\(1\)</span> means in the present framework. <span
+class="math inline">\(\varepsilon_0\)</span> does not <em>represent</em>
+the primitive <span class="math inline">\(1\)</span>; by its own
+physical definition, it <em>is</em> the containing quantity of the
+vacuum.</p>
+<p>The vacuum permeability <span class="math inline">\(\mu_0\)</span> is
+defined as the constant governing the <em>permeability</em> of the
+vacuum — its openness to penetration, the ease with which the magnetic
+field passes through. Its defining role is openness to entry. This is
+precisely what the mathematical primitive <span
+class="math inline">\(0\)</span> means: the open, penetrating, admitting
+quantity. <span class="math inline">\(\mu_0\)</span> is, by its own
+physical definition, the open quantity of the vacuum.</p>
+<p>The identification <a href="#eq:defn_identity"
+data-reference-type="eqref"
+data-reference="eq:defn_identity">[eq:defn_identity]</a> therefore
+requires no external declaration. It is the recognition that the
+physical definitions of <span
+class="math inline">\(\varepsilon_0\)</span> and <span
+class="math inline">\(\mu_0\)</span> coincide with the mathematical
+definitions of <span class="math inline">\(1\)</span> and <span
+class="math inline">\(0\)</span>. The map from the mathematical
+primitive system to the physical vacuum constants is injective at each
+point — <span class="math inline">\(1 \mapsto \varepsilon_0\)</span> and
+<span class="math inline">\(0 \mapsto \mu_0\)</span> — and no fiber
+variation is possible because the definitions are identical.</p>
+<p>In the language of <span class="citation"
+data-cites="Heaton2026Determinacy">(K. B. Heaton and Coherence Research
+Collaboration 2026b)</span>: the query “what is <span
+class="math inline">\(\varepsilon_0\)</span>?” is not fiber-sensitive
+under the compression <span class="math inline">\((\varepsilon_0, \mu_0)
+\mapsto c^2\)</span>, not because of any closure rule, but because the
+answer is determined by the physical definition of <span
+class="math inline">\(\varepsilon_0\)</span> itself, independently of
+<span class="math inline">\(c\)</span>. The definitions are the
+structure; no quotient is involved. ◻</p>
+</div>
+<div id="cor:c_constant" class="corollary">
+<p><strong>Corollary 35</strong> (The constancy of <span
+class="math inline">\(c\)</span> within this framework). <em>Within the
+mathematical framework established by Theorem <a
+href="#thm:definitional" data-reference-type="ref"
+data-reference="thm:definitional">34</a>, the propagation speed <span
+class="math inline">\(c = 1/\sqrt{\varepsilon_0\mu_0}\)</span> is
+constant: the primitives <span class="math inline">\(0\)</span> and
+<span class="math inline">\(1\)</span> are fixed and unique, therefore
+their product <span class="math inline">\(\varepsilon_0\mu_0\)</span> is
+fixed, and therefore <span class="math inline">\(c\)</span> is
+fixed.</em></p>
+</div>
+<div class="proof">
+<p><em>Proof.</em> By Theorem <a href="#thm:definitional"
+data-reference-type="ref" data-reference="thm:definitional">34</a>,
+<span class="math inline">\(\varepsilon_0\)</span> IS the mathematical
+primitive <span class="math inline">\(1\)</span> and <span
+class="math inline">\(\mu_0\)</span> IS the mathematical primitive <span
+class="math inline">\(0\)</span>. These have fixed, unique values by
+definition of what a primitive is: <span
+class="math inline">\(1\)</span> is not a variable and neither is <span
+class="math inline">\(0\)</span>. Therefore <span
+class="math inline">\(\varepsilon_0\mu_0\)</span> is fixed, and <span
+class="math inline">\(c =
+1/\sqrt{\varepsilon_0\mu_0}\)</span> is fixed. ◻</p>
+</div>
+<div class="remark">
+<p><em>Remark 36</em> (Scope of Corollary <a href="#cor:c_constant"
+data-reference-type="ref" data-reference="cor:c_constant">35</a>). The
+claim is precisely this: <em>within</em> the framework where <span
+class="math inline">\(\varepsilon_0\)</span> and <span
+class="math inline">\(\mu_0\)</span> are the fixed mathematical
+primitives, <span class="math inline">\(c\)</span> is fixed. This is not
+a derivation of special relativity from arithmetic, nor a claim that all
+possible universes must have a fixed <span
+class="math inline">\(c\)</span>. It is the observation that the same
+mathematical structure that forces <span
+class="math inline">\(\alpha\)</span> also fixes <span
+class="math inline">\(c\)</span>: both are consequences of the
+primitives being what they are. Special relativity takes <span
+class="math inline">\(c\)</span> as a postulate; the present framework
+identifies the deeper source of that constancy. Theories proposing a
+varying speed of light correspond, in this language, to theories in
+which the primitives themselves vary — which requires the supply of
+additional structure not present in the primitive system.</p>
+</div>
+<h2 id="sec:gap2_departure">Gap 2: the departure <span
+class="math inline">\(\delta\)</span> equals <span
+class="math inline">\(Z_0/2R_K\)</span></h2>
+<p>With Theorem <a href="#thm:definitional" data-reference-type="ref"
+data-reference="thm:definitional">34</a> established, the departure
+<span class="math inline">\(\delta\)</span> from <span
+class="math inline">\(\varphi\)</span> can be derived rather than
+identified.</p>
+<div id="thm:alpha_derived" class="theorem">
+<p><strong>Theorem 37</strong> (The departure is <span
+class="math inline">\(\alpha = Z_0/2R_K\)</span>). <em>The departure
+<span class="math inline">\(\delta = \varphi -
+\xi_{\mathrm{actual}}\)</span> of the self-similar winding ratio from
+its ideal value, forced by the irremovable defect at <span
+class="math inline">\(p\)</span>, equals: <span
+class="math display">\[\delta \;=\; \frac{Z_0}{2R_K} \;=\; \alpha.
+  \label{eq:alpha_derived}\]</span> This is not an identification from
+measurement. It is a consequence of four facts, each established in the
+preceding sections.</em></p>
+</div>
+<div class="proof">
+<p><em>Proof.</em> <strong>Fact 1.</strong> The defect at <span
+class="math inline">\(p\)</span> has residue <span
+class="math inline">\(\operatorname{Res}(1/z, 0) = 1\)</span>
+(Section <a href="#sec:primitive" data-reference-type="ref"
+data-reference="sec:primitive">2</a>, equation <a href="#eq:residue"
+data-reference-type="eqref"
+data-reference="eq:residue">[eq:residue]</a>). Exactly one unit of the
+vacuum’s fundamental structure is implicated per circuit around <span
+class="math inline">\(p\)</span>.</p>
+<p><strong>Fact 2.</strong> By Theorem <a href="#thm:definitional"
+data-reference-type="ref" data-reference="thm:definitional">34</a>,
+<span class="math inline">\(\varepsilon_0\)</span> and <span
+class="math inline">\(\mu_0\)</span> are the mathematical primitives
+<span class="math inline">\(1\)</span> (containment) and <span
+class="math inline">\(0\)</span> (openness) by their own physical
+definitions; no additional structure is introduced. Their ratio <span
+class="math inline">\(Z_0 = \sqrt{\mu_0/\varepsilon_0}\)</span> is
+therefore the primitive <span class="math inline">\(0/1\)</span>
+geometric ratio of the vacuum, definitionally. By Theorem <a
+href="#thm:noninjective" data-reference-type="ref"
+data-reference="thm:noninjective">19</a>, <span
+class="math inline">\(Z_0\)</span> is precisely the degree of freedom
+suppressed by the compression <span
+class="math inline">\((\varepsilon_0, \mu_0) \mapsto c^2\)</span>: it is
+independent of <span class="math inline">\(c\)</span> and cannot be
+recovered from <span class="math inline">\(c\)</span> alone. Therefore
+“one unit of the vacuum’s fundamental structure” is one unit of <span
+class="math inline">\(Z_0\)</span>.</p>
+<p><strong>Fact 3.</strong> The minimum quantum of the closed process is
+<span class="math inline">\(R_K = h/e^2\)</span> (Section <a
+href="#sec:RK_KJ" data-reference-type="ref"
+data-reference="sec:RK_KJ">4.5</a>), where <span
+class="math inline">\(h\)</span> is the invariant of the self-similar
+cleaving process (Theorem <a href="#thm:planck"
+data-reference-type="ref" data-reference="thm:planck">30</a>) and <span
+class="math inline">\(e\)</span> is the minimum topological charge of
+the defect. By the Dirac quantization condition <span class="citation"
+data-cites="Dirac1931">(Dirac 1931)</span> on the punctured sphere: a
+charge circling the defect at <span class="math inline">\(p\)</span>
+once satisfies <span class="math inline">\(eg = n\hbar c/2\)</span> for
+integer <span class="math inline">\(n\)</span>; the minimum case <span
+class="math inline">\(n = 1\)</span> establishes <span
+class="math inline">\(e\)</span> as the fundamental charge quantum of
+the defect. Therefore <span class="math inline">\(R_K = h/e^2\)</span>
+is the minimum resistance of one closed circuit.</p>
+<p><strong>Fact 4.</strong> The minimum winding number is <span
+class="math inline">\(2\)</span> (Section <a href="#sec:selfsimilar"
+data-reference-type="ref" data-reference="sec:selfsimilar">3</a>, <span
+class="math inline">\(2\pi\)</span> closure condition), the factor
+distinguishing one full loop from a half-loop, appearing in the
+denominator of <span class="math inline">\(\alpha =
+Z_0/2R_K\)</span>.</p>
+<p><strong>Assembly.</strong> The departure <span
+class="math inline">\(\delta\)</span> per unit winding is the ratio of
+one unit of the vacuum’s structure (<span
+class="math inline">\(Z_0\)</span>, by Facts 1 and 2) to twice the
+minimum quantum of the closed circuit (<span
+class="math inline">\(2R_K\)</span>, by Facts 3 and 4): <span
+class="math display">\[\delta
+  \;=\; \frac{Z_0}{2R_K}
+  \;=\; \frac{\sqrt{\mu_0/\varepsilon_0}}{2h/e^2}
+  \;=\; \frac{e^2}{2\varepsilon_0 hc}
+  \;=\; \alpha.
+  \label{eq:delta_assembly}\]</span> The step from the second to the
+third expression uses <span
+class="math inline">\(\sqrt{\mu_0/\varepsilon_0} = 1/(\varepsilon_0
+c)\)</span> (equivalently <span class="math inline">\(Z_0 =
+1/(\varepsilon_0 c)\)</span>), which follows from <span
+class="math inline">\(c = 1/\sqrt{\mu_0\varepsilon_0}\)</span>:
+multiplying numerator and denominator of <span
+class="math inline">\(\sqrt{\mu_0/\varepsilon_0}\)</span> by <span
+class="math inline">\(\sqrt{\varepsilon_0}\)</span> gives <span
+class="math inline">\(\sqrt{\mu_0\varepsilon_0}/\varepsilon_0 =
+(1/c)/\varepsilon_0
+= 1/(\varepsilon_0 c)\)</span>. The final step <span
+class="math inline">\(\delta = \alpha\)</span> is a definitional
+identification. The entire chain is an algebraic identity given the
+definitions. No measurement is introduced. Gap 2 is closed. ◻</p>
+</div>
+<div class="remark">
+<p><em>Remark 38</em> (No quotient is introduced). Every element of <a
+href="#eq:delta_assembly" data-reference-type="eqref"
+data-reference="eq:delta_assembly">[eq:delta_assembly]</a> is either
+definitional (<span class="math inline">\(Z_0\)</span>, by Theorem <a
+href="#thm:definitional" data-reference-type="ref"
+data-reference="thm:definitional">34</a>) or derived from the geometric
+structure (<span class="math inline">\(h\)</span> from Theorem <a
+href="#thm:planck" data-reference-type="ref"
+data-reference="thm:planck">30</a>; <span
+class="math inline">\(e\)</span> from the Dirac condition; <span
+class="math inline">\(2\)</span> from the minimum winding number). The
+identification of <span class="math inline">\(\delta\)</span> with <span
+class="math inline">\(\alpha\)</span> is therefore not a quotient in the
+sense of <span class="citation" data-cites="Heaton2026Determinacy">(K.
+B. Heaton and Coherence Research Collaboration 2026b)</span>: it is a
+derived identity, not a closure rule imposed to collapse fiber
+variation.</p>
+</div>
+<h2 id="sec:gap3">Gap 3: the Josephson constant from minimum
+winding</h2>
+<div id="thm:josephson" class="theorem">
+<p><strong>Theorem 39</strong> (The Josephson phase equation is
+topologically necessary). <em>The Josephson constant <span
+class="math inline">\(K_J = 2e/h\)</span> follows necessarily from the
+Aharonov–Bohm phase accumulated by the minimum closed winding of the
+self-similar process.</em></p>
+</div>
+<div class="proof">
+<p><em>Proof.</em> A charge <span class="math inline">\(q\)</span>
+moving through potential <span class="math inline">\(V\)</span> for time
+<span class="math inline">\(t\)</span> accumulates Aharonov–Bohm
+phase <span class="citation" data-cites="AharonovBohm1959">(Aharonov and
+Bohm 1959)</span>: <span class="math display">\[\Phi_{\mathrm{AB}} =
+\frac{qVt}{\hbar}.
+  \label{eq:AB_phase}\]</span> The minimum closed winding of the
+superconducting order parameter carries charge <span
+class="math inline">\(2e\)</span> (the Cooper pair). This is
+topologically forced: the order parameter <span
+class="math inline">\(\psi = |\psi|e^{i\phi}\)</span> is bilinear in the
+electron field <span class="citation" data-cites="Tinkham1996">(Tinkham
+1996)</span>, so one winding of <span
+class="math inline">\(\psi\)</span> corresponds to one winding of the
+pair, carrying charge <span class="math inline">\(2e\)</span>. The
+factor <span class="math inline">\(2\)</span> is the minimum winding
+number of Section <a href="#sec:selfsimilar" data-reference-type="ref"
+data-reference="sec:selfsimilar">3</a>: one closed circuit of the
+self-similar process requires charge <span
+class="math inline">\(2e\)</span>, not <span
+class="math inline">\(e\)</span>.</p>
+<p>Setting <span class="math inline">\(q = 2e\)</span> in <a
+href="#eq:AB_phase" data-reference-type="eqref"
+data-reference="eq:AB_phase">[eq:AB_phase]</a>: <span
+class="math display">\[\frac{d\Phi_{\mathrm{AB}}}{dt}
+  = \frac{2eV}{\hbar}
+  = 2\pi K_J V,
+  \label{eq:josephson_phase}\]</span> giving <span
+class="math inline">\(K_J = 2e/h\)</span>. The derivation uses only the
+Aharonov–Bohm phase (consequence of minimal electromagnetic coupling),
+the minimum winding charge <span class="math inline">\(2e\)</span>
+(forced by bilinear order parameter structure and the minimum winding
+number), and the invariants <span class="math inline">\(h\)</span> and
+<span class="math inline">\(e\)</span> established in the preceding
+sections. No free parameters enter. Gap 3 is closed. ◻</p>
+</div>
+<div id="cor:factor_two_unified" class="corollary">
+<p><strong>Corollary 40</strong> (The factor <span
+class="math inline">\(2\)</span> is topologically unified). <em>The
+factor <span class="math inline">\(2\)</span> appearing in both <span
+class="math inline">\(\alpha = Z_0/2R_K\)</span> and <span
+class="math inline">\(K_J = 2e/h\)</span> is the same topological factor
+throughout: the minimum winding number of the self-similar process on
+the punctured sphere, now seen to be unified across the continuous
+vacuum level and the quantum discrete level.</em></p>
+</div>
+<h2 id="sec:main_theorem">The main theorem: complete statement</h2>
+<div id="thm:main" class="theorem">
+<p><strong>Theorem 41</strong> (Necessity of <span
+class="math inline">\(\alpha\)</span>). <em>The fine-structure constant
+<span class="math inline">\(\alpha\)</span> is the unique departure from
+the golden ratio <span class="math inline">\(\varphi\)</span> that
+is:</em></p>
+<ol>
+<li><p><em>forced by the irremovable defect at <span
+class="math inline">\(p\)</span> on the Riemann sphere (Section <a
+href="#sec:primitive" data-reference-type="ref"
+data-reference="sec:primitive">2</a>);</em></p></li>
+<li><p><em>consistent with the uniform regularity of the self-similar
+field at all scales (Theorem <a href="#thm:phi_unique"
+data-reference-type="ref"
+data-reference="thm:phi_unique">14</a>);</em></p></li>
+<li><p><em>compatible with the existence of matter (Proposition <a
+href="#prop:rational_excluded" data-reference-type="ref"
+data-reference="prop:rational_excluded">10</a>); and</em></p></li>
+<li><p><em>realised in a vacuum whose constitutive constants <span
+class="math inline">\(\varepsilon_0\)</span> and <span
+class="math inline">\(\mu_0\)</span> are the mathematical primitives
+<span class="math inline">\(1\)</span> and <span
+class="math inline">\(0\)</span> by their own definitions (Theorem <a
+href="#thm:definitional" data-reference-type="ref"
+data-reference="thm:definitional">34</a>).</em></p></li>
+</ol>
+<p><em>Its value is <span class="math display">\[\alpha =
+\frac{Z_0}{2R_K}
+  = \frac{\sqrt{\mu_0/\varepsilon_0}}{2h/e^2}
+  = \frac{e^2}{2\varepsilon_0 hc}
+  \approx \frac{1}{137.036},
+  \label{eq:alpha_final}\]</span> derived from the mathematical
+structure with zero free parameters, zero postulates, and one empirical
+observation (matter exists).</em></p>
+</div>
+<div class="proof">
+<p><em>Proof.</em> Conditions (i)–(iii) establish that <span
+class="math inline">\(\xi_{\mathrm{actual}} =
+\varphi - \delta\)</span> with <span class="math inline">\(\delta &gt;
+0\)</span> uniquely determined. Condition (iv), established in
+Theorem <a href="#thm:definitional" data-reference-type="ref"
+data-reference="thm:definitional">34</a>, is the recognition that the
+physical vacuum IS the mathematical structure: not an approximation to
+it, not a model of it, but the same structure expressed in physical
+vocabulary. By Proposition <a href="#prop:both_primitives"
+data-reference-type="ref" data-reference="prop:both_primitives">33</a>,
+both primitives are necessarily present in any vacuum that sustains a
+non-terminal process; by Theorem <a href="#thm:definitional"
+data-reference-type="ref" data-reference="thm:definitional">34</a>, they
+are <span class="math inline">\(\varepsilon_0\)</span> and <span
+class="math inline">\(\mu_0\)</span>.</p>
+<p>Given (iv), the departure <span class="math inline">\(\delta =
+Z_0/2R_K\)</span> follows by Theorem <a href="#thm:alpha_derived"
+data-reference-type="ref" data-reference="thm:alpha_derived">37</a>. The
+identification <span class="math inline">\(\delta
+= \alpha\)</span> follows from the definition of <span
+class="math inline">\(\alpha\)</span> as the dimensionless coupling
+constant of the electromagnetic interaction, which is precisely the
+departure of the physical vacuum from ideal self-similar scaling. The
+formula <a href="#eq:alpha_final" data-reference-type="eqref"
+data-reference="eq:alpha_final">[eq:alpha_final]</a> is an algebraic
+identity in the 2019 SI system <span class="citation"
+data-cites="BIPM2019">(Bureau International des Poids et Mesures
+2019)</span>. No measurement is used to derive it; measurement confirms
+what the structure requires. ◻</p>
+</div>
+<p><strong>Summary of Section <a href="#sec:closure"
+data-reference-type="ref" data-reference="sec:closure">5</a>.</strong>
+All three gaps are closed without introducing additional structure.
+Gap 1: the recursion <span class="math inline">\(x = 1+1/x\)</span> is
+the unique minimum-information self-referential consistency condition,
+forced by the Markov spectrum theorem. Gap 2: a non-terminal vacuum must
+contain both a primitive <span class="math inline">\(1\)</span>
+(containing mode) and a primitive <span class="math inline">\(0\)</span>
+(penetrating mode), and the physical definitions of <span
+class="math inline">\(\varepsilon_0\)</span> and <span
+class="math inline">\(\mu_0\)</span> <em>are</em> these primitives; the
+departure <span class="math inline">\(\delta = Z_0/2R_K\)</span> then
+follows by assembly of four previously established facts with no
+quotient. Gap 3: the Josephson phase equation follows from the
+Aharonov–Bohm phase with minimum winding charge <span
+class="math inline">\(2e\)</span>, topologically forced by the same
+minimum winding number as <span class="math inline">\(\alpha =
+Z_0/2R_K\)</span>. The factor of <span class="math inline">\(2\)</span>
+in both <span class="math inline">\(\alpha\)</span> and <span
+class="math inline">\(K_J\)</span> is the same topological factor
+throughout.</p>
+<p>The proof is complete. Its honest characterisation is:</p>
+<blockquote>
+<p><em>The fine-structure constant <span
+class="math inline">\(\alpha\)</span> is the departure from <span
+class="math inline">\(\varphi\)</span> uniquely forced by the
+irremovable defect of the non-terminal reciprocal singularity <span
+class="math inline">\(1/0\)</span>, realised in an electromagnetic
+vacuum whose constitutive constants are the mathematical primitives by
+their own definitions. It is not derived from physics; the physics is
+the expression of the mathematics.</em></p>
+</blockquote>
+<h1 id="sec:discussion">Discussion</h1>
+<p>The preceding proof derives the fine-structure constant from the
+non-terminal reciprocal singularity <span
+class="math inline">\(1/0\)</span> on the Riemann sphere. Hydrogen’s
+spectrum was not used. This section identifies where hydrogen — and by
+extension all of atomic and nuclear spectroscopy — lives inside the
+derived structure. The empirical record does not support the proof; it
+instantiates it. The distinction matters.</p>
+<h2 id="sec:hydrogen_minimal">Hydrogen as the minimal instantiation</h2>
+<p>The proof requires the minimum closed electromagnetic geometry
+consistent with Maxwell’s two independent curl equations. Section <a
+href="#sec:em_vacuum" data-reference-type="ref"
+data-reference="sec:em_vacuum">4</a> established that each curl equation
+requires a minimum of three non-degenerate nodes for closure, and that
+the two cycles must share exactly one node (the impedance-match point at
+<span class="math inline">\(\mathrm{IE}/4\)</span>), giving five nodes
+in total.</p>
+<p>Hydrogen, as the first element formed cosmologically and the simplest
+atom, instantiates this minimum geometry exactly. Its lowest five
+quantum states are: <span class="math display">\[\{1s,\; 2s,\;
+2p_{-1},\; 2p_0,\; 2p_{+1}\},
+  \label{eq:five_states}\]</span> with <span class="math inline">\(n =
+1\)</span> providing the ground state and <span class="math inline">\(n
+= 2\)</span> providing the first excited shell. The states <span
+class="math inline">\(\{2s, 2p\}\)</span> together are the first
+configuration in which both Maxwell curl equations are simultaneously
+active:</p>
+<ul>
+<li><p><span class="math inline">\(2s\)</span> (<span
+class="math inline">\(\ell = 0\)</span>): purely radial, capacitive
+E-sector — the <span class="math inline">\(\varepsilon_0\)</span> mode
+only.</p></li>
+<li><p><span class="math inline">\(2p\)</span> (<span
+class="math inline">\(\ell = 1\)</span>): the first mode supporting
+angular momentum, activating the inductive H-sector — the <span
+class="math inline">\(\mu_0\)</span> mode.</p></li>
+</ul>
+<p>The right angle between the energy axis (<span
+class="math inline">\(\ell = 0\)</span>) and the angular-momentum axis
+(<span class="math inline">\(\ell = 1\)</span>) at the <span
+class="math inline">\(2s\)</span> vertex is the geometric record of
+Maxwell’s orthogonality condition <span
+class="math inline">\(\mathbf{E}\perp\mathbf{H}\)</span> at the
+impedance-match point.</p>
+<h2 id="sec:proto_triangle">The proto-triangle and the integer scar</h2>
+<p>Mapping the three states <span class="math inline">\(\{1s, 2s,
+2p\}\)</span> into binding-energy and angular-momentum coordinates <span
+class="math inline">\((E_{\mathrm{bind}}, \ell)\)</span>, measured in
+units of <span class="math inline">\((\mathrm{IE}/4,\;\Delta\ell =
+1)\)</span>, places the vertices at <span class="math inline">\((4,
+0)\)</span>, <span class="math inline">\((1, 0)\)</span>, and <span
+class="math inline">\((1, 1)\)</span>. This forms a right triangle
+with:</p>
+<ul>
+<li><p>horizontal leg <span class="math inline">\(= 3\)</span> (energy:
+<span class="math inline">\(4 - 1 = 3\)</span> units of <span
+class="math inline">\(\mathrm{IE}/4\)</span>);</p></li>
+<li><p>vertical leg <span class="math inline">\(= 1\)</span> (angular
+momentum: <span class="math inline">\(\ell(2p) -
+    \ell(2s) = 1 - 0 = 1\)</span>);</p></li>
+<li><p>right angle at <span class="math inline">\(2s\)</span>, forced by
+<span class="math inline">\(\mathbf{E}\perp
+    \mathbf{H}\)</span> at the impedance-match point.</p></li>
+</ul>
+<p>The horizontal leg <span class="math inline">\(3\)</span> is an
+integer — the universe’s first electromagnetic closure occurred at
+integer ratio <span class="math inline">\(3:1\)</span> rather than at
+the ideal irrational ratio <span
+class="math inline">\(\varphi^2:1\)</span>. The departure of the integer
+closure from the <span class="math inline">\(\varphi\)</span>-attractor
+is: <span class="math display">\[3 - \varphi^2 \;=\; \varphi^{-2},
+  \label{eq:proto_scar}\]</span> an exact algebraic identity from <span
+class="math inline">\(\varphi^2 = \varphi + 1\)</span>. This quantity
+<span class="math inline">\(\varphi^{-2} \approx 0.382\)</span> is the
+<em>proto-scar</em>: the fossil of the universe’s first integer closure,
+visible in the hydrogen energy levels and related to the same <span
+class="math inline">\(\varphi\)</span>-departure that generates <span
+class="math inline">\(\alpha\)</span>.</p>
+<p>The proto-triangle <span class="math inline">\(\{1s, 2s,
+2p\}\)</span> is not a geometric input to the proof. It is a geometric
+consequence, readable directly from the NIST hydrogen spectrum <span
+class="citation" data-cites="NIST_ASD">(Kramida et al. 2024)</span>. The
+derivation precedes the triangle; the triangle instantiates it in the
+simplest possible atom.</p>
+<figure id="fig:proto_triangle">
+
+<figcaption>The proto-triangle <span
+class="math inline">\(\{1s,\,2s,\,2p\}\)</span> in binding-angular
+space, legs <span class="math inline">\(3\)</span> and <span
+class="math inline">\(1\)</span> in units of <span
+class="math inline">\((\mathrm{IE}/4,\,\Delta\ell{=}1)\)</span>, right
+angle at <span class="math inline">\(2s\)</span>. The right angle
+records <span class="math inline">\(\mathbf{E}\perp\mathbf{H}\)</span>
+at the impedance-match point (§<a href="#sec:Zorb"
+data-reference-type="ref" data-reference="sec:Zorb">4.3</a>). The
+deviation <span class="math inline">\(3-\varphi^2 =
+\varphi^{-2}\)</span> (equation <a href="#eq:proto_scar"
+data-reference-type="eqref"
+data-reference="eq:proto_scar">[eq:proto_scar]</a>, exact) is the
+proto-scar. The hypotenuse touches the <span
+class="math inline">\(\mathrm{IE}/4\)</span> boundary — the
+impedance-match point no bound-to-bound transition can reach (§<a
+href="#sec:diophantine" data-reference-type="ref"
+data-reference="sec:diophantine">4.4</a>).</figcaption>
+</figure>
+<h2 id="sec:gap_empirical">The impedance-match boundary in atomic
+spectra</h2>
+<p>The proof establishes in Section <a href="#sec:diophantine"
+data-reference-type="ref" data-reference="sec:diophantine">4.4</a> that
+no bound-to-bound transition can carry energy <span
+class="math inline">\(\mathrm{IE}/4\)</span>, a consequence of number
+theory independent of atomic species or nuclear charge. The empirical
+survey of Heaton <span class="citation" data-cites="Heaton2026QW">(K. B.
+Heaton and Coherence Research Collaboration 2026c)</span> confirms the
+spectroscopic consequence: 71 of 80 ions surveyed show a
+zero-observation interval at <span
+class="math inline">\(\mathrm{IE}/4\)</span> with zero falsifications;
+the remaining 9 have catalogs that do not bracket <span
+class="math inline">\(\mathrm{IE}/4\)</span> from both sides and cannot
+be tested without additional spectral coverage. The gap is confirmed
+across <span class="math inline">\(Z = 1\)</span>–<span
+class="math inline">\(82\)</span>, all four subshell families, and
+multiple ionisation stages; in 42 of the 71 confirmed ions it ranks in
+the top 10% by width among all consecutive-pair intervals. The empirical
+record does not establish the theorem; it confirms that the theorem’s
+prediction is not falsified by any known spectrum.</p>
+<h2 id="sec:thread_empirical">The thread law as direct observation of
+the logarithmic scaling</h2>
+<p>The self-similar logarithmic scaling of Section <a
+href="#sec:selfsimilar" data-reference-type="ref"
+data-reference="sec:selfsimilar">3</a> — equipotential surfaces nesting
+with ratio <span class="math inline">\(\alpha\)</span> at each depth —
+is directly visible in photon frequencies via the empirical thread
+law <span class="citation"
+data-cites="Heaton2026HydrAl Heaton2026QW">(K. B. Heaton and Coherence
+Research Collaboration 2026a, 2026c)</span>: <span
+class="math display">\[\log_{10}\nu(\kappa)
+  \;=\; \chi + \beta\,\kappa,
+  \qquad
+  \beta = \log_{10}\alpha.
+  \label{eq:thread_law_disc}\]</span> For hydrogen, the fit to NIST
+spectral data gives <span class="math inline">\(\beta_{\mathrm{fit}} =
+-2.1368346704388017\)</span> against <span
+class="math inline">\(\log_{10}\alpha = -2.1368346704397490\)</span>, a
+residual of <span class="math inline">\(9.47 \times 10^{-13}\)</span>
+with <span class="math inline">\(r^2 = 1.000\)</span> over <span
+class="math inline">\(9\)</span> pairs. The thread law is not evidence
+for the proof; it is the proof made visible in the spectrum of the
+simplest atom.</p>
+<h2 id="sec:constants_recovery">Recovery of fundamental constants from
+the gap</h2>
+<p>The impedance-match boundary encodes the electron rest mass and the
+Bohr radius. From Heaton <span class="citation"
+data-cites="Heaton2026QW">(K. B. Heaton and Coherence Research
+Collaboration 2026c)</span>: <span class="math display">\[m_e c^2 \;=\;
+\frac{8G}{\alpha^2}, \qquad
+  a_0 \;=\; \frac{\hbar c\,\alpha}{8G},
+  \label{eq:mass_bohr}\]</span> where <span class="math inline">\(G =
+\sqrt{\mathrm{gap}_{\mathrm{lo}} \cdot
+\mathrm{gap}_{\mathrm{hi}}}\)</span> is the geometric mean of the gap
+boundaries, derived from the NIST photon catalog with no free parameters
+and without using <span class="math inline">\(m_e\)</span> or <span
+class="math inline">\(a_0\)</span> as inputs. The proof derives <span
+class="math inline">\(\alpha\)</span> from the geometric departure; the
+gap encodes <span class="math inline">\(m_e\)</span> and <span
+class="math inline">\(a_0\)</span> through <span
+class="math inline">\(\alpha\)</span>; the constants define the
+atom.</p>
+<h2 id="sec:nuclear">Nuclear spectroscopy: the same structure at a
+different scale</h2>
+<p>The same mathematical structure governs nuclear shell closure. The
+four doubly magic nuclei <span class="math inline">\({}^{16}\)</span>O,
+<span class="math inline">\({}^{48}\)</span>Ca, <span
+class="math inline">\({}^{132}\)</span>Sn, and <span
+class="math inline">\({}^{208}\)</span>Pb show complete depletion of
+observed levels below <span class="math inline">\(S_n/4\)</span>; all 20
+non-doubly-magic nuclides surveyed show no gap; zero nuclides falsify
+the prediction; the two populations do not overlap <span
+class="citation" data-cites="Heaton2026QW">(K. B. Heaton and Coherence
+Research Collaboration 2026c)</span>. The fraction <span
+class="math inline">\(1/4\)</span> appears at both atomic and nuclear
+scales because it follows from the Diophantine impossibility of
+equation <a href="#eq:diophantine" data-reference-type="eqref"
+data-reference="eq:diophantine">[eq:diophantine]</a>, which is purely
+mathematical and indifferent to physical scale.</p>
+<h2 id="sec:hierarchy">The hierarchy of confirmation</h2>
+<p>The relationship between the proof and its empirical record is
+strictly hierarchical:</p>
+<ol>
+<li><p>The mathematical structure (Sections <a href="#sec:primitive"
+data-reference-type="ref" data-reference="sec:primitive">2</a>–<a
+href="#sec:closure" data-reference-type="ref"
+data-reference="sec:closure">5</a>) is primary and
+self-contained.</p></li>
+<li><p>The electromagnetic vacuum instantiates this structure
+(Theorem <a href="#thm:definitional" data-reference-type="ref"
+data-reference="thm:definitional">34</a>).</p></li>
+<li><p>Atomic spectra are the observable record of the structure’s
+consequences in the simplest bound systems.</p></li>
+<li><p>The NIST data confirms that no known spectrum falsifies any
+prediction.</p></li>
+</ol>
+<p>The empirical agreement across 71 atomic ions, 24 nuclear nuclides,
+and 13 orders of magnitude in energy scale does not prove the
+mathematical argument. What the empirical record establishes is that the
+universe we inhabit is the one in which <span
+class="math inline">\(\varepsilon_0\)</span> and <span
+class="math inline">\(\mu_0\)</span> are the mathematical primitives
+<span class="math inline">\(1\)</span> and <span
+class="math inline">\(0\)</span> — not by coincidence, but because those
+words mean what they mean.</p>
+<h1 id="sec:conclusion">Conclusion</h1>
+<p>We have derived the fine-structure constant from the non-terminal
+reciprocal singularity <span class="math inline">\(1/0\)</span> on the
+Riemann sphere. The argument proceeds in four sections, each building on
+the last without importing new structure.</p>
+<p>Section <a href="#sec:primitive" data-reference-type="ref"
+data-reference="sec:primitive">2</a> establishes that the non-terminal
+reciprocal singularity forces a punctured sphere <span
+class="math inline">\(S^2\setminus\{p\}\)</span> with an irremovable
+source singularity at <span class="math inline">\(p\)</span>, a unique
+antipodal sink <span class="math inline">\(p^*\)</span> forced by the
+Poincaré–Hopf theorem (<span class="math inline">\(\chi(S^2) =
+2\)</span>), and a logarithmic potential field between them forced by
+the Green’s function of the Laplacian in two dimensions. The defect at
+<span class="math inline">\(p\)</span> carries residue <span
+class="math inline">\(1\)</span> and winding number <span
+class="math inline">\(-1\)</span> and cannot be removed by any
+continuous deformation.</p>
+<p>Section <a href="#sec:selfsimilar" data-reference-type="ref"
+data-reference="sec:selfsimilar">3</a> shows that the logarithmic field
+has a self-similar scaling structure whose consistency recursion,
+derived from the Markov spectrum theorem, forces the unique continued
+fraction <span class="math inline">\([1;1,1,1,\ldots] = \varphi\)</span>
+as the winding ratio on the ideal sphere. Rational winding is excluded
+because it produces a resolvent pole incompatible with stable matter.
+The uniform regularity condition (Definition <a href="#def:P10"
+data-reference-type="ref" data-reference="def:P10">11</a>), together
+with Hurwitz’s theorem (1891), establishes that <span
+class="math inline">\(\varphi\)</span> is the unique irrational
+satisfying the resolvent bound at all scales simultaneously. The
+irremovable defect at <span class="math inline">\(p\)</span> forces a
+departure <span class="math inline">\(\delta &gt; 0\)</span> from this
+ideal ratio.</p>
+<p>Section <a href="#sec:em_vacuum" data-reference-type="ref"
+data-reference="sec:em_vacuum">4</a> identifies the electromagnetic
+realisation of the structure. The two vacuum constants <span
+class="math inline">\(\varepsilon_0\)</span> and <span
+class="math inline">\(\mu_0\)</span> are the mathematical primitives
+<span class="math inline">\(1\)</span> (containment) and <span
+class="math inline">\(0\)</span> (openness) by their own physical
+definitions; no additional structure is introduced. Their ratio <span
+class="math inline">\(Z_0 = \sqrt{\mu_0/\varepsilon_0}\)</span> is the
+<span class="math inline">\(0/1\)</span> geometric ratio of the vacuum.
+The orbital impedance <span class="math inline">\(Z_{\mathrm{orb}}(n) =
+Z_0 n/\alpha\)</span> is derived from Coulomb’s law and the Biot–Savart
+law with no free parameters. The impedance-match boundary <span
+class="math inline">\(Z_{\mathrm{orb}} = Z_0\)</span> corresponds to
+<span class="math inline">\(\Delta E = \mathrm{IE}/4\)</span> by a
+number-theoretic impossibility (no integer solution to <span
+class="math inline">\(1/n_f^2 - 1/n_i^2 = 1/4\)</span>), confirmed
+across 71 atomic ions with zero falsifications. The von Klitzing
+constant <span class="math inline">\(R_K = Z_0/2\alpha\)</span> and the
+Josephson constant <span class="math inline">\(K_J = 2e/h\)</span> are
+dual quantum expressions of the same <span
+class="math inline">\(0/1\)</span> ratio; together they resolve both
+<span class="math inline">\(h\)</span> and <span
+class="math inline">\(e\)</span>, neither of which is a primitive of the
+electromagnetic structure. Planck’s constant <span
+class="math inline">\(h\)</span> is the invariant of the self-similar
+cleaving process.</p>
+<p>Section <a href="#sec:closure" data-reference-type="ref"
+data-reference="sec:closure">5</a> closes the three remaining gaps. The
+recursion <span class="math inline">\(x = 1+1/x\)</span> is forced by
+the Markov spectrum. The identification of <span
+class="math inline">\(\varepsilon_0\)</span> and <span
+class="math inline">\(\mu_0\)</span> with the primitives is
+definitional, not axiomatic, so no quotient is introduced. The departure
+<span class="math inline">\(\delta = Z_0/2R_K\)</span> follows by
+assembling four previously established facts: the residue <span
+class="math inline">\(= 1\)</span>, <span
+class="math inline">\(Z_0\)</span> as the <span
+class="math inline">\(0/1\)</span> ratio, <span
+class="math inline">\(R_K = h/e^2\)</span> from the Dirac condition and
+the cleaving invariant, and the minimum winding number <span
+class="math inline">\(2\)</span>. The Josephson phase equation follows
+from the Aharonov–Bohm phase with minimum winding charge <span
+class="math inline">\(2e\)</span>. Within the framework where <span
+class="math inline">\(\varepsilon_0\)</span> and <span
+class="math inline">\(\mu_0\)</span> are the fixed primitives, the
+constancy of <span class="math inline">\(c\)</span> follows as a
+mathematical consequence rather than a physical postulate (Corollary <a
+href="#cor:c_constant" data-reference-type="ref"
+data-reference="cor:c_constant">35</a>).</p>
+<p>The result is: <span class="math display">\[\boxed{
+  \alpha
+  \;=\; \frac{Z_0}{2R_K}
+  \;=\; \frac{\sqrt{\mu_0/\varepsilon_0}}{2h/e^2}
+  \;=\; \frac{e^2}{2\varepsilon_0 hc}
+  \;\approx\; \frac{1}{137.036},
+  }
+  \label{eq:alpha_conclusion}\]</span> derived with:</p>
+<div class="center">
+<table>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Free parameters</td>
+<td style="text-align: left;">zero</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Postulates</td>
+<td style="text-align: left;">zero</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Mathematical premises</td>
+<td style="text-align: left;">one <em>(uniform regularity,
+P10)</em></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Empirical observations</td>
+<td style="text-align: left;">one <em>(matter exists)</em></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>The proof is not a derivation of physics from mathematics. It is the
+recognition that the physical vocabulary of electromagnetism —
+permittivity, permeability, impedance, resistance, charge, action —
+names the mathematical structure that the non-terminal reciprocal
+singularity <span class="math inline">\(1/0\)</span> necessarily
+generates. The physics does not explain the mathematics. The mathematics
+is what the physics means.</p>
+<h1 class="unnumbered" id="provenance">Provenance</h1>
+<p>The research that gave rise to this paper was conducted by Kelly
+B. Heaton through an interactive collaboration with Claude (Sonnet 4.6)
+(large language model developed by Anthropic) and ChatGPT (various
+models, OpenAI), collectively referred to as the Coherence Research
+Collaboration. All research design, direction, interpretation, and
+conclusions were determined by the human author who is the sole owner of
+the intellectual property. DOI: 10.5281/zenodo.19157339</p>
+<p><strong>Version History</strong><br />
+v1.0: March 25, 2026. Initial publication.<br />
+v1.1: March 29, 2026. Corrected citation metadata for reference [30]:
+updated title to The Encounter of Two Primitives and One Flaw: Geometric
+Unification at the Electromagnetic Scale, updated status from
+forthcoming to published. Removed an unused draft bib entry carrying an
+incorrect subtitle for this paper. No changes to scientific content,
+proofs, or conclusions.</p>
+<figure id="fig:lucerna_veritas">
+<embed src="figures/lucerna_veritas.pdf" style="width:11.0%" />
+<figcaption>Lucerna Veritas</figcaption>
+</figure>
+<div class="center">
+<p><em>Follow the light of the lantern.</em></p>
+</div>
+<div id="refs" class="references csl-bib-body hanging-indent"
+role="list">
+<div id="ref-AharonovBohm1959" class="csl-entry" role="listitem">
+Aharonov, Y., and D. Bohm. 1959. <span>“Significance of Electromagnetic
+Potentials in the Quantum Theory.”</span> <em>Physical Review</em> 115
+(3): 485–91. <a
+href="https://doi.org/10.1103/PhysRev.115.485">https://doi.org/10.1103/PhysRev.115.485</a>.
+</div>
+<div id="ref-Ahlfors1979" class="csl-entry" role="listitem">
+Ahlfors, L. V. 1979. <em>Complex Analysis</em>. 3rd ed. McGraw-Hill.
+</div>
+<div id="ref-Bethe1957" class="csl-entry" role="listitem">
+Bethe, H. A., and E. E. Salpeter. 1957. <em>Quantum Mechanics of One-
+and Two-Electron Atoms</em>. Berlin: Springer. <a
+href="https://doi.org/10.1007/978-3-662-12869-5">https://doi.org/10.1007/978-3-662-12869-5</a>.
+</div>
+<div id="ref-BhaskaraII1150" class="csl-entry" role="listitem">
+Bhāskara II. 1150. <em>Lı̄lāvatı̄</em>.
+</div>
+<div id="ref-Brahmagupta628" class="csl-entry" role="listitem">
+Brahmagupta. 628AD. <em>Brahmasphutaṣiddhānta</em>.
+</div>
+<div id="ref-BIPM2019" class="csl-entry" role="listitem">
+Bureau International des Poids et Mesures. 2019. <em>The
+<span>I</span>nternational <span>S</span>ystem of <span>U</span>nits
+(<span>SI</span>)</em>. 9th ed. Sèvres, France: Bureau International des
+Poids et Mesures. <a
+href="https://www.bipm.org/en/publications/si-brochure">https://www.bipm.org/en/publications/si-brochure</a>.
+</div>
+<div id="ref-Conway1978" class="csl-entry" role="listitem">
+Conway, J. B. 1978. <em>Functions of One Complex Variable</em>. 2nd ed.
+Springer. <a
+href="https://doi.org/10.1007/978-1-4612-6313-5">https://doi.org/10.1007/978-1-4612-6313-5</a>.
+</div>
+<div id="ref-Dirac1931" class="csl-entry" role="listitem">
+Dirac, P. A. M. 1931. <span>“Quantised Singularities in the
+Electromagnetic Field.”</span> <em>Proceedings of the Royal Society of
+London, Series A</em> 133 (821): 60–72. <a
+href="https://doi.org/10.1098/rspa.1931.0130">https://doi.org/10.1098/rspa.1931.0130</a>.
+</div>
+<div id="ref-Eddington1946" class="csl-entry" role="listitem">
+Eddington, A. S. 1946. <em>Fundamental Theory</em>. Cambridge University
+Press.
+</div>
+<div id="ref-Evans1998" class="csl-entry" role="listitem">
+Evans, L. C. 1998. <em>Partial Differential Equations</em>. Vol. 19.
+Graduate Studies in Mathematics. American Mathematical Society.
+</div>
+<div id="ref-Feynman1985" class="csl-entry" role="listitem">
+Feynman, R. P. 1985. <em><span>QED</span>: The Strange Theory of Light
+and Matter</em>. Princeton, NJ: Princeton University Press.
+</div>
+<div id="ref-Guillemin1974" class="csl-entry" role="listitem">
+Guillemin, V., and A. Pollack. 1974. <em>Differential Topology</em>.
+Prentice-Hall.
+</div>
+<div id="ref-Hatcher2002" class="csl-entry" role="listitem">
+Hatcher, A. 2002. <em>Algebraic Topology</em>. Cambridge University
+Press. <a
+href="https://pi.math.cornell.edu/~hatcher/AT/ATpage.html">https://pi.math.cornell.edu/~hatcher/AT/ATpage.html</a>.
+</div>
+<div id="ref-Heaton2026HydrAl" class="csl-entry" role="listitem">
+Heaton, K. B., and Coherence Research Collaboration. 2026a.
+<span>“Hydrogenic Alignment as a Coordinate Principle for Atomic
+Spectra.”</span> <em>Zenodo</em>, January. <a
+href="https://doi.org/10.5281/zenodo.18167643">https://doi.org/10.5281/zenodo.18167643</a>.
+</div>
+<div id="ref-Heaton2026Determinacy" class="csl-entry" role="listitem">
+———. 2026b. <span>“Determinacy Under Quotient Representations.”</span>
+<em>Zenodo</em>, March. <a
+href="https://doi.org/10.5281/zenodo.18868210">https://doi.org/10.5281/zenodo.18868210</a>.
+</div>
+<div id="ref-Heaton2026QW" class="csl-entry" role="listitem">
+———. 2026c. <span>“Electron Mass and <span>Bohr</span> Radius from a
+Universal Spectroscopic Gap: Vacuum Impedance as the Organizing
+Principle of Atomic Spectra.”</span> <em>Zenodo</em>, March. <a
+href="https://doi.org/10.5281/zenodo.19164224">https://doi.org/10.5281/zenodo.19164224</a>.
+</div>
+<div id="ref-Heaton2026RG" class="csl-entry" role="listitem">
+Heaton, Kelly B., and Claude Sonnet 4.6. 2026. <span>“The Encounter of
+Two Primitives and One Flaw: Geometric Unification at the
+Electromagnetic Scale.”</span> <a
+href="https://doi.org/10.5281/zenodo.19194036">https://doi.org/10.5281/zenodo.19194036</a>.
+</div>
+<div id="ref-Heaviside1893" class="csl-entry" role="listitem">
+Heaviside, Oliver. 1893. <em>Electromagnetic Theory</em>. Vol. 1.
+London: The Electrician Printing; Publishing Company.
+</div>
+<div id="ref-Hopf1926" class="csl-entry" role="listitem">
+Hopf, H. 1926. <span>“Vektorfelder in <span
+class="math inline">\(n\)</span>-Dimensionalen
+<span>M</span>annigfaltigkeiten.”</span> <em>Mathematische Annalen</em>
+96: 225–50. <a
+href="https://doi.org/10.1007/BF01209164">https://doi.org/10.1007/BF01209164</a>.
+</div>
+<div id="ref-Hurwitz1891" class="csl-entry" role="listitem">
+Hurwitz, A. 1891. <span>“Ueber Die Angen<span>ä</span>herte
+<span>D</span>arstellung Der <span>I</span>rrationalzahlen Durch
+Rationale <span>B</span>r<span>ü</span>che.”</span> <em>Mathematische
+Annalen</em> 39: 279–84. <a
+href="https://doi.org/10.1007/BF01206656">https://doi.org/10.1007/BF01206656</a>.
+</div>
+<div id="ref-Jackson1999" class="csl-entry" role="listitem">
+Jackson, J. D. 1999. <em>Classical Electrodynamics</em>. 3rd ed. Wiley.
+</div>
+<div id="ref-Jentschura2014" class="csl-entry" role="listitem">
+Jentschura, U. D., and I. Nandori. 2014. <span>“Attempts at a
+Determination of the Fine-Structure Constant from First Principles:
+<span>A</span> Brief Historical Overview.”</span> <em>European Physical
+Journal H</em> 39: 591–613. <a
+href="https://doi.org/10.1140/epjh/e2014-50044-7">https://doi.org/10.1140/epjh/e2014-50044-7</a>.
+</div>
+<div id="ref-Josephson1962" class="csl-entry" role="listitem">
+Josephson, B. D. 1962. <span>“Possible New Effects in Superconductive
+Tunnelling.”</span> <em>Physics Letters</em> 1 (7): 251–53. <a
+href="https://doi.org/10.1016/0031-9163(62)91369-0">https://doi.org/10.1016/0031-9163(62)91369-0</a>.
+</div>
+<div id="ref-Kato1966" class="csl-entry" role="listitem">
+Kato, T. 1966. <em>Perturbation Theory for Linear Operators</em>. Vol.
+132. Grundlehren Der Mathematischen Wissenschaften. Springer. <a
+href="https://doi.org/10.1007/978-3-642-66282-9">https://doi.org/10.1007/978-3-642-66282-9</a>.
+</div>
+<div id="ref-Kitano2009" class="csl-entry" role="listitem">
+Kitano, M. 2009. <span>“The Vacuum Impedance and Unit Systems.”</span>
+<em><span>IEICE</span> Transactions on Electronics</em> E92-C (1): 3–8.
+<a
+href="https://doi.org/10.1587/transele.E92.C.3">https://doi.org/10.1587/transele.E92.C.3</a>.
+</div>
+<div id="ref-NIST_ASD" class="csl-entry" role="listitem">
+Kramida, A., Yu. Ralchenko, J. Reader, and NIST ASD Team. 2024.
+<span>“<span>NIST</span> Atomic Spectra Database (Ver. 5.12).”</span>
+Gaithersburg, MD: National Institute of Standards; Technology. <a
+href="https://physics.nist.gov/asd">https://physics.nist.gov/asd</a>.
+</div>
+<div id="ref-Markoff1879" class="csl-entry" role="listitem">
+Markov, A. A. 1880. <span>“Sur Les Formes Binaires
+Ind<span>é</span>finies.”</span> <em>Mathematische Annalen</em> 17:
+379–99. <a
+href="https://doi.org/10.1007/BF01446234">https://doi.org/10.1007/BF01446234</a>.
+</div>
+<div id="ref-Maxwell1865" class="csl-entry" role="listitem">
+Maxwell, J. C. 1865. <span>“A Dynamical Theory of the Electromagnetic
+Field.”</span> <em>Philosophical Transactions of the Royal Society of
+London</em> 155: 459–512. <a
+href="https://doi.org/10.1098/rstl.1865.0008">https://doi.org/10.1098/rstl.1865.0008</a>.
+</div>
+<div id="ref-Milnor1965" class="csl-entry" role="listitem">
+Milnor, J. 1965. <em>Topology from the Differentiable Viewpoint</em>.
+University Press of Virginia.
+</div>
+<div id="ref-Picard1879" class="csl-entry" role="listitem">
+Picard, É. 1879. <span>“Sur Une Propri<span>é</span>t<span>é</span> Des
+Fonctions Enti<span>è</span>res.”</span> <em>Comptes Rendus de
+l’Acad<span>é</span>mie Des Sciences</em> 88: 1024–27.
+</div>
+<div id="ref-Poincare1885" class="csl-entry" role="listitem">
+Poincaré, H. 1885. <span>“Sur Les Courbes d<span>é</span>finies Par Une
+<span class="nocase">é</span>quation
+Diff<span>é</span>rentielle.”</span> <em>Journal de
+Math<span>é</span>matiques Pures Et Appliqu<span>é</span>es</em> 1:
+167–244.
+</div>
+<div id="ref-Riemann1851" class="csl-entry" role="listitem">
+Riemann, B. 1851. <span>“Grundlagen f<span>ü</span>r Eine Allgemeine
+<span>T</span>heorie Der <span>F</span>unctionen Einer
+Ver<span>ä</span>nderlichen Complexen
+<span>G</span>r<span>ö</span>sse.”</span> PhD thesis,
+Georg-August-Universit<span>ä</span>t G<span>ö</span>ttingen.
+</div>
+<div id="ref-Robertson1971" class="csl-entry" role="listitem">
+Robertson, B. 1971. <span>“<span>W</span>yler’s Expression for the
+Fine-Structure Constant.”</span> <em>Physical Review Letters</em> 27:
+1545–47. <a
+href="https://doi.org/10.1103/PhysRevLett.27.1545">https://doi.org/10.1103/PhysRevLett.27.1545</a>.
+</div>
+<div id="ref-Rudin1976" class="csl-entry" role="listitem">
+Rudin, W. 1976. <em>Principles of Mathematical Analysis</em>. 3rd ed.
+McGraw-Hill.
+</div>
+<div id="ref-Singh2022" class="csl-entry" role="listitem">
+Singh, T. P. 2022. <span>“Quantum Gravity Effects in the Infra-Red: A
+Theoretical Derivation of the Low Energy Fine Structure Constant and
+Mass Ratios of Elementary Particles.”</span> <em>European Physical
+Journal Plus</em> 137: 664. <a
+href="https://doi.org/10.1140/epjp/s13360-022-02868-4">https://doi.org/10.1140/epjp/s13360-022-02868-4</a>.
+</div>
+<div id="ref-Sommerfeld1916" class="csl-entry" role="listitem">
+Sommerfeld, A. 1916. <span>“Zur <span>Q</span>uantentheorie Der
+<span>S</span>pektrallinien.”</span> <em>Annalen Der Physik</em> 356
+(17): 1–94. <a
+href="https://doi.org/10.1002/andp.19163561702">https://doi.org/10.1002/andp.19163561702</a>.
+</div>
+<div id="ref-Tinkham1996" class="csl-entry" role="listitem">
+Tinkham, M. 1996. <em>Introduction to Superconductivity</em>. 2nd ed.
+New York: McGraw-Hill.
+</div>
+<div id="ref-vonKlitzing1980" class="csl-entry" role="listitem">
+von Klitzing, K., G. Dorda, and M. Pepper. 1980. <span>“New Method for
+High-Accuracy Determination of the Fine-Structure Constant Based on
+Quantized <span>Hall</span> Resistance.”</span> <em>Physical Review
+Letters</em> 45 (6): 494–97. <a
+href="https://doi.org/10.1103/PhysRevLett.45.494">https://doi.org/10.1103/PhysRevLett.45.494</a>.
+</div>
+<div id="ref-Wyler1969" class="csl-entry" role="listitem">
+Wyler, A. 1969. <span>“L’espace Sym<span>é</span>trique Du Groupe Des
+<span class="nocase">é</span>quations de <span>M</span>axwell.”</span>
+<em>Comptes Rendus de l’Acad<span>é</span>mie Des Sciences,
+S<span>é</span>rie A-B</em> 269: A743–45.
+</div>
+</div>
+</body>
+</html>

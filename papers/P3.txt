@@ -1,0 +1,388 @@
+Introduction
+
+Every act of measurement, modeling, and computation proceeds through representation: a full state space is replaced by a compressed description that retains some structure and discards the rest. Projections, coarse-grainings, summaries, invariants, feature maps, learned embeddings, and symbolic encodings all serve this role. Such reductions are indispensable. They also impose geometric constraints on what can be inferred from the compressed data alone.
+
+This paper studies a specific constraint: when a representation is non-injective, certain scalar queries cannot be recovered from the represented data. In other words, when distinct states of a system are identified as the same element of a compressed space, downstream analysis can no longer tell them apart. The obstruction is not statistical, computational, or approximative. It is structural (a map is not the territory(Korzybski 1933)). The representation itself determines what can and cannot descend to a well-defined scalar answer.
+
+The central object is the fiber. Given a surjective map π : X → Y, the fiber over a represented value y is
+π⁻¹(y) := {x ∈ X : π(x) = y}.
+Fibers collect all states that are indistinguishable under π. A scalar query F : X → ℝ is determined by the representation if and only if it does not vary within any fiber (Theorem 8). When it does vary, no function of the represented data can recover its value. Any single-valued answer necessarily introduces additional structure beyond the representation.
+
+The criterion itself is elementary. Its contemporary significance lies not in the mathematics, which is a direct consequence of the universal property of quotient maps, but in the systematic gap between what the criterion requires and what modern practice enforces. Scientific and computational pipelines increasingly consist of many layers of compression—sensor encoding, discretization, dimensional reduction, feature extraction, learned embedding, and summary—each of which introduces its own fibers. The effective representation is the composite of these maps, and the fibers accumulate accordingly. As representations are stacked, the equivalence classes grow while the geometric provenance of scalar outputs becomes less visible.
+
+Unless this quotient accumulation is tracked, downstream scalar outputs may appear more determinate than the composite representation supports. A number produced with high precision at the end of a long pipeline is still representation-relative: it is determined by the composite encoding, not by the original system. The precision of the output says nothing about the breadth of the fiber from which it was drawn.
+
+The purpose of this paper is to make these distinctions precise and operational. We develop the determinacy criterion as a structural audit: a discipline-agnostic test for whether a scalar output is determined by its representation, or whether additional structure has been imposed. The test applies equally whether the system under study is electromagnetic, fluid-mechanical, probabilistic, harmonic-analytic, or digital-computational. It applies regardless of whether the agent performing the inference is a human analyst, a numerical solver, or a learned model. The fibers are the same; the obstruction is the same; the available responses are the same.
+
+When scalar determinacy fails, several responses remain available:
+
+-   retain the full fiber information (set-valued description);
+
+-   extract extremal or rigidity statements that constrain fiber variation;
+
+-   refine the representation by restoring a discarded coordinate; or
+
+-   introduce an explicit aggregation or selection rule.
+
+We refer to the last of these—the aggregation or selection rule—as closure. Closure produces a single-valued scalar answer where intrinsic determinacy is absent. Such answers depend on how unresolved fiber variation is handled. The examples developed in Sections 5–8 are not incidental illustrations. Each instantiates the same geometric pattern in a distinct technical dialect: electromagnetism (Section 5), nonlinear queries under linear projection (Section 6), probability (Section 7), and harmonic analysis (Section 8). The cross-disciplinary range is deliberate. Within any single domain, the obstruction may appear to be a domain-specific subtlety—a known limitation, a modeling choice, a matter of convention. Seen across domains, it reveals itself as a single structural pattern that recurs wherever non-injective representations are used and fiber geometry is not tracked.
+
+Section 9 draws out the consequences for stacked representations in contemporary practice, including digital computation and machine learning. Section 10 offers brief closing remarks.
+
+Representations and fibers
+
+We fix notation and isolate the geometric structure induced by a representation.
+
+Definition 1 (Representation). Let X and Y be sets. A representation is a surjective map π : X → Y.
+
+The space X is interpreted as the full state space of a system, and Y as the representation space obtained by retaining only the information encoded by π. Surjectivity ensures that every element of Y corresponds to at least one state in X. If π is non-injective, distinct states in X are identified in Y.
+
+Definition 2 (Fiber). For y ∈ Y, the fiber over y is
+π⁻¹(y) := {x ∈ X : π(x) = y}.
+
+Each fiber collects all states in X that are indistinguishable under the representation. When π is non-injective, fibers typically contain multiple elements.
+
+Remark 3 (Geometry of discarded information). Fibers encode the degrees of freedom discarded by the representation. They are not introduced by approximation, uncertainty, or noise, but arise deterministically from the choice of π. Once a representation is fixed, variation within a fiber is invisible to Y.
+
+Different representations may induce the same partition of X while differing only in the labeling of coordinates.
+
+Definition 4 (Equivalent representations). Two surjective maps π : X → Y and π′ : X → Y′ are equivalent representations of X if there exists a bijection φ : Y → Y′ such that π′ = φ ∘ π.
+
+Equivalent representations induce the same partition of X into fibers and therefore discard the same information.
+
+Remark 5. All subsequent statements depend only on the induced fiber structure and are invariant under equivalence of representations.
+
+The determinacy gate
+
+Let π : X → Y be a surjective representation. We characterize when a scalar query is determined by π.
+
+Definition 6 (Fiber-constant and fiber-sensitive queries). A function F : X → ℝ is fiber-constant if
+F(x₁) = F(x₂)  whenever  π(x₁) = π(x₂).
+Otherwise F is fiber-sensitive.
+
+Definition 7 (Queries that descend). A function F : X → ℝ descends to Y if there exists F̃ : Y → ℝ such that F = F̃ ∘ π. Equivalently, F depends only on y = π(x).
+
+Theorem 8 (Determinacy criterion). Let π : X → Y be surjective and let F : X → ℝ. Then F descends to Y if and only if F is fiber-constant.
+
+Proof. If F = F̃ ∘ π and π(x₁) = π(x₂), then
+F(x₁) = F̃(π(x₁)) = F̃(π(x₂)) = F(x₂).
+Conversely, if F is fiber-constant, define F̃(y) := F(x) for any x ∈ π⁻¹(y). This is well-defined by fiber-constancy and satisfies F = F̃ ∘ π. ◻
+
+The criterion is elementary. Its role in this paper is operational: it provides a gate that every scalar query must pass before its value can be attributed to the representation alone.
+
+The post-quotient repertoire
+
+We now describe what replaces scalar determinacy when a query is fiber-sensitive. Let π : X → Y be surjective and let F : X → ℝ be fiber-sensitive. By Theorem 8, F does not descend to Y. Any scalar response must supplement the representation with additional structure.
+
+Definition 9 (Closure rule). A (scalar) closure rule for (π,F) is a single-valued assignment F̂ : Y → ℝ used as a surrogate for F on the quotient data. It is exact if F = F̂ ∘ π; otherwise it introduces structure beyond π.
+
+When a declared analytic contract requires a scalar answer but the query is fiber-sensitive, a refusal outcome—reporting that the representation does not support the query—is a valid analytic result. Below we record three recurring response types.
+
+(i) Set-valued answers. One may return the full range of values attained by F on the fiber:
+R_(F)(y) := {F(x) : x ∈ π⁻¹(y)}.
+This preserves exactness and introduces no assumptions. The output is not scalar.
+
+Definition 10 (Refusal scalarization). Let ℝ_(⊥) := ℝ ∪ {⊥}, where ⊥ denotes “not supported.” Define
+$$F_\bot(y) := \begin{cases} a, & \text{if } R_F(y) = \{a\}, \\ \bot, & \text{otherwise}. \end{cases}$$
+
+Here ⊥ records an honest absence of determinacy: the representation does not support a unique scalar answer at y without additional structure.
+
+(ii) Extremal bounds and rigidity. One may weaken determinacy by passing from exact values to bounds. Define the fiber extremals
+$$\underline{F}(y) := \inf_{x \in \pi^{-1}(y)} F(x), \qquad
+  \overline{F}(y) := \sup_{x \in \pi^{-1}(y)} F(x),$$
+and the fiber variation
+$$\Delta_F(y) := \overline{F}(y) - \underline{F}(y).$$
+Bounds constrain fiber variation without selecting a single value.
+
+(iii) Scalar answers via closure. One may introduce an explicit rule F̂ : Y → ℝ that selects or summarizes points in each fiber. Such a rule is not determined by π.
+
+Remark 11 (Closure as additional structure). If F is fiber-sensitive, then there exist x₁, x₂ ∈ X with π(x₁) = π(x₂) but F(x₁) ≠ F(x₂). Any single-valued F̂(y) therefore specifies how this variation is resolved.
+
+(iv) Representation refinement. A fourth response is available when the discarded coordinate is identifiable and independently defined: restore it. Rather than working within the quotient and managing its consequences, one refines the representation itself by reinstating the fiber coordinate that scalar determinacy requires. This response differs categorically from (i)–(iii). Responses (i)–(iii) accept the quotient as given; response (iv) undoes it.
+
+When the discarded coordinate possesses an independent physical or mathematical definition—as $Z_0 = \sqrt{\mu_0/\varepsilon_0}$ does in the electromagnetic vacuum—representation refinement is not merely a formal option but the structurally correct response. The irreversibility theorem (Theorem 22) establishes that no downstream processing can recover the lost determinacy; the only path to genuine recovery is to return upstream and restore the discarded coordinate before the quotient is applied.
+
+Remark 12 (Response (iv) and the companion series). The companion papers of this series instantiate response (iv) at the level of the electromagnetic vacuum. The compression (ε₀,μ₀) → c² is identified as the quotient that discards Z₀; the papers restore Z₀ as an explicit coordinate and derive the fine-structure constant, the universal spectroscopic gap, the electron mass, and the proton mass from the resulting geometry—results that are fiber-sensitive under the c-only representation and therefore inaccessible without the restored coordinate.
+
+Summary. When a representation is non-injective, scalar determinacy holds only for fiber-constant queries. Otherwise, four responses are available: (i) retain set-valued information, (ii) extract extremal control, (iii) introduce closure, or (iv) refine the representation by restoring the discarded coordinate. The first three responses accept the quotient and manage its consequences from within. The fourth undoes it. The distinction between (iii) and (iv) is especially consequential: closure introduces structure beyond what the representation contains; refinement recovers structure the representation discarded. These four response types recur across every domain examined in this paper. The distinction is not between different kinds of mathematics, but between working within a quotient and recognizing when the quotient itself is the source of the obstruction.
+
+Maxwellian demonstration of determinacy failure at interfaces
+
+Maxwellian wave propagation in a homogeneous isotropic medium depends on two independent constitutive scalars (μ,ε). A common compression retains only a single dispersion invariant, the wave speed $v = 1/\sqrt{\mu\varepsilon}$ (equivalently $n = \sqrt{\mu_r \varepsilon_r}$), discarding the partition coordinate $Z = \sqrt{\mu/\varepsilon}$. This compression is exact for dispersion but many-to-one: fixing v fixes the product με and identifies a one-parameter family of distinct electric–magnetic partitions. Consequently, any quantity that depends on impedance—in particular interface reflection—is not determined by v alone.
+
+Nothing is missing from Maxwell’s equations; the indeterminacy is induced solely by the chosen representation. We give a minimal demonstration (0% vs. 67% power reflection at equal v), followed by a transmission-line analogue.
+
+Two orthogonal coordinates in homogeneous media
+
+Consider a homogeneous, isotropic, lossless medium with μ > 0 and ε > 0. There are two complementary combinations:
+$$\begin{aligned}
+  v &= \frac{1}{\sqrt{\mu\varepsilon}}, \label{eq:speed} \\
+  Z &= \sqrt{\frac{\mu}{\varepsilon}}. \label{eq:impedance}
+\end{aligned}$$
+Here v is the dispersion coordinate and Z is the partition coordinate.
+
+Lemma 13 (Reconstruction from (v,Z)). For μ, ε > 0, the pair (v,Z) determines (μ,ε) uniquely via μ = Z/v, ε = 1/(Zv).
+
+Proof. From the definitions, με = 1/v² and μ/ε = Z². Multiplying yields μ² = Z²/v², hence μ = Z/v. Dividing yields ε² = 1/(Z²v²), hence ε = 1/(Zv). ◻
+
+Thus (v,Z) provide a bijective reparameterization of the positive (μ,ε)-plane, whereas the compression π : (μ,ε) ↦ v retains only the product coordinate and discards the complementary ratio coordinate. Each fiber π⁻¹(v) is a one-parameter family (a hyperbola in (μ,ε)-space). Points on the same fiber propagate waves at the same speed yet distribute field amplitudes and energy differently. Any query sensitive to that partition is fiber-sensitive.
+
+In relative units, write μ = μ₀μ_(r) and ε = ε₀ε_(r). Then
+$$\label{eq:n}
+  n = \sqrt{\mu_r \varepsilon_r}, \qquad Z = Z_0 \sqrt{\frac{\mu_r}{\varepsilon_r}},$$
+where $Z_0 = \sqrt{\mu_0/\varepsilon_0}$ is the vacuum impedance. Compressing a medium description to n (or v) discards Z unless additional structure is supplied.
+
+The interface reflection demonstration
+
+Define the interface reflectance query F((μ₁,ε₁), (μ₂,ε₂)) := R and the speed-only representation Π((μ₁,ε₁), (μ₂,ε₂)) := (v₁,v₂). At normal incidence, the reflection coefficient is
+$$\label{eq:reflect}
+  \Gamma = \frac{Z_2 - Z_1}{Z_2 + Z_1}, \qquad R = |\Gamma|^2,$$
+where Z_(i) are the wave impedances (Jackson 1998; Pozar 2011)
+
+Proposition 14 (Interface reflectance is fiber-sensitive). There exists no function F̃ such that F = F̃ ∘ Π.
+
+Proof. Construct two media with identical refractive index n = 10 but different impedance. Let medium 1 be vacuum: μ_(r, 1) = ε_(r, 1) = 1, hence Z₁ = Z₀.
+
+Medium A (impedance-matched): μ_(r, 2) = ε_(r, 2) = 10. Then n = 10 and Z₂ = Z₀, so Γ = 0 and R = 0.
+
+Medium B (dielectric closure): μ_(r, 2) = 1, ε_(r, 2) = 100. Then n = 10 and Z₂ = Z₀/10, giving
+$$\Gamma = \frac{Z_0/10 - Z_0}{Z_0/10 + Z_0} = -\frac{9}{11}, \qquad R = \frac{81}{121} \approx 0.669.$$
+Both media lie on the same fiber of (μ,ε) ↦ v yet yield different reflectance. ◻
+
+Remark 15 (Where closure enters in practice). In many optical regimes one adopts the modeling assumption μ_(r) ≈ 1. On the fiber $n = \sqrt{\mu_r \varepsilon_r}$ this selects a section and fixes Z = Z₀/n. This is a closure rule: it specifies how fiber variation is resolved. When a medium violates μ_(r) ≈ 1 (e.g. engineered metamaterials), the speed-only description becomes unreliable for interface questions. The prediction remains well-defined, but its validity depends on the chosen section.
+
+Amplification across multiple interfaces
+
+For medium B, the single-interface transmittance is T ≈ 0.331. In a strongly dephased regime, transmission across N comparable interfaces scales approximately as T^(N), so N = 10 yields T¹⁰ ≈ 1.6 × 10⁻⁵, while the impedance-matched case remains T = 1. In all regimes the response depends on impedance data absent from v. The discrepancy compounds across interfaces: a speed-only representation cannot bound cumulative transmission without partition structure.
+
+Transmission-line analogue
+
+A lossless transmission line is characterized by inductance L′ and capacitance C′ per unit length, with
+$$v = \frac{1}{\sqrt{L' C'}}, \qquad Z_c = \sqrt{\frac{L'}{C'}}.$$
+The map (L′,C′) ↦ v is many-to-one, with fibers parameterized by Z_(c). Junction reflection depends on Z_(c) and is therefore fiber-sensitive under the speed-only representation.
+
+Example 16 (Same velocity, different junction behavior). Let line A have (L′,C′) = (1,1) so that v = 1 and Z_(c) = 1. Let line B have (L′,C′) = (100,0.01) so that v = 1 but Z_(c) = 100. At the junction, Γ = (100−1)/(100+1) ≈ 0.980, giving R ≈ 0.960. A speed-only representation predicts nothing here; any scalar prediction requires an impedance closure.
+
+Why this example matters
+
+The point is not that engineers and physicists do not know impedance. The point is that this example isolates, in its simplest possible form, a representational pattern that recurs across domains:
+
+1.  A reduced description retains a dispersion invariant.
+
+2.  A partition-sensitive query is posed.
+
+3.  A scalar value is produced by implicitly selecting a section of the fiber.
+
+The “closure tax” is the structural price paid whenever scalar answers are extracted from a quotient representation (Theorem 22). In this example, the tax is visible because the example is simple. In stacked representations with many layers of compression, the same tax is paid at each stage, but the fiber geometry that generates it becomes progressively harder to see.
+
+Nonlinear queries under linear projection
+
+A natural question is whether fiber sensitivity arises only in the continuous or field-theoretic settings of Section 5, or whether it appears equally in discrete, computational reductions. This section gives a clean answer in a setting where the representation is a low-pass projection in Fourier space and the query is a quadratic functional of the full field. The obstruction is not domain-specific. It is a structural consequence of applying a nonlinear query to a linearly projected state: whenever the projection collapses modes that the query mixes, exact scalar determinacy fails.
+
+The setting is deliberately chosen from a well-studied domain where the mathematical objects are unambiguous. The claim here is purely representational: we prove that a specific quadratic functional is fiber-sensitive under a specific linear projection. No dynamical model, closure hypothesis, or turbulence physics is assumed or required.
+
+A representation may become effectively injective on a dynamically restricted set if the underlying evolution collapses fibers. We record this as a genuine mechanism for restoring determinacy before exhibiting the obstruction.
+
+Proposition 17 (Determinacy restored by dynamical fiber collapse). Let π : X → Y be a representation and let ẋ = G(x) define a dynamical system on X. Let A(t) ⊂ X denote states reachable at time t from admissible initial data. For y ∈ Y define
+π_(A(t))⁻¹(y) := A(t) ∩ π⁻¹(y).
+Suppose there exists a function d on subsets of X such that d(π_(A(t))⁻¹(y)) → 0 as t → t^(*) for all y in the image of A(t). Then any continuous query becomes effectively fiber-constant on A(t) as t → t^(*), and hence descends to Y when restricted to admissible states.
+
+This describes a genuine geometric mechanism by which determinacy may be restored: the dynamics themselves eliminate unresolved degrees of freedom. The example below shows that this mechanism does not apply in general.
+
+Definition 18 (Spectral low-pass projection). Let 𝕋^(d) := (ℝ/2πℤ)^(d) with d ≥ 2. For f ∈ L²(𝕋^(d)), write
+f(x) = ∑_(k ∈ ℤ^(d))f̂(k) e^(ik ⋅ x).
+Fix K ≥ 1. The spectral low-pass projection is
+$$P_{\leq K} f(x) := \sum_{\substack{k \in \mathbb{Z}^d \\ |k| \leq K}}
+  \hat{f}(k)\, e^{ik \cdot x},$$
+so that P_( ≤ K)² = P_( ≤ K).
+
+Definition 19 (Quadratic commutator). For a smooth divergence-free vector field u : 𝕋^(d) → ℝ^(d), let ū := P_( ≤ K)u. Define the quadratic commutator
+τ(u) := P_( ≤ K)(u⊗u) − ū ⊗ ū,
+where (u⊗u)_(ij) := u_(i)u_(j).
+
+The quantity τ(u) measures the extent to which low-pass projection and quadratic multiplication fail to commute. We ask whether τ descends to Π := P_( ≤ K), that is, whether τ(u) = τ̃(ū) for some single-valued τ̃.
+
+Theorem 20 (Quadratic commutator is fiber-sensitive under spectral projection). Let d ≥ 2 and K ≥ 1. Define
+𝒰 := {u ∈ C^(∞)(𝕋^(d);ℝ^(d)) : ∇ ⋅ u = 0},   Π := P_( ≤ K) : 𝒰 → Π(𝒰).
+Then there exists no map τ̃ : Π(𝒰) → 𝒟′(𝕋^(d);ℝ^(d × d)) such that τ(u) = τ̃(Πu) for all u ∈ 𝒰.
+
+Proof. Consider the fiber over ū = 0. Let k := K + 1, ℓ := K + 2, and define
+w(x) := a(cos (kx₁) + cos (ℓx₁)) e₂,
+where a ≠ 0 and e₂ ∈ ℝ^(d) is the second standard basis vector. Then w ∈ 𝒰 and Πw = 0, so Π(0) = Π(w) = 0.
+
+On the other hand, (w⊗w)₂₂ contains the term
+2a²cos (kx₁)cos (ℓx₁) = a²cos ((ℓ−k)x₁) + a²cos ((ℓ+k)x₁),
+and since ℓ − k = 1 ≤ K, the projection P_( ≤ K)(w⊗w) retains a nonzero cos (x₁) mode. Thus τ(0) = 0 but τ(w) ≠ 0, so τ is not constant on Π⁻¹(0) and does not descend. ◻
+
+The obstruction is purely representational. Theorem 20 requires no dynamics, no model of the field’s evolution, and no assumption about the physical system generating u. Whenever a linear projection collapses high-frequency modes that a quadratic query mixes back into the low-frequency band, the quadratic quantity is fiber-sensitive. Any single-valued rule for τ based only on ū is therefore a closure rule in the sense of Section 4: it introduces structure beyond the representation.
+
+Remark 21 (Named instances). The quadratic commutator τ defined above coincides with the subgrid stress tensor of large-eddy simulation when u is a fluid velocity field (Leonard 1975; Sagaut 2006). The closure problem of that field—the need to model τ from ū alone—is a named instance of the general obstruction proved here. The theorem makes precise why no exact deterministic closure can exist without additional structure: not as a statement about turbulence physics, but as a consequence of the representation.
+
+Probability as fiber bookkeeping
+
+The preceding sections show that compression can destroy scalar determinacy in fully deterministic settings. A common response is to introduce probabilistic structure. In the present framework, probability does not reverse the quotient that produced the loss. Rather, it provides a disciplined language for assigning weights to variation along fibers once a representation has already failed to determine a scalar answer. Conditional expectation is not a restoration of determinacy but a particular closure rule: a principled way of producing a single value relative to a chosen observation.
+
+Setup. Let X denote a space of latent states, Y an observed representation, and π : X → Y a surjective map. If a query F : X → ℝ varies along fibers, then y does not determine a unique scalar value (Theorem 8). A probabilistic model assigns a rule for weighting this fiber variation.
+
+Theorem 22 (Irreversibility and closure tax). Let $X \xrightarrow{\pi} Y \xrightarrow{\psi} Z$ be surjective maps and let Π := ψ ∘ π : X → Z. Let F : X → ℝ.
+
+(i) Irreversibility. If F does not descend to π, then F does not descend to Π. Once a query is fiber-sensitive, no downstream compression restores determinacy without added structure.
+
+(ii) Closure tax. Assume the fiber range R_(F)(y) := {F(x) : x ∈ π⁻¹(y)} is bounded for each y ∈ Y, and define
+$$\underline{F}(y) := \inf R_F(y), \quad \overline{F}(y) := \sup R_F(y), \quad \Delta_F(y) := \overline{F}(y) - \underline{F}(y).$$
+For any scalar rule F̂ : Y → ℝ define its worst-case fiber error
+e_(F̂)(y) := sup_(x ∈ π⁻¹(y))|F(x)−F̂(y)|.
+Then $e_{\hat{F}}(y) \geq \tfrac{1}{2} \Delta_F(y)$, and inf_(F̂)e_(F̂)(y) = Δ_(F)(y)/2.
+
+Proof. For (i), if F = G ∘ Π then F = (G∘ψ) ∘ π, so F descends to π. The contrapositive gives irreversibility.
+
+For (ii), fix y and let $I = [\underline{F}(y), \overline{F}(y)]$. For any a ∈ ℝ, $\sup_{t \in I} |t - a| \geq \tfrac{1}{2}(\overline{F}(y) - \underline{F}(y))$, with equality at a midpoint. Since {F(x) : x ∈ π⁻¹(y)} ⊂ I, the bound holds for e_(F̂)(y). ◻
+
+What probability can and cannot do. Introducing a probability law on X specifies a family of measures supported on fibers. Under standard regularity, one may disintegrate a measure P on X along π to obtain conditional measures {P_(y)} supported on π⁻¹(y). A probabilistic scalar rule has the form
+F̂(y) = ∫_(π⁻¹(y))F(x) μ_(y)(dx),
+where μ_(y) is a chosen fiber measure. Conditional expectation corresponds to the choice μ_(y) = P_(y). Different choices of μ_(y) correspond to different closure rules on the same quotient geometry.
+
+The closure tax shows that no scalar rule—probabilistic or otherwise—eliminates worst-case fiber error without modifying the representation itself. The fiber variation Δ_(F)(y) is a representation-induced lower bound on scalar fidelity, independent of the weighting.
+
+For F ∈ L², the conditional variance Var(F∣Y=y) vanishes almost surely if and only if F descends. When it is nonzero, scalar recovery depends on the selected fiber measure.
+
+Where choice enters. In routine data practice, conditioning, filtering, and denoising are treated as neutral preprocessing steps. Geometrically, each such step fixes a quotient representation and aggregates over its fibers relative to a chosen query. Variation labeled as “noise” is representation-relative: it is variation suppressed by a projection, not variation that is intrinsically irrelevant. Probability operates within the given quotient; it governs completion under that quotient but does not undo it.
+
+Harmonic analysis: phase geometry, coarse invariants, and the vacuum partition
+
+Phase as a fiber coordinate
+
+We begin with the simplest oscillating system. Let two sinusoids be given:
+x(t) = Asin (ωt+ϕ₁),   y(t) = Bsin (ωt+ϕ₂).
+A representation that records only amplitudes (A,B) and frequency ω is many-to-one: it fixes a product-type invariant while discarding the phase difference Δϕ = ϕ₂ − ϕ₁. The fiber over any point (A,B,ω) is the full circle of phase offsets Δϕ ∈ [0, 2π).
+
+The query “what curve does (x(t),y(t)) trace in the plane?”—the Lissajous figure—is fiber-sensitive under this representation. The shape of the figure, its ellipticity, its sense of rotation, and whether it closes are determined entirely by Δϕ, which lives in the fiber. A description that retains only amplitudes and frequency cannot distinguish constructive from destructive superposition, cannot determine coherence, and cannot predict any property of the coupled trajectory. This is not a limitation of measurement precision. It is a structural fact about the representation: the phase relation is a discarded coordinate, and the Lissajous figure is a fiber-sensitive query.
+
+The same pattern appears in any system of coupled nonlinear oscillators. Each oscillator may be characterized by its own dispersion invariant (frequency, period, characteristic time). The coupling between oscillators, however, depends on phase relations that are invisible to a component-wise amplitude representation. The emergent behavior—interference patterns, mode-locking, beating, amplitude modulation—lives in the fiber of the frequency-only map. A representation that discards phase discards the geometry of interaction.
+
+Coarse energy invariants: the formal result
+
+We now state this precisely in the harmonic-analytic setting of Theorem 8.
+
+Fix d ≥ 1 and work on 𝕋^(d). Let Ω₁, Ω₂ ⊂ ℤ^(d) be disjoint finite sets, and fix k₁ ∈ Ω₁, k₂ ∈ Ω₂.
+
+Representation. Define
+π(f) := (∥f̂∥_(ℓ²(Ω₁)), ∥f̂∥_(ℓ²(Ω₂))),
+which records ℓ² energy on each frequency cap and discards relative phase.
+
+Query. Define
+$$F(f) := \Re\bigl(\widehat{f^2}(k_1 + k_2)\bigr).$$
+
+Proposition 23 (Phase-sensitive query does not descend). There exist f⁽¹⁾, f⁽²⁾ such that π(f⁽¹⁾) = π(f⁽²⁾) but F(f⁽¹⁾) ≠ F(f⁽²⁾).
+
+Proof. Fix a > 0 and define
+f⁽¹⁾(x) := a(e^(ik₁ ⋅ x) + e^(ik₂ ⋅ x)),   f⁽²⁾(x) := a(e^(ik₁ ⋅ x) + i e^(ik₂ ⋅ x)).
+Then π(f⁽¹⁾) = π(f⁽²⁾) = (a,a). The Fourier coefficient of (f⁽¹⁾)² at k₁ + k₂ is 2a², giving F(f⁽¹⁾) = 2a². For (f⁽²⁾)², the coefficient at k₁ + k₂ is 2ia², giving F(f⁽²⁾) = 0. ◻
+
+Even when a representation preserves substantial harmonic structure—ℓ² energy on both frequency bands—scalar determinacy may still fail. Coarse energy invariants constrain behavior but do not determine phase-sensitive interactions. The failure does not arise from insufficient richness of the invariant, but from the specific equivalence relation the representation imposes.
+
+The vacuum as a fiber geometry
+
+The Maxwell example of Section 5 and the harmonic example above share a common algebraic structure: a product coordinate retains a dispersion invariant, and a ratio coordinate encodes partition. In both cases the product coordinate alone is many-to-one, and queries sensitive to the partition do not descend.
+
+The same structure appears at the level of the vacuum itself. The vacuum is parameterized by two constitutive constants (ε₀,μ₀). These enter electromagnetic theory through two independent combinations:
+$$\label{eq:vac_c}
+  c = \frac{1}{\sqrt{\varepsilon_0 \mu_0}},
+  \qquad
+  Z_0 = \sqrt{\frac{\mu_0}{\varepsilon_0}}.$$
+The speed of light c is the product coordinate: it fixes the product ε₀μ₀ and identifies a one-parameter family of (ε₀,μ₀) pairs on the hyperbola ε₀μ₀ = c⁻². The impedance of free space Z₀ is the ratio coordinate: together with c, it uniquely resolves the pair via
+$$\label{eq:vac_resolve}
+  \mu_0 = \frac{Z_0}{c}, \qquad \varepsilon_0 = \frac{1}{Z_0 c}.$$
+A description of the vacuum that retains only c discards the partition between electric and magnetic field storage. Any query that depends on how electromagnetic energy is distributed between E and B components is fiber-sensitive under the c-only representation. This is the same obstruction proved for interface reflectance in Proposition 14: two media can share a propagation speed while differing arbitrarily in their field-energy partition.
+
+The fine-structure constant links these vacuum coordinates to the quantum of action. It is given by
+$$\label{eq:alpha_Z0}
+  \alpha = \frac{e^2 Z_0}{2h},$$
+where e is the elementary charge and h is Planck’s constant. The presence of Z₀ in this expression is not incidental: α encodes the impedance of free space—the vacuum’s partition coordinate—relative to the quantum of action. Any theoretical framework anchored to α therefore implicitly carries both fiber coordinates of the vacuum. The product ε₀μ₀ is present through c; the ratio μ₀/ε₀ is present through Z₀; together they determine ε₀ and μ₀ individually via [eq:vac_resolve].
+
+Remark 24 (Thread Frame coordinates, vacuum fiber, and MDL confirmation). The Thread Frame coordinate system introduced for atomic spectroscopy in (Heaton and Coherence Research Collaboration 2025a, 2026b) uses log₁₀(α) as a scaling exponent to map energy-level spacings into a dimensionless alignment coordinate. By construction, every ratio computed in the Thread Frame carries the vacuum’s partition structure: Z₀ is encoded in α, and α appears as the base of the relevant logarithm.
+
+Independent information-theoretic evidence that photon frequencies genuinely align along the Thread Frame coordinate—rather than merely being organized by it as a matter of construction—is provided in (Heaton and Coherence Research Collaboration 2025b). The slope β = log₁₀α is fixed by the coordinate definition and carries no empirical content on its own. What is not guaranteed by construction, and what requires demonstration, is whether observed photon frequencies organize along threads at that slope or scatter away from it. Applying the Minimum Description Length principle to six spectral datasets spanning atomic, molecular, solar, and stellar domains, that analysis encodes photon frequencies under varying slope parameters β and compares description lengths. A shared global minimum is found near β ≈  − 2.143 ± 0.005, statistically indistinguishable from the constructed value log₁₀α ≈  − 2.137. In the language of the present paper, this constitutes evidence that real spectroscopic data descends under the Thread Frame representation: the photon frequencies are fiber-constant with respect to the constructed coordinate, and departures from that coordinate increase description length.
+
+The geometric attractor values observed in half-filled subshell ions, reported in the forthcoming companion paper (Heaton and Coherence Research Collaboration 2026a), arise in this coordinate system. Whether the appearance of α in those attractor values reflects the restoration of the vacuum’s fiber coordinates in the spectroscopic representation is a question the present framework makes precise, even if it does not resolve it.
+
+Stacked representations and the contemporary audit
+
+The preceding sections establish the structural principle: scalar determinacy is governed by fiber geometry, and the fiber geometry is determined by the representation. The electromagnetic, spectral projection, probabilistic, and harmonic examples each instantiate this principle in a distinct technical dialect. In each case, the obstruction is the same: a non-injective map identifies states that a query distinguishes. The available responses are the same: retain set-valued information, extract extremal control, introduce closure, or refine the representation.
+
+The examples were chosen for mathematical precision, but the contemporary significance of the framework extends beyond any single domain. We now address the setting in which fiber geometry is most pervasive and least visible: layered computational representation.
+
+Stacked representations
+
+Modern computational pipelines rarely involve a single representation. A physical system is measured by sensors with finite bandwidth. The measurement is digitized. The digital signal is projected, filtered, reduced in dimension, encoded into features, and summarized by a model or algorithm. Each stage is a non-injective map. The effective representation is the composite of all these maps, and its fibers are the product of the individual fiber structures.
+
+Theorem 22 makes the consequence precise: once a query is fiber-sensitive at any stage, no downstream processing restores scalar determinacy without introducing additional structure. The fiber variation at an early stage propagates forward through every subsequent compression. At the end of the pipeline, the scalar output is determined relative to the composite representation—not relative to the physical system that generated the data.
+
+In simple pipelines with one or two stages, this observation is often manageable. In deep pipelines—with sensor compression, analog-to-digital conversion, feature extraction, learned embedding, and summary layers—the accumulated fibers may be enormous while the final output is a single number reported with high numerical precision. The precision is genuine: it reflects exact computation on the represented coordinates. But it does not imply that the output is determined by the underlying system. Apparent numerical precision and representational determinacy are distinct properties.
+
+Digital computation as controlled quotienting
+
+Digital computation provides a clear and consequential instance. A digital encoding maps a continuous or high-dimensional state space into a finite symbolic space. This map is necessarily many-to-one. The system operates exclusively within the symbolic space, and only distinctions encoded in the symbolic space are available to it. All other distinctions reside in fibers.
+
+The stability and reproducibility of digital computation arise precisely from this controlled quotienting. By fixing a representation space and restricting operations to it, digital systems ensure that their invariants are manipulable, composable, and algorithmically tractable. This is a feature, not a defect. But it entails a structural consequence: every scalar output of a digital pipeline is determined relative to the encoding. If a query is fiber-sensitive with respect to that encoding, any single-valued answer involves closure.
+
+Machine learning and learned representations
+
+Learned models operate on feature spaces defined by training. The feature map is the representation; the model’s outputs are deterministic relative to that feature space. Two inputs that map to the same feature vector are identified, regardless of how they differ in the original space. Any query that distinguishes between inputs so identified is fiber-sensitive under the learned representation.
+
+This is not a criticism of machine learning. It is a geometric characterization of what any representational system can and cannot determine. The framework clarifies a structural limit: model behavior is governed by the geometry of the learned representation, and sensitivity to structure outside that representation is a fiber-level phenomenon.
+
+The audit
+
+The fiber geometry of a representation is a structural fact. It applies to any agent that operates on the represented data—whether that agent is a human analyst working with summary statistics, a numerical simulation running on a grid, or a neural network processing a learned embedding.
+
+The framework provides four diagnostic questions that may be posed before accepting a scalar output:
+
+1.  What is the representation?
+
+2.  What are its fibers?
+
+3.  Does the query descend?
+
+4.  If not, what closure is being used?
+
+These questions are geometric. They do not depend on the domain, the computing substrate, or the nature of the agent performing the inference. They apply equally to physical models, probabilistic systems, harmonic analysis, and digital computation.
+
+When pipelines are short, these questions may be answered informally. When pipelines are deep and layered, answering them requires explicit fiber-tracking: identifying, at each stage, what structure is retained and what is discarded. The determinacy criterion provides the gate at each stage, and the irreversibility theorem ensures that fiber sensitivity, once introduced, persists through all subsequent compressions.
+
+Closing remarks
+
+This paper has addressed a structural question: what can and cannot be determined once a system is viewed through a non-injective representation? The answer is geometric. A scalar query descends through a representation if and only if it is constant on the representation’s fibers. When this condition fails, any single-valued answer depends on additional structure.
+
+The obstruction depends only on the partition of X induced by π and is invariant under equivalence of representations. It does not arise from noise, approximation, or computational limitation, but from the identification of states under a non-injective map. The post-quotient repertoire organizes the available responses: retain set-valued information, extract extremal control, impose closure, or refine the representation by restoring the discarded coordinate.
+
+The mathematics is classical. What the paper provides is a methodology: a systematic discipline for enforcing the determinacy criterion across layered representations, making explicit the boundary at which closure becomes unavoidable, and distinguishing what is representation-determined from what depends on additional structure.
+
+The relevance of this methodology follows from the depth and ubiquity of stacked representations in modern practice. As pipelines grow deeper, the fibers accumulate, the geometric provenance of scalar outputs becomes less visible, and the gap between representational determinacy and numerical precision widens. Making this gap visible is the purpose of the structural audit developed here. It does not oppose reduction. It clarifies the consequences that follow once a representation is chosen.
+
+Provenance
+
+The research that gave rise to this paper was conducted by Kelly B. Heaton through an interactive collaboration with ChatGPT (large language models developed by OpenAI) and Claude (large language models developed by Anthropic), collectively referred to as the Coherence Research Collaboration. All research design, direction, interpretation, and conclusions were determined by the human author who is the sole owner of the intellectual property. Version 1.0 (March 4, 2026): DOI: 10.5281/zenodo.18868210. Version 1.1 (April 4, 2026): 10.5281/zenodo.19424910 corrects a structural inconsistency between the Introduction and Section 3.
+
+[]
+
+Lucerna Veritas
+
+Follow the light of the lantern.
+
+Heaton, Kelly B., and Coherence Research Collaboration. 2025a. “Recursive Geometry of Atomic Spectra.” Zenodo Preprint. https://doi.org/10.5281/zenodo.17188444.
+
+———. 2025b. “Information-Theoretic Confirmation of the α-Affine Thread Frame: Minimum Description Length Validation of the Fine-Structure Slope.” Zenodo Preprint, October. https://doi.org/10.5281/zenodo.17335815.
+
+———. 2026a. “Angular Momentum Quantization of the Electromagnetic Attractor.”
+
+———. 2026b. “Hydrogenic Alignment as a Coordinate Principle for Atomic Spectra: Clarifying Note to Recursive Geometry of Atomic Spectra.” Zenodo, January. https://doi.org/10.5281/zenodo.18167643.
+
+Jackson, John David. 1998. Classical Electrodynamics. 3rd ed. New York: John Wiley & Sons.
+
+Korzybski, Alfred. 1933. “A Non-Aristotelian System and Its Necessity for Rigour in Mathematics and Physics.” In Science and Sanity: An Introduction to Non-Aristotelian Systems and General Semantics. International Non-Aristotelian Library Publishing Company.
+
+Leonard, Anthony. 1975. “Energy Cascade in Large-Eddy Simulations of Turbulent Fluid Flows.” Advances in Geophysics 18: 237–48.
+
+Pozar, David M. 2011. Microwave Engineering. 4th ed. Hoboken, NJ: John Wiley & Sons.
+
+Sagaut, Pierre. 2006. Large Eddy Simulation for Incompressible Flows. 3rd ed. Berlin: Springer.

@@ -28,14 +28,32 @@ structure forced by the two-invariant Maxwell vacuum and the value of α.
 
 ---
 
+## A Note on File Formats
+
+Each paper is available in three formats:
+
+- **PDF (Zenodo)** — the complete typeset paper including all figures and diagrams.
+  This is the canonical reference version.
+- **HTML** — optimized for light file size and machine readability. Equations render
+  via MathJax. Data figures (PNG images) are included. TikZ diagrams (geometric
+  figures constructed in LaTeX) are not rendered as images — they appear as their
+  figure captions only.
+- **TXT** — optimized for machine readability. All mathematical content is preserved
+  as LaTeX notation. No figures of any kind are included.
+
+These HTML and TXT conversions are provided specifically to make the full
+mathematical content of the papers accessible to AI systems and search indexers.
+They are not intended as a substitute for the typeset PDFs.
+
+---
+
 ## Papers — P-Series (2026)
 
 The P-series develops the full geometric framework from empirical foundation to
-particle mass derivation. All papers are available on Zenodo (PDF) and in this
-repository (HTML + plain text for AI readability).
+particle mass derivation.
 
-| Paper | Title | Zenodo | HTML | TXT |
-|-------|-------|--------|------|-----|
+| Paper | Title | PDF (Zenodo) | HTML | TXT |
+|-------|-------|--------------|------|-----|
 | P1 | Vacuum Impedance as the Organizing Principle of Atomic Spectra | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19164224.svg)](https://doi.org/10.5281/zenodo.19164224) | [P1.html](papers/P1.html) | [P1.txt](papers/P1.txt) |
 | P2 | Electromagnetic Closure and the Fine-Structure Constant: A Geometric Derivation | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19157339.svg)](https://doi.org/10.5281/zenodo.19157339) | [P2.html](papers/P2.html) | [P2.txt](papers/P2.txt) |
 | P3 | Determinacy Under Quotient Representations | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18868210.svg)](https://doi.org/10.5281/zenodo.18868210) | [P3.html](papers/P3.html) | [P3.txt](papers/P3.txt) |
@@ -60,8 +78,8 @@ pipeline** (levels-only → photons-post-hoc) that exposes a universal
 **Thread Frame** with slope **β = log₁₀α**. Physics lives in the **intercepts χ**
 (mass, Z², site factors) and in structured local deviations (microslopes).
 
-| Paper | Title | Zenodo | HTML | TXT |
-|-------|-------|--------|------|-----|
+| Paper | Title | PDF (Zenodo) | HTML | TXT |
+|-------|-------|--------------|------|-----|
 | RGAS | Recursive Geometry of Atomic Spectra | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17188444.svg)](https://doi.org/10.5281/zenodo.17188444) | [RGAS.html](papers/RGAS.html) | [RGAS.txt](papers/RGAS.txt) |
 | MDL | Information-Theoretic Confirmation of the α-Affine Thread Frame | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17335815.svg)](https://doi.org/10.5281/zenodo.17335815) | [MDL.html](papers/MDL.html) | [MDL.txt](papers/MDL.txt) |
 | Hydrogenic | Hydrogenic Alignment as a Coordinate Principle for Atomic Spectra | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18167643.svg)](https://doi.org/10.5281/zenodo.18167643) | — | — |
@@ -70,7 +88,8 @@ pipeline** (levels-only → photons-post-hoc) that exposes a universal
 
 ## Reproducibility
 
-Select code, data pointers, and quick-start scripts to reproduce the orginal "γ-ladder" from the Thread Frame coordiate sytem along with basic intercept analyses reported in RGAS are hosted in a separate repository:
+Code, data pointers, and quick-start scripts to reproduce the γ-ladder and basic
+intercept analyses reported in RGAS are maintained in a separate repository:
 
 🧪 **[CoherenceResearchCollaboration/RecursiveGeometry](https://github.com/CoherenceResearchCollaboration/RecursiveGeometry)**
 

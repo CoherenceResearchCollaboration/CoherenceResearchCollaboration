@@ -1,0 +1,1350 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Kelly B. Heaton &amp; The Coherence Research Collaboration" />
+  <title>Determinacy Under Quotient Representations</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    div.abstract {
+      margin: 2em 2em 2em 2em;
+      text-align: left;
+      font-size: 85%;
+    }
+    div.abstract-title {
+      font-weight: bold;
+      text-align: center;
+      padding: 0;
+      margin-bottom: 0.5em;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+    }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }  </style>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="/usr/share/javascript/mathjax/MathJax.js"
+  type="text/javascript"></script>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Determinacy Under Quotient Representations</h1>
+<p class="author">Kelly B. Heaton<br />
+<em>&amp; The Coherence Research Collaboration</em></p>
+<p class="date">March 4, 2026<br />
+<em>Revised April 4, 2026</em></p>
+<div class="abstract">
+<div class="abstract-title">Abstract</div>
+<p>Whenever a state space is compressed by a non-injective map, distinct
+states are identified. A geometric fact governs what can be inferred
+afterward.</p>
+<p><strong>Determinacy criterion.</strong> <em>Given a surjective map
+<span class="math inline">\(\pi : X \to Y\)</span>, a scalar query <span
+class="math inline">\(F : X \to \mathbb{R}\)</span> descends to the
+representation if and only if it is constant on the fibers of <span
+class="math inline">\(\pi\)</span>. When this condition fails, no
+function of <span class="math inline">\(y = \pi(x)\)</span> can recover
+<span class="math inline">\(F(x)\)</span> without introducing additional
+structure.</em></p>
+<p>The criterion is classical. What is not yet canonized in practice is
+the discipline of enforcing it. Modern scientific and computational
+pipelines routinely operate through successive compressions—projections,
+discretizations, feature maps, learned embeddings, summary layers—whose
+induced fibers are rarely tracked in downstream analysis. Scalar outputs
+are then interpreted as if they were determined by the underlying
+system, when in fact they are determined only relative to the composite
+representation. Apparent numerical precision does not imply
+representational determinacy.</p>
+<p>We develop the criterion abstractly and instantiate it across
+electromagnetism, nonlinear queries under linear projection,
+probability, harmonic analysis, and digital computation. The aim is not
+to construct closures, but to identify the geometric boundary at which
+closure becomes unavoidable. Making this boundary explicit separates
+what a representation determines from what depends on additional
+structure.</p>
+<p><strong>Contributions.</strong> We (i) formalize the post-quotient
+repertoire (set-valued description, extremal control, scalar closure, or
+representation refinement), (ii) prove an irreversibility principle for
+stacked representations (determinacy, once lost, cannot be regained
+downstream without added structure), and (iii) give explicit structural
+audits across multiple technical dialects showing how the same geometric
+obstruction recurs under different names.</p>
+</div>
+</header>
+<h1 id="introduction">Introduction</h1>
+<p>Every act of measurement, modeling, and computation proceeds through
+representation: a full state space is replaced by a compressed
+description that retains some structure and discards the rest.
+Projections, coarse-grainings, summaries, invariants, feature maps,
+learned embeddings, and symbolic encodings all serve this role. Such
+reductions are indispensable. They also impose geometric constraints on
+what can be inferred from the compressed data alone.</p>
+<p>This paper studies a specific constraint: when a representation is
+non-injective, certain scalar queries cannot be recovered from the
+represented data. In other words, when distinct states of a system are
+identified as the same element of a compressed space, downstream
+analysis can no longer tell them apart. The obstruction is not
+statistical, computational, or approximative. It is structural (a map is
+<em>not</em> the territory<span class="citation"
+data-cites="Korzybski1933NonAristotelian">(Korzybski 1933)</span>). The
+representation itself determines what can and cannot descend to a
+well-defined scalar answer.</p>
+<p>The central object is the <em>fiber</em>. Given a surjective map
+<span class="math inline">\(\pi : X \to Y\)</span>, the fiber over a
+represented value <span class="math inline">\(y\)</span> is <span
+class="math display">\[\pi^{-1}(y) := \{ x \in X : \pi(x) = y
+\}.\]</span> Fibers collect all states that are indistinguishable under
+<span class="math inline">\(\pi\)</span>. A scalar query <span
+class="math inline">\(F : X \to \mathbb{R}\)</span> is determined by the
+representation if and only if it does not vary within any fiber
+(Theorem <a href="#thm:determinacy" data-reference-type="ref"
+data-reference="thm:determinacy">8</a>). When it does vary, no function
+of the represented data can recover its value. Any single-valued answer
+necessarily introduces additional structure beyond the
+representation.</p>
+<p>The criterion itself is elementary. Its contemporary significance
+lies not in the mathematics, which is a direct consequence of the
+universal property of quotient maps, but in the systematic gap between
+what the criterion requires and what modern practice enforces.
+Scientific and computational pipelines increasingly consist of many
+layers of compression—sensor encoding, discretization, dimensional
+reduction, feature extraction, learned embedding, and summary—each of
+which introduces its own fibers. The effective representation is the
+composite of these maps, and the fibers accumulate accordingly. As
+representations are stacked, the equivalence classes grow while the
+geometric provenance of scalar outputs becomes less visible.</p>
+<p>Unless this quotient accumulation is tracked, downstream scalar
+outputs may appear more determinate than the composite representation
+supports. A number produced with high precision at the end of a long
+pipeline is still representation-relative: it is determined by the
+composite encoding, not by the original system. The precision of the
+output says nothing about the breadth of the fiber from which it was
+drawn.</p>
+<p>The purpose of this paper is to make these distinctions precise and
+operational. We develop the determinacy criterion as a structural audit:
+a discipline-agnostic test for whether a scalar output is determined by
+its representation, or whether additional structure has been imposed.
+The test applies equally whether the system under study is
+electromagnetic, fluid-mechanical, probabilistic, harmonic-analytic, or
+digital-computational. It applies regardless of whether the agent
+performing the inference is a human analyst, a numerical solver, or a
+learned model. The fibers are the same; the obstruction is the same; the
+available responses are the same.</p>
+<p>When scalar determinacy fails, several responses remain
+available:</p>
+<ul>
+<li><p>retain the full fiber information (set-valued
+description);</p></li>
+<li><p>extract extremal or rigidity statements that constrain fiber
+variation;</p></li>
+<li><p>refine the representation by restoring a discarded coordinate;
+or</p></li>
+<li><p>introduce an explicit aggregation or selection rule.</p></li>
+</ul>
+<p>We refer to the last of these—the aggregation or selection rule—as
+<em>closure</em>. Closure produces a single-valued scalar answer where
+intrinsic determinacy is absent. Such answers depend on how unresolved
+fiber variation is handled. The examples developed in Sections <a
+href="#sec:maxwell" data-reference-type="ref"
+data-reference="sec:maxwell">5</a>–<a href="#sec:harmonic"
+data-reference-type="ref" data-reference="sec:harmonic">8</a> are not
+incidental illustrations. Each instantiates the same geometric pattern
+in a distinct technical dialect: electromagnetism (Section <a
+href="#sec:maxwell" data-reference-type="ref"
+data-reference="sec:maxwell">5</a>), nonlinear queries under linear
+projection (Section <a href="#sec:les" data-reference-type="ref"
+data-reference="sec:les">6</a>), probability (Section <a
+href="#sec:probability" data-reference-type="ref"
+data-reference="sec:probability">7</a>), and harmonic analysis
+(Section <a href="#sec:harmonic" data-reference-type="ref"
+data-reference="sec:harmonic">8</a>). The cross-disciplinary range is
+deliberate. Within any single domain, the obstruction may appear to be a
+domain-specific subtlety—a known limitation, a modeling choice, a matter
+of convention. Seen across domains, it reveals itself as a single
+structural pattern that recurs wherever non-injective representations
+are used and fiber geometry is not tracked.</p>
+<p>Section <a href="#sec:discussion" data-reference-type="ref"
+data-reference="sec:discussion">9</a> draws out the consequences for
+stacked representations in contemporary practice, including digital
+computation and machine learning. Section <a href="#sec:closing"
+data-reference-type="ref" data-reference="sec:closing">10</a> offers
+brief closing remarks.</p>
+<h1 id="sec:fibers">Representations and fibers</h1>
+<p>We fix notation and isolate the geometric structure induced by a
+representation.</p>
+<div id="def:rep" class="definition">
+<p><strong>Definition 1</strong> (Representation). Let <span
+class="math inline">\(X\)</span> and <span
+class="math inline">\(Y\)</span> be sets. A <em>representation</em> is a
+surjective map <span class="math inline">\(\pi : X \to Y\)</span>.</p>
+</div>
+<p>The space <span class="math inline">\(X\)</span> is interpreted as
+the full state space of a system, and <span
+class="math inline">\(Y\)</span> as the representation space obtained by
+retaining only the information encoded by <span
+class="math inline">\(\pi\)</span>. Surjectivity ensures that every
+element of <span class="math inline">\(Y\)</span> corresponds to at
+least one state in <span class="math inline">\(X\)</span>. If <span
+class="math inline">\(\pi\)</span> is non-injective, distinct states in
+<span class="math inline">\(X\)</span> are identified in <span
+class="math inline">\(Y\)</span>.</p>
+<div id="def:fiber" class="definition">
+<p><strong>Definition 2</strong> (Fiber). For <span
+class="math inline">\(y \in Y\)</span>, the <em>fiber</em> over <span
+class="math inline">\(y\)</span> is <span
+class="math display">\[\pi^{-1}(y) := \{ x \in X : \pi(x) = y
+\}.\]</span></p>
+</div>
+<p>Each fiber collects all states in <span
+class="math inline">\(X\)</span> that are indistinguishable under the
+representation. When <span class="math inline">\(\pi\)</span> is
+non-injective, fibers typically contain multiple elements.</p>
+<div id="rem:discarded" class="remark">
+<p><em>Remark 3</em> (Geometry of discarded information). Fibers encode
+the degrees of freedom discarded by the representation. They are not
+introduced by approximation, uncertainty, or noise, but arise
+deterministically from the choice of <span
+class="math inline">\(\pi\)</span>. Once a representation is fixed,
+variation within a fiber is invisible to <span
+class="math inline">\(Y\)</span>.</p>
+</div>
+<p>Different representations may induce the same partition of <span
+class="math inline">\(X\)</span> while differing only in the labeling of
+coordinates.</p>
+<div id="def:equiv" class="definition">
+<p><strong>Definition 4</strong> (Equivalent representations). Two
+surjective maps <span class="math inline">\(\pi : X \to Y\)</span> and
+<span class="math inline">\(\pi&#39; : X \to Y&#39;\)</span> are
+<em>equivalent representations</em> of <span
+class="math inline">\(X\)</span> if there exists a bijection <span
+class="math inline">\(\varphi : Y \to Y&#39;\)</span> such that <span
+class="math inline">\(\pi&#39; = \varphi \circ \pi\)</span>.</p>
+</div>
+<p>Equivalent representations induce the same partition of <span
+class="math inline">\(X\)</span> into fibers and therefore discard the
+same information.</p>
+<div id="rem:invariance" class="remark">
+<p><em>Remark 5</em>. All subsequent statements depend only on the
+induced fiber structure and are invariant under equivalence of
+representations.</p>
+</div>
+<h1 id="sec:gate">The determinacy gate</h1>
+<p>Let <span class="math inline">\(\pi : X \to Y\)</span> be a
+surjective representation. We characterize when a scalar query is
+determined by <span class="math inline">\(\pi\)</span>.</p>
+<div id="def:fc" class="definition">
+<p><strong>Definition 6</strong> (Fiber-constant and fiber-sensitive
+queries). A function <span class="math inline">\(F : X \to
+\mathbb{R}\)</span> is <em>fiber-constant</em> if <span
+class="math display">\[F(x_1) = F(x_2) \quad \text{whenever} \quad
+\pi(x_1) = \pi(x_2).\]</span> Otherwise <span
+class="math inline">\(F\)</span> is <em>fiber-sensitive</em>.</p>
+</div>
+<div id="def:descend" class="definition">
+<p><strong>Definition 7</strong> (Queries that descend). A function
+<span class="math inline">\(F : X \to \mathbb{R}\)</span>
+<em>descends</em> to <span class="math inline">\(Y\)</span> if there
+exists <span class="math inline">\(\tilde{F} : Y \to \mathbb{R}\)</span>
+such that <span class="math inline">\(F = \tilde{F} \circ \pi\)</span>.
+Equivalently, <span class="math inline">\(F\)</span> depends only on
+<span class="math inline">\(y = \pi(x)\)</span>.</p>
+</div>
+<div id="thm:determinacy" class="theorem">
+<p><strong>Theorem 8</strong> (Determinacy criterion). <em>Let <span
+class="math inline">\(\pi : X \to Y\)</span> be surjective and let <span
+class="math inline">\(F : X \to \mathbb{R}\)</span>. Then <span
+class="math inline">\(F\)</span> descends to <span
+class="math inline">\(Y\)</span> if and only if <span
+class="math inline">\(F\)</span> is fiber-constant.</em></p>
+</div>
+<div class="proof">
+<p><em>Proof.</em> If <span class="math inline">\(F = \tilde{F} \circ
+\pi\)</span> and <span class="math inline">\(\pi(x_1) =
+\pi(x_2)\)</span>, then <span class="math display">\[F(x_1) =
+\tilde{F}(\pi(x_1)) = \tilde{F}(\pi(x_2)) = F(x_2).\]</span> Conversely,
+if <span class="math inline">\(F\)</span> is fiber-constant, define
+<span class="math inline">\(\tilde{F}(y) := F(x)\)</span> for any <span
+class="math inline">\(x \in \pi^{-1}(y)\)</span>. This is well-defined
+by fiber-constancy and satisfies <span class="math inline">\(F =
+\tilde{F} \circ \pi\)</span>. ◻</p>
+</div>
+<p>The criterion is elementary. Its role in this paper is operational:
+it provides a gate that every scalar query must pass before its value
+can be attributed to the representation alone.</p>
+<h1 id="sec:trilemma">The post-quotient repertoire</h1>
+<p>We now describe what replaces scalar determinacy when a query is
+fiber-sensitive. Let <span class="math inline">\(\pi : X \to Y\)</span>
+be surjective and let <span class="math inline">\(F : X \to
+\mathbb{R}\)</span> be fiber-sensitive. By Theorem <a
+href="#thm:determinacy" data-reference-type="ref"
+data-reference="thm:determinacy">8</a>, <span
+class="math inline">\(F\)</span> does not descend to <span
+class="math inline">\(Y\)</span>. Any scalar response must supplement
+the representation with additional structure.</p>
+<div id="def:closure" class="definition">
+<p><strong>Definition 9</strong> (Closure rule). A <em>(scalar) closure
+rule</em> for <span class="math inline">\((\pi, F)\)</span> is a
+single-valued assignment <span class="math inline">\(\hat{F} : Y \to
+\mathbb{R}\)</span> used as a surrogate for <span
+class="math inline">\(F\)</span> on the quotient data. It is
+<em>exact</em> if <span class="math inline">\(F = \hat{F} \circ
+\pi\)</span>; otherwise it introduces structure beyond <span
+class="math inline">\(\pi\)</span>.</p>
+</div>
+<p>When a declared analytic contract requires a scalar answer but the
+query is fiber-sensitive, a <em>refusal</em> outcome—reporting that the
+representation does not support the query—is a valid analytic result.
+Below we record three recurring response types.</p>
+<p><strong>(i) Set-valued answers.</strong> One may return the full
+range of values attained by <span class="math inline">\(F\)</span> on
+the fiber: <span class="math display">\[R_F(y) := \{ F(x) : x \in
+\pi^{-1}(y) \}.\]</span> This preserves exactness and introduces no
+assumptions. The output is not scalar.</p>
+<div id="def:refusal" class="definition">
+<p><strong>Definition 10</strong> (Refusal scalarization). Let <span
+class="math inline">\(\mathbb{R}_\bot := \mathbb{R}\cup
+\{\bot\}\)</span>, where <span class="math inline">\(\bot\)</span>
+denotes “not supported.” Define <span class="math display">\[F_\bot(y)
+:= \begin{cases} a, &amp; \text{if } R_F(y) = \{a\}, \\ \bot, &amp;
+\text{otherwise}. \end{cases}\]</span></p>
+</div>
+<p>Here <span class="math inline">\(\bot\)</span> records an honest
+absence of determinacy: the representation does not support a unique
+scalar answer at <span class="math inline">\(y\)</span> without
+additional structure.</p>
+<p><strong>(ii) Extremal bounds and rigidity.</strong> One may weaken
+determinacy by passing from exact values to bounds. Define the fiber
+extremals <span class="math display">\[\underline{F}(y) := \inf_{x \in
+\pi^{-1}(y)} F(x), \qquad
+  \overline{F}(y) := \sup_{x \in \pi^{-1}(y)} F(x),\]</span> and the
+fiber variation <span class="math display">\[\Delta_F(y) :=
+\overline{F}(y) - \underline{F}(y).\]</span> Bounds constrain fiber
+variation without selecting a single value.</p>
+<p><strong>(iii) Scalar answers via closure.</strong> One may introduce
+an explicit rule <span class="math inline">\(\hat{F} : Y \to
+\mathbb{R}\)</span> that selects or summarizes points in each fiber.
+Such a rule is not determined by <span
+class="math inline">\(\pi\)</span>.</p>
+<div id="rem:closure_structure" class="remark">
+<p><em>Remark 11</em> (Closure as additional structure). If <span
+class="math inline">\(F\)</span> is fiber-sensitive, then there exist
+<span class="math inline">\(x_1, x_2 \in X\)</span> with <span
+class="math inline">\(\pi(x_1) = \pi(x_2)\)</span> but <span
+class="math inline">\(F(x_1) \neq F(x_2)\)</span>. Any single-valued
+<span class="math inline">\(\hat{F}(y)\)</span> therefore specifies how
+this variation is resolved.</p>
+</div>
+<p><strong>(iv) Representation refinement.</strong> A fourth response is
+available when the discarded coordinate is identifiable and
+independently defined: restore it. Rather than working within the
+quotient and managing its consequences, one refines the representation
+itself by reinstating the fiber coordinate that scalar determinacy
+requires. This response differs categorically from (i)–(iii). Responses
+(i)–(iii) accept the quotient as given; response (iv) undoes it.</p>
+<p>When the discarded coordinate possesses an independent physical or
+mathematical definition—as <span class="math inline">\(Z_0 =
+\sqrt{\mu_0/\varepsilon_0}\)</span> does in the electromagnetic
+vacuum—representation refinement is not merely a formal option but the
+structurally correct response. The irreversibility theorem (Theorem <a
+href="#thm:irrev" data-reference-type="ref"
+data-reference="thm:irrev">22</a>) establishes that no downstream
+processing can recover the lost determinacy; the only path to genuine
+recovery is to return upstream and restore the discarded coordinate
+before the quotient is applied.</p>
+<div id="rem:companion_response" class="remark">
+<p><em>Remark 12</em> (Response (iv) and the companion series). The
+companion papers of this series instantiate response (iv) at the level
+of the electromagnetic vacuum. The compression <span
+class="math inline">\((\varepsilon_0, \mu_0) \to c^2\)</span> is
+identified as the quotient that discards <span
+class="math inline">\(Z_0\)</span>; the papers restore <span
+class="math inline">\(Z_0\)</span> as an explicit coordinate and derive
+the fine-structure constant, the universal spectroscopic gap, the
+electron mass, and the proton mass from the resulting geometry—results
+that are fiber-sensitive under the <span
+class="math inline">\(c\)</span>-only representation and therefore
+inaccessible without the restored coordinate.</p>
+</div>
+<p><strong>Summary.</strong> When a representation is non-injective,
+scalar determinacy holds only for fiber-constant queries. Otherwise,
+four responses are available: (i) retain set-valued information,
+(ii) extract extremal control, (iii) introduce closure, or (iv) refine
+the representation by restoring the discarded coordinate. The first
+three responses accept the quotient and manage its consequences from
+within. The fourth undoes it. The distinction between (iii) and (iv) is
+especially consequential: closure introduces structure beyond what the
+representation contains; refinement recovers structure the
+representation discarded. These four response types recur across every
+domain examined in this paper. The distinction is not between different
+kinds of mathematics, but between working within a quotient and
+recognizing when the quotient itself is the source of the
+obstruction.</p>
+<h1 id="sec:maxwell">Maxwellian demonstration of determinacy failure at
+interfaces</h1>
+<p>Maxwellian wave propagation in a homogeneous isotropic medium depends
+on two independent constitutive scalars <span
+class="math inline">\((\mu, \varepsilon)\)</span>. A common compression
+retains only a single dispersion invariant, the wave speed <span
+class="math inline">\(v = 1/\sqrt{\mu\varepsilon}\)</span> (equivalently
+<span class="math inline">\(n = \sqrt{\mu_r \varepsilon_r}\)</span>),
+discarding the partition coordinate <span class="math inline">\(Z =
+\sqrt{\mu/\varepsilon}\)</span>. This compression is exact for
+dispersion but many-to-one: fixing <span
+class="math inline">\(v\)</span> fixes the product <span
+class="math inline">\(\mu\varepsilon\)</span> and identifies a
+one-parameter family of distinct electric–magnetic partitions.
+Consequently, any quantity that depends on impedance—in particular
+interface reflection—is not determined by <span
+class="math inline">\(v\)</span> alone.</p>
+<p>Nothing is missing from Maxwell’s equations; the indeterminacy is
+induced solely by the chosen representation. We give a minimal
+demonstration (0% vs. 67% power reflection at equal <span
+class="math inline">\(v\)</span>), followed by a transmission-line
+analogue.</p>
+<h2 id="two-orthogonal-coordinates-in-homogeneous-media">Two orthogonal
+coordinates in homogeneous media</h2>
+<p>Consider a homogeneous, isotropic, lossless medium with <span
+class="math inline">\(\mu &gt; 0\)</span> and <span
+class="math inline">\(\varepsilon &gt; 0\)</span>. There are two
+complementary combinations: <span class="math display">\[\begin{aligned}
+  v &amp;= \frac{1}{\sqrt{\mu\varepsilon}}, \label{eq:speed} \\
+  Z &amp;= \sqrt{\frac{\mu}{\varepsilon}}. \label{eq:impedance}
+\end{aligned}\]</span> Here <span class="math inline">\(v\)</span> is
+the dispersion coordinate and <span class="math inline">\(Z\)</span> is
+the partition coordinate.</p>
+<div id="lem:recon" class="lemma">
+<p><strong>Lemma 13</strong> (Reconstruction from <span
+class="math inline">\((v, Z)\)</span>). <em>For <span
+class="math inline">\(\mu, \varepsilon &gt; 0\)</span>, the pair <span
+class="math inline">\((v, Z)\)</span> determines <span
+class="math inline">\((\mu, \varepsilon)\)</span> uniquely via <span
+class="math inline">\(\mu = Z/v\)</span>, <span
+class="math inline">\(\varepsilon = 1/(Zv)\)</span>.</em></p>
+</div>
+<div class="proof">
+<p><em>Proof.</em> From the definitions, <span
+class="math inline">\(\mu\varepsilon = 1/v^2\)</span> and <span
+class="math inline">\(\mu/\varepsilon = Z^2\)</span>. Multiplying yields
+<span class="math inline">\(\mu^2 = Z^2/v^2\)</span>, hence <span
+class="math inline">\(\mu = Z/v\)</span>. Dividing yields <span
+class="math inline">\(\varepsilon^2 = 1/(Z^2 v^2)\)</span>, hence <span
+class="math inline">\(\varepsilon = 1/(Zv)\)</span>. ◻</p>
+</div>
+<p>Thus <span class="math inline">\((v, Z)\)</span> provide a bijective
+reparameterization of the positive <span class="math inline">\((\mu,
+\varepsilon)\)</span>-plane, whereas the compression <span
+class="math inline">\(\pi : (\mu, \varepsilon) \mapsto v\)</span>
+retains only the product coordinate and discards the complementary ratio
+coordinate. Each fiber <span class="math inline">\(\pi^{-1}(v)\)</span>
+is a one-parameter family (a hyperbola in <span
+class="math inline">\((\mu, \varepsilon)\)</span>-space). Points on the
+same fiber propagate waves at the same speed yet distribute field
+amplitudes and energy differently. Any query sensitive to that partition
+is fiber-sensitive.</p>
+<p>In relative units, write <span class="math inline">\(\mu = \mu_0
+\mu_r\)</span> and <span class="math inline">\(\varepsilon =
+\varepsilon_0 \varepsilon_r\)</span>. Then <span
+class="math display">\[\label{eq:n}
+  n = \sqrt{\mu_r \varepsilon_r}, \qquad Z = Z_0
+\sqrt{\frac{\mu_r}{\varepsilon_r}},\]</span> where <span
+class="math inline">\(Z_0 = \sqrt{\mu_0/\varepsilon_0}\)</span> is the
+vacuum impedance. Compressing a medium description to <span
+class="math inline">\(n\)</span> (or <span
+class="math inline">\(v\)</span>) discards <span
+class="math inline">\(Z\)</span> unless additional structure is
+supplied.</p>
+<h2 id="the-interface-reflection-demonstration">The interface reflection
+demonstration</h2>
+<p>Define the interface reflectance query <span
+class="math inline">\(F\bigl((\mu_1, \varepsilon_1), (\mu_2,
+\varepsilon_2)\bigr) := R\)</span> and the speed-only representation
+<span class="math inline">\(\Pi\bigl((\mu_1, \varepsilon_1), (\mu_2,
+\varepsilon_2)\bigr) := (v_1, v_2)\)</span>. At normal incidence, the
+reflection coefficient is <span
+class="math display">\[\label{eq:reflect}
+  \Gamma = \frac{Z_2 - Z_1}{Z_2 + Z_1}, \qquad R = |\Gamma|^2,\]</span>
+where <span class="math inline">\(Z_i\)</span> are the wave
+impedances <span class="citation"
+data-cites="jackson1998 pozar2011">(Jackson 1998; Pozar 2011)</span></p>
+<div id="prop:reflect" class="proposition">
+<p><strong>Proposition 14</strong> (Interface reflectance is
+fiber-sensitive). <em>There exists no function <span
+class="math inline">\(\tilde{F}\)</span> such that <span
+class="math inline">\(F = \tilde{F} \circ \Pi\)</span>.</em></p>
+</div>
+<div class="proof">
+<p><em>Proof.</em> Construct two media with identical refractive index
+<span class="math inline">\(n = 10\)</span> but different impedance. Let
+medium 1 be vacuum: <span class="math inline">\(\mu_{r,1} =
+\varepsilon_{r,1} = 1\)</span>, hence <span class="math inline">\(Z_1 =
+Z_0\)</span>.</p>
+<p><em>Medium A</em> (impedance-matched): <span
+class="math inline">\(\mu_{r,2} = \varepsilon_{r,2} = 10\)</span>. Then
+<span class="math inline">\(n = 10\)</span> and <span
+class="math inline">\(Z_2 = Z_0\)</span>, so <span
+class="math inline">\(\Gamma = 0\)</span> and <span
+class="math inline">\(R = 0\)</span>.</p>
+<p><em>Medium B</em> (dielectric closure): <span
+class="math inline">\(\mu_{r,2} = 1\)</span>, <span
+class="math inline">\(\varepsilon_{r,2} = 100\)</span>. Then <span
+class="math inline">\(n = 10\)</span> and <span
+class="math inline">\(Z_2 = Z_0/10\)</span>, giving <span
+class="math display">\[\Gamma = \frac{Z_0/10 - Z_0}{Z_0/10 + Z_0} =
+-\frac{9}{11}, \qquad R = \frac{81}{121} \approx 0.669.\]</span> Both
+media lie on the same fiber of <span class="math inline">\((\mu,
+\varepsilon) \mapsto v\)</span> yet yield different reflectance. ◻</p>
+</div>
+<div id="rem:closure_em" class="remark">
+<p><em>Remark 15</em> (Where closure enters in practice). In many
+optical regimes one adopts the modeling assumption <span
+class="math inline">\(\mu_r \approx 1\)</span>. On the fiber <span
+class="math inline">\(n = \sqrt{\mu_r \varepsilon_r}\)</span> this
+selects a section and fixes <span class="math inline">\(Z =
+Z_0/n\)</span>. This is a closure rule: it specifies how fiber variation
+is resolved. When a medium violates <span class="math inline">\(\mu_r
+\approx 1\)</span> (e.g. engineered metamaterials), the speed-only
+description becomes unreliable for interface questions. The prediction
+remains well-defined, but its validity depends on the chosen
+section.</p>
+</div>
+<h2 id="amplification-across-multiple-interfaces">Amplification across
+multiple interfaces</h2>
+<p>For medium B, the single-interface transmittance is <span
+class="math inline">\(T \approx 0.331\)</span>. In a strongly dephased
+regime, transmission across <span class="math inline">\(N\)</span>
+comparable interfaces scales approximately as <span
+class="math inline">\(T^N\)</span>, so <span class="math inline">\(N =
+10\)</span> yields <span class="math inline">\(T^{10} \approx 1.6 \times
+10^{-5}\)</span>, while the impedance-matched case remains <span
+class="math inline">\(T = 1\)</span>. In all regimes the response
+depends on impedance data absent from <span
+class="math inline">\(v\)</span>. The discrepancy compounds across
+interfaces: a speed-only representation cannot bound cumulative
+transmission without partition structure.</p>
+<h2 id="transmission-line-analogue">Transmission-line analogue</h2>
+<p>A lossless transmission line is characterized by inductance <span
+class="math inline">\(L&#39;\)</span> and capacitance <span
+class="math inline">\(C&#39;\)</span> per unit length, with <span
+class="math display">\[v = \frac{1}{\sqrt{L&#39; C&#39;}}, \qquad Z_c =
+\sqrt{\frac{L&#39;}{C&#39;}}.\]</span> The map <span
+class="math inline">\((L&#39;, C&#39;) \mapsto v\)</span> is
+many-to-one, with fibers parameterized by <span
+class="math inline">\(Z_c\)</span>. Junction reflection depends on <span
+class="math inline">\(Z_c\)</span> and is therefore fiber-sensitive
+under the speed-only representation.</p>
+<div id="ex:txline" class="example">
+<p><strong>Example 16</strong> (Same velocity, different junction
+behavior). Let line A have <span class="math inline">\((L&#39;, C&#39;)
+= (1, 1)\)</span> so that <span class="math inline">\(v = 1\)</span> and
+<span class="math inline">\(Z_c = 1\)</span>. Let line B have <span
+class="math inline">\((L&#39;, C&#39;) = (100, 0.01)\)</span> so that
+<span class="math inline">\(v = 1\)</span> but <span
+class="math inline">\(Z_c = 100\)</span>. At the junction, <span
+class="math inline">\(\Gamma = (100 - 1)/(100 + 1) \approx
+0.980\)</span>, giving <span class="math inline">\(R \approx
+0.960\)</span>. A speed-only representation predicts nothing here; any
+scalar prediction requires an impedance closure.</p>
+</div>
+<h2 id="why-this-example-matters">Why this example matters</h2>
+<p>The point is not that engineers and physicists do not know impedance.
+The point is that this example isolates, in its simplest possible form,
+a representational pattern that recurs across domains:</p>
+<ol>
+<li><p>A reduced description retains a dispersion invariant.</p></li>
+<li><p>A partition-sensitive query is posed.</p></li>
+<li><p>A scalar value is produced by implicitly selecting a section of
+the fiber.</p></li>
+</ol>
+<p>The “closure tax” is the structural price paid whenever scalar
+answers are extracted from a quotient representation (Theorem <a
+href="#thm:irrev" data-reference-type="ref"
+data-reference="thm:irrev">22</a>). In this example, the tax is visible
+because the example is simple. In stacked representations with many
+layers of compression, the same tax is paid at each stage, but the fiber
+geometry that generates it becomes progressively harder to see.</p>
+<h1 id="sec:les">Nonlinear queries under linear projection</h1>
+<p>A natural question is whether fiber sensitivity arises only in the
+continuous or field-theoretic settings of Section <a href="#sec:maxwell"
+data-reference-type="ref" data-reference="sec:maxwell">5</a>, or whether
+it appears equally in discrete, computational reductions. This section
+gives a clean answer in a setting where the representation is a low-pass
+projection in Fourier space and the query is a quadratic functional of
+the full field. The obstruction is not domain-specific. It is a
+structural consequence of applying a nonlinear query to a linearly
+projected state: whenever the projection collapses modes that the query
+mixes, exact scalar determinacy fails.</p>
+<p>The setting is deliberately chosen from a well-studied domain where
+the mathematical objects are unambiguous. The claim here is purely
+representational: we prove that a specific quadratic functional is
+fiber-sensitive under a specific linear projection. No dynamical model,
+closure hypothesis, or turbulence physics is assumed or required.</p>
+<p>A representation may become effectively injective on a dynamically
+restricted set if the underlying evolution collapses fibers. We record
+this as a genuine mechanism for restoring determinacy before exhibiting
+the obstruction.</p>
+<div id="prop:dyncollapse" class="proposition">
+<p><strong>Proposition 17</strong> (Determinacy restored by dynamical
+fiber collapse). <em>Let <span class="math inline">\(\pi : X \to
+Y\)</span> be a representation and let <span
+class="math inline">\(\dot{x} = G(x)\)</span> define a dynamical system
+on <span class="math inline">\(X\)</span>. Let <span
+class="math inline">\(A(t) \subset X\)</span> denote states reachable at
+time <span class="math inline">\(t\)</span> from admissible initial
+data. For <span class="math inline">\(y \in Y\)</span> define <span
+class="math display">\[\pi^{-1}_{A(t)}(y) := A(t) \cap
+\pi^{-1}(y).\]</span> Suppose there exists a function <span
+class="math inline">\(d\)</span> on subsets of <span
+class="math inline">\(X\)</span> such that <span
+class="math inline">\(d\bigl(\pi^{-1}_{A(t)}(y)\bigr) \to 0\)</span> as
+<span class="math inline">\(t \to t^*\)</span> for all <span
+class="math inline">\(y\)</span> in the image of <span
+class="math inline">\(A(t)\)</span>. Then any continuous query becomes
+effectively fiber-constant on <span class="math inline">\(A(t)\)</span>
+as <span class="math inline">\(t \to t^*\)</span>, and hence descends to
+<span class="math inline">\(Y\)</span> when restricted to admissible
+states.</em></p>
+</div>
+<p>This describes a genuine geometric mechanism by which determinacy may
+be restored: the dynamics themselves eliminate unresolved degrees of
+freedom. The example below shows that this mechanism does not apply in
+general.</p>
+<div id="def:lowpass" class="definition">
+<p><strong>Definition 18</strong> (Spectral low-pass projection). Let
+<span class="math inline">\(\mathbb{T}^d:=
+(\mathbb{R}/2\pi\mathbb{Z})^d\)</span> with <span
+class="math inline">\(d \geq 2\)</span>. For <span
+class="math inline">\(f \in L^2(\mathbb{T}^d)\)</span>, write <span
+class="math display">\[f(x) = \sum_{k \in \mathbb{Z}^d} \hat{f}(k)\,
+e^{ik \cdot x}.\]</span> Fix <span class="math inline">\(K \geq
+1\)</span>. The spectral low-pass projection is <span
+class="math display">\[P_{\leq K} f(x) := \sum_{\substack{k \in
+\mathbb{Z}^d \\ |k| \leq K}}
+  \hat{f}(k)\, e^{ik \cdot x},\]</span> so that <span
+class="math inline">\(P_{\leq K}^2 = P_{\leq K}\)</span>.</p>
+</div>
+<div id="def:subgrid" class="definition">
+<p><strong>Definition 19</strong> (Quadratic commutator). For a smooth
+divergence-free vector field <span class="math inline">\(u :
+\mathbb{T}^d\to \mathbb{R}^d\)</span>, let <span
+class="math inline">\(\bar{u} := P_{\leq K} u\)</span>. Define the
+quadratic commutator <span class="math display">\[\tau(u) := P_{\leq
+K}(u \otimes u) - \bar{u} \otimes \bar{u},\]</span> where <span
+class="math inline">\((u \otimes u)_{ij} := u_i u_j\)</span>.</p>
+</div>
+<p>The quantity <span class="math inline">\(\tau(u)\)</span> measures
+the extent to which low-pass projection and quadratic multiplication
+fail to commute. We ask whether <span
+class="math inline">\(\tau\)</span> descends to <span
+class="math inline">\(\Pi := P_{\leq K}\)</span>, that is, whether <span
+class="math inline">\(\tau(u) = \tilde{\tau}(\bar{u})\)</span> for some
+single-valued <span class="math inline">\(\tilde{\tau}\)</span>.</p>
+<div id="thm:les" class="theorem">
+<p><strong>Theorem 20</strong> (Quadratic commutator is fiber-sensitive
+under spectral projection). <em>Let <span class="math inline">\(d \geq
+2\)</span> and <span class="math inline">\(K \geq 1\)</span>. Define
+<span class="math display">\[\mathcal{U} := \{ u \in
+C^\infty(\mathbb{T}^d; \mathbb{R}^d) : \nabla \cdot u = 0 \},
+  \qquad
+  \Pi := P_{\leq K} : \mathcal{U} \to \Pi(\mathcal{U}).\]</span> Then
+there exists no map <span class="math inline">\(\tilde{\tau} :
+\Pi(\mathcal{U}) \to
+\mathcal{D}&#39;(\mathbb{T}^d; \mathbb{R}^{d \times d})\)</span> such
+that <span class="math inline">\(\tau(u) = \tilde{\tau}(\Pi u)\)</span>
+for all <span class="math inline">\(u \in \mathcal{U}\)</span>.</em></p>
+</div>
+<div class="proof">
+<p><em>Proof.</em> Consider the fiber over <span
+class="math inline">\(\bar{u} = 0\)</span>. Let <span
+class="math inline">\(k := K + 1\)</span>, <span
+class="math inline">\(\ell := K + 2\)</span>, and define <span
+class="math display">\[w(x) := a\bigl(\cos(kx_1) + \cos(\ell
+x_1)\bigr)\, e_2,\]</span> where <span class="math inline">\(a \neq
+0\)</span> and <span class="math inline">\(e_2 \in \mathbb{R}^d\)</span>
+is the second standard basis vector. Then <span class="math inline">\(w
+\in \mathcal{U}\)</span> and <span class="math inline">\(\Pi w =
+0\)</span>, so <span class="math inline">\(\Pi(0) = \Pi(w) =
+0\)</span>.</p>
+<p>On the other hand, <span class="math inline">\((w \otimes
+w)_{22}\)</span> contains the term <span class="math display">\[2a^2
+\cos(kx_1)\cos(\ell x_1)
+  = a^2 \cos((\ell - k)x_1) + a^2 \cos((\ell + k)x_1),\]</span> and
+since <span class="math inline">\(\ell - k = 1 \leq K\)</span>, the
+projection <span class="math inline">\(P_{\leq K}(w \otimes w)\)</span>
+retains a nonzero <span class="math inline">\(\cos(x_1)\)</span> mode.
+Thus <span class="math inline">\(\tau(0) = 0\)</span> but <span
+class="math inline">\(\tau(w) \neq 0\)</span>, so <span
+class="math inline">\(\tau\)</span> is not constant on <span
+class="math inline">\(\Pi^{-1}(0)\)</span> and does not descend. ◻</p>
+</div>
+<p>The obstruction is purely representational. Theorem <a
+href="#thm:les" data-reference-type="ref"
+data-reference="thm:les">20</a> requires no dynamics, no model of the
+field’s evolution, and no assumption about the physical system
+generating <span class="math inline">\(u\)</span>. Whenever a linear
+projection collapses high-frequency modes that a quadratic query mixes
+back into the low-frequency band, the quadratic quantity is
+fiber-sensitive. Any single-valued rule for <span
+class="math inline">\(\tau\)</span> based only on <span
+class="math inline">\(\bar{u}\)</span> is therefore a closure rule in
+the sense of Section <a href="#sec:trilemma" data-reference-type="ref"
+data-reference="sec:trilemma">4</a>: it introduces structure beyond the
+representation.</p>
+<div id="rem:les_instances" class="remark">
+<p><em>Remark 21</em> (Named instances). The quadratic commutator <span
+class="math inline">\(\tau\)</span> defined above coincides with the
+subgrid stress tensor of large-eddy simulation when <span
+class="math inline">\(u\)</span> is a fluid velocity field <span
+class="citation" data-cites="Leonard1975 Sagaut2006">(Leonard 1975;
+Sagaut 2006)</span>. The closure problem of that field—the need to model
+<span class="math inline">\(\tau\)</span> from <span
+class="math inline">\(\bar{u}\)</span> alone—is a named instance of the
+general obstruction proved here. The theorem makes precise why no exact
+deterministic closure can exist without additional structure: not as a
+statement about turbulence physics, but as a consequence of the
+representation.</p>
+</div>
+<h1 id="sec:probability">Probability as fiber bookkeeping</h1>
+<p>The preceding sections show that compression can destroy scalar
+determinacy in fully deterministic settings. A common response is to
+introduce probabilistic structure. In the present framework, probability
+does not reverse the quotient that produced the loss. Rather, it
+provides a disciplined language for assigning weights to variation along
+fibers once a representation has already failed to determine a scalar
+answer. Conditional expectation is not a restoration of determinacy but
+a particular closure rule: a principled way of producing a single value
+relative to a chosen observation.</p>
+<p><strong>Setup.</strong> Let <span class="math inline">\(X\)</span>
+denote a space of latent states, <span class="math inline">\(Y\)</span>
+an observed representation, and <span class="math inline">\(\pi : X \to
+Y\)</span> a surjective map. If a query <span class="math inline">\(F :
+X \to \mathbb{R}\)</span> varies along fibers, then <span
+class="math inline">\(y\)</span> does not determine a unique scalar
+value (Theorem <a href="#thm:determinacy" data-reference-type="ref"
+data-reference="thm:determinacy">8</a>). A probabilistic model assigns a
+rule for weighting this fiber variation.</p>
+<div id="thm:irrev" class="theorem">
+<p><strong>Theorem 22</strong> (Irreversibility and closure tax).
+<em>Let <span class="math inline">\(X \xrightarrow{\pi} Y
+\xrightarrow{\psi} Z\)</span> be surjective maps and let <span
+class="math inline">\(\Pi := \psi \circ \pi : X \to Z\)</span>. Let
+<span class="math inline">\(F : X \to \mathbb{R}\)</span>.</em></p>
+<p><em><span class="upright">(i) Irreversibility.</span> If <span
+class="math inline">\(F\)</span> does not descend to <span
+class="math inline">\(\pi\)</span>, then <span
+class="math inline">\(F\)</span> does not descend to <span
+class="math inline">\(\Pi\)</span>. Once a query is fiber-sensitive, no
+downstream compression restores determinacy without added
+structure.</em></p>
+<p><em><span class="upright">(ii) Closure tax.</span> Assume the fiber
+range <span class="math inline">\(R_F(y) := \{ F(x) : x \in \pi^{-1}(y)
+\}\)</span> is bounded for each <span class="math inline">\(y \in
+Y\)</span>, and define <span class="math display">\[\underline{F}(y) :=
+\inf R_F(y), \quad \overline{F}(y) := \sup R_F(y), \quad \Delta_F(y) :=
+\overline{F}(y) - \underline{F}(y).\]</span> For any scalar rule <span
+class="math inline">\(\hat{F} : Y \to \mathbb{R}\)</span> define its
+worst-case fiber error <span class="math display">\[e_{\hat{F}}(y) :=
+\sup_{x \in \pi^{-1}(y)} |F(x) - \hat{F}(y)|.\]</span> Then <span
+class="math inline">\(e_{\hat{F}}(y) \geq \tfrac{1}{2}
+\Delta_F(y)\)</span>, and <span class="math inline">\(\inf_{\hat{F}}
+e_{\hat{F}}(y) = \Delta_F(y)/2\)</span>.</em></p>
+</div>
+<div class="proof">
+<p><em>Proof.</em> For (i), if <span class="math inline">\(F = G \circ
+\Pi\)</span> then <span class="math inline">\(F = (G \circ \psi) \circ
+\pi\)</span>, so <span class="math inline">\(F\)</span> descends to
+<span class="math inline">\(\pi\)</span>. The contrapositive gives
+irreversibility.</p>
+<p>For (ii), fix <span class="math inline">\(y\)</span> and let <span
+class="math inline">\(I = [\underline{F}(y), \overline{F}(y)]\)</span>.
+For any <span class="math inline">\(a \in \mathbb{R}\)</span>, <span
+class="math inline">\(\sup_{t \in I} |t - a| \geq
+\tfrac{1}{2}(\overline{F}(y) - \underline{F}(y))\)</span>, with equality
+at a midpoint. Since <span class="math inline">\(\{ F(x) : x \in
+\pi^{-1}(y) \} \subset I\)</span>, the bound holds for <span
+class="math inline">\(e_{\hat{F}}(y)\)</span>. ◻</p>
+</div>
+<p><strong>What probability can and cannot do.</strong> Introducing a
+probability law on <span class="math inline">\(X\)</span> specifies a
+family of measures supported on fibers. Under standard regularity, one
+may disintegrate a measure <span class="math inline">\(P\)</span> on
+<span class="math inline">\(X\)</span> along <span
+class="math inline">\(\pi\)</span> to obtain conditional measures <span
+class="math inline">\(\{P_y\}\)</span> supported on <span
+class="math inline">\(\pi^{-1}(y)\)</span>. A probabilistic scalar rule
+has the form <span class="math display">\[\hat{F}(y) =
+\int_{\pi^{-1}(y)} F(x)\, \mu_y(dx),\]</span> where <span
+class="math inline">\(\mu_y\)</span> is a chosen fiber measure.
+Conditional expectation corresponds to the choice <span
+class="math inline">\(\mu_y = P_y\)</span>. Different choices of <span
+class="math inline">\(\mu_y\)</span> correspond to different closure
+rules on the same quotient geometry.</p>
+<p>The closure tax shows that no scalar rule—probabilistic or
+otherwise—eliminates worst-case fiber error without modifying the
+representation itself. The fiber variation <span
+class="math inline">\(\Delta_F(y)\)</span> is a representation-induced
+lower bound on scalar fidelity, independent of the weighting.</p>
+<p>For <span class="math inline">\(F \in L^2\)</span>, the conditional
+variance <span class="math inline">\(\text{Var}(F \mid Y = y)\)</span>
+vanishes almost surely if and only if <span
+class="math inline">\(F\)</span> descends. When it is nonzero, scalar
+recovery depends on the selected fiber measure.</p>
+<p><strong>Where choice enters.</strong> In routine data practice,
+conditioning, filtering, and denoising are treated as neutral
+preprocessing steps. Geometrically, each such step fixes a quotient
+representation and aggregates over its fibers relative to a chosen
+query. Variation labeled as “noise” is representation-relative: it is
+variation suppressed by a projection, not variation that is
+intrinsically irrelevant. Probability operates within the given
+quotient; it governs completion under that quotient but does not undo
+it.</p>
+<h1 id="sec:harmonic">Harmonic analysis: phase geometry, coarse
+invariants, and the vacuum partition</h1>
+<h2 id="phase-as-a-fiber-coordinate">Phase as a fiber coordinate</h2>
+<p>We begin with the simplest oscillating system. Let two sinusoids be
+given: <span class="math display">\[x(t) = A\sin(\omega t + \phi_1),
+\qquad y(t) = B\sin(\omega t + \phi_2).\]</span> A representation that
+records only amplitudes <span class="math inline">\((A, B)\)</span> and
+frequency <span class="math inline">\(\omega\)</span> is many-to-one: it
+fixes a product-type invariant while discarding the phase difference
+<span class="math inline">\(\Delta\phi = \phi_2 - \phi_1\)</span>. The
+fiber over any point <span class="math inline">\((A, B, \omega)\)</span>
+is the full circle of phase offsets <span
+class="math inline">\(\Delta\phi \in [0, 2\pi)\)</span>.</p>
+<p>The query “what curve does <span class="math inline">\((x(t),
+y(t))\)</span> trace in the plane?”—the Lissajous figure—is
+fiber-sensitive under this representation. The shape of the figure, its
+ellipticity, its sense of rotation, and whether it closes are determined
+entirely by <span class="math inline">\(\Delta\phi\)</span>, which lives
+in the fiber. A description that retains only amplitudes and frequency
+cannot distinguish constructive from destructive superposition, cannot
+determine coherence, and cannot predict any property of the coupled
+trajectory. This is not a limitation of measurement precision. It is a
+structural fact about the representation: the phase relation is a
+discarded coordinate, and the Lissajous figure is a fiber-sensitive
+query.</p>
+<p>The same pattern appears in any system of coupled nonlinear
+oscillators. Each oscillator may be characterized by its own dispersion
+invariant (frequency, period, characteristic time). The coupling between
+oscillators, however, depends on phase relations that are invisible to a
+component-wise amplitude representation. The emergent
+behavior—interference patterns, mode-locking, beating, amplitude
+modulation—lives in the fiber of the frequency-only map. A
+representation that discards phase discards the geometry of
+interaction.</p>
+<h2 id="coarse-energy-invariants-the-formal-result">Coarse energy
+invariants: the formal result</h2>
+<p>We now state this precisely in the harmonic-analytic setting of
+Theorem <a href="#thm:determinacy" data-reference-type="ref"
+data-reference="thm:determinacy">8</a>.</p>
+<p>Fix <span class="math inline">\(d \geq 1\)</span> and work on <span
+class="math inline">\(\mathbb{T}^d\)</span>. Let <span
+class="math inline">\(\Omega_1, \Omega_2 \subset \mathbb{Z}^d\)</span>
+be disjoint finite sets, and fix <span class="math inline">\(k_1 \in
+\Omega_1\)</span>, <span class="math inline">\(k_2 \in
+\Omega_2\)</span>.</p>
+<p><strong>Representation.</strong> Define <span
+class="math display">\[\pi(f) := \bigl(\| \hat{f}
+\|_{\ell^2(\Omega_1)},\;
+  \| \hat{f} \|_{\ell^2(\Omega_2)}\bigr),\]</span> which records <span
+class="math inline">\(\ell^2\)</span> energy on each frequency cap and
+discards relative phase.</p>
+<p><strong>Query.</strong> Define <span class="math display">\[F(f) :=
+\Re\bigl(\widehat{f^2}(k_1 + k_2)\bigr).\]</span></p>
+<div id="prop:harmonic" class="proposition">
+<p><strong>Proposition 23</strong> (Phase-sensitive query does not
+descend). <em>There exist <span class="math inline">\(f^{(1)},
+f^{(2)}\)</span> such that <span class="math inline">\(\pi(f^{(1)}) =
+\pi(f^{(2)})\)</span> but <span class="math inline">\(F(f^{(1)}) \neq
+F(f^{(2)})\)</span>.</em></p>
+</div>
+<div class="proof">
+<p><em>Proof.</em> Fix <span class="math inline">\(a &gt; 0\)</span> and
+define <span class="math display">\[f^{(1)}(x) := a\bigl(e^{ik_1 \cdot
+x} + e^{ik_2 \cdot x}\bigr),
+  \qquad
+  f^{(2)}(x) := a\bigl(e^{ik_1 \cdot x} + i\, e^{ik_2 \cdot
+x}\bigr).\]</span> Then <span class="math inline">\(\pi(f^{(1)}) =
+\pi(f^{(2)}) = (a, a)\)</span>. The Fourier coefficient of <span
+class="math inline">\((f^{(1)})^2\)</span> at <span
+class="math inline">\(k_1 + k_2\)</span> is <span
+class="math inline">\(2a^2\)</span>, giving <span
+class="math inline">\(F(f^{(1)}) = 2a^2\)</span>. For <span
+class="math inline">\((f^{(2)})^2\)</span>, the coefficient at <span
+class="math inline">\(k_1 + k_2\)</span> is <span
+class="math inline">\(2ia^2\)</span>, giving <span
+class="math inline">\(F(f^{(2)}) = 0\)</span>. ◻</p>
+</div>
+<p>Even when a representation preserves substantial harmonic
+structure—<span class="math inline">\(\ell^2\)</span> energy on both
+frequency bands—scalar determinacy may still fail. Coarse energy
+invariants constrain behavior but do not determine phase-sensitive
+interactions. The failure does not arise from insufficient richness of
+the invariant, but from the specific equivalence relation the
+representation imposes.</p>
+<h2 id="sec:vacuum_fiber">The vacuum as a fiber geometry</h2>
+<p>The Maxwell example of Section <a href="#sec:maxwell"
+data-reference-type="ref" data-reference="sec:maxwell">5</a> and the
+harmonic example above share a common algebraic structure: a product
+coordinate retains a dispersion invariant, and a ratio coordinate
+encodes partition. In both cases the product coordinate alone is
+many-to-one, and queries sensitive to the partition do not descend.</p>
+<p>The same structure appears at the level of the vacuum itself. The
+vacuum is parameterized by two constitutive constants <span
+class="math inline">\((\varepsilon_0, \mu_0)\)</span>. These enter
+electromagnetic theory through two independent combinations: <span
+class="math display">\[\label{eq:vac_c}
+  c = \frac{1}{\sqrt{\varepsilon_0 \mu_0}},
+  \qquad
+  Z_0 = \sqrt{\frac{\mu_0}{\varepsilon_0}}.\]</span> The speed of light
+<span class="math inline">\(c\)</span> is the product coordinate: it
+fixes the product <span class="math inline">\(\varepsilon_0
+\mu_0\)</span> and identifies a one-parameter family of <span
+class="math inline">\((\varepsilon_0, \mu_0)\)</span> pairs on the
+hyperbola <span class="math inline">\(\varepsilon_0 \mu_0 =
+c^{-2}\)</span>. The impedance of free space <span
+class="math inline">\(Z_0\)</span> is the ratio coordinate: together
+with <span class="math inline">\(c\)</span>, it uniquely resolves the
+pair via <span class="math display">\[\label{eq:vac_resolve}
+  \mu_0 = \frac{Z_0}{c}, \qquad \varepsilon_0 = \frac{1}{Z_0
+c}.\]</span> A description of the vacuum that retains only <span
+class="math inline">\(c\)</span> discards the partition between electric
+and magnetic field storage. Any query that depends on how
+electromagnetic energy is distributed between <span
+class="math inline">\(E\)</span> and <span
+class="math inline">\(B\)</span> components is fiber-sensitive under the
+<span class="math inline">\(c\)</span>-only representation. This is the
+same obstruction proved for interface reflectance in Proposition <a
+href="#prop:reflect" data-reference-type="ref"
+data-reference="prop:reflect">14</a>: two media can share a propagation
+speed while differing arbitrarily in their field-energy partition.</p>
+<p>The fine-structure constant links these vacuum coordinates to the
+quantum of action. It is given by <span
+class="math display">\[\label{eq:alpha_Z0}
+  \alpha = \frac{e^2 Z_0}{2h},\]</span> where <span
+class="math inline">\(e\)</span> is the elementary charge and <span
+class="math inline">\(h\)</span> is Planck’s constant. The presence of
+<span class="math inline">\(Z_0\)</span> in this expression is not
+incidental: <span class="math inline">\(\alpha\)</span> encodes the
+impedance of free space—the vacuum’s partition coordinate—relative to
+the quantum of action. Any theoretical framework anchored to <span
+class="math inline">\(\alpha\)</span> therefore implicitly carries both
+fiber coordinates of the vacuum. The product <span
+class="math inline">\(\varepsilon_0 \mu_0\)</span> is present through
+<span class="math inline">\(c\)</span>; the ratio <span
+class="math inline">\(\mu_0 / \varepsilon_0\)</span> is present through
+<span class="math inline">\(Z_0\)</span>; together they determine <span
+class="math inline">\(\varepsilon_0\)</span> and <span
+class="math inline">\(\mu_0\)</span> individually via <a
+href="#eq:vac_resolve" data-reference-type="eqref"
+data-reference="eq:vac_resolve">[eq:vac_resolve]</a>.</p>
+<div id="rem:threadframe" class="remark">
+<p><em>Remark 24</em> (Thread Frame coordinates, vacuum fiber, and MDL
+confirmation). The Thread Frame coordinate system introduced for atomic
+spectroscopy in <span class="citation"
+data-cites="Heaton2025_RGAS Heaton2026_HydrogenicAlignmentCoordinatePrinciple">(Heaton
+and Coherence Research Collaboration 2025a, 2026b)</span> uses <span
+class="math inline">\(\log_{10}(\alpha)\)</span> as a scaling exponent
+to map energy-level spacings into a dimensionless alignment coordinate.
+By construction, every ratio computed in the Thread Frame carries the
+vacuum’s partition structure: <span class="math inline">\(Z_0\)</span>
+is encoded in <span class="math inline">\(\alpha\)</span>, and <span
+class="math inline">\(\alpha\)</span> appears as the base of the
+relevant logarithm.</p>
+<p>Independent information-theoretic evidence that photon frequencies
+genuinely align along the Thread Frame coordinate—rather than merely
+being organized by it as a matter of construction—is provided in <span
+class="citation" data-cites="Heaton2025_MDL">(Heaton and Coherence
+Research Collaboration 2025b)</span>. The slope <span
+class="math inline">\(\beta = \log_{10}\alpha\)</span> is fixed by the
+coordinate definition and carries no empirical content on its own. What
+is not guaranteed by construction, and what requires demonstration, is
+whether observed photon frequencies organize along threads at that slope
+or scatter away from it. Applying the Minimum Description Length
+principle to six spectral datasets spanning atomic, molecular, solar,
+and stellar domains, that analysis encodes photon frequencies under
+varying slope parameters <span class="math inline">\(\beta\)</span> and
+compares description lengths. A shared global minimum is found near
+<span class="math inline">\(\beta \approx -2.143 \pm 0.005\)</span>,
+statistically indistinguishable from the constructed value <span
+class="math inline">\(\log_{10}\alpha \approx -2.137\)</span>. In the
+language of the present paper, this constitutes evidence that real
+spectroscopic data descends under the Thread Frame representation: the
+photon frequencies are fiber-constant with respect to the constructed
+coordinate, and departures from that coordinate increase description
+length.</p>
+<p>The geometric attractor values observed in half-filled subshell ions,
+reported in the forthcoming companion paper <span class="citation"
+data-cites="Heaton2026_Attractor">(Heaton and Coherence Research
+Collaboration 2026a)</span>, arise in this coordinate system. Whether
+the appearance of <span class="math inline">\(\alpha\)</span> in those
+attractor values reflects the restoration of the vacuum’s fiber
+coordinates in the spectroscopic representation is a question the
+present framework makes precise, even if it does not resolve it.</p>
+</div>
+<h1 id="sec:discussion">Stacked representations and the contemporary
+audit</h1>
+<p>The preceding sections establish the structural principle: scalar
+determinacy is governed by fiber geometry, and the fiber geometry is
+determined by the representation. The electromagnetic, spectral
+projection, probabilistic, and harmonic examples each instantiate this
+principle in a distinct technical dialect. In each case, the obstruction
+is the same: a non-injective map identifies states that a query
+distinguishes. The available responses are the same: retain set-valued
+information, extract extremal control, introduce closure, or refine the
+representation.</p>
+<p>The examples were chosen for mathematical precision, but the
+contemporary significance of the framework extends beyond any single
+domain. We now address the setting in which fiber geometry is most
+pervasive and least visible: layered computational representation.</p>
+<h2 id="stacked-representations">Stacked representations</h2>
+<p>Modern computational pipelines rarely involve a single
+representation. A physical system is measured by sensors with finite
+bandwidth. The measurement is digitized. The digital signal is
+projected, filtered, reduced in dimension, encoded into features, and
+summarized by a model or algorithm. Each stage is a non-injective map.
+The effective representation is the composite of all these maps, and its
+fibers are the product of the individual fiber structures.</p>
+<p>Theorem <a href="#thm:irrev" data-reference-type="ref"
+data-reference="thm:irrev">22</a> makes the consequence precise: once a
+query is fiber-sensitive at any stage, no downstream processing restores
+scalar determinacy without introducing additional structure. The fiber
+variation at an early stage propagates forward through every subsequent
+compression. At the end of the pipeline, the scalar output is determined
+relative to the composite representation—not relative to the physical
+system that generated the data.</p>
+<p>In simple pipelines with one or two stages, this observation is often
+manageable. In deep pipelines—with sensor compression, analog-to-digital
+conversion, feature extraction, learned embedding, and summary
+layers—the accumulated fibers may be enormous while the final output is
+a single number reported with high numerical precision. The precision is
+genuine: it reflects exact computation on the represented coordinates.
+But it does not imply that the output is determined by the underlying
+system. Apparent numerical precision and representational determinacy
+are distinct properties.</p>
+<h2 id="digital-computation-as-controlled-quotienting">Digital
+computation as controlled quotienting</h2>
+<p>Digital computation provides a clear and consequential instance. A
+digital encoding maps a continuous or high-dimensional state space into
+a finite symbolic space. This map is necessarily many-to-one. The system
+operates exclusively within the symbolic space, and only distinctions
+encoded in the symbolic space are available to it. All other
+distinctions reside in fibers.</p>
+<p>The stability and reproducibility of digital computation arise
+precisely from this controlled quotienting. By fixing a representation
+space and restricting operations to it, digital systems ensure that
+their invariants are manipulable, composable, and algorithmically
+tractable. This is a feature, not a defect. But it entails a structural
+consequence: every scalar output of a digital pipeline is determined
+relative to the encoding. If a query is fiber-sensitive with respect to
+that encoding, any single-valued answer involves closure.</p>
+<h2 id="machine-learning-and-learned-representations">Machine learning
+and learned representations</h2>
+<p>Learned models operate on feature spaces defined by training. The
+feature map is the representation; the model’s outputs are deterministic
+relative to that feature space. Two inputs that map to the same feature
+vector are identified, regardless of how they differ in the original
+space. Any query that distinguishes between inputs so identified is
+fiber-sensitive under the learned representation.</p>
+<p>This is not a criticism of machine learning. It is a geometric
+characterization of what any representational system can and cannot
+determine. The framework clarifies a structural limit: model behavior is
+governed by the geometry of the learned representation, and sensitivity
+to structure outside that representation is a fiber-level
+phenomenon.</p>
+<h2 id="the-audit">The audit</h2>
+<p>The fiber geometry of a representation is a structural fact. It
+applies to any agent that operates on the represented data—whether that
+agent is a human analyst working with summary statistics, a numerical
+simulation running on a grid, or a neural network processing a learned
+embedding.</p>
+<p>The framework provides four diagnostic questions that may be posed
+before accepting a scalar output:</p>
+<ol>
+<li><p>What is the representation?</p></li>
+<li><p>What are its fibers?</p></li>
+<li><p>Does the query descend?</p></li>
+<li><p>If not, what closure is being used?</p></li>
+</ol>
+<p>These questions are geometric. They do not depend on the domain, the
+computing substrate, or the nature of the agent performing the
+inference. They apply equally to physical models, probabilistic systems,
+harmonic analysis, and digital computation.</p>
+<p>When pipelines are short, these questions may be answered informally.
+When pipelines are deep and layered, answering them requires explicit
+fiber-tracking: identifying, at each stage, what structure is retained
+and what is discarded. The determinacy criterion provides the gate at
+each stage, and the irreversibility theorem ensures that fiber
+sensitivity, once introduced, persists through all subsequent
+compressions.</p>
+<h1 id="sec:closing">Closing remarks</h1>
+<p>This paper has addressed a structural question: what can and cannot
+be determined once a system is viewed through a non-injective
+representation? The answer is geometric. A scalar query descends through
+a representation if and only if it is constant on the representation’s
+fibers. When this condition fails, any single-valued answer depends on
+additional structure.</p>
+<p>The obstruction depends only on the partition of <span
+class="math inline">\(X\)</span> induced by <span
+class="math inline">\(\pi\)</span> and is invariant under equivalence of
+representations. It does not arise from noise, approximation, or
+computational limitation, but from the identification of states under a
+non-injective map. The post-quotient repertoire organizes the available
+responses: retain set-valued information, extract extremal control,
+impose closure, or refine the representation by restoring the discarded
+coordinate.</p>
+<p>The mathematics is classical. What the paper provides is a
+methodology: a systematic discipline for enforcing the determinacy
+criterion across layered representations, making explicit the boundary
+at which closure becomes unavoidable, and distinguishing what is
+representation-determined from what depends on additional structure.</p>
+<p>The relevance of this methodology follows from the depth and ubiquity
+of stacked representations in modern practice. As pipelines grow deeper,
+the fibers accumulate, the geometric provenance of scalar outputs
+becomes less visible, and the gap between representational determinacy
+and numerical precision widens. Making this gap visible is the purpose
+of the structural audit developed here. It does not oppose reduction. It
+clarifies the consequences that follow once a representation is
+chosen.</p>
+<h1 class="unnumbered" id="provenance">Provenance</h1>
+<p>The research that gave rise to this paper was conducted by Kelly
+B. Heaton through an interactive collaboration with ChatGPT (large
+language models developed by OpenAI) and Claude (large language models
+developed by Anthropic), collectively referred to as the Coherence
+Research Collaboration. All research design, direction, interpretation,
+and conclusions were determined by the human author who is the sole
+owner of the intellectual property. Version 1.0 (March 4, 2026): DOI:
+10.5281/zenodo.18868210. Version 1.1 (April 4, 2026):
+10.5281/zenodo.19424910 corrects a structural inconsistency between the
+Introduction and Section 3.</p>
+<figure id="fig:lucerna_veritas">
+<embed src="figures/lucerna_veritas.pdf" style="width:11.0%" />
+<figcaption>Lucerna Veritas </figcaption>
+</figure>
+<div class="center">
+<p><em>Follow the light of the lantern.</em></p>
+</div>
+<div id="refs" class="references csl-bib-body hanging-indent"
+role="list">
+<div id="ref-Heaton2025_RGAS" class="csl-entry" role="listitem">
+Heaton, Kelly B., and Coherence Research Collaboration. 2025a.
+<span>“Recursive Geometry of Atomic Spectra.”</span> <em>Zenodo
+Preprint</em>. <a
+href="https://doi.org/10.5281/zenodo.17188444">https://doi.org/10.5281/zenodo.17188444</a>.
+</div>
+<div id="ref-Heaton2025_MDL" class="csl-entry" role="listitem">
+———. 2025b. <span>“Information-Theoretic Confirmation of the <span
+class="math inline">\(\alpha\)</span>-Affine Thread Frame:
+<span>M</span>inimum Description Length Validation of the Fine-Structure
+Slope.”</span> <em>Zenodo Preprint</em>, October. <a
+href="https://doi.org/10.5281/zenodo.17335815">https://doi.org/10.5281/zenodo.17335815</a>.
+</div>
+<div id="ref-Heaton2026_Attractor" class="csl-entry" role="listitem">
+———. 2026a. <span>“Angular Momentum Quantization of the Electromagnetic
+Attractor.”</span>
+</div>
+<div id="ref-Heaton2026_HydrogenicAlignmentCoordinatePrinciple"
+class="csl-entry" role="listitem">
+———. 2026b. <span>“Hydrogenic Alignment as a Coordinate Principle for
+Atomic Spectra: Clarifying Note to Recursive Geometry of Atomic
+Spectra.”</span> <em>Zenodo</em>, January. <a
+href="https://doi.org/10.5281/zenodo.18167643">https://doi.org/10.5281/zenodo.18167643</a>.
+</div>
+<div id="ref-jackson1998" class="csl-entry" role="listitem">
+Jackson, John David. 1998. <em>Classical Electrodynamics</em>. 3rd ed.
+New York: John Wiley &amp; Sons.
+</div>
+<div id="ref-Korzybski1933NonAristotelian" class="csl-entry"
+role="listitem">
+Korzybski, Alfred. 1933. <span>“A Non-Aristotelian System and Its
+Necessity for Rigour in Mathematics and Physics.”</span> In <em>Science
+and Sanity: An Introduction to Non-Aristotelian Systems and General
+Semantics</em>. International Non-Aristotelian Library Publishing
+Company.
+</div>
+<div id="ref-Leonard1975" class="csl-entry" role="listitem">
+Leonard, Anthony. 1975. <span>“Energy Cascade in Large-Eddy Simulations
+of Turbulent Fluid Flows.”</span> <em>Advances in Geophysics</em> 18:
+237–48.
+</div>
+<div id="ref-pozar2011" class="csl-entry" role="listitem">
+Pozar, David M. 2011. <em>Microwave Engineering</em>. 4th ed. Hoboken,
+NJ: John Wiley &amp; Sons.
+</div>
+<div id="ref-Sagaut2006" class="csl-entry" role="listitem">
+Sagaut, Pierre. 2006. <em>Large Eddy Simulation for Incompressible
+Flows</em>. 3rd ed. Berlin: Springer.
+</div>
+</div>
+</body>
+</html>
