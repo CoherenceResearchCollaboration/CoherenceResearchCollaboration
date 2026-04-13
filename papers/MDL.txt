@@ -1,3 +1,15 @@
+Affine Thread Frame Minimum Description Length Validation of the Fine-Structure Slope
+Kelly B. Heaton Coherence Research Collaboration
+October 2025
+DOI: 10.5281/zenodo.17335815
+
+Abstract
+
+The \(\alpha\)-Affine Thread Frame, introduced in Recursive Geometry of Atomic Spectra (Heaton & Coherence Research Collaboration, 2025), reveals that when atomic and molecular photon frequencies are plotted in \((\gamma, \log_{10}\nu)\) space, they align into near-linear threads of universal slope \(\beta = \log_{10}\alpha\). The present work provides an alternate confirmation of that slope using the Minimum Description Length (MDL) principle as formulated by Rissanen, 1978; Barron, Rissanen, & Yu, 1998; Grünwald, 2007; and Grünwald & Roos, 2019. By encoding spectral datasets under variable slope parameters \(\beta\), we measure the relative description length \(\Delta L(\beta)\) between model and null encodings. Across six datasets spanning four domains—solar, stellar, laboratory, and molecular spectra—we find that \(\Delta L(\beta)\) attains a global minimum near \(\beta = -2.143 \pm 0.005\), statistically indistinguishable from \(\log_{10}\alpha \approx -2.137\) within the resolution of this analysis, confirming that the fine-structure constant defines the most compressive and information-optimal coordinate for photon organization. This result validates the \(\alpha\)-Affine Thread Frame as a physically meaningful representation of light and establishes a unified law linking its geometric and informational forms: the Fine-Structure Frequency Relation \((\nu(\gamma)\propto\alpha^{\gamma})\) and its differential expression, the Thread Law.
+
+
+------------------------------------------------------------------------
+
 Introduction
 
 The atomic spectrum has long served as nature’s data archive of quantum geometry. The Recursive Geometry of Atomic Spectra (RGAS) introduced a non-circular analytical framework that reorganizes these spectra through a continuous recursion coordinate γ, derived solely from level spacings:
@@ -339,7 +351,7 @@ The pipeline includes:
 
 Archival Access
 
-The complete project, including CSV and JSON result files, figure sources, and configuration scripts, is archived on Zenodo under DOI: 10.5281/zenodo.17167687 (Heaton et al., 2025). All materials are released under a CC-BY 4.0 license to ensure open replication and extension.
+The complete project, including CSV and JSON result files, figure sources, and configuration scripts, is archived on Zenodo under DOI: 10.5281/zenodo.17335815 (Heaton et al., 2025). All materials are released under a CC-BY 4.0 license to ensure open replication and extension.
 
 Verification Procedure
 
@@ -456,7 +468,7 @@ Grünwald, P. (2007). The Minimum Description Length Principle. MIT Press, Cambr
 
 Grünwald, P., & Roos, T. (2019). Minimum Description Length Revisited. International Journal of Mathematics for Industry, 11(1), 1930001.
 
-Heaton, K. B. (2025). Recursive Geometry of Atomic Spectra. Preprint, Zenodo. Version 2. Manuscript describing the α-affine Thread Frame and κ-lattice mapping. . https://doi.org/10.5281/zenodo.17167687.
+Heaton, K. B. (2025). Recursive Geometry of Atomic Spectra. Preprint, Zenodo. Version 2. Manuscript describing the α-affine Thread Frame and κ-lattice mapping. . https://doi.org/10.5281/zenodo.17335815.
 
 Kramida, A., Ralchenko, Yu., Reader, J., and NIST ASD Team (2023). NIST Atomic Spectra Database (ver. 5.11). National Institute of Standards and Technology, Gaithersburg, MD. Available at https://physics.nist.gov/asd.
 
@@ -474,7 +486,7 @@ Lucerna Veritas
 
 Follow the light of the lantern.
 
-[1] https://github.com/CoherenceResearchCollaboration/RecursiveGeometry; Zenodo (DOI 10.5281/zenodo.17167687)
+[1] https://github.com/CoherenceResearchCollaboration/RecursiveGeometry; Zenodo (DOI 10.5281/zenodo.17335815)
 
 [2] As described in Recursive Geometry of Atomic Spectra and U.S. Provisional Application No. 63/881,260, “Systems and Methods for Photon-Only Motif Identification and Recursive Geometry Encoding (Photoncodes).”
 

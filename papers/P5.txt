@@ -1,3 +1,16 @@
+The Proton Mass from Atomic Spectra: A Geometric Derivation
+10.5281/zenodo.19355588
+Kelly B. Heaton Coherence Research Collaboration thecoherencecode.com
+March 31, 2026
+
+Abstract
+
+The proton-to-electron mass ratio \(m_p/m_e \approx 1836\) has no derivation within the Standard Model; it is measured and used but not explained. This paper derives it from one spectral measurement and integer arithmetic.
+The cause is orbital impedance. The orbital impedance \(Z_{\mathrm{orb}}(n) = Z_0 n/\alpha\), derived in (Heaton 2026c) from Coulomb’s law and the Biot–Savart law with charge and orbital radius cancelling exactly from \(|\mathbf{E}|/|\mathbf{H}|\), equals \(Z_0\) only when \(n = \alpha \approx 1/137\), which no positive integer satisfies. The field configuration that impedance-matching requires is simultaneously demanded by the geometry and forbidden by the closure condition of any bound state, producing a structural absence at \(\mathrm{IE}/4\) in every ion’s transition spectrum. Because nuclear charge \(Z\) cancels from \(Z_{\mathrm{orb}}/Z_0 = n/\alpha\), the boundary is universal. In hydrogen, 440 of 518 observed transitions fall below \(\mathrm{IE}/4\) and 76 fall strictly above \(3\mathrm{IE}/4\); none fall between them. This boundary is confirmed across 71 ions in the NIST Atomic Spectra Database with zero falsifications (Heaton 2026d), and the identical fraction \(1/4\) appears at \(S_n/4\) in all four doubly magic nuclei surveyed (Heaton 2026c), where the Rydberg formula plays no role — establishing that the boundary belongs to the vacuum geometry rather than to any particular force or scale.
+The H-mode winding around the source pole converges toward the golden ratio through successive Fibonacci approximations; the proton condenses at the step where the convergence error first falls below \(\alpha\), in the only mathematics then available. From this geometry, the proton rest mass follows: \[m_pc^2 \;=\; 4^{13} \times E_0 \times \frac{2157 - 869\sqrt{5}}{208} \;=\; 938.273\,\mathrm{MeV},\] accurate to \(0.61\,\mathrm{ppm}\). The only empirical input is the hydrogen ionisation energy \(E_0\) (NIST); no coupling constant, quark mass, nuclear parameter, or fitted constant enters.
+The same vacuum geometry produces a second exact result. The H-mode field (\(\mu_0\), Lyman series) encircles the source singularity, accumulating a holonomy of \(\alpha\) per circuit (Heaton 2026b); the E-mode field (\(\varepsilon_0\), Balmer series) terminates on it and does not. Dividing by the circuit measure \(2\pi\): \[a_e = \frac{g-2}{2} = \frac{\alpha}{2\pi} \approx 1.1614 \times 10^{-3}.\] Both results originate in the electromagnetic light cone: a causal boundary in the two-dimensional energy space \((\mathcal{E}_E, \mathcal{E}_H)\) in which the Rydberg trajectory is a null geodesic and the forbidden zone is the cone’s projection onto the energy axis. Extension of the mass recovery across the full periodic table is the subject of ongoing work.
+
+
 Introduction
 
 The proton-to-electron mass ratio m_(p)/m_(e) ≈ 1836 is one of the most precisely measured and least explained numbers in physics. The Standard Model assigns it no derivation. It enters as a measured input, used throughout atomic and nuclear physics but traced to no deeper principle. This paper derives it.

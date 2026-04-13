@@ -1,3 +1,13 @@
+Recursive Geometry of Atomic Spectra
+Kelly B. Heaton & The Coherence Research Collaboration
+September 2025 DOI: 10.5281/zenodo.17188444. Version 1, September 20, 2025. Pre-print v2.
+
+Abstract
+
+Atomic spectra reveal hidden regularities when reorganized in a recursive geometry. Our method is non-circular: (1) we fix a recursion coordinate \(\gamma\) by defining an \(\alpha\)-powered ruler that is anchored to the Rydberg scale; (2) evaluate level spacings statistically for resonance with this ruler; and (3) overlay photons on their \(\gamma\)-resonant levels only afterwards. We find empirically that, when plotted by \((\gamma,\nu)\), photon frequencies decay as \(\nu \propto \alpha^{\gamma}\). In the \(\alpha\)-affine Thread Frame \((\gamma,\log_{10}\nu)\), these decays straighten into near-linear threads with universal tilt \(\beta = \log_{10}\alpha\). To evaluate the physics of our discovery, \(\gamma\)-resonant transitions are grouped by principal-quantum-number towers \((n_i,n_k)\), and tower partitioning is used to resolve intercepts \(\chi\) (carrying reduced mass, \(Z^{2}\), and site factors) and local deviations (microslopes).
+Across \(\sim 30\) ions processed with one preregistered pipeline and bootstrap nulls, we find: (1) slopes cluster tightly near \(\log_{10}\alpha\); (2) intercepts enable isotope calibration and hydrogenic collapse; (3) a \(\sigma\)-sweep recovers \(\alpha\) only in fine-structure windows; (4) microslopes reveal torsion corridors and support ceilings; and (5) cross-thread interactions (CTI) are falsifiable by phase- and linewidth gates. We also introduce photoncodes—\(\chi\)-invariant binary sequences on a fixed \(\kappa\)-lattice—showing that recursive structure is recoverable from photons alone.
+Finally, many ions exhibit terminal photons approaching a common geometric envelope, motivating the conjecture \[E = mc^{2} + h\nu_{\min},\] with \(h\nu_{\min}\) as a putative single-photon anchor. We present this as a falsifiable synthesis: a reproducible reorganization of spectra in which photons themselves reveal recursive geometry, independent of the \(\gamma\) construction.
+
 Introduction
 
 Atomic spectra have shaped physics from the birth of quantum theory to modern precision tests. From Balmer’s optical series (Balmer 1885), Rydberg’s scaling formula (rydberg1890?), and Moseley’s X-ray ordering of the periodic table (Moseley 1913) to Ritz’s combination principle (Ritz 1908) and quantum-defect theory (Condon and Shortley 1935), line patterns have repeatedly revealed how matter organizes energy and emits radiation. In parallel, the wave picture—from Maxwell’s electrodynamics (Maxwell 1865), through Sommerfeld’s relativistic refinements (Sommerfeld 1916), to modern QED (Feynman 1985)—has emphasized that oscillations are governed by geometry and scale.
@@ -1253,7 +1263,7 @@ License: This preprint is distributed under the Creative Commons Attribution (CC
 IP Notice: The underlying methods for photon-only motif identification and recursive geometry encoding (“Photoncodes”) are the subject of U.S. Provisional Patent Application No. 63/881,260, filed September 13, 2025. Patent rights are reserved; licensing inquiries welcome.
 
 Recursive Geometry of Atomic Spectra.
-DOI: 10.5281/zenodo.17167687
+DOI: 10.5281/zenodo.17188444
 Version: 1 (First edition)
 Date: September 20, 2025
 

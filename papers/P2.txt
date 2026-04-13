@@ -1,4 +1,17 @@
+
+Electromagnetic Closure and the Fine-Structure Constant: A Geometric Derivation
+10.5281/zenodo.19157339
+Kelly B. Heaton & Coherence Research Collaboration Version 1.2 issued April 12, 2026 with minor corrections thecoherencecode.com & lucernaveritas.ai
+March 2026
 ------------------------------------------------------------------------
+
+Abstract
+
+The fine-structure constant \(\alpha = Z_0/2R_K \approx 1/137.036\) is derived from the non-terminal reciprocal singularity \(1/z\) at \(z = 0\), completed on the Riemann sphere. The derivation proceeds without free parameters, postulates, or imported physical structure.
+The singularity forces three consequences on the completed space: an irremovable source defect at \(p\), a unique antipodal sink \(p^*\) required by the Poincaré–Hopf theorem (\(\chi(S^2) = 2\)), and a logarithmic potential field between them. The self-similar scaling structure of this field has a unique attractor, the golden ratio \(\varphi = [1;\,1,1,1,\ldots]\), forced by the Markov spectrum theorem and the uniform resolvent condition (Hurwitz, 1891). Rational winding is excluded by the existence of matter. The irremovable defect forces a departure \(\delta > 0\) from \(\varphi\).
+The electromagnetic constants \(\varepsilon_0\) and \(\mu_0\) are not introduced as physical inputs. Their own definitions coincide with the mathematical primitives already present in the structure: \(\varepsilon_0\) is the capacity for containment (the primitive \(1\)) and \(\mu_0\) is the openness to penetration (the primitive \(0\)). Their ratio \(Z_0 = \sqrt{\mu_0/\varepsilon_0}\) is therefore the \(0/1\) geometric ratio of the vacuum, definitionally. No additional structure is required. Within this framework the constancy of \(c = 1/\sqrt{\varepsilon_0\mu_0}\) is a mathematical consequence, not a physical postulate.
+The departure \(\delta\) is assembled from four established facts: the residue of \(1/z\) at \(0\) equals \(1\); \(Z_0\) is the \(0/1\) vacuum ratio; \(R_K = h/e^2\), where \(h\) is the invariant of the self-similar scaling process and \(e\) is the minimum charge of the defect; and the minimum winding number is \(2\). The result is: \[\alpha \;=\; \frac{Z_0}{2R_K} \;=\; \frac{e^2}{2\varepsilon_0 hc} \;\approx\; \frac{1}{137.036},\] with zero free parameters. Neither \(h\), \(e\), nor \(c\) is a primitive of the structure; all are derived consequences.
+The derivation is not an extraction of physics from mathematics. It is the recognition that the physical vocabulary of electromagnetism names the mathematical structure that the non-terminal reciprocal singularity \(1/0\) necessarily generates.
 
 Keywords: fine-structure constant, Riemann sphere, reciprocal singularity, punctured sphere, Poincaré–Hopf theorem, logarithmic potential, golden ratio, Markov spectrum, Hurwitz theorem, self-similar scaling, vacuum impedance, vacuum permittivity, vacuum permeability, von Klitzing constant, Josephson constant, Diophantine impossibility, impedance matching, orbital impedance, electromagnetic primitives, first-principles derivation.
 

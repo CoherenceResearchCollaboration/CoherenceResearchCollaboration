@@ -1,3 +1,17 @@
+Determinacy Under Quotient Representations
+10.5281/zenodo.19424910
+Apr 4, 2026
+Kelly B. Heaton & The Coherence Research Collaboration
+March 4, 2026 Revised April 4, 2026
+
+Abstract
+
+Whenever a state space is compressed by a non-injective map, distinct states are identified. A geometric fact governs what can be inferred afterward.
+Determinacy criterion. Given a surjective map \(\pi : X \to Y\), a scalar query \(F : X \to \mathbb{R}\) descends to the representation if and only if it is constant on the fibers of \(\pi\). When this condition fails, no function of \(y = \pi(x)\) can recover \(F(x)\) without introducing additional structure.
+The criterion is classical. What is not yet canonized in practice is the discipline of enforcing it. Modern scientific and computational pipelines routinely operate through successive compressions—projections, discretizations, feature maps, learned embeddings, summary layers—whose induced fibers are rarely tracked in downstream analysis. Scalar outputs are then interpreted as if they were determined by the underlying system, when in fact they are determined only relative to the composite representation. Apparent numerical precision does not imply representational determinacy.
+We develop the criterion abstractly and instantiate it across electromagnetism, nonlinear queries under linear projection, probability, harmonic analysis, and digital computation. The aim is not to construct closures, but to identify the geometric boundary at which closure becomes unavoidable. Making this boundary explicit separates what a representation determines from what depends on additional structure.
+Contributions. We (i) formalize the post-quotient repertoire (set-valued description, extremal control, scalar closure, or representation refinement), (ii) prove an irreversibility principle for stacked representations (determinacy, once lost, cannot be regained downstream without added structure), and (iii) give explicit structural audits across multiple technical dialects showing how the same geometric 
+
 Introduction
 
 Every act of measurement, modeling, and computation proceeds through representation: a full state space is replaced by a compressed description that retains some structure and discards the rest. Projections, coarse-grainings, summaries, invariants, feature maps, learned embeddings, and symbolic encodings all serve this role. Such reductions are indispensable. They also impose geometric constraints on what can be inferred from the compressed data alone.
