@@ -1,123 +1,151 @@
-# The Coherence Research Collaboration
+# Coherence Research Collaboration Archive
 
-**Kelly B. Heaton & The Coherence Research Collaboration**
+**Research archive and reproducibility materials for Kelly B. Heaton / Lucerna Veritas**
 
-This repository hosts the research papers, reproducibility code, and AI-readable
-paper conversions of the Coherence Research Collaboration — an independent research
-program developing a geometric framework that derives fundamental constants and
-particle masses from electromagnetic vacuum geometry.
+This repository preserves public research releases, machine-readable paper conversions, selected reproducibility materials, and the historical record of an evolving human–AI research program.
 
-🌐 **[lucernaveritas.ai](https://www.lucernaveritas.ai)**  
-📓 **[The Coherence Code on Substack](https://www.thecoherencecode.com)**  
-💼 **[Kelly Heaton](https://www.linkedin.com/in/kelly-heaton-studio/)**  
-📧 **Contact:** kelly@circuiticon.com
+The current research home is:
 
----
+**Lucerna Veritas**  
+https://www.lucernaveritas.ai/
 
-## The Central Result
+Essays and public reflections are published at:
 
-The proton and tau lepton masses follow from a single empirical input — the
-hydrogen ionization energy — with zero free parameters:
+**The Coherence Code**  
+https://www.thecoherencecode.com/
 
-$$m_p c^2 = 4^{13} \times E_0 \times \frac{2157 - 869\sqrt{5}}{208} = 938.273~\text{MeV} \quad (+0.61~\text{ppm})$$
+Kelly B. Heaton’s artwork and studio practice are documented at:
 
-$$m_\tau c^2 = 4^{13} \times E_0 \times \frac{83 + 144\sqrt{5}}{208} = 1776.864~\text{MeV}$$
-
-The Fibonacci sequence is not a postulate: it is proved to be the unique coherence
-structure forced by the two-invariant Maxwell vacuum and the value of α.
+**Kelly Heaton Studio**  
+https://www.kellyheatonstudio.com/
 
 ---
 
-## A Note on File Formats
+## Current status
 
-Each paper is available in three formats:
+This repository is an **active research archive**, not the current claim ceiling of the program.
 
-- **PDF (Zenodo)** — the complete typeset paper including all figures and diagrams.
-  This is the canonical reference version.
-- **HTML** — optimized for light file size and machine readability. Equations render
-  via MathJax. Data figures (PNG images) are included. TikZ diagrams (geometric
-  figures constructed in LaTeX) are not rendered as images — they appear as their
-  figure captions only.
-- **TXT** — optimized for machine readability. All mathematical content is preserved
-  as LaTeX notation. No figures of any kind are included.
+Earlier papers and code remain public because the research process itself is part of the record: the insights, errors, revisions, audits, and failures are central to the work. Some older claims have been revised, retired, quarantined, or reclassified under the program’s current Determinacy-governed review process.
 
-These HTML and TXT conversions are provided specifically to make the full
-mathematical content of the papers accessible to AI systems and search indexers.
-They are not intended as a substitute for the typeset PDFs.
+The current public framing is maintained through Lucerna Veritas. GitHub serves as a preservation and reproducibility layer.
 
----
+In short:
 
-## Papers — P-Series (2026)
-
-The P-series develops the full geometric framework from empirical foundation to
-particle mass derivation.
-
-| Paper | Title | PDF (Zenodo) | HTML | TXT |
-|-------|-------|--------------|------|-----|
-| P1 | Vacuum Impedance as the Organizing Principle of Atomic Spectra | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19164224.svg)](https://doi.org/10.5281/zenodo.19164224) | [P1.html](papers/P1.html) | [P1.txt](papers/P1.txt) |
-| P2 | Electromagnetic Closure and the Fine-Structure Constant: A Geometric Derivation | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19157339.svg)](https://doi.org/10.5281/zenodo.19157339) | [P2.html](papers/P2.html) | [P2.txt](papers/P2.txt) |
-| P3 | Determinacy Under Quotient Representations | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18868210.svg)](https://doi.org/10.5281/zenodo.18868210) | [P3.html](papers/P3.html) | [P3.txt](papers/P3.txt) |
-| P4 | The Encounter of Two Primitives and One Flaw: Geometric Unification at the Electromagnetic Scale | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19194036.svg)](https://doi.org/10.5281/zenodo.19194036) | [P4.html](papers/P4.html) | [P4.txt](papers/P4.txt) |
-| P5 | The Proton Mass from Atomic Spectra: A Geometric Derivation | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19355588.svg)](https://doi.org/10.5281/zenodo.19355588) | [P5.html](papers/P5.html) | [P5.txt](papers/P5.txt) |
-| P6 | On the Geometric Origin of Particle Masses | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19543540.svg)](https://doi.org/10.5281/zenodo.19543540) | [P6.html](papers/P6.html) | [P6.txt](papers/P6.txt) |
+- This archive preserves dated research releases.
+- Older documents should be read as historical and developmental records unless explicitly reaffirmed.
+- The current program emphasizes representational determinacy, audit discipline, reproducibility, and responsible human–AI collaboration.
+- Machine-readable HTML and TXT files are retained to support review, search, and AI-assisted analysis.
+- Nothing in an older release should be treated as a current claim merely because it remains available here.
 
 ---
 
-## Papers — Thread Frame Series (2025)
+## How to read this archive
 
-The Thread Frame series establishes the empirical and information-theoretic
-foundation: photon frequencies organize universally as ν(γ) ∝ α^γ, with the
-fine-structure constant defining the optimal coordinate for atomic spectra.
+The Coherence Research Collaboration began as an exploratory human–AI research program investigating recursive geometry, electromagnetic structure, atomic spectra, and physical constants.
 
-### ν(γ) ∝ α^γ
+The program has since matured into a more disciplined research framework centered on **Determinacy Under Quotient Representations**: the principle that a scalar claim is admissible only when the declared representation determines it, or when the additional closure structure is explicitly named.
 
-*Photon frequencies decay by powers of the fine-structure constant.*
+This shift does not erase the earlier work. It contextualizes it.
 
-To reveal this structure, atomic spectra are reorganized in a **non-circular
-pipeline** (levels-only → photons-post-hoc) that exposes a universal
-**Thread Frame** with slope **β = log₁₀α**. Physics lives in the **intercepts χ**
-(mass, Z², site factors) and in structured local deviations (microslopes).
+The earlier papers are retained because they document:
 
-| Paper | Title | PDF (Zenodo) | HTML | TXT |
-|-------|-------|--------------|------|-----|
-| RGAS | Recursive Geometry of Atomic Spectra | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17188444.svg)](https://doi.org/10.5281/zenodo.17188444) | [RGAS.html](papers/RGAS.html) | [RGAS.txt](papers/RGAS.txt) |
-| MDL | Information-Theoretic Confirmation of the α-Affine Thread Frame | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17335815.svg)](https://doi.org/10.5281/zenodo.17335815) | [MDL.html](papers/MDL.html) | [MDL.txt](papers/MDL.txt) |
-| Hydrogenic | Hydrogenic Alignment as a Coordinate Principle for Atomic Spectra | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18167643.svg)](https://doi.org/10.5281/zenodo.18167643) | — | — |
+- genuine mathematical and physical insights;
+- failed or overextended interpretations;
+- human–AI amplification failure modes;
+- the emergence of a stronger audit protocol;
+- the development of Thread Frame as an instrument rather than a proof object;
+- the basis for forthcoming work on human–AI research methodology.
+
+The journey is part of the evidence.
+
+---
+
+## Current workstreams
+
+### 1. Determinacy Under Quotient Representations
+
+The Determinacy paper is under major revision.
+
+The current revision treats the determinacy criterion as a classical but under-enforced audit discipline. It develops the post-quotient repertoire: set-valued description, extremal control, declared scalar closure, representation refinement, and refusal.
+
+The new version also incorporates boundary examples, including a case where the framework diagnoses a false positive in the authors’ own prior work.
+
+### 2. Thread Frame
+
+Thread Frame is being developed as a levels-first spectroscopic audit instrument.
+
+Its purpose is not to prove that selected spectral lines are physically special. Its purpose is to provide a reproducible representation of atomic level structure, photon realization, closure residuals, catalog consistency, and candidate queues for further review.
+
+Current development emphasizes provenance, null comparisons, covariance awareness, observed-channel cycle closure, and responsible use of NIST atomic data.
+
+### 3. Electromagnetic impedance and α
+
+The program retains a conservative synthesis around the relation between the fine-structure constant and electromagnetic impedance.
+
+Current framing distinguishes identities, readings, pedagogical syntheses, and physical claims. The emphasis is no longer “derivation of constants,” but disciplined representation: what is exact by construction, what is interpretive, what is inherited from established physics, and what requires further review.
+
+### 4. Human–AI collaboration methodology
+
+The program’s research history is now itself a case study in human–AI collaboration.
+
+The archive documents a rare full arc: exploratory discovery, overclaim, audit, burial, salvage, revision, and protocol design. This supports future work on multi-instance AI review, correlated-prior failure, admission gates, citation debt, quarantine discipline, and external human review.
+
+---
+
+## Papers — P-Series
+
+These papers are preserved as dated research releases. Status notes will continue to be synchronized with Lucerna Veritas.
+
+| Paper | Title | Status | PDF | HTML | TXT |
+|---|---|---|---|---|---|
+| P1 | Vacuum Impedance as the Organizing Principle of Atomic Spectra | Legacy release; current status under review | [PDF](https://doi.org/10.5281/zenodo.19164224) | [HTML](papers/P1.html) | [TXT](papers/P1.txt) |
+| P2 | Electromagnetic Closure and the Fine-Structure Constant: A Geometric Derivation | Legacy release; concepts under re-audit and synthesis | [PDF](https://doi.org/10.5281/zenodo.19157339) | [HTML](papers/P2.html) | [TXT](papers/P2.txt) |
+| P3 | Determinacy Under Quotient Representations | Active revision | [PDF](https://doi.org/10.5281/zenodo.18868210) | [HTML](papers/P3.html) | [TXT](papers/P3.txt) |
+| P4 | The Encounter of Two Primitives and One Flaw | Legacy release; teaching material deferred pending review | [PDF](https://doi.org/10.5281/zenodo.19194036) | [HTML](papers/P4.html) | [TXT](papers/P4.txt) |
+| P5 | The Proton Mass from Atomic Spectra | Legacy release; retained as part of the audit record | [PDF](https://doi.org/10.5281/zenodo.19355588) | [HTML](papers/P5.html) | [TXT](papers/P5.txt) |
+| P6 | On the Geometric Origin of Particle Masses | Legacy release; retained as historical record | [PDF](https://doi.org/10.5281/zenodo.19543540) | [HTML](papers/P6.html) | [TXT](papers/P6.txt) |
+
+---
+
+## Thread Frame and atomic spectra
+
+| Work | Title | Status | PDF | HTML | TXT |
+|---|---|---|---|---|---|
+| RGAS | Recursive Geometry of Atomic Spectra | Historical release; vNext audit framework in development | [PDF](https://doi.org/10.5281/zenodo.17188444) | [HTML](papers/RGAS.html) | [TXT](papers/RGAS.txt) |
+| MDL | Information-Theoretic Confirmation of the α-Affine Thread Frame | Historical release; results under current reinterpretation | [PDF](https://doi.org/10.5281/zenodo.17335815) | [HTML](papers/MDL.html) | [TXT](papers/MDL.txt) |
+| Hydrogenic | Hydrogenic Alignment as a Coordinate Principle for Atomic Spectra | Historical release | [PDF](https://doi.org/10.5281/zenodo.18167643) | — | — |
 
 ---
 
 ## Reproducibility
 
-Code, data pointers, and quick-start scripts to reproduce the γ-ladder and basic
-intercept analyses reported in RGAS are maintained in a separate repository:
+Selected code, data pointers, and reproducibility materials are preserved in related repositories, including:
 
-🧪 **[CoherenceResearchCollaboration/RecursiveGeometry](https://github.com/CoherenceResearchCollaboration/RecursiveGeometry)**
+**RecursiveGeometry**  
+https://github.com/CoherenceResearchCollaboration/RecursiveGeometry
 
----
-
-## About This Research
-
-The framework rests on a coordinate that standard electromagnetism suppresses.
-Maxwell's equations in vacuum are governed by two independent constitutive
-constants, ε₀ and μ₀. The standard formulation retains only their product c² =
-1/ε₀μ₀, discarding the ratio Z₀ = √(μ₀/ε₀) — the vacuum impedance. Quantities
-such as α, mₑ, and mₚ are partition observables sensitive to how field energy
-divides between electric and magnetic modes. They are indeterminate from the wave
-equation alone — not as an approximation, but as a matter of algebra. Restoring
-Z₀ as an independent coordinate makes them determinate for the first time.
-
-The empirical foundation (P1) confirms the IE/4 spectroscopic boundary across
-80+ atomic ions with zero falsifications. The theoretical framework (P2–P6)
-derives α, the electron mass, the proton mass, the tau lepton mass, and quark
-charge fractions from this geometry with zero free parameters.
+These materials are retained for provenance, review, and historical reproducibility. Their presence in the archive does not imply that all interpretations in the original papers remain current.
 
 ---
 
 ## Provenance
 
-This research was conducted by Kelly B. Heaton through an interactive
-collaboration with Claude (Anthropic) and ChatGPT (OpenAI), collectively referred
-to as the Coherence Research Collaboration. All research design, direction,
-interpretation, and conclusions were determined by the human author.
+This research was conducted by Kelly B. Heaton through an interactive collaboration with ChatGPT and Claude, collectively referred to as the Coherence Research Collaboration.
 
-*Follow the light of the lantern.* — [lucernaveritas.ai](https://www.lucernaveritas.ai)
+All research design, direction, interpretation, publication decisions, and intellectual-property decisions remain under the authority of Kelly B. Heaton.
+
+The AI systems are part of the collaboration record: as assistants, instruments, reviewers, failure modes, and subjects of methodological analysis.
+
+---
+
+## Licensing and use
+
+Licensing varies by file, paper, and release.
+
+Unless a file or release explicitly states otherwise, copyright and intellectual property remain with Kelly B. Heaton / Lucerna Veritas. Code repositories or release packets may carry their own explicit licenses.
+
+Please cite dated releases by DOI where available, and consult Lucerna Veritas for current status notes.
+
+---
+
+*Follow the light of the lantern.*
